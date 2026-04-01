@@ -85,12 +85,13 @@ export default {
   head({path}) {
     const lang = getLang(path);
     const hide = ["de", "en", "fr"]
-      .filter(l => l !== lang)
-      .flatMap(l => [
-        `#observablehq-sidebar li:has(a[href*="/${l}/"])`,
-        `#observablehq-sidebar details:has(a[href*="/${l}/"])`
-      ])
-      .join(",") + "{display:none}";
+  .filter(l => l !== lang)
+  .flatMap(l => [
+    `#observablehq-sidebar li:has(a[href*="/${l}/"])`,
+    `#observablehq-sidebar details:has(a[href*="/${l}/"])`,
+    `#observablehq-sidebar section:has(a[href*="/${l}/"])`
+  ])
+  .join(",") + "{display:none}";
     return `<link rel="icon" href="/images/swiss-logo-flag.svg" type="image/svg+xml">`
          + `<script>document.documentElement.lang="${lang}";</script>`
          + `<style>${hide}</style>`;
