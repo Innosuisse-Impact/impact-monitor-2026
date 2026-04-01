@@ -27,7 +27,7 @@ function getPageLinks(path) {
   const basePath = path.split("#")[0];
   const match = pageSlugMap.find(m => Object.values(m).includes(basePath));
   const links = match ?? { de: "/de/", en: "/en/", fr: "/fr/" };
-  return { de: base + links.de, en: base + links.en, fr: base + links.fr };
+  return { de: links.de, en: links.en, fr: links.fr };
 }
 
 export default {
