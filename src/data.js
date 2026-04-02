@@ -63,7 +63,7 @@ export const instrument_link = new Map(
   instrument_link_hex.map(item => [item.instrument, item[`link_${lang}`]])
 );
 
-export const df_waffle = await FileAttachment("data/daten_waffle.txt").tsv({ typed: true });
+export const df_waffle = await FileAttachment("data/daten_waffle.csv").csv({ typed: true });
 
 // KOF DiD data with language-aware type labels
 const kofTypeLabels = {
