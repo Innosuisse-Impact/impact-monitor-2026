@@ -112,7 +112,7 @@ export const df_zufrieden = df_ziel_erfolg
     };
   });
 
-export const df_ergebnisse = await FileAttachment("data/daten_ergebnisse.txt").tsv({ typed: true });
+export const df_ergebnisse = await FileAttachment("data/daten_ergebnisse.csv").csv({ typed: true });
 
 const innovationsart = await FileAttachment("data/daten_innovationsart.csv").csv({ typed: true });
 
