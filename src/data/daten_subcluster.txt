@@ -1,26 +1,41 @@
-inst	instrument_de	subcluster	obs_value	instrument_fr	instrument_en
-Begleitung von Start-ups	Start-up Core Coaching	Engineering	0.14	Start-up Core Coaching	Start-up Core Coaching
-Begleitung von Start-ups	Start-up Core Coaching	Life sciences	0.38	Start-up Core Coaching	Start-up Core Coaching
-Begleitung von Start-ups	Start-up Core Coaching	Energy & environment	0.14	Start-up Core Coaching	Start-up Core Coaching
-Begleitung von Start-ups	Start-up Core Coaching	ICT	0.3	Start-up Core Coaching	Start-up Core Coaching
-Begleitung von Start-ups	Start-up Core Coaching	Social sciences & business mgmt	0.04	Start-up Core Coaching	Start-up Core Coaching
-Förderung für Schweizer Innovationsprojekte	BRIDGE Proof of Concept	Engineering	0.31	BRIDGE Proof of Concept	BRIDGE Proof of Concept
-Förderung für Schweizer Innovationsprojekte	BRIDGE Proof of Concept	Life sciences	0.34	BRIDGE Proof of Concept	BRIDGE Proof of Concept
-Förderung für Schweizer Innovationsprojekte	BRIDGE Proof of Concept	Energy & environment	0.12	BRIDGE Proof of Concept	BRIDGE Proof of Concept
-Förderung für Schweizer Innovationsprojekte	BRIDGE Proof of Concept	ICT	0.17	BRIDGE Proof of Concept	BRIDGE Proof of Concept
-Förderung für Schweizer Innovationsprojekte	BRIDGE Proof of Concept	Social sciences & business mgmt	0.06	BRIDGE Proof of Concept	BRIDGE Proof of Concept
-Förderung für Schweizer Innovationsprojekte	Innovationsprojekte ohne Umsetzungspartner	Engineering	0.13	Innovationsprojekte ohne UP	Innovation projects without IP
-Förderung für Schweizer Innovationsprojekte	Innovationsprojekte ohne Umsetzungspartner	Life sciences	0.66	Innovationsprojekte ohne UP	Innovation projects without IP
-Förderung für Schweizer Innovationsprojekte	Innovationsprojekte ohne Umsetzungspartner	Energy & environment	0.09	Innovationsprojekte ohne UP	Innovation projects without IP
-Förderung für Schweizer Innovationsprojekte	Innovationsprojekte ohne Umsetzungspartner	ICT	0.09	Innovationsprojekte ohne UP	Innovation projects without IP
-Förderung für Schweizer Innovationsprojekte	Innovationsprojekte ohne Umsetzungspartner	Social sciences & business mgmt	0.03	Innovationsprojekte ohne UP	Innovation projects without IP
-Förderung für Schweizer Innovationsprojekte	Innovationsscheck	Engineering	0.32	Chèque d'innovation	Innovation cheque
-Förderung für Schweizer Innovationsprojekte	Innovationsscheck	Life sciences	0.14	Chèque d'innovation	Innovation cheque
-Förderung für Schweizer Innovationsprojekte	Innovationsscheck	Energy & environment	0.15	Chèque d'innovation	Innovation cheque
-Förderung für Schweizer Innovationsprojekte	Innovationsscheck	ICT	0.18	Chèque d'innovation	Innovation cheque
-Förderung für Schweizer Innovationsprojekte	Innovationsscheck	Social sciences & business mgmt	0.21	Chèque d'innovation	Innovation cheque
-Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit Umsetzungspartner	Engineering	0.37	Innovationsprojekte mit UP	Innovation projects with IP
-Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit Umsetzungspartner	Life sciences	0.18	Innovationsprojekte mit UP	Innovation projects with IP
-Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit Umsetzungspartner	Energy & environment	0.17	Innovationsprojekte mit UP	Innovation projects with IP
-Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit Umsetzungspartner	ICT	0.18	Innovationsprojekte mit UP	Innovation projects with IP
-Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit Umsetzungspartner	Social sciences & business mgmt	0.1	Innovationsprojekte mit UP	Innovation projects with IP
+instrument_de,instrument_fr,instrument_en,subcluster,obs_value
+BRIDGE Discovery,BRIDGE Discovery,BRIDGE Discovery,Engineering,0.38
+BRIDGE Discovery,BRIDGE Discovery,BRIDGE Discovery,Life sciences,0.44
+BRIDGE Discovery,BRIDGE Discovery,BRIDGE Discovery,Energy & environment,0.06
+BRIDGE Discovery,BRIDGE Discovery,BRIDGE Discovery,ICT,0.06
+BRIDGE Discovery,BRIDGE Discovery,BRIDGE Discovery,Social sciences & business mgmt,0.06
+BRIDGE Proof of Concept,BRIDGE Proof of Concept,BRIDGE Proof of Concept,Engineering,0.33
+BRIDGE Proof of Concept,BRIDGE Proof of Concept,BRIDGE Proof of Concept,Life sciences,0.37
+BRIDGE Proof of Concept,BRIDGE Proof of Concept,BRIDGE Proof of Concept,Energy & environment,0.09
+BRIDGE Proof of Concept,BRIDGE Proof of Concept,BRIDGE Proof of Concept,ICT,0.14
+BRIDGE Proof of Concept,BRIDGE Proof of Concept,BRIDGE Proof of Concept,Social sciences & business mgmt,0.07
+Innovationsprojekte mit Umsetzungspartner,Projets d'innovation avec partenaire de mise en œuvre,Innovation projects with implementation partner,Engineering,0.39
+Innovationsprojekte mit Umsetzungspartner,Projets d'innovation avec partenaire de mise en œuvre,Innovation projects with implementation partner,Life sciences,0.23
+Innovationsprojekte mit Umsetzungspartner,Projets d'innovation avec partenaire de mise en œuvre,Innovation projects with implementation partner,Energy & environment,0.13
+Innovationsprojekte mit Umsetzungspartner,Projets d'innovation avec partenaire de mise en œuvre,Innovation projects with implementation partner,ICT,0.17
+Innovationsprojekte mit Umsetzungspartner,Projets d'innovation avec partenaire de mise en œuvre,Innovation projects with implementation partner,Social sciences & business mgmt,0.08
+Innovationsprojekte ohne Umsetzungspartner,Projets d'innovation sans partenaire de mise en œuvre,Innovation projects without implementation partner,Engineering,0.16
+Innovationsprojekte ohne Umsetzungspartner,Projets d'innovation sans partenaire de mise en œuvre,Innovation projects without implementation partner,Life sciences,0.71
+Innovationsprojekte ohne Umsetzungspartner,Projets d'innovation sans partenaire de mise en œuvre,Innovation projects without implementation partner,Energy & environment,0.04
+Innovationsprojekte ohne Umsetzungspartner,Projets d'innovation sans partenaire de mise en œuvre,Innovation projects without implementation partner,ICT,0.08
+Innovationsprojekte ohne Umsetzungspartner,Projets d'innovation sans partenaire de mise en œuvre,Innovation projects without implementation partner,Social sciences & business mgmt,0.01
+Innovationsscheck,Chèque d'innovation,Innovation cheque,Engineering,0.24
+Innovationsscheck,Chèque d'innovation,Innovation cheque,Life sciences,0.16
+Innovationsscheck,Chèque d'innovation,Innovation cheque,Energy & environment,0.15
+Innovationsscheck,Chèque d'innovation,Innovation cheque,ICT,0.23
+Innovationsscheck,Chèque d'innovation,Innovation cheque,Social sciences & business mgmt,0.21
+Start-up Innovationsprojekte,Projets d'innovation pour start-up,Start-up innovation projects,Engineering,0.16
+Start-up Innovationsprojekte,Projets d'innovation pour start-up,Start-up innovation projects,Life sciences,0.37
+Start-up Innovationsprojekte,Projets d'innovation pour start-up,Start-up innovation projects,Energy & environment,0.2
+Start-up Innovationsprojekte,Projets d'innovation pour start-up,Start-up innovation projects,ICT,0.24
+Start-up Innovationsprojekte,Projets d'innovation pour start-up,Start-up innovation projects,Social sciences & business mgmt,0.03
+Start-up Coaching,Start-up Coaching,Start-up Coaching,Engineering,0.14
+Start-up Coaching,Start-up Coaching,Start-up Coaching,Life sciences,0.31
+Start-up Coaching,Start-up Coaching,Start-up Coaching,Energy & environment,0.15
+Start-up Coaching,Start-up Coaching,Start-up Coaching,ICT,0.28
+Start-up Coaching,Start-up Coaching,Start-up Coaching,Social sciences & business mgmt,0.11
+Innovationsmentoring,Innovationsmentoring,Innovation mentoring,Engineering,0.2
+Innovationsmentoring,Innovationsmentoring,Innovation mentoring,Life sciences,0.23
+Innovationsmentoring,Innovationsmentoring,Innovation mentoring,Energy & environment,0.14
+Innovationsmentoring,Innovationsmentoring,Innovation mentoring,ICT,0.29
+Innovationsmentoring,Innovationsmentoring,Innovation mentoring,Social sciences & business mgmt,0.15

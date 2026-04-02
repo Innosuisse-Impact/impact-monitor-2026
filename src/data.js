@@ -6,7 +6,7 @@ const lang = getLang();
 
 export const daten_controlling = await FileAttachment("data/daten_controlling.csv").csv({ typed: true });
 
-const df_subcluster = await FileAttachment("data/daten_subcluster.txt").tsv({ typed: true });
+const df_subcluster = await FileAttachment("data/daten_subcluster.csv").csv({ typed: true });
 
 export const df_subcluster_n = df_subcluster.map((d) => ({
   ...d,
