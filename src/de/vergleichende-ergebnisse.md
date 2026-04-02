@@ -81,9 +81,9 @@ Die Förderinstrumente ermöglichen es Unternehmen und Organisationen, frühzeit
 Rund 60 % der geförderten ${coloredUnderline("Innovationsprojekte","Förderung für Schweizer Innovationsprojekte")} zeigen bei einer konkreten Umsetzung das Potenzial einen Beitrag zur nachhaltigen Entwicklung zu leisten, entweder zur ökologischen oder sozialen nachhaltigen Entwicklung oder bei beiden Themenbereichen. Bei den ${coloredUnderline("Start-ups im Coaching","Begleitung von Start-ups")} sind die Anteile mit 67 % leicht höher. 
 
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 0px; width: 800px">
-  ${draw_dn("nachhaltig", "Innovationsprojekte mit UP", true, 20)}
+  ${draw_dn("nachhaltig", "Innovationsprojekte mit Umsetzungspartner", true, 20)}
   ${draw_dn("nachhaltig", "Innovationsschecks", false, -8)}
-  ${draw_dn("nachhaltig", "Innovationsprojekte ohne UP", false, -8)}
+  ${draw_dn("nachhaltig", "Innovationsprojekte ohne Umsetzungspartner", false, -8)}
     ${draw_dn("nachhaltig", "BRIDGE Discovery", false, -8)}
   ${draw_dn("nachhaltig", "Start-up Core Coaching", false, -8)}
 </div>
