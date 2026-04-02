@@ -67,9 +67,9 @@ Die Digitalisierung zielt sowohl auf wichtige digitale Zukunftstechnologien (Blo
 
 Rund 55 % der von Innosuisse geförderten ${coloredUnderline("Innovationsprojekten","Förderung für Schweizer Innovationsprojekte")} tragen wesentlich zur digitalen Transformation der Wirtschaft bei, durch digitale Technologien und/oder digitalen Geschäftsmodellen. Die Anwendung von neuen digitalen Technologien ist wichtiger, als die Umsetzung eines digitalen Geschäftsmodells. Bei den ${coloredUnderline("gecoachten Start-ups","Begleitung von Start-ups")} ist die Bedeutung der Digitalisierung nochmals signifikant höher.
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 0px; width: 800px">
-  ${draw_dn("digital", "Innovationsprojekte mit UP", true, 20)}
+  ${draw_dn("digital", "Innovationsprojekte mit Umsetzungspartner", true, 20)}
   ${draw_dn("digital", "Innovationsschecks", false, -8)}
-  ${draw_dn("digital", "Innovationsprojekte ohne UP", false, -8)}
+  ${draw_dn("digital", "Innovationsprojekte ohne Umsetzungspartner", false, -8)}
     ${draw_dn("digital", "BRIDGE Discovery", false, -8)}
   ${draw_dn("digital", "Start-up Core Coaching", false, -8)}
 </div>
