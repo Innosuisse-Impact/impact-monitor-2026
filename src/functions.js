@@ -931,8 +931,8 @@ export function drawMiniPlot(instrument, funding = true) {
     marginLeft: 0,
     y: funding ? { label: s.fundingUnit } : { label: label, domain: instrument !== "Start-up Coaching" ? undefined : [0,400] },
     x: {
-      domain: [2021, 2022, 2023],
-      ticks: [2021, 2023],
+      domain: [2023, 2024, 2025],
+      ticks: [2023, 2025],
       tickSize: 0,
       label: null,
       tickFormat: (d) => String(d)
@@ -964,43 +964,16 @@ export function drawMiniPlot(instrument, funding = true) {
 }
 
 export function drawMiniPlot1(instrument = instruments.CC, funding = false) {
-  const df = [
-    {
-      FA: "Begleitung von Start-ups",
-      inst: "Begleitung von Start-ups",
-      type: "Begleitung von Start-ups",
-      instrument: "Start-up Coaching",
-      year: 2021,
-      funding: 4.3,
-      n: 319,
-      label: "Total Coaching",
-      monitoring: "Ja"
-    },
-    {
-      FA: "Begleitung von Start-ups",
-      inst: "Begleitung von Start-ups",
-      type: "Begleitung von Start-ups",
-      instrument: "Start-up Coaching",
-      year: 2022,
-      funding: 3.3,
-      n: 283,
-      label: "Total Coaching",
-      monitoring: "Ja"
-    },
-    {
-      FA: "Begleitung von Start-ups",
-      inst: "Begleitung von Start-ups",
-      type: "Begleitung von Start-ups",
-      instrument: "Start-up Coaching",
-      year: 2023,
-      funding: 6,
-      n: 380,
-      label: "Total Coaching",
-      monitoring: "Ja"
-    }
-  ];
-
-  const label = df[0].label;
+  const df = aq
+  .from(daten_controlling.filter((d) => d.instrument_de === instrument))
+  .groupby("FA", "inst", "type", instrCol, "year", labelCol, "monitoring")
+  .rollup({
+    funding: (d) => aq.op.sum(d.funding),
+    n: (d) => aq.op.sum(d.n)
+  })
+  .objects();
+  
+  const label = df[0][labelCol];
 
   return Plot.plot({
     color: color_inst,
@@ -1011,8 +984,8 @@ export function drawMiniPlot1(instrument = instruments.CC, funding = false) {
     marginLeft: 0,
     y: funding ? { label: s.fundingUnit } : { label: label, domain: [0, 400] },
     x: {
-      domain: [2021, 2022, 2023],
-      ticks: [2021, 2023],
+      domain: [2023, 2024, 2025],
+      ticks: [2023, 2025],
       tickSize: 0,
       label: null,
       tickFormat: (d) => String(d)
