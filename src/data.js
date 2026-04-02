@@ -4,7 +4,7 @@ import { getLang } from "./lang.js";
 
 const lang = getLang();
 
-export const daten_controlling = await FileAttachment("data/daten_controlling.txt").tsv({ typed: true });
+export const daten_controlling = await FileAttachment("data/daten_controlling.csv").csv({ typed: true });
 
 const df_subcluster = await FileAttachment("data/daten_subcluster.txt").tsv({ typed: true });
 
