@@ -275,18 +275,21 @@ export function draw_fin_plot(
   const instrCol = `instrument_${lang}`;
   //const labelCol = `label_${lang}`;
 
-  const data = aq
-    .from(daten_controlling)
-    .groupby("FA", "inst", instrCol, "type", 
-             //labelCol, 
-             "monitoring")
-    .rollup({
-      mean_funding: (d) => aq.op.round(aq.op.mean(d.funding) * 10) / 10,
-      sum_funding: (d) => aq.op.round(aq.op.sum(d.funding) * 10) / 10,
-      mean_n: (d) => aq.op.round(aq.op.mean(d.n)),
-      sum_n: (d) => aq.op.round(aq.op.sum(d.n))
-    })
-    .objects();
+const data = aq
+  .from(daten_controlling)
+  .groupby("FA", "inst", instrCol, "type", "monitoring", "year")
+  .rollup({
+    sum_funding: (d) => aq.op.sum(d.funding),
+    sum_n: (d) => aq.op.sum(d.n)
+  })
+  .groupby("FA", "inst", instrCol, "type", "monitoring")
+  .rollup({
+    mean_funding: (d) => aq.op.round(aq.op.mean(d.sum_funding) * 10) / 10,
+    sum_funding: (d) => aq.op.round(aq.op.sum(d.sum_funding) * 10) / 10,
+    mean_n: (d) => aq.op.round(aq.op.mean(d.sum_n)),
+    sum_n: (d) => aq.op.round(aq.op.sum(d.sum_n))
+  })
+  .objects();
 
   const df =
     type === undefined
