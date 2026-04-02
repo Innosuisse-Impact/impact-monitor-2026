@@ -22,8 +22,8 @@ const strings = {
       phase: "Umsetzung\nFördermassnahme"
     },
     fin_plot: {
-      xLabel: "Bewilligte Mittel in Mio. Fr. pro Jahr (⌀ 2021–2023)",
-      caption: "Quelle: Cockpit/PowerBI Innosuisse (2025)",
+      xLabel: "Bewilligte Mittel in Mio. Fr. pro Jahr (⌀ 2023–2025)",
+      caption: "Quelle: Cockpit/PowerBI Innosuisse (2026)",
       snsf: "Betrag wird durch den SNF verdoppelt"
     },
     n_subcluster: {
@@ -79,8 +79,8 @@ const strings = {
       phase: "Implementation \nof support offer"
     },
     fin_plot: {
-      xLabel: "Approved funding in millions of Swiss francs per year (⌀ 2021-2023)",
-      caption: "Source: Cockpit/PowerBI Innosuisse (2025)",
+      xLabel: "Approved funding in millions of Swiss francs per year (⌀ 2023-2025)",
+      caption: "Source: Cockpit/PowerBI Innosuisse (2026)",
       snsf: "The amount is doubled by the SNSF"
     },
     n_subcluster: {
@@ -135,8 +135,8 @@ const strings = {
       phase: "Mise en œuvre de \nl'offre d'encouragement"
     },
     fin_plot: {
-      xLabel: "Fonds accordés en millions de francs par an (⌀ 2021-2023)",
-      caption: "Source: Cockpit/PowerBI Innosuisse (2025)",
+      xLabel: "Fonds accordés en millions de francs par an (⌀ 2023-2025)",
+      caption: "Source: Cockpit/PowerBI Innosuisse (2026)",
       snsf: "Le montant est doublé par le FNS"
     },
     n_subcluster: {
