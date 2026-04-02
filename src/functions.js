@@ -294,10 +294,10 @@ export function draw_fin_plot(
   const bridgePOC = instruments.BP;
   const bridgeDisc = instruments.BD;
   const startupSpecial = lang === "de"
-    ? "Start-up Innovationsprojekte (2023ff)"
+    ? "Start-up Innovationsprojekte"
     : lang === "fr"
-    ? "Projets d'innovation pour start-up (2023+)"
-    : "Start-up innovation projects (2023+)";
+    ? "Projets d'innovation pour start-up"
+    : "Start-up innovation projects";
 
   const fmtFunding = lang === "de"
     ? (v) => `⌀ ${v.toLocaleString("fr-CH")} Mio. Fr.`
