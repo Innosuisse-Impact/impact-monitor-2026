@@ -273,11 +273,13 @@ export function draw_fin_plot(
   displayCaption = false
 ) {
   const instrCol = `instrument_${lang}`;
-  const labelCol = `label_${lang}`;
+  //const labelCol = `label_${lang}`;
 
   const data = aq
     .from(daten_controlling)
-    .groupby("FA", "inst", instrCol, "type", labelCol, "monitoring")
+    .groupby("FA", "inst", instrCol, "type", 
+             //labelCol, 
+             "monitoring")
     .rollup({
       mean_funding: (d) => aq.op.round(aq.op.mean(d.funding) * 10) / 10,
       sum_funding: (d) => aq.op.round(aq.op.sum(d.funding) * 10) / 10,
