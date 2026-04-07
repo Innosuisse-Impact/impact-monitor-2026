@@ -48,8 +48,8 @@ ${draw_waffle("ipr_impl_goals",-100)}
 
 ## BRIDGE Discovery
 <div style="display: flex;">
-  <div>${drawMiniPlot("BRIDGE: Discovery")}</div>
-  <div>${drawMiniPlot("BRIDGE: Discovery", false)}</div>
+  <div>${drawMiniPlot("BRIDGE Discovery")}</div>
+  <div>${drawMiniPlot("BRIDGE Discovery", false)}</div>
 </div>
 
 BRIDGE Discovery zielt darauf ab, das Innovationspotenzial von Forschungsresultaten zu identifizieren, zu erforschen und in Anwendungen zu überführen. Das Instrument ermöglicht es erfahrenen Forschenden, wissenschaftlich exzellente Projekte mit klarer Vision einer zukünftigen Anwendung umzusetzen und die wissenschaftlichen Grundlagen für innovative Produkte, Dienstleistungen oder gesellschaftliche Lösungen zu entwickeln. Voraussetzung für die Förderung ist eine überzeugende Umsetzungsstrategie sowie ein hohes wirtschaftliches oder gesellschaftliches Potenzial.
@@ -80,8 +80,8 @@ ${draw_waffle("bd_impl_goals",-100)}
 
 ## BRIDGE Proof of Concept
 <div style="display: flex;">
-  <div>${drawMiniPlot("BRIDGE: Proof of Concept")}</div>
-  <div>${drawMiniPlot("BRIDGE: Proof of Concept", false)}</div>
+  <div>${drawMiniPlot("BRIDGE Proof of Concept")}</div>
+  <div>${drawMiniPlot("BRIDGE Proof of Concept", false)}</div>
   </div>
   
 BRIDGE ist das gemeinsame Förderprogramm von Innosuisse und dem Schweizerischen Nationalfonds (SNF) und verbindet Grundlagenforschung und anwendungsorientierte Forschung mit der Umsetzung. Das Förderangebot BRIDGE Proof of Concept richtet sich an Nachwuchsforschende, die an der Schnittstelle von Grundlagenforschung und wissenschaftsbasierter Innovation arbeiten. Das Programm bietet ein Jahr lang Unterstützung, um Forschungsergebnisse anwendungsorientiert weiterzuentwickeln, mit dem Ziel, diese zur Marktreife zu führen und die Forschenden auf eine Karriere ausserhalb der Akademie vorzubereiten.
