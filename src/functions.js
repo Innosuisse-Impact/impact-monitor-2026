@@ -33,8 +33,8 @@ const strings = {
         "Innovationsprojekte mit\nUmsetzungspartner",
         "Innovationsscheck",
         "Innovationsprojekte ohne\nUmsetzungspartner",
-        "BRIDGE: Proof of Concept",
-        "BRIDGE: Discovery",
+        "BRIDGE Proof of Concept",
+        "BRIDGE Discovery",
         "Start-up Coaching"
       ],
       marginLeft: 150
