@@ -8,10 +8,10 @@ import { getLang } from "./lang.js";
 /**
  * Creates a specific Plot color scale configuration based on the provided key.
  *
- * @param {'inst' | 'inst_lng' | 'instrument' | 'subcluster' | 'su' | 'zufrieden' | 'ziel' | 'erfolg'} scaleKey
+ * @param {'inst' | 'inst_lng' | 'subcluster' | 'su' | 'zufrieden' | 'ziel' | 'erfolg'} scaleKey
  * @returns {object | null}
  */
-export async function createColorScale(scaleKey) {
+export function createColorScale(scaleKey) {
   const lang = getLang();
 
   switch (scaleKey) {
@@ -54,22 +54,6 @@ export async function createColorScale(scaleKey) {
           range: ["#06F7DA", "#A2AFE9", "#FCE300", "#FF8674"]
         }
       });
-
-    // Per-instrument colors from data file
-    case 'instrument': {
-      const { instrument_link_hex } = await import("./data.js");
-      if (!instrument_link_hex || instrument_link_hex.length === 0) {
-        console.warn("Instrument data (instrument_link_hex) is empty or not loaded.");
-        return Plot.scale({ color: { type: "categorical", domain: [], range: [] } });
-      }
-      return Plot.scale({
-        color: {
-          type: "categorical",
-          domain: instrument_link_hex.map(item => item.instrument),
-          range: instrument_link_hex.map(item => item.hex)
-        }
-      });
-    }
 
     // Thematic subcluster colors
     case 'subcluster':

@@ -188,14 +188,16 @@ const strings = {
 
 const s = strings[lang];
 
-const color_inst = await createColorScale("inst");
-const color_inst_lng = await createColorScale("inst_lng");
-const color_subcluster = await createColorScale("subcluster");
-const color_zufrieden = await createColorScale("zufrieden");
-const color_ziel = await createColorScale("ziel");
-const color_erfolg = await createColorScale("erfolg");
-const color_instrument = await createColorScale("instrument");
-const color_su = await createColorScale("su");
+const color_inst = createColorScale("inst");
+const color_inst_lng = createColorScale("inst_lng");
+const color_subcluster = createColorScale("subcluster");
+const color_zufrieden = createColorScale("zufrieden");
+const color_ziel = createColorScale("ziel");
+const color_erfolg = createColorScale("erfolg");
+const color_su = createColorScale("su");
+
+// Lazy-load color_instrument to avoid Safari initialization issues with async data
+let color_instrument = null;
 const brand = getBrandColors();
 const grey_innosuisse = brand.greyInnosuisse
 const black_innosuisse = brand.blackInnosuisse
@@ -203,7 +205,19 @@ const grey_background = brand.greyBackground
 const grey_comment = brand.greyComment
 const color_waffle = getWaffleColorSet('dark')
 
-export function coloredUnderline(text, domain) {
+export async function coloredUnderline(text, domain) {
+  // Lazy-load color_instrument on first use to avoid Safari initialization issues
+  if (!color_instrument) {
+    const { instrument_link_hex } = await import("./data.js");
+    color_instrument = Plot.scale({
+      color: {
+        type: "categorical",
+        domain: instrument_link_hex.map(item => item.instrument),
+        range: instrument_link_hex.map(item => item.hex)
+      }
+    });
+  }
+
   const colorScale = color_instrument.apply;
   const color = colorScale(domain);
   const link = instrument_link.get(domain);
