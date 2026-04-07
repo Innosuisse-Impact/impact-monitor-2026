@@ -874,7 +874,7 @@ export function draw_dn(
 
 export function drawMiniPlot(instrument, funding = true) {
   const labelField = `label_${lang}`;
-
+  const instrCol = `instrument_${lang}`;
   const pre_df =
     instrument !== "Innovation Booster"
       ? daten_controlling.filter((d) => d.instrument_de === instrument)
