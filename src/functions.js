@@ -875,7 +875,7 @@ export function draw_dn(
 export function drawMiniPlot(instrument, funding = true) {
   const labelField = `label_${lang}`;
 
-  const df =
+  const pre_df =
     instrument !== "Innovation Booster"
       ? daten_controlling.filter((d) => d.instrument_de === instrument)
       : [
@@ -920,6 +920,15 @@ export function drawMiniPlot(instrument, funding = true) {
           }
         ];
 
+  const df = aq
+  .from(pre_df)
+  .groupby("FA", "inst", "type", instrCol, "year", labelCol, "monitoring")
+  .rollup({
+    funding: (d) => aq.op.sum(d.funding),
+    n: (d) => aq.op.sum(d.n)
+  })
+  .objects();
+  
   const label = df[0][labelField];
 
   return Plot.plot({
