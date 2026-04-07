@@ -873,7 +873,7 @@ export function draw_dn(
 // Ergebnisse Förderangebote
 
 export function drawMiniPlot(instrument, funding = true) {
-  const labelField = `label_${lang}`;
+  const labelCol = `label_${lang}`;
   const instrCol = `instrument_${lang}`;
   const pre_df =
     instrument !== "Innovation Booster"
@@ -929,7 +929,7 @@ export function drawMiniPlot(instrument, funding = true) {
   })
   .objects();
   
-  const label = df[0][labelField];
+  const label = df[0][labelCol];
 
   return Plot.plot({
     color: color_inst,
