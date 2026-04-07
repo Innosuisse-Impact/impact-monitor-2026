@@ -920,13 +920,14 @@ export function drawMiniPlot(instrument, funding = true) {
           }
         ];
 
-  const df = aq
+  const df =  instrument !== "Start-up Coaching" ? pre_df : aq
   .from(pre_df)
-  .groupby("FA", "inst", "type", instrCol, "year", labelCol, "monitoring")
+  .groupby("FA", "inst", "type", instrCol, "year", "monitoring")
   .rollup({
     funding: (d) => aq.op.sum(d.funding),
     n: (d) => aq.op.sum(d.n)
   })
+  .derive({ [labelCol]: aq.escape(d => d[instrCol]) })
   .objects();
   
   const label = df[0][labelCol];
