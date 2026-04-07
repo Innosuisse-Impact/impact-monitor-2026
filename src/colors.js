@@ -1,7 +1,6 @@
 // Colors
 import * as Plot from "npm:@observablehq/plot";
 import * as d3 from "npm:d3";
-import { instrument_link_hex } from "./data.js";
 import { getLang } from "./lang.js";
 
 // --- Consolidated Color Scale Creation Function ---
@@ -12,7 +11,7 @@ import { getLang } from "./lang.js";
  * @param {'inst' | 'inst_lng' | 'instrument' | 'subcluster' | 'su' | 'zufrieden' | 'ziel' | 'erfolg'} scaleKey
  * @returns {object | null}
  */
-export function createColorScale(scaleKey) {
+export async function createColorScale(scaleKey) {
   const lang = getLang();
 
   switch (scaleKey) {
@@ -57,7 +56,8 @@ export function createColorScale(scaleKey) {
       });
 
     // Per-instrument colors from data file
-    case 'instrument':
+    case 'instrument': {
+      const { instrument_link_hex } = await import("./data.js");
       if (!instrument_link_hex || instrument_link_hex.length === 0) {
         console.warn("Instrument data (instrument_link_hex) is empty or not loaded.");
         return Plot.scale({ color: { type: "categorical", domain: [], range: [] } });
@@ -69,6 +69,7 @@ export function createColorScale(scaleKey) {
           range: instrument_link_hex.map(item => item.hex)
         }
       });
+    }
 
     // Thematic subcluster colors
     case 'subcluster':

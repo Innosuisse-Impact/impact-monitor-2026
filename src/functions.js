@@ -188,14 +188,14 @@ const strings = {
 
 const s = strings[lang];
 
-const color_inst = createColorScale("inst");
-const color_inst_lng = createColorScale("inst_lng");
-const color_subcluster = createColorScale("subcluster");
-const color_zufrieden = createColorScale("zufrieden");
-const color_ziel = createColorScale("ziel");
-const color_erfolg = createColorScale("erfolg");
-const color_instrument = createColorScale("instrument");
-const color_su = createColorScale("su");
+const color_inst = await createColorScale("inst");
+const color_inst_lng = await createColorScale("inst_lng");
+const color_subcluster = await createColorScale("subcluster");
+const color_zufrieden = await createColorScale("zufrieden");
+const color_ziel = await createColorScale("ziel");
+const color_erfolg = await createColorScale("erfolg");
+const color_instrument = await createColorScale("instrument");
+const color_su = await createColorScale("su");
 const brand = getBrandColors();
 const grey_innosuisse = brand.greyInnosuisse
 const black_innosuisse = brand.blackInnosuisse
