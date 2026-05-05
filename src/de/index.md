@@ -23,15 +23,15 @@ import { coloredUnderline} from "../functions.js";
 #### [Innovationsprojekte mit Umsetzungspartner](/de/projekte-unternehmen-forschende)
 <div class="grid grid-cols-2" style="grid-auto-rows: auto; padding: 1rem;">
 <div class="card">
-  <h2>Programm trägt dazu bei neuen Produkte, Dienstleistungen und Prozesse zu realisieren</h2>
+  <h1>Programm trägt dazu bei neuen Produkte, Dienstleistungen und Prozesse zu realisieren</h1>
   <p></p>56 % der geförderten Unternehmen erreichen ihre Ziele im Rahmen der Innovationsprojekte vollständig oder übertreffen diese sogar.</p>
 </div>
 <div class="card">
-  <h2>Die Projekte decken das gesamte Spektrum der Innovationen ab</h2>
+  <h1>Die Projekte decken das gesamte Spektrum der Innovationen ab</h1>
   <p></p>25 % sind eindeutig inkrementell, während 27 % eindeutig radikal sind.
 </div>
 <div class="card">
-  <h2>Die Ergebnisse erreichen den Markt.</h2>
+  <h1>Die Ergebnisse erreichen den Markt.</h1>
   <p>45 % der geförderten Innovationen werden innerhalb eines Jahres umgesetzt oder sind dafür vorgesehen. Drei Jahre nach Ende des Förderbeitrags steigt dieser Anteil auf 57 %.</p> 
 </div>
 <div class="card">
