@@ -21,7 +21,7 @@ import { coloredUnderline} from "../functions.js";
 
 ### Projekt- und Programmförderung
 #### [Innovationsprojekte mit Umsetzungspartner](/de/projekte-unternehmen-forschende)
-<div class="grid grid-cols-2" style="padding: 1rem;">
+<div class="grid grid-cols-2" style="padding: 1rem;" style="grid-auto-rows: auto;">
 <div class="card">
   <h2>Programm trägt dazu bei neuen Produkte, Dienstleistungen und Prozesse zu realisieren</h2>
   <p></p>56 % der geförderten Unternehmen erreichen ihre Ziele im Rahmen der Innovationsprojekte vollständig oder übertreffen diese sogar.</p>
