@@ -31,11 +31,11 @@ import { coloredUnderline} from "../functions.js";
   <p></p>25 % sind eindeutig inkrementell, während 27 % eindeutig radikal sind.
 </div>
 <div class="card">
-  <h2>Die Ergebnisse erreichen den Markt.</h2>
+  <h4>Die Ergebnisse erreichen den Markt.</h2>
   <p>45 % der geförderten Innovationen werden innerhalb eines Jahres umgesetzt oder sind dafür vorgesehen. Drei Jahre nach Ende des Förderbeitrags steigt dieser Anteil auf 57 %.</p> 
 </div>
 <div class="card">
-  <h2>Die wirtschaftlichen Auswirkungen sind eindeutig.</h2>
+  <h4>Die wirtschaftlichen Auswirkungen sind eindeutig.</h2>
   <p>Eine unabhängige wissenschaftliche Studie der KOF Konjunkturforschungsstelle (ETH Zürich) liefert erstmals kausale Belege für die Wirksamkeit von Innovationsprojekten. Sie verglich geförderte Unternehmen mit ähnlichen Firmen, die keinen Förderbeitrag erhielten. Über einen Zeitraum von fünf Jahren schufen die geförderten Unternehmen durchschnittlich 18 % mehr Arbeitsplätze und wuchsen um 21 % schneller.</p>
   <p>Die Wirkungsmessung von Innosuisse verbindet jedes abgeschlossene Projekt mit durchschnittlich 2,5 zusätzlichen Vollzeitstellen drei Jahre nach Abschluss. EBP schätzt, dass jeder Schweizer Franken an Förderbeiträgen innerhalb von drei Jahren rund vier Franken an Wertschöpfung generiert.</p>
 </div>
