@@ -1,6 +1,6 @@
 ---
 title: Wirkung der Innosuisse-Förderung
-style: ../styles.css
+theme: air
 toc: false
 ---
 
