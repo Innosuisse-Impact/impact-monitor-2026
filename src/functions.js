@@ -205,8 +205,10 @@ const grey_background = brand.greyBackground
 const grey_comment = brand.greyComment
 const color_waffle = getWaffleColorSet('dark')
 
+/*
 export async function coloredUnderline(text, domain) {
-  // Lazy-load color_instrument on first use to avoid Safari initialization issues
+  // Replaced by CSS-based link styling in styles.css (a[href^="/"]).
+  // Kept for reference; call sites in /de/ pages converted to plain markdown links.
   if (!color_instrument) {
     const { instrument_link_hex } = await import("./data.js");
     color_instrument = Plot.scale({
@@ -223,6 +225,7 @@ export async function coloredUnderline(text, domain) {
   const link = instrument_link.get(domain);
   return html`<a href="${link}" style="text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: ${color}; color: #3d3d3d">${text}</a>`;
 }
+*/
 
 // Methodische Grundlage / Methodology / Bases méthodologiques
 export function plot_erhebung() {
