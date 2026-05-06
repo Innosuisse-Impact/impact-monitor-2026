@@ -1,12 +1,12 @@
 ---
 title: Starthilfe für Projekte und Vernetzung
-style: ../styles-ch-starthilfe.css
+style: ../styles.css
 toc: false
 ---
 
 ```js
 import { html } from "npm:htl";
-import { coloredUnderline, drawMiniPlot, draw_waffle, draw_results, ib_toipis} from "../functions.js"
+import { drawMiniPlot, draw_waffle, draw_results, ib_toipis} from "../functions.js"
 ```
 
 # Starthilfe für Projekte und Vernetzung

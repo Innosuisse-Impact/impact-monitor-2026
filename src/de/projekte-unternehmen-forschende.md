@@ -1,12 +1,12 @@
 ---
 title: Projekte von Forschenden mit Unternehmen
-style: ../styles-ch-projekte.css
+style: ../styles.css
 toc: false
 ---
 
 ```js
 import { html } from "npm:htl";
-import { coloredUnderline, drawMiniPlot, draw_waffle, draw_results, leverage, kof_did_plot} from "../functions.js"
+import { drawMiniPlot, draw_waffle, draw_results, leverage, kof_did_plot} from "../functions.js"
 import { df_waffle, df_ergebnisse } from "../data.js"
 ```
 

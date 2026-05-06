@@ -1,12 +1,31 @@
 @import url("observablehq:default.css");
 @import url("observablehq:theme-air.css");
 
+@font-face {
+  font-family: "Frutiger LT";
+  src: url("./fonts/Frutiger-LT-55-Roman.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Frutiger LT";
+  src: url("./fonts/Frutiger-LT-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Frutiger LT";
+  src: url("./fonts/Frutiger-LT-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
 /*#observablehq-toc nav {
     width: 300px;
   }*/
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Frutiger LT", "Arial", sans-serif;
   color: #3d3d3d;
   font-weight: 100;
   font-style: normal;
@@ -16,7 +35,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Arial", sans-serif;
+  font-family: "Frutiger LT", "Arial", sans-serif;
   color: #3d3d3d;
   font-style: normal;
   font-weight: 700;
@@ -25,7 +44,7 @@ h3 {
 }
 
 h1 + h2 {
-  font-family: "Arial", sans-serif;
+  font-family: "Frutiger LT", "Arial", sans-serif;
   color: #3d3d3d;
   font-style: normal;
   font-weight: 700;
@@ -36,12 +55,26 @@ h1 + h2 {
 h4,
 h5,
 h6 {
-  font-family: "Arial", sans-serif;
+  font-family: "Frutiger LT", "Arial", sans-serif;
   color: #3d3d3d;
   font-weight: 700;
   font-style: normal;
   margin-top: 1.2rem;
   /* margin-bottom: 0.375em;*/
+}
+
+h1 {
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 3px;
+  text-decoration-color: #06F7DA;
+}
+
+h2 {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+  text-decoration-color: #06F7DA;
 }
 
 .comment {
@@ -57,6 +90,7 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-family: "Frutiger LT", "Arial", sans-serif;
 }
 
 button:hover {
@@ -100,7 +134,7 @@ select[class$="-inputs"]:focus {
 }
 
 #observablehq-sidebar {
-  font-family: "Arial", sans-serif;
+  font-family: "Frutiger LT", "Arial", sans-serif;
 }
 
 #observablehq-header {
@@ -109,43 +143,32 @@ select[class$="-inputs"]:focus {
 }
 
 li {
-  margin-bottom: 7px; 
+  margin-bottom: 7px;
 }
 
-.card h2,
-.card h3 {
-  font-size: inherit;
-}
-
-.card h2 {
-  font-weight: 700;
-  font-size: 18px;
-}
-
-.card h3 {
-  font-weight: 700;
+/* Internal navigation links */
+a[href^="/"]:not(.no-underline):not(.logo) {
   color: #3d3d3d;
-  font-size: 17px;
-  text-decoration: underline; 
-  text-decoration-thickness: 2px; 
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
   text-underline-offset: 2px;
-  text-decoration-color: var(--underline-color, #06F7DA)
+  text-decoration-color: #06F7DA;
 }
 
-.card h4 {
-  font-weight: 700;
+/* External links — grey underline + ↗ icon */
+a[href^="http"]:not(.no-underline),
+a[href^="https"]:not(.no-underline) {
   color: #3d3d3d;
-  font-size: 15px;
-  text-decoration: underline; 
-  text-decoration-thickness: 2px; 
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
   text-underline-offset: 2px;
-  text-decoration-color: var(--underline-color, #06F7DA)
+  text-decoration-color: #828282;
 }
-
-.card h3 a {
-  color: #3d3d3d;
-}
-
-.card h4 a {
-  color: #3d3d3d;
+a[href^="http"]::after,
+a[href^="https"]::after {
+  content: "\2197";
+  font-size: 0.75em;
+  margin-left: 0.15em;
+  vertical-align: super;
+  text-decoration: none;
 }

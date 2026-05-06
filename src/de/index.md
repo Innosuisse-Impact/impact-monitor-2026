@@ -1,12 +1,11 @@
 ---
 title: Wirkung der Innosuisse-Förderung
-theme: air
+style: ../styles.css
 toc: false
 ---
 
 ```js
 import { html } from "npm:htl";
-import { coloredUnderline} from "../functions.js";
 ```
 
 <div style="background: transparent linear-gradient(284deg, rgb(6, 247, 218) 0%, #FCE300 100%) no-repeat padding-box; height: 60px; width: 650px; padding-left: 40px; padding-top: 24px; padding-bottom: 30px;  margin-left: -48px; margin-top: -31px;">
