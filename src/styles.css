@@ -77,12 +77,23 @@ h2 {
   text-underline-offset: 2px;
   text-decoration-color: #06F7DA;
 }
+*/
 
 .comment {
   font-size: 11px;
   color: #828282;
 }
-*/
+
+
+.card h1 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #3d3d3d;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+  text-decoration-color: #06F7DA;
+}
 
 button {
   padding: 2px 5px;
