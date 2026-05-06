@@ -10,17 +10,14 @@ import { html } from "npm:htl";
 
 <div style="background: transparent linear-gradient(284deg, rgb(6, 247, 218) 0%, #FCE300 100%) no-repeat padding-box; height: 60px; width: 650px; padding-left: 40px; padding-top: 24px; padding-bottom: 30px;  margin-left: -48px; margin-top: -31px;">
 
-# Wirkung der Innosuisse-Förderung
-
+# Wirkung der Innosuisse-Förderung 2023–2025
+<p class="comment" style="margin-bottom: 30px">Version 2.0.1, letzte Änderungen: 17. November 2025</p>
 </div>
 <br>
 
-## Ergebnisse des Wirkungsmonitoring 2022–2024
-<p class="comment" style="margin-bottom: 30px">Version 2.0.1, letzte Änderungen: 17. November 2025</p>
-
 ### Projekt- und Programmförderung
 #### [Innovationsprojekte mit Umsetzungspartner](/de/projekte-unternehmen-forschende)
-<div class="grid grid-cols-2" style="grid-auto-rows: auto; padding: 1rem;">
+<div class="grid grid-cols-1" style="grid-auto-rows: auto; padding: 1rem;">
 <div class="card">
   <h1>Programm trägt dazu bei neuen Produkte, Dienstleistungen und Prozesse zu realisieren</h1>
   <p></p>56 % der geförderten Unternehmen erreichen ihre Ziele im Rahmen der Innovationsprojekte vollständig oder übertreffen diese sogar.</p>
