@@ -19,7 +19,7 @@ import { df_waffle } from "../data.js"
 
 ### Projekt- und Programmförderung
 #### [Innovationsprojekte mit Umsetzungspartner](/de/projekte-unternehmen-forschende)
-<div class="grid grid-cols-1" style="grid-auto-rows: auto; padding: 1rem;">
+<div class="grid grid-cols-2" style="grid-auto-rows: auto; padding: 1rem; max-width: 600px;">
 <div class="card">
   <h1>Programm trägt dazu bei neuen Produkte, Dienstleistungen und Prozesse zu realisieren</h1>
   <p></p>56 % der geförderten Unternehmen erreichen ihre Ziele im Rahmen der Innovationsprojekte vollständig oder übertreffen diese sogar.</p>
