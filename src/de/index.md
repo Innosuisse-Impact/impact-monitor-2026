@@ -6,6 +6,8 @@ toc: false
 
 ```js
 import { html } from "npm:htl";
+import { draw_waffle } from "../functions.js"
+import { df_waffle } from "../data.js"
 ```
 
 <div style="background: transparent linear-gradient(284deg, rgb(6, 247, 218) 0%, #FCE300 100%) no-repeat padding-box; height: 60px; width: 650px; padding-left: 40px; padding-top: 24px; padding-bottom: 30px;  margin-left: -48px; margin-top: -31px;">
@@ -28,7 +30,7 @@ import { html } from "npm:htl";
 </div>
 <div class="card">
   <h1>Die Ergebnisse erreichen den Markt.</h1>
-  <p>45 % der geförderten Innovationen werden innerhalb eines Jahres umgesetzt oder sind dafür vorgesehen. Drei Jahre nach Ende des Förderbeitrags steigt dieser Anteil auf 57 %.</p> 
+  ${draw_waffle("ip_time_to_market", -117)} 
 </div>
 <div class="card">
   <h1>Die wirtschaftlichen Auswirkungen sind eindeutig.</h1>
