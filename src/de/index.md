@@ -1,7 +1,8 @@
 ---
 title: Wirkung der Innosuisse-Förderung
 style: ../styles.css
-toc: false
+toc: true
+sidebar: true
 ---
 
 ```js
@@ -10,7 +11,7 @@ import { draw_waffle } from "../functions.js"
 import { df_waffle } from "../data.js"
 ```
 
-<div style="background: transparent linear-gradient(284deg, rgb(6, 247, 218) 0%, #FCE300 100%) no-repeat padding-box; height: 60px; width: 650px; padding-left: 40px; padding-top: 24px; padding-bottom: 30px;  margin-left: -48px; margin-top: -31px;">
+<div style="background: transparent linear-gradient(284deg, rgb(6, 247, 218) 0%, #FCE300 100%) no-repeat padding-box; height: 110px; width: 650px; padding-left: 40px; padding-top: 24px; padding-bottom: 30px;  margin-left: -48px; margin-top: -31px;">
 
 # Wirkung der Innosuisse-Förderung 2023–2025
 <p class="comment" style="margin-bottom: 30px">Version 2.0.1, letzte Änderungen: 17. November 2025</p>
@@ -19,14 +20,14 @@ import { df_waffle } from "../data.js"
 
 ### Projekt- und Programmförderung
 #### [Innovationsprojekte mit Umsetzungspartner](/de/projekte-unternehmen-forschende)
-<div class="grid grid-cols-2" style="grid-auto-rows: auto; padding: 1rem; max-width: 600px;">
+<div class="grid grid-cols-1" style="grid-auto-rows: auto; max-width: 600px;">
 <div class="card">
   <h1>Programm trägt dazu bei neuen Produkte, Dienstleistungen und Prozesse zu realisieren</h1>
-  <p></p>56 % der geförderten Unternehmen erreichen ihre Ziele im Rahmen der Innovationsprojekte vollständig oder übertreffen diese sogar.</p>
+  <p>56 % der geförderten Unternehmen erreichen ihre Ziele im Rahmen der Innovationsprojekte vollständig oder übertreffen diese sogar.</p>
 </div>
 <div class="card">
   <h1>Die Projekte decken das gesamte Spektrum der Innovationen ab</h1>
-  <p></p>25 % sind eindeutig inkrementell, während 27 % eindeutig radikal sind.
+  <p>25 % sind eindeutig inkrementell, während 27 % eindeutig radikal sind.</p>
 </div>
 <div class="card">
   <h1>Die Ergebnisse erreichen den Markt.</h1>
