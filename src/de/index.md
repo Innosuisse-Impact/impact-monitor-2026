@@ -19,22 +19,20 @@ import { df_waffle } from "../data.js"
 <br>
 
 ### Projekt- und Programmförderung
-#### [Innovationsprojekte mit Umsetzungspartner](/de/projekte-unternehmen-forschende)
+#### 
 <div class="grid grid-cols-1" style="grid-auto-rows: auto; max-width: 600px;">
 <div class="card">
-  <h1>Programm trägt dazu bei neuen Produkte, Dienstleistungen und Prozesse zu realisieren</h1>
+  <h1>[Innovationsprojekte mit Umsetzungspartner](/de/projekte-unternehmen-forschende)</h1>
+  <h2>Programm trägt dazu bei neuen Produkte, Dienstleistungen und Prozesse zu realisieren</h2>
   <p>56 % der geförderten Unternehmen erreichen ihre Ziele im Rahmen der Innovationsprojekte vollständig oder übertreffen diese sogar.</p>
-</div>
-<div class="card">
-  <h1>Die Projekte decken das gesamte Spektrum der Innovationen ab</h1>
+  <hr>
+  <h2>Die Projekte decken das gesamte Spektrum der Innovationen ab</h2>
   <p>25 % sind eindeutig inkrementell, während 27 % eindeutig radikal sind.</p>
-</div>
-<div class="card">
-  <h1>Die Ergebnisse erreichen den Markt.</h1>
+  <hr>
+  <h2>Die Ergebnisse erreichen den Markt.</h2>
   ${draw_waffle("ip_time_to_market", -117)} 
-</div>
-<div class="card">
-  <h1>Die wirtschaftlichen Auswirkungen sind eindeutig.</h1>
+  <hr>
+  <h2>Die wirtschaftlichen Auswirkungen sind eindeutig.</h2>
   <p>Eine unabhängige wissenschaftliche Studie der KOF Konjunkturforschungsstelle (ETH Zürich) liefert erstmals kausale Belege für die Wirksamkeit von Innovationsprojekten. Sie verglich geförderte Unternehmen mit ähnlichen Firmen, die keinen Förderbeitrag erhielten. Über einen Zeitraum von fünf Jahren schufen die geförderten Unternehmen durchschnittlich 18 % mehr Arbeitsplätze und wuchsen um 21 % schneller.</p>
   <p>Die Wirkungsmessung von Innosuisse verbindet jedes abgeschlossene Projekt mit durchschnittlich 2,5 zusätzlichen Vollzeitstellen drei Jahre nach Abschluss. EBP schätzt, dass jeder Schweizer Franken an Förderbeiträgen innerhalb von drei Jahren rund vier Franken an Wertschöpfung generiert.</p>
 </div>
