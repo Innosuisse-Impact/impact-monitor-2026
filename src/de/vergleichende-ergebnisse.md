@@ -19,7 +19,7 @@ Die Fördernehmer von Innosuisse sind mit der Innovationsförderung von Innosuis
   
   ${draw_result_zf_legend()}
   ${draw_result(df_zufrieden,"Innovationsprojekte mit Umsetzungspartner", false, 35)}
-  ${draw_result(df_zufrieden,"Innovationsschecks", false)}
+  ${draw_result(df_zufrieden,"Innovationsscheck", false)}
   ${draw_result(df_zufrieden,"Innovationsprojekte ohne Umsetzungspartner", false)}
     ${draw_result(df_zufrieden,"BRIDGE Discovery", false)}
   ${draw_result(df_zufrieden,"Innovation Booster", false)}
@@ -68,7 +68,7 @@ Die Digitalisierung zielt sowohl auf wichtige digitale Zukunftstechnologien (Blo
 Rund 55 % der von Innosuisse geförderten [Innovationsprojekten](/de/projekte-unternehmen-forschende) tragen wesentlich zur digitalen Transformation der Wirtschaft bei, durch digitale Technologien und/oder digitalen Geschäftsmodellen. Die Anwendung von neuen digitalen Technologien ist wichtiger, als die Umsetzung eines digitalen Geschäftsmodells. Bei den [gecoachten Start-ups](/de/begleitung-start-ups) ist die Bedeutung der Digitalisierung nochmals signifikant höher.
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 0px; width: 800px">
   ${draw_dn("digital", "Innovationsprojekte mit Umsetzungspartner", true, 20)}
-  ${draw_dn("digital", "Innovationsschecks", false, -8)}
+  ${draw_dn("digital", "Innovationsscheck", false, -8)}
   ${draw_dn("digital", "Innovationsprojekte ohne Umsetzungspartner", false, -8)}
     ${draw_dn("digital", "BRIDGE Discovery", false, -8)}
   ${draw_dn("digital", "Start-up Core Coaching", false, -8)}
@@ -82,7 +82,7 @@ Rund 60 % der geförderten [Innovationsprojekte](/de/projekte-unternehmen-forsc
 
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 0px; width: 800px">
   ${draw_dn("nachhaltig", "Innovationsprojekte mit Umsetzungspartner", true, 20)}
-  ${draw_dn("nachhaltig", "Innovationsschecks", false, -8)}
+  ${draw_dn("nachhaltig", "Innovationsscheck", false, -8)}
   ${draw_dn("nachhaltig", "Innovationsprojekte ohne Umsetzungspartner", false, -8)}
     ${draw_dn("nachhaltig", "BRIDGE Discovery", false, -8)}
   ${draw_dn("nachhaltig", "Start-up Core Coaching", false, -8)}

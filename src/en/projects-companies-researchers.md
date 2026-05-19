@@ -36,7 +36,7 @@ Some of the projects require a longer period of time to be introduced to the mar
 ### Funding achieves measurable and significant economic effects in over 60% of SMEs
 Selected key figures prove the effectiveness in terms of economic effects that would not have occurred without the funded project. Around one third of the SMEs report an increase in employment, creating new, highly skilled jobs. Three out of ten companies report an increase in sales. More than a quarter of the companies have invested more in research and development (R&D), either in R&D employees or in R&D spending. 12% of the companies report cost savings.
 
-<div>${draw_results("Innovationsprojekte mit UP", false)}</div>
+<div>${draw_results("Innovationsprojekte mit Umsetzungspartner", false)}</div>
 
 ### Great leverage of one franc in funding
 On average, an innovation project leads to almost 2.5 additional full-time positions in the reporting years 2021–23. Extrapolated to the 350 projects completed on average during this period, between 800 and 900 new full-time positions will be created at companies in Switzerland.

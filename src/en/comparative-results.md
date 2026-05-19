@@ -18,7 +18,7 @@ Innosuisse's funding beneficiaries are satisfied to very satisfied with Innosuis
   
   ${draw_result_zf_legend()}
   ${draw_result(df_zufrieden,"Innovationsprojekte mit Umsetzungspartner", false, 35)}
-  ${draw_result(df_zufrieden,"Innovationsschecks", false)}
+  ${draw_result(df_zufrieden,"Innovationsscheck", false)}
   ${draw_result(df_zufrieden,"Innovationsprojekte ohne Umsetzungspartner", false)}
   ${draw_result(df_zufrieden,"Innovation Booster", false)}
   ${draw_result(df_zufrieden,"Start-up Core Coaching", false)}
@@ -64,9 +64,9 @@ Digitisation is aimed at important future digital technologies (blockchain, robo
 Around 55% of the ${coloredUnderline("innovation projects","Förderung für Schweizer Innovationsprojekte")} funded by Innosuisse make a significant contribution to the digital transformation of the economy through digital technologies and/or digital business models. The application of new digital technologies is more important than the implementation of a digital business model. The importance of digitisation is significantly higher among the ${coloredUnderline("start-ups in coaching","Begleitung von Start-ups")}.
 
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 0px; width: 800px">
-  ${draw_dn("digital", "Innovationsprojekte mit UP", true, 20)}
-  ${draw_dn("digital", "Innovationsschecks", false, -8)}
-  ${draw_dn("digital", "Innovationsprojekte ohne UP", false, -8)}
+  ${draw_dn("digital", "Innovationsprojekte mit Umsetzungspartner", true, 20)}
+  ${draw_dn("digital", "Innovationsscheck", false, -8)}
+  ${draw_dn("digital", "Innovationsprojekte ohne Umsetzungspartner", false, -8)}
   ${draw_dn("digital", "Start-up Core Coaching", false, -8)}
 </div>
 <p class="comment">Question asked: Is the project funded by Innosuisse based on new digital technologies or new digital business models? Assessment by the funding recipients using a six-point rating scale with predefined definitions: (5) strongly, (6) very strongly.</p>
@@ -77,9 +77,9 @@ The support offers enable companies and organisations to test innovative approac
 Around 60% of the ${coloredUnderline("innovation projects","Förderung für Schweizer Innovationsprojekte")} that receive funding show the potential to contribute to sustainable development, either in terms of environmental or social sustainability or both, when implemented in a specific way. For the ${coloredUnderline("start-ups in the coaching programme","Begleitung von Start-ups")}, the figures are slightly higher at 67%.
 
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 0px; width: 800px">
-  ${draw_dn("nachhaltig", "Innovationsprojekte mit UP", true, 20)}
-  ${draw_dn("nachhaltig", "Innovationsschecks", false, -8)}
-  ${draw_dn("nachhaltig", "Innovationsprojekte ohne UP", false, -8)}
+  ${draw_dn("nachhaltig", "Innovationsprojekte mit Umsetzungspartner", true, 20)}
+  ${draw_dn("nachhaltig", "Innovationsscheck", false, -8)}
+  ${draw_dn("nachhaltig", "Innovationsprojekte ohne Umsetzungspartner", false, -8)}
   ${draw_dn("nachhaltig", "Start-up Core Coaching", false, -8)}
 </div>
 

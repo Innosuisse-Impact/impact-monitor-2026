@@ -23,7 +23,7 @@ Innovation projects without implementation partners thus promote application-ori
 ### Successful steps towards implementation
 Two thirds of the innovation projects have successfully demonstrated feasibility. Every second funded project is highly likely to introduce the innovation to the market, and 4 out of 10 deliver conclusive results for further implementation steps.
 
-<div>${draw_results("Innovationsprojekte ohne UP", false, 450)}</div>
+<div>${draw_results("Innovationsprojekte ohne Umsetzungspartner", false, 450)}</div>
 
 ### Scientific output is higher than in projects with implementation partners
 Published scientific results are an important form of knowledge and technology transfer (KTT). They serve to disseminate project results in research and application and strengthen KTT. The dissertations are an indication of the novelty and quality of the research and the associated risk of finding a (technological) solution for implementation. 

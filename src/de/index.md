@@ -7,7 +7,7 @@ sidebar: true
 
 ```js
 import { html } from "npm:htl";
-import { draw_waffle } from "../functions.js"
+import { draw_waffle, draw_bar } from "../functions.js"
 import { df_waffle } from "../data.js"
 ```
 
@@ -18,7 +18,67 @@ import { df_waffle } from "../data.js"
 </div>
 <br>
 
-### Projekt- und Programmförderung
+## Projekt- und Programmförderung
+
+<div style="grid grid-cols-1; grid-auto-rows: auto; max-width: 600px;">
+      <h3>Innovation Projects with Implementation Partners</h3>
+      <p>National innovation projects are Innosuisse's most important funding instrument. Companies and organisations from the economy and society cooperate with research partners to jointly develop innovative products, services, processes or new business models.</p>
+<section class="claim">
+    <header class="claim__header">
+      <h4 class="claim__title">Projekte decken das gesamte Spektrum der Innovation ab und führen zu neuen Produkten, Dienstleistungen und Prozessen.</h4>
+      <span class="claim__level">Output</span>
+    </header>
+    <div class="claim__evidence claim__evidence--split">
+      <div class="claim__evidence-chart">
+          <p>${draw_bar(df_waffle, { title: "ip_radikal_inkr", mode: "opposite" })}</p>
+      </div>
+      <p>Die geförderten Organisationen stufen ihre Projekte zu fast gleichen Teilen als <span class="text-neutral-a">eindeutig inkrementell</span> und <span class="text-neutral-b">eindeutig radikal</span> ein.</p>
+    <div class="claim__evidence-chart">
+          <p>${draw_bar(df_waffle, { title: "ip_project_goals", mode: "opposite" })}</p>
+      </div>
+      <p>Sie erreichen ihre Projektziele <span class="text-positive">vollständig oder übertreffen</span> sie sogar, während nur ein kleiner Teil sie <span class="text-negative">nicht ausreichend</span> erreicht.</p>
+      </div>
+    <a class="claim__link" href="#">More on this <span class="claim__link-arrow">→</span></a>
+  </section>
+  <section class="claim">
+    <header class="claim__header">
+      <h4 class="claim__title">Die Ergebnisse erreichen den Markt.</h4>
+      <span class="claim__level">Outcome</span>
+    </header>
+    <div class="claim__evidence claim__evidence--split">
+      <div class="claim__evidence-chart">
+          <p>${draw_bar(df_waffle, { title: "ip_time_to_market", mode: "single", rank: "pct2" })}</p>
+      </div>
+      <p>Innovationen sind bei Projektabschluss auf dem Markt oder sollen innerhalb eines Jahres auf den Markt gebracht werden.</p>
+    <div class="claim__evidence-chart">
+          <p>${draw_bar(df_waffle, { title: "ip_time_to_market", mode: "single", rank: "pct1" })}</p>
+      </div>
+      <p>Drei Jahre später sind die Innovationen bereits umgesetzt oder ihre Umsetzung ist innerhalb von zwei Jahren geplant.</p>
+      </div>
+    <a class="claim__link" href="/projects-companies-researchers#innosuisse-enables-high-risk-and-interdisciplinary-projects">More on this <span class="claim__link-arrow">→</span></a>
+  </section>
+    <section class="claim">
+        <header class="claim__header">
+    <h4>Die wirtschaftlichen Auswirkungen sind eindeutig.</h4>
+          <span class="claim__level">Impact</span>
+    </header>
+    <div class="evidence">
+      <div class="figure">
+        <div class="figure__value">+18%<br><br>+21%</div>
+          <p>Eine unabhängige wissenschaftliche Studie der KOF Konjunkturforschungsstelle (ETH Zürich) liefert erstmals kausale Belege für die Wirksamkeit von Innovationsprojekten. Sie verglich geförderte Unternehmen mit ähnlichen Firmen, die keinen Förderbeitrag erhielten. Über einen Zeitraum von fünf Jahren schufen die geförderten Unternehmen durchschnittlich 18 % mehr Arbeitsplätze und wuchsen um 21 % schneller.</p>
+      </div>
+      <div class="figure">
+        <div class="figure__value">+2.5 FTE</div>
+        <p>Die Wirkungsmessung von Innosuisse verbindet jedes abgeschlossene Projekt mit durchschnittlich 2,5 zusätzlichen Vollzeitstellen drei Jahre nach Abschluss.</p>
+      </div>
+            <div class="figure">
+        <div class="figure__value">x4</div>
+        <p>EBP schätzt, dass jeder Schweizer Franken an Förderbeiträgen innerhalb von drei Jahren rund vier Franken an Wertschöpfung generiert.</p>
+      </div>
+      <a class="claim__link" href="#">More on this <span class="arrow">→</span></a>
+    </div>
+</div>
+
 #### 
 <div class="grid grid-cols-1" style="grid-auto-rows: auto; max-width: 600px;">
 <div class="card">
@@ -30,11 +90,10 @@ import { df_waffle } from "../data.js"
   <p>25 % sind eindeutig inkrementell, während 27 % eindeutig radikal sind.</p>
   <hr>
   <h2>Die Ergebnisse erreichen den Markt.</h2>
-  ${draw_waffle("ip_time_to_market", -117)} 
+    ${draw_bar(df_waffle, { title: "ip_time_to_market", mode: "single", rank: "pct1" })} 
+  ${draw_bar(df_waffle, { title: "ip_time_to_market", mode: "single", rank: "pct2" })} 
   <hr>
-  <h2>Die wirtschaftlichen Auswirkungen sind eindeutig.</h2>
-  <p>Eine unabhängige wissenschaftliche Studie der KOF Konjunkturforschungsstelle (ETH Zürich) liefert erstmals kausale Belege für die Wirksamkeit von Innovationsprojekten. Sie verglich geförderte Unternehmen mit ähnlichen Firmen, die keinen Förderbeitrag erhielten. Über einen Zeitraum von fünf Jahren schufen die geförderten Unternehmen durchschnittlich 18 % mehr Arbeitsplätze und wuchsen um 21 % schneller.</p>
-  <p>Die Wirkungsmessung von Innosuisse verbindet jedes abgeschlossene Projekt mit durchschnittlich 2,5 zusätzlichen Vollzeitstellen drei Jahre nach Abschluss. EBP schätzt, dass jeder Schweizer Franken an Förderbeiträgen innerhalb von drei Jahren rund vier Franken an Wertschöpfung generiert.</p>
+
 </div>
 </div>
 

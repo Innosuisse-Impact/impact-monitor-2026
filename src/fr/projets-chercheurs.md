@@ -24,7 +24,7 @@ Les projets d'innovation sans partenaire chargé de la mise en valeur soutiennen
 ### Des étapes réussies vers la mise en œuvre
 Les deux tiers des projets d'innovation ont démontré leur faisabilité avec succès. Un projet subventionné sur deux a de fortes chances d'introduire l'innovation sur le marché et 4 sur 10 fournissent des résultats concluants pour la suite de la mise en œuvre.
 
-<div>${draw_results("Innovationsprojekte ohne UP", false, 450)}</div>
+<div>${draw_results("Innovationsprojekte ohne Umsetzungspartner", false, 450)}</div>
 
 ### L'output scientifique est plus élevé que pour les projets avec des partenaires chargés de la mise en valeur
 Les résultats scientifiques publiés sont des formes importantes de transfert de savoir et de technologie (TST). Ils servent à diffuser les résultats du projet dans la recherche et l'application et renforcent le TST. Les thèses sont une indication de la nouveauté et de la qualité de la recherche et du risque associé à la recherche de solutions (technologiques) pour la mise en œuvre. 

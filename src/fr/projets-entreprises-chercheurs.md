@@ -36,7 +36,7 @@ Une partie des projets nécessite une période plus longue pour la mise sur le m
 ### L'encouragement génère des retombées économiques tangibles et significatifs sur plus de 60 % des PME
 Une sélection de chiffres clés prouve l'efficacité en termes d'effets économiques qui n'auraient pas Certains chiffres clés témoignent de l'efficacité des effets économiques qui n'auraient pas pu être obtenus sans le projet soutenu. Environ un tiers des PME font état d'une croissance de l'emploi et créent ainsi de nouveaux postes hautement qualifiés. 3 entreprises sur 10 constatent une augmentation de leur chiffre d'affaires. Plus d'un quart des entreprises ont investi davantage dans la recherche et le développement (R&D), que ce soit en termes d'employés dans le domaine de la R&D ou de dépenses de R&D. 12 % des entreprises font état de réductions de coûts.
 
-<div>${draw_results("Innovationsprojekte mit UP", false)}</div>
+<div>${draw_results("Innovationsprojekte mit Umsetzungspartner", false)}</div>
 
 ### Un franc d'encouragement a un effet de levier important
 En moyenne, un projet d'innovation conduit à la création de près de 2,5 emplois à temps plein supplémentaires au cours des années 2021–23. En extrapolant sur les 350 projets en moyenne menés à bien au cours de cette période, entre 800 et 900 nouveaux emplois à temps plein sont ainsi créés dans les entreprises en Suisse.

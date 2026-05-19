@@ -37,7 +37,7 @@ Ein Teil der Projekte benötigt einen längeren Zeitraum für die Markteinführu
 ### Förderung erzielt bei über 60 % der KMU messbare und massgebliche wirtschaftliche Effekte
 Ausgewählte Kennzahlen belegen die Wirksamkeit hinsichtlich ökonomischer Effekte, welche ohne das geförderte Projekt nicht entstanden wären. Rund ein Drittel der KMU berichtet über ein Wachstum der Beschäftigung und schafft damit neue hochqualifizierte Arbeitsstellen. 3 von 10 Unternehmen stellen eine Umsatzsteigerung fest. Über ein Viertel der Unternehmen hat mehr in Forschung und Entwicklung (F&E) investiert, sei es in Beschäftigte im F&E-Bereich oder höhere F&E-Ausgaben getätigt. Uber Kosteneinsparungen berichten 12 % der Unternehmen.
 
-<div>${draw_results("Innovationsprojekte mit UP", false)}</div>
+<div>${draw_results("Innovationsprojekte mit Umsetzungspartner", false)}</div>
 
 ### Grosse Hebelwirkung eines Förderfrankens
 Ein Innovationsprojekt führt im Durchschnitt der Berichtsjahre 2021–23 zu knapp 2.5 zusätzlichen Vollzeitstellen. Hochgerechnet auf die in diesem Zeitraum durchschnittlich 350 abgeschlossenen Projekte, werden somit bei den Unternehmen in der Schweiz zwischen 800 und 900 neue Vollzeitstellen geschaffen.

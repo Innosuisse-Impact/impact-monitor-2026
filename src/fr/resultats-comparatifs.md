@@ -19,7 +19,7 @@ Les bénéficiaires de l'encouragement d'Innosuisse sont satisfaits, voire très
   
   ${draw_result_zf_legend()}
   ${draw_result(df_zufrieden,"Innovationsprojekte mit Umsetzungspartner", false, 35)}
-  ${draw_result(df_zufrieden,"Innovationsschecks", false)}
+  ${draw_result(df_zufrieden,"Innovationsscheck", false)}
   ${draw_result(df_zufrieden,"Innovationsprojekte ohne Umsetzungspartner", false)}
   ${draw_result(df_zufrieden,"Innovation Booster", false)}
   ${draw_result(df_zufrieden,"Start-up Core Coaching")}
@@ -65,9 +65,9 @@ La numérisation vise à la fois les technologies numériques d'avenir (blockcha
 Environ 55 % des ${coloredUnderline("projets d'innovation","Förderung für Schweizer Innovationsprojekte")} soutenus par Innosuisse contribuent de manière significative à la transformation numérique de l'économie, grâce aux technologies numériques et/ou aux modèles d'entreprise numériques. L'application de nouvelles technologies numériques est plus importante que la mise en œuvre d'un modèle d'entreprise numérique. Pour les ${coloredUnderline("start-up en coaching","Begleitung von Start-ups")}, l'importance de la numérisation est encore plus significative.
 
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 0px; width: 800px">
-  ${draw_dn("digital", "Innovationsprojekte mit UP", true, 20)}
-  ${draw_dn("digital", "Innovationsschecks", false, -8)}
-  ${draw_dn("digital", "Innovationsprojekte ohne UP", false, -8)}
+  ${draw_dn("digital", "Innovationsprojekte mit Umsetzungspartner", true, 20)}
+  ${draw_dn("digital", "Innovationsscheck", false, -8)}
+  ${draw_dn("digital", "Innovationsprojekte ohne Umsetzungspartner", false, -8)}
   ${draw_dn("digital", "Start-up Core Coaching", false, -8)}
 </div>
 <p class="comment">Question posée : le projet encouragé par Innosuisse repose-t-il sur de nouvelles technologies numériques ou sur de nouveaux modèles commerciaux numériques ? Appréciations des bénéficiaires de l'encouragement sur la base d'une échelle d'évaluation à six niveaux avec des définitions prédéfinies : (5) fortement, (6) très fortement.</p>
@@ -78,9 +78,9 @@ Les instruments d'encouragement permettent aux entreprises et aux organisations 
 Environ 60 % des ${coloredUnderline("projets d'innovation","Förderung für Schweizer Innovationsprojekte")} soutenus montrent, lorsqu'ils sont mis en œuvre concrètement, qu'ils ont le potentiel de contribuer au développement durable, soit au développement durable environnemental, soit au développement durable social, soit aux deux. Pour les ${coloredUnderline("start-up en coaching","Begleitung von Start-ups")}, les proportions sont légèrement plus élevées, avec 67 %.
 
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 0px; width: 800px">
-  ${draw_dn("nachhaltig", "Innovationsprojekte mit UP", true, 20)}
-  ${draw_dn("nachhaltig", "Innovationsschecks", false, -8)}
-  ${draw_dn("nachhaltig", "Innovationsprojekte ohne UP", false, -8)}
+  ${draw_dn("nachhaltig", "Innovationsprojekte mit Umsetzungspartner", true, 20)}
+  ${draw_dn("nachhaltig", "Innovationsscheck", false, -8)}
+  ${draw_dn("nachhaltig", "Innovationsprojekte ohne Umsetzungspartner", false, -8)}
   ${draw_dn("nachhaltig", "Start-up Core Coaching", false, -8)}
 </div>
 

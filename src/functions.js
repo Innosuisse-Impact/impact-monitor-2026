@@ -1185,6 +1185,100 @@ export function draw_waffle(
   });
 }
 
+export function draw_bar(
+  data,
+  {
+    title = "ip_impuls",
+    mode = "single", // "single" | "opposite"
+    rank = "pct1", // "pct1" | "pct2" — only used when mode === "single"
+    colors = color_waffle
+  } = {}
+) {
+  const df = data.filter((d) => d.title === title);
+  if (df.length === 0) return null;
+
+  const { negative, opposites, inst } = df[0];
+  const color_scale = negative
+    ? opposites
+      ? "negative_opposite"
+      : "negative"
+    : inst;
+
+  const formatPct = (d) =>
+    (d.pct / 100).toLocaleString("fr-CH", { style: "percent" });
+
+  const label = (subset, side) =>
+    Plot.text(subset, {
+      x: side === "left" ? "pct" : undefined,
+      frameAnchor: side === "right" ? "right" : undefined,
+      dx: -2,
+      dy: 20,
+      text: formatPct,
+      fill: "rank",
+      fontSize: 13,
+      fontWeight: "bold",
+      textAnchor: "end"
+    });
+
+  const marks = [
+    Plot.barX(
+      { length: 1 },
+      { x1: 0, x2: 100, fill: brand.greyBackground, insetTop: 1, insetBottom: 1 }
+    )
+  ];
+
+  if (mode === "opposite") {
+    const df1 = df.filter((d) => d.rank === "pct1");
+    const df2 = df.filter((d) => d.rank === "pct2");
+    marks.push(
+      Plot.barX(df1, { x: "pct", fill: "rank", insetTop: 1, insetBottom: 1 }),
+      Plot.barX(df2, {
+        x1: (d) => 100 - d.pct,
+        x2: 100,
+        fill: "rank",
+        insetTop: 1,
+        insetBottom: 1
+      }),
+      label(df1, "left"),
+      label(df2, "right")
+    );
+  } else {
+    const subset = df.filter((d) => d.rank === rank);
+    marks.push(
+      Plot.barX(subset, {
+        x: "pct",
+        fill: "rank",
+        insetTop: 1,
+        insetBottom: 1
+      }),
+      label(subset, "left")
+    );
+  }
+
+  marks.push(
+    //Plot.ruleX([0, 100]),
+    Plot.ruleX([50], { stroke: "white" })
+  );
+
+  return Plot.plot({
+    axis: null,
+    label: null,
+    height: 38,
+    width: 160,
+    marginTop: 3,
+    marginBottom: 15,
+    marginRight: 35,
+    color: instLegend(colors, color_scale),
+    x: { domain: [0, 100] },
+    style: {
+      fontFamily: "sans-serif",
+      fontWeight: 200,
+      color: brand.blackInnosuisse
+    },
+    marks
+  });
+}
+
 function getLastDigit(number) {
   const numStr = number.toString();
   const lastDigit = parseInt(numStr.slice(-1), 10);

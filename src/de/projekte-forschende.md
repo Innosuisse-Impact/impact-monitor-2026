@@ -24,7 +24,7 @@ Innovationsprojekte ohne Umsetzungspartner fördern damit anwendungsorientierte 
 ### Erfolgreiche Schritte in Richtung Umsetzung gemacht
 Zwei Drittel der Innovationsprojekte haben die Machbarkeit erfolgreich geprüft. Jedes zweite geförderte Projekt wird mit hoher Wahrscheinlichkeit die Innovation auf dem Markt eingeführen und 4 von 10 liefern schlüssige Ergebnisse für weitere Umsetzungsschritte.
 
-<div>${draw_results("Innovationsprojekte ohne UP", false, 450)}</div>
+<div>${draw_results("Innovationsprojekte ohne Umsetzungspartner", false, 450)}</div>
 
 ### Wissenschaftlicher Output ist höher als bei Projekten mit Umsetzungspartnern
 Publizierte wissenschaftliche Ergebnisse sind wichtige Formen des Wissens- und Technologietransfers (WTT). Sie dienen der Weiterverbreitung der Projektergebnisse in Forschung und Anwendung und stärken den WTT. Die Dissertationen sind ein Hinweis auf die Neuartigkeit und Qualität der Forschung und damit verbundenen Risiko der (technologischen) Lösungsfindung für die Umsetzung. 
