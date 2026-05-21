@@ -1264,10 +1264,9 @@ export function draw_bar(
     axis: null,
     label: null,
     height: 38,
-    width: 160,
+    width: 150,
     marginTop: 3,
     marginBottom: 15,
-    marginRight: 35,
     color: instLegend(colors, color_scale),
     x: { domain: [0, 100] },
     style: {

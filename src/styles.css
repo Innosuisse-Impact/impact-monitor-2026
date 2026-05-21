@@ -86,7 +86,7 @@ h5,
 h6 {
   color: var(--color-text);
   font-weight: 700;
-  margin-top: 1.8rem;
+  margin-top: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
@@ -171,6 +171,10 @@ li {
   margin-bottom: 0.44rem;
 }
 
+.claims-wrapper {
+  max-width: 600px;
+}
+
 .claim {
   padding: var(--space-2) 0;
   border-top: 1px solid var(--color-rule);
@@ -209,31 +213,11 @@ li {
   padding-top: var(--space-1);
 }
 
-.claim__evidence + .claim__evidence {
-  margin-top: var(--space-5);
-}
-.claim__evidence--split {
-  display: grid;
-  grid-template-columns: var(--chart-column-width) 1fr;
-  gap: var(--space-1);
-  align-items: start;
-}
-/* Container for the Plot chart. Plot renders an SVG inside this. */
-.claim__evidence-chart {
-  padding-top: var(--space-1);
-}
-.claim__descriptive {
-  font-family: var(--font-sans);
-  font-size: var(--text-base);
-  line-height: var(--leading-relaxed);
-  color: var(--color-ink-soft);
-}
- 
 .claim__link {
   display: block;
-  margin-top: var(--space-3);
+  margin-top: var(--space-1);
   text-align: right;
-  font-size: var(--text-xs);
+  font-size: var(--text-sm);
   letter-spacing: var(--tracking-wide);
   color: var(--color-ink-faint);
   transition: color var(--transition-fast);
@@ -257,11 +241,28 @@ li {
 
 .figure {
   display: flex;
-  align-items: baseline;
-  gap: var(--space-5);
+  align-items: flex-start;
+  gap: var(--space-8);
 }
 .figure + .figure {
   margin-top: var(--space-2);
+}
+.figure > p {
+  margin-top: 0;
+}
+.figure__col {
+  min-width: 150px;
+  margin-top: var(--space-1)
+}
+.figure__title {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-regular);
+  color: var(--color-ink-soft);
+  text-align: right;
+  line-height: 1.4;
+}
+.figure__value + .figure__title {
+  margin-top: var(--space-4);
 }
 .figure__value {
   font-size: var(--text-lg);
@@ -270,6 +271,8 @@ li {
   color: var(--color-accent);
   line-height: 1;
   min-width: 120px;
+  text-align: right;
+  margin-top: var(--space-1);
 }
 .figure__unit {
   font-size: var(--text-sm);
