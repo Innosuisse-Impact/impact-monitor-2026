@@ -1,7 +1,7 @@
 import * as Plot from "npm:@observablehq/plot";
 import * as aq from "npm:arquero";
 import * as d3 from "npm:d3";
-import { createColorScale, getBrandColors, getWaffleColorSet } from "./colors.js";
+import { palette } from "./colors.js";
 import { html } from "npm:htl";
 import { getLang } from "./lang.js";
 import { instruments } from "./constants.js";
@@ -188,22 +188,66 @@ const strings = {
 
 const s = strings[lang];
 
-const color_inst = createColorScale("inst");
-const color_inst_lng = createColorScale("inst_lng");
-const color_subcluster = createColorScale("subcluster");
-const color_zufrieden = createColorScale("zufrieden");
-const color_ziel = createColorScale("ziel");
-const color_erfolg = createColorScale("erfolg");
-const color_su = createColorScale("su");
+// Instrument domain — index-aligned with palette.cat
+const instDomain = [
+  "Förderung für Schweizer Innovationsprojekte",
+  "Förderung für internationale Innovationsprojekte",
+  "Starthilfe für Projekte und Vernetzung",
+  "Begleitung von Start-ups",
+];
+
+// Translated instrument labels for legends (same order as instDomain)
+const instLabels = lang === "en"
+  ? ["Funding for national projects", "Funding for international projects", "Project set-up assistance and networking", "Support for start-ups"]
+  : lang === "fr"
+  ? ["Encouragement de projets nationaux", "Encouragement de projets internationaux", "Aide au démarrage de projets et mise en réseau", "Accompagnement de start-up"]
+  : instDomain;
+
+// Diverging pos/neg 4-stop (even selection from divPN6, teal→orange)
+const divPN4 = [palette.divPN6[5], palette.divPN6[3], palette.divPN6[2], palette.divPN6[0]];
+
+// Diverging domains per survey question (index-aligned with divPN3 / divPN4)
+const zufriedenDomain = lang === "en"
+  ? ["satisfied to very satisfied", "rather not satisfied to rather satisfied", "not at all satisfied to not satisfied"]
+  : lang === "fr"
+  ? ["satisfait à très satisfait", "plutôt pas satisfait à plutôt satisfait", "pas du tout satisfait à pas satisfait"]
+  : ["zufrieden bis sehr zufrieden", "eher nicht bis eher zufrieden", "überhaupt nicht zufrieden bis nicht zufrieden"];
+
+const zielDomain = lang === "en"
+  ? ["fully achieved or exceeded", "rather achieved", "rather not achieved", "not or only partially achieved"]
+  : lang === "fr"
+  ? ["complètement atteint ou dépassé", "plutôt atteint", "plutôt pas atteint", "pas atteint ou dans une faible mesure"]
+  : ["vollständig erreicht oder übertroffen", "eher erreicht", "eher nicht erreicht", "nicht oder nur in geringem Ausmass erreicht"];
+
+const erfolgDomain = lang === "en"
+  ? ["high or very high success", "rather high success", "rather low success", "no or low success"]
+  : lang === "fr"
+  ? ["succès élevé ou très élevé", "succès plutôt élevé", "succès plutôt faible", "pas de succès ou succès faible"]
+  : ["hoher oder sehr hoher Erfolg", "eher hoher Erfolg", "eher geringer Erfolg", "kein Erfolg oder geringer Erfolg"];
+
+// Start-up cohort domain
+const suDomain = lang === "en"
+  ? ["After completion", "Three years after completion"]
+  : lang === "fr"
+  ? ["Après la fin du projet", "Trois ans après la fin du projet"]
+  : ["Nach Abschluss", "3 Jahre nach Abschluss"];
+
+// Waffle/bar color lookup: {standard, shade} per instrument key
+const waffleColors = {
+  "Förderung für Schweizer Innovationsprojekte":      { standard: "#06F7DA", shade: "#037C6D" },
+  "Förderung für internationale Innovationsprojekte": { standard: "#A2AFE9", shade: "#5C647C" },
+  "Starthilfe für Projekte und Vernetzung":           { standard: "#FCE300", shade: "#867200" },
+  "Begleitung von Start-ups":                         { standard: "#FF8674", shade: "#7B3433" },
+  "negative":                                         { standard: "#FED79F", shade: "#FEB040" },
+  "negative_opposite":                                { standard: "#65CDDF", shade: "#FEB040" },
+};
 
 // Lazy-load color_instrument to avoid Safari initialization issues with async data
 let color_instrument = null;
-const brand = getBrandColors();
-const grey_innosuisse = brand.greyInnosuisse
-const black_innosuisse = brand.blackInnosuisse
-const grey_background = brand.greyBackground
-const grey_comment = brand.greyComment
-const color_waffle = getWaffleColorSet('dark')
+const black_innosuisse = "#000000";
+const grey_innosuisse  = "#E8E8E8";
+const grey_background  = "#E8E8E8";
+const grey_comment     = "#333333";
 
 /*
 export async function coloredUnderline(text, domain) {
@@ -276,10 +320,6 @@ export function plot_erhebung() {
       })
     ]
   });
-}
-
-export function draw_fin_plot_legend() {
-  return Plot.legend({ color: color_inst_lng, columns: 1, swatchSize: 12, style: { fontSize: "12px", fontFamily: "sans-serif", fontWeight: 200, color: black_innosuisse } })
 }
 
 export function draw_fin_plot(
@@ -356,7 +396,6 @@ const data = aq
       fontWeight: 200,
       color: black_innosuisse
     },
-    color: color_inst,
     marks: [
       Plot.axisX({ anchor: "top", ticks: [0, 50, 100, 150, 200] }),
       Plot.gridX({ interval: 25 }),
@@ -364,7 +403,7 @@ const data = aq
         x: "mean_funding",
         y: (d) => (d.monitoring === "Ja" ? `*${d[instrCol]}` : d[instrCol]),
         sort: { y: "x", reverse: true },
-        fill: "inst"
+        fill: palette.accent
       }),
       Plot.barX(
         df.filter((d) => d.monitoring !== "Ja"),
@@ -400,12 +439,21 @@ export function n_subcluster() {
     marginLeft: ns.marginLeft,
     marginRight: 50,
     marginBottom: 0,
-    marginTop: 65,
+    marginTop: 55,
     caption: html`<span style="font-size: 10px; color: #828282;">${ns.caption}</span>`,
     style: { fontSize: "12px", fontFamily: "sans-serif", fontWeight: 200, color: black_innosuisse },
     width: 755,
     height: 270,
-    color: color_subcluster,
+    color: {
+      type: "categorical",
+      domain: [
+        "Engineering",
+        "Life sciences",
+        "Energy & environment",
+        "ICT",
+        "Social sciences & business mgmt"],
+      range: palette.cat
+    },
     fx: {
       domain: [
         "Engineering",
@@ -416,11 +464,12 @@ export function n_subcluster() {
       ],
       axis: "top",
       tickFormat: (d) => "",
-      label: ""
+      label: "",
+      frameAnchor: "start",
     },
     x: {
-      labelOffset: 45,
-      domain: [0, 80],
+      labelOffset: 55,
+      domain: [0, 100],
       axis: "top",
       labelAnchor: "left",
       percent: true,
@@ -433,6 +482,7 @@ export function n_subcluster() {
       domain: ns.yDomain
     },
     marks: [
+      Plot.axisFx({ textAnchor: "start", dx: -50, tickSize: 0, lineWidth: 10 }),
       Plot.barX(df_subcluster_n, {
         x: "obs_value",
         y: "instrument_n",
@@ -467,7 +517,7 @@ export function n_subcluster() {
 }
 
 export function draw_result_zf_legend() {
-  return Plot.legend({ color: color_zufrieden, swatchSize: 12, style: { fontSize: "12px", fontFamily: "sans-serif", fontWeight: 200, color: black_innosuisse } })
+  return Plot.legend({ color: { type: "ordinal", domain: zufriedenDomain, range: palette.divPN3 }, swatchSize: 12, style: { fontSize: "12px", fontFamily: "sans-serif", fontWeight: 200, color: black_innosuisse } })
 }
 
 export function draw_result(data, instrument, x_axis = true, sy = 0) {
@@ -500,12 +550,11 @@ export function draw_result(data, instrument, x_axis = true, sy = 0) {
       label: null,
       ticks: null
     },
-    color:
-      data === df_ziel
-        ? color_ziel
-        : data === df_zufrieden
-        ? color_zufrieden
-        : color_erfolg,
+    color: data === df_ziel
+      ? { type: "ordinal", domain: zielDomain, range: divPN4 }
+      : data === df_zufrieden
+      ? { type: "ordinal", domain: zufriedenDomain, range: palette.divPN3 }
+      : { type: "ordinal", domain: erfolgDomain, range: divPN4 },
     marks: [
       Plot.barX(df, {
         x: (d) => d.pct/100,
@@ -575,7 +624,7 @@ export function draw_innoart(plot = "type_2", width = 640, height = 150) {
     Plot.barX(df, {
       x: "pct",
       y: "instrument_n",
-      fill: "inst",
+      fill: type,
       fx: type,
       inset: 0.5,
       sort: plot === "inkr_radikal" ? null : { y: "-x" }
@@ -638,7 +687,7 @@ export function draw_innoart(plot = "type_2", width = 640, height = 150) {
     marginRight: plot === "inkr_radikal" ? 65 : 0,
     width: width,
     height: height,
-    color: color_inst,
+    color: { type: "categorical", range: palette.cat },
     fx: {
       label: null,
       axis: "top"
@@ -671,7 +720,7 @@ function Likert(responses) {
 }
 
 // Diverging stacked bar chart for incremental vs radical innovations (ported from DE)
-export function draw_inkr_radikal_diverging(width = 640, height = 260) {
+export function draw_inkr_radikal_diverging(width = 640, height = 240) {
   const df_raw = df_innovationsart.filter((d) => d.plot === "inkr_radikal" && d.pct !== null);
   const labelKey = `label_${lang}`;
 
@@ -692,15 +741,11 @@ export function draw_inkr_radikal_diverging(width = 640, height = 260) {
       const diff = radikale_pct - inkrementelle_pct;
       differences.push({ instrument_n: inst, difference: diff });
 
-      const baseColor = color_inst.apply(inst_value);
-      const lighterColor = d3.color(baseColor).brighter(0.8).formatHex();
-
       transformedData.push({
         instrument_n: inst,
         category: "inkrementelle",
         value: inkrementelle_pct,
         inst: inst_value,
-        color: baseColor,
         label: df_raw[0][labelKey]
       });
       transformedData.push({
@@ -708,7 +753,6 @@ export function draw_inkr_radikal_diverging(width = 640, height = 260) {
         category: "neutral",
         value: neutral_pct,
         inst: inst_value,
-        color: grey_background,
         label: df_raw[0][labelKey]
       });
       transformedData.push({
@@ -716,7 +760,6 @@ export function draw_inkr_radikal_diverging(width = 640, height = 260) {
         category: "radikale",
         value: radikale_pct,
         inst: inst_value,
-        color: baseColor,
         label: df_raw[0][labelKey]
       });
     }
@@ -728,21 +771,21 @@ export function draw_inkr_radikal_diverging(width = 640, height = 260) {
   const likert = Likert([["inkrementelle", -1], ["neutral", 0], ["radikale", 1]]);
 
   return Plot.plot({
-    marginTop: 65,
+    marginTop: 45,
     marginLeft: 180,
     marginBottom: 0,
     marginRight: 40,
     width: width,
     height: height,
-    color: color_inst,
+    color: { type: "categorical", domain: ["inkrementelle", "neutral", "radikale"], range: palette.div3 },
     style: {fontSize: "12px", fontFamily: "sans-serif", fontWeight: 200, color: black_innosuisse},
     x: {
       axis: "top",
-      labelOffset: 45,
+      labelOffset: 25,
       labelAnchor: "center",
       label: s.draw_inkr_radikal,
-      tickFormat: (d) => Math.abs(d) + "%",
-      grid: true
+      ticks: [],
+      grid: false
     },
     y: {
       domain: instrument_order,
@@ -753,7 +796,7 @@ export function draw_inkr_radikal_diverging(width = 640, height = 260) {
       Plot.barX(transformedData, {
         x: "value",
         y: "instrument_n",
-        fill: "color",
+        fill: "category",
         order: likert.order,
         offset: likert.offset,
         z: "category",
@@ -817,7 +860,7 @@ export function draw_dn(
     marginRight: 120,
     height: x_axis ? 85 + sy : 40 + sy,
     width: 800,
-    color: color_inst,
+    color: { type: "categorical", domain: instDomain, range: palette.cat },
     fx: {
       label: null,
       axis: "top",
@@ -950,7 +993,7 @@ export function drawMiniPlot(instrument, funding = true) {
   const label = df[0][labelCol];
 
   return Plot.plot({
-    color: color_inst,
+    color: { type: "categorical", domain: instDomain, range: palette.cat },
     height: 100,
     width: 110,
     marginTop: 35,
@@ -1003,7 +1046,7 @@ export function drawMiniPlot1(instrument = instruments.CC, funding = false) {
   const label = df[0][labelCol];
 
   return Plot.plot({
-    color: color_inst,
+    color: { type: "categorical", domain: instDomain, range: palette.cat },
     height: 100,
     width: 100,
     marginTop: 35,
@@ -1047,7 +1090,7 @@ export function draw_waffle(
   title = "ip_impuls",
   dy_text = 0,
   dy_text2 = 0,
-  colors = color_waffle
+  colors = waffleColors
 ) {
   const df = df_waffle.filter((d) => d.title === title);
   const df1 = df.filter((d) => d.rank === "pct1");
@@ -1079,11 +1122,11 @@ export function draw_waffle(
       { length: 1 },
       {
         y2: [100],
-        fill: colors === color_waffle ? "#E8E8E8" : "white",
+        fill: colors === waffleColors ? "#E8E8E8" : "white",
         rx: "100%",
         gap: 3.5,
         stroke: grey_innosuisse,
-        strokeWidth: colors === color_waffle ? 0 : 1
+        strokeWidth: colors === waffleColors ? 0 : 1
       }
     ),
     Plot.text(df1, {
@@ -1191,7 +1234,7 @@ export function draw_bar(
     title = "ip_impuls",
     mode = "single", // "single" | "opposite"
     rank = "pct1", // "pct1" | "pct2" — only used when mode === "single"
-    colors = color_waffle
+    colors = waffleColors
   } = {}
 ) {
   const df = data.filter((d) => d.title === title);
@@ -1223,7 +1266,7 @@ export function draw_bar(
   const marks = [
     Plot.barX(
       { length: 1 },
-      { x1: 0, x2: 100, fill: brand.greyBackground, insetTop: 1, insetBottom: 1 }
+      { x1: 0, x2: 100, fill: grey_background, insetTop: 1, insetBottom: 1 }
     )
   ];
 
@@ -1272,7 +1315,7 @@ export function draw_bar(
     style: {
       fontFamily: ["Frutiger LT", "Arial", "sans-serif"],
       fontWeight: 200,
-      color: brand.blackInnosuisse
+      color: black_innosuisse
     },
     marks
   });
@@ -1284,15 +1327,12 @@ function getLastDigit(number) {
   return lastDigit === 0 ? 9.5 : lastDigit;
 }
 
-function instLegend(data, inst) {
-  const df = data.filter((d) => d.inst === inst);
-  const color1 = data.find((d) => d.inst === inst).shade;
-  const color2 = data.find((d) => d.inst === inst).standard;
-
+function instLegend(colors, inst) {
+  const entry = colors[inst] ?? colors["negative"];
   return Plot.scale({
     color: {
       domain: ["pct2", "pct1", "background"],
-      range: [color1, color2, "#F7F7F7"],
+      range: [entry.shade, entry.standard, "#F7F7F7"],
       type: "ordinal"
     }
   });
@@ -1386,7 +1426,7 @@ export function draw_results(
     marginLeft: marginLeft,
     marginRight: relevance ? 55 : 15,
     marginBottom: 10,
-    color: color_inst,
+    color: { type: "categorical", domain: instDomain, range: palette.cat },
     caption: html`<span style="font-size: 10px; color: #828282;">${caption}</span>`,
     style: {fontSize: "12px", fontFamily: "sans-serif", fontWeight: 200, color: black_innosuisse},
     x: {
@@ -1613,7 +1653,7 @@ export function ib_toipis() {
     marginTop: 45,
     marginLeft: 120,
     width: 330,
-    color: color_inst,
+    color: { type: "categorical", domain: instDomain, range: palette.cat },
     x: {
       axis: "top",
       labelAnchor: "left",
@@ -1665,7 +1705,7 @@ export function su_vza() {
     marginBottom: 35,
     height: 120,
     marginLeft: 5,
-    color: color_inst,
+    color: { type: "categorical", domain: instDomain, range: palette.cat },
     style: { fontSize: "12px", fontFamily: "sans-serif", fontWeight: 200, color: black_innosuisse },
     x: {
       axis: "top",
@@ -1739,5 +1779,5 @@ export function su_vza() {
 }
 
 export function su_vza_legend() {
-  return Plot.legend({ color: color_su, style: { fontSize: "12px", fontFamily: "sans-serif", fontWeight: 200, color: black_innosuisse } })
+  return Plot.legend({ color: { type: "categorical", domain: suDomain, range: ["#FF8674", "#7B3433"] }, style: { fontSize: "12px", fontFamily: "sans-serif", fontWeight: 200, color: black_innosuisse } })
 }

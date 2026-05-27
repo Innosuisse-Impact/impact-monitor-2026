@@ -15,21 +15,17 @@ Der gegenwärtige Stand des Wirkungsmonitorings ist so aufgebaut, dass in allen 
  
 ### Innosuisse Förderangebote
 
-```js
-draw_fin_plot_legend()
-```
-
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 5px;">
   <h5 style= "margin-bottom: 0;">Projekte von Unternehmen mit Forschenden</h5>
   ${draw_fin_plot("Förderung","Projekte von Unternehmen mit Forschenden",135,true)}
   <h5 style= "margin-bottom: 0;">Projekte von Unternehmen</h5>
   ${draw_fin_plot("Förderung","Projekte von Unternehmen", 25, false)}
   <h5 style= "margin-bottom: 0;">Projekte von Forschenden</h5>
-  ${draw_fin_plot("Förderung","Projekte von Forschenden", 68, false)}
+  ${draw_fin_plot("Förderung","Projekte von Forschenden", 70, false)}
   <h5 style= "margin-bottom: 0;">Starthilfe für Projekte und Vernetzung</h5>
-  ${draw_fin_plot("Starthilfe für Projekte und Vernetzung",undefined, 68,false)}
+  ${draw_fin_plot("Starthilfe für Projekte und Vernetzung",undefined,70,false)}
   <h5 style= "margin-bottom: 0;">Begleitung von Start-ups</h5>
-  ${draw_fin_plot("Begleitung von Start-ups",undefined,96, false)}
+  ${draw_fin_plot("Begleitung von Start-ups",undefined,55, false)}
 </div>
 
 <p class="comment">Quelle: Cockpit/PowerBI Innosuisse (2025)

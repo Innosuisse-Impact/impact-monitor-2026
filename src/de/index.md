@@ -97,10 +97,10 @@ Der Innovationsscheck bietet KMU und Start-ups eine niederschwellige Förderung.
   <section class="claim">
     <header class="claim__header">
       <h3 class="claim__title">KMU beginnen eine strukturierte Zusammenarbeit mit Forschungspartnern</h3>
+      <span class="claim__level">Output</span>
     </header>
     <div class="figure">
-      <div class="figure__col">${draw_bar(df_waffle, { title: "is_connection", mode: "single", rank: "pct1" })}
-      </div>
+      <div class="figure__col">${draw_bar(df_waffle, { title: "is_connection", mode: "single", rank: "pct1" })}</div>
       <p>KMU arbeiten zum ersten Mal mit einem Forschungspartner einer Hochschule zusammen.</p>
     </div>
   </section>
@@ -108,13 +108,13 @@ Der Innovationsscheck bietet KMU und Start-ups eine niederschwellige Förderung.
   <section class="claim">
     <header class="claim__header">
       <h3 class="claim__title">Die Ergebnisse sind nützlich und führen zur Umsetzung von Innovationen</h3>
+      <span class="claim__level">Outcome</span>
     </header>
     <div class="figure">
-      <div class="figure__col">${draw_bar(df_waffle, { title: "is_ideas", mode: "single", rank: "pct1" })}
-      </div>
+      <div class="figure__col">${draw_bar(df_waffle, { title: "is_ideas", mode: "single", rank: "pct1" })}</div>
       <p>KMU entwickeln ihre Innovationsidee nach Abschluss mit demselben Forschungspartner weiter.</p>
-      </div>
-      <div class="figure">
+    </div>
+    <div class="figure">
       <div class="figure__col">${draw_bar(df_waffle, { title: "is_ideas", mode: "single", rank: "pct2" })}</div>
       <p>Einige beantragen oder planen konkret innerhalb eines Jahres ein vollwertiges Innosuisse Innovationsprojekt.</p>
     </div>
@@ -130,13 +130,14 @@ Innovationsprojekte ohne Umsetzungspartner zielen darauf ab, wissenschaftliche E
   <section class="claim">
     <header class="claim__header">
       <h3 class="claim__title">Forschende machen Schritte in Richtung Umsetzung</h3>
+            <span class="claim__level">Output</span>
     </header>
     <div class="figure">
       <div class="figure__col">${draw_bar(df_waffle, { title: "ipr_proj_stand", mode: "single", rank: "pct1" })}</div>
       <p>Projekte prüfen erfolgreich die Machbarkeit der Innovationsidee. Konkrete Umsetzungsschritte sind möglich.</p>
     </div>
     <div class="figure">
-      <div class="figure__col">42%</div>
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ipr_proj_stand", mode: "single", rank: "pct2" })}</div>
       <p>Projekte erzielen schlüssige Ergebnisse für die Umsetzung.</p>
     </div>
   </section>
@@ -144,6 +145,7 @@ Innovationsprojekte ohne Umsetzungspartner zielen darauf ab, wissenschaftliche E
   <section class="claim">
     <header class="claim__header">
       <h3 class="claim__title">Innovationen werden in Zukunft in der Praxis umgesetzt.</h3>
+            <span class="claim__level">Outcome</span>
     </header>
     <div class="figure">
       <div class="figure__col">${draw_bar(df_waffle, { title: "ipr_umsetzung", mode: "single", rank: "pct1" })}</div>
@@ -169,7 +171,8 @@ Das Förderangebot des Schweizerischen Nationalfonds (SNF) und Innosuisse zielt 
 
   <section class="claim">
     <header class="claim__header">
-      <h3 class="claim__title">Forschenungsgruppen machen Schritte in Richtung Umsetzung</h3>
+      <h3 class="claim__title">Forschungsgruppen machen Schritte in Richtung Umsetzung</h3>
+            <span class="claim__level">Output</span>
     </header>
     <div class="figure">
       <div class="figure__col">77%</div>
@@ -177,13 +180,14 @@ Das Förderangebot des Schweizerischen Nationalfonds (SNF) und Innosuisse zielt 
     </div>
     <div class="figure">
       <div class="figure__col">53%</div>
-      <p>Projekte lieferen schlüssige Ergebnisse die es ermöglichen konkrete Umsetzungschritte vorzunehmen.</p>
+      <p>Projekte liefern schlüssige Ergebnisse, die es ermöglichen, konkrete Umsetzungsschritte vorzunehmen.</p>
     </div>
   </section>
 
   <section class="claim">
     <header class="claim__header">
       <h3 class="claim__title"> Auch Discovery-Projekte sind anwendungsorientiert, aber der Start-up-Pfad spielt eine untergeordnete Rolle</h3>
+            <span class="claim__level">Outcome</span>
     </header>
         <div class="figure">
       <div class="figure__col">58%</div>
@@ -210,6 +214,7 @@ BRIDGE Proof of Concept bietet Forschenden ein Jahr Unterstützung, um Forschung
   <section class="claim">
     <header class="claim__header">
       <h3 class="claim__title">Gründung von Start-ups aus der Forschung</h3>
+      <span class="claim__level">Impact</span>
     </header>
     <div class="figure">
       <div class="figure__col"><div class="figure__value">70%</div></div>
@@ -230,20 +235,25 @@ Bei den themenorientierten Innovation Booster werden neue und radikale Innovatio
 
   <section class="claim">
     <header class="claim__header">
-      <h3 class="claim__title">Fähigkeiten und Kompetenzen der Teilnehmenden</h3>
+      <h3 class="claim__title">Fähigkeiten und Kompetenzen der Teilnehmenden werden gesteigert</h3>
+      <span class="claim__level">Output</span>
     </header>
     <div class="figure">
-      <div class="figure__col"></div>
-      Die grosse Mehrheit der Befragten (81 %) bestätigt, dass sie aufgrund ihrer Teilnahme an einem Innovation Booster ihre Fähigkeiten und Kompetenz zum Entwickeln und Testen von radikalen Ideen erhöhen konnten.
-      </div>
-          <header class="claim__header">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_capabilities", mode: "single", rank: "pct1" })}</div>
+      <p>Befragte bestätigen, dass sie aufgrund ihrer Teilnahme an einem Innovation Booster ihre Fähigkeiten und Kompetenz zum Entwickeln und Testen von radikalen Ideen erhöhen konnten.</p>
+    </div>
+  </section>
+
+  <section class="claim">
+    <header class="claim__header">
       <h3 class="claim__title">Weiterführung der Innovationsideen</h3>
+      <span class="claim__level">Outcome</span>
     </header>
     <div class="figure">
-      <div class="figure__col"></div>
-      Zwei von drei Innovationsideen werden weiterverfolgt, oft mit neuen Lösungsansätzen. Es entstehen daraus durchschnittlich 26 Innovationsprojekte bei Innosuisse pro Jahr.
-      </div>
-<a class="claim__link" href="/de/starthilfe-projekte-vernetzung">Zu den detaillierten Ergebnissen und Darstellungen</a>
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_continued", mode: "single", rank: "pct1" })}</div>
+      <p>Innovationsideen werden weiterverfolgt, oft mit neuen Lösungsansätzen. Es entstehen daraus durchschnittlich 26 Innovationsprojekte bei Innosuisse pro Jahr.</p>
+    </div>
+    <a class="claim__link" href="/de/starthilfe-projekte-vernetzung">Zu den detaillierten Ergebnissen und Darstellungen<span class="claim__link-arrow">→</span></a>
   </section>
 
 ## Start-up Coaching
@@ -251,20 +261,25 @@ Bei den themenorientierten Innovation Booster werden neue und radikale Innovatio
   <section class="claim">
     <header class="claim__header">
       <h3 class="claim__title">Unterstützung der Start-ups im Core Coaching</h3>
+      <span class="claim__level">Output</span>
     </header>
     <div class="figure">
-      <div class="figure__col"></div>
-      Rund vier von fünf gecoachten Start-ups bestätigen, dass das Core Coaching in mindestens einem für das Start-up zentralen Themenbereich einen massgeblichen Beitrag geleistet hat zur Entwicklung des Start-ups (78 %). Der Anteil der Start-ups, deren Erwartungen an den gesamten Coachingprozess mehrheitlich erfüllt wurden, liegt mit 84 % noch etwas höher.
-      </div>
-          <header class="claim__header">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "scc_support", mode: "single", rank: "pct1" })}</div>
+      <p>Rund vier von fünf gecoachten Start-ups bestätigen, dass das Core Coaching in mindestens einem für das Start-up zentralen Themenbereich einen massgeblichen Beitrag geleistet hat. Der Anteil der Start-ups, deren Erwartungen an den gesamten Coachingprozess mehrheitlich erfüllt wurden, liegt noch etwas höher.</p>
+    </div>
+  </section>
+
+  <section class="claim">
+    <header class="claim__header">
       <h3 class="claim__title">Kapitalakquisition</h3>
+      <span class="claim__level">Outcome</span>
     </header>
     <div class="figure">
-      <div class="figure__col"></div>
-      Bis zum Abschluss des Core Coachings haben 21 % der Start-ups über 5 Millionen Franken an Kapital akquiriert. Zwei Drittel erhielten im Core Coaching direkte und hilfreiche Unterstützung bei der Kapitalbeschaffung.
-      </div>
-<a class="claim__link" href="/de/begleitung-start-ups">Zu den detaillierten Ergebnissen und Darstellungen</a>
-</section>
+      <div class="figure__col">${draw_bar(df_waffle, { title: "scc_capital", mode: "single", rank: "pct2" })}</div>
+      <p>Bis zum Abschluss des Core Coachings haben Start-ups über 5 Millionen Franken an Kapital akquiriert. Zwei Drittel erhielten im Core Coaching direkte und hilfreiche Unterstützung bei der Kapitalbeschaffung.</p>
+    </div>
+    <a class="claim__link" href="/de/begleitung-start-ups">Zu den detaillierten Ergebnissen und Darstellungen<span class="claim__link-arrow">→</span></a>
+  </section>
 </div>
 </details>
 

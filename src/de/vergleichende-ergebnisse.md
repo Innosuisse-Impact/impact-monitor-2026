@@ -17,13 +17,13 @@ Die Fördernehmer von Innosuisse sind mit der Innovationsförderung von Innosuis
 
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 0px;">
   
-  ${draw_result_zf_legend()}
-  ${draw_result(df_zufrieden,"Innovationsprojekte mit Umsetzungspartner", false, 35)}
-  ${draw_result(df_zufrieden,"Innovationsscheck", false)}
-  ${draw_result(df_zufrieden,"Innovationsprojekte ohne Umsetzungspartner", false)}
-    ${draw_result(df_zufrieden,"BRIDGE Discovery", false)}
-  ${draw_result(df_zufrieden,"Innovation Booster", false)}
-  ${draw_result(df_zufrieden,"Start-up Core Coaching")}
+${draw_result_zf_legend()}
+${draw_result(df_zufrieden,"Innovationsprojekte mit\nUmsetzungspartner", false, 35)}
+${draw_result(df_zufrieden,"Innovationsscheck", false)}
+${draw_result(df_zufrieden,"Innovationsprojekte ohne\nUmsetzungspartner", false)}
+${draw_result(df_zufrieden,"BRIDGE Discovery", false)}
+${draw_result(df_zufrieden,"Innovation Booster", false)}
+${draw_result(df_zufrieden,"Start-up Core Coaching")}
 </div>
 
 ### Innosuisse fördert sowohl inkrementelle wie auch radikale Innovationen
