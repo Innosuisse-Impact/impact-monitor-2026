@@ -11,10 +11,10 @@ import { draw_waffle, draw_bar } from "../functions.js"
 import { df_waffle } from "../data.js"
 ```
 
-<div style="background: rgb(6, 247, 218) no-repeat padding-box; height: 110px; width: 650px; padding-left: 40px; padding-top: 24px; padding-bottom: 30px;  margin-left: -48px; margin-top: -31px;">
+<div style="background: rgb(6, 247, 218) no-repeat padding-box; min-height: 110px; max-width: 650px; padding-left: 40px; padding-top: 24px; padding-bottom: 5px;  margin-left: -48px; margin-top: -31px;">
 
 # Wirkung der Innosuisse-Förderung<br>2023–2025
-<p class="comment" style="margin-bottom: 30px">Version 2.0.1, letzte Änderungen: 17. November 2025</p>
+<p class="comment">Version 2.0, letzte Änderungen: 27. Mai 2026</p>
 </div>
 <br>
 
@@ -22,9 +22,9 @@ import { df_waffle } from "../data.js"
 <summary>Projekt- und Programmförderung</summary>
 <div class="claims-wrapper">
 
-## Innovation Projects with Implementation Partners
+## Innovationsprojekte mit Umsetzungspartner
 
-National innovation projects are Innosuisse's most important funding instrument. Companies and organisations from the economy and society cooperate with research partners to jointly develop innovative products, services, processes or new business models.
+Die nationalen Innovationsprojekte sind das wichtigste Förderinstrument von Innosuisse. Unternehmen und Organisationen aus der Wirtschaft und Gesellschaft kooperieren mit Forschungspartnern, um gemeinsam innovative Produkte, Dienstleistungen, Prozesse oder neue Geschäftsmodelle zu entwickeln.
 
   <section class="claim">
     <header class="claim__header">
@@ -96,29 +96,28 @@ Der Innovationsscheck bietet KMU und Start-ups eine niederschwellige Förderung.
 
   <section class="claim">
     <header class="claim__header">
-      <h3 class="claim__title">Zusammenarbeit mit der Forschung</h3>
+      <h3 class="claim__title">KMU beginnen eine strukturierte Zusammenarbeit mit Forschungspartnern</h3>
     </header>
     <div class="figure">
       <div class="figure__col">${draw_bar(df_waffle, { title: "is_connection", mode: "single", rank: "pct1" })}
       </div>
-      <p>Über die Hälfte der beteiligten Unternehmen können dank des Innovationsschecks neu an den Wissens- und Technologietransfer mit der Forschung herangeführt werden.</p>
-    </div>
-        <div class="figure">
-      <div class="figure__col">${draw_bar(df_waffle, { title: "is_ideas", mode: "single", rank: "pct1" })}
-      </div>
-      <p>76 % der KMU arbeiten auch nach dem Abschluss noch mit ihrem Forschungspartner zusammen.</p>
+      <p>KMU arbeiten zum ersten Mal mit einem Forschungspartner einer Hochschule zusammen.</p>
     </div>
   </section>
 
   <section class="claim">
     <header class="claim__header">
-      <h3 class="claim__title">Erzielte Ergebnisse</h3>
+      <h3 class="claim__title">Die Ergebnisse sind nützlich und führen zur Umsetzung von Innovationen</h3>
     </header>
     <div class="figure">
-      <div class="figure__col"></div>
-      <p>Die Zusammenarbeit mit den Forschungspartnern wird in vier von fünf Fällen erfolgreich geprüft. 61 % der Unternehmen haben ihre Innovationsidee erfolgreich getestet und weiterentwickelt und dieses Ziel vollständig erreicht. 29 % der Innovationschecks führen nachfolgend ein Innovationsprojekt durch oder planen dies in einem Jahr.</p>
+      <div class="figure__col">${draw_bar(df_waffle, { title: "is_ideas", mode: "single", rank: "pct1" })}
+      </div>
+      <p>KMU entwickeln ihre Innovationsidee nach Abschluss mit demselben Forschungspartner weiter.</p>
+      </div>
+      <div class="figure">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "is_ideas", mode: "single", rank: "pct2" })}</div>
+      <p>Einige beantragen oder planen konkret innerhalb eines Jahres ein vollwertiges Innosuisse Innovationsprojekt.</p>
     </div>
-    <a class="claim__link" href="/de/projekte-unternehmen-forschende#innovationsscheck">Zu den detaillierten Ergebnissen und Darstellungen <span class="claim__link-arrow">→</span></a>
   </section>
 </div>
 
@@ -130,21 +129,33 @@ Innovationsprojekte ohne Umsetzungspartner zielen darauf ab, wissenschaftliche E
 
   <section class="claim">
     <header class="claim__header">
-      <h3 class="claim__title">Anwendungsorientierung</h3>
+      <h3 class="claim__title">Forschende machen Schritte in Richtung Umsetzung</h3>
     </header>
     <div class="figure">
-      <div class="figure__col"></div>
-      <p>42 % der Projekte liefern schlüssige Ergebnisse für weitere Umsetzungsschritte und die Hälfte der Projekte besitzt mit hoher Wahrscheinlichkeit längerfristiges Potenzial für eine Markteinführung.</p>
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ipr_proj_stand", mode: "single", rank: "pct1" })}</div>
+      <p>Projekte prüfen erfolgreich die Machbarkeit der Innovationsidee. Konkrete Umsetzungsschritte sind möglich.</p>
+    </div>
+    <div class="figure">
+      <div class="figure__col">42%</div>
+      <p>Projekte erzielen schlüssige Ergebnisse für die Umsetzung.</p>
     </div>
   </section>
 
   <section class="claim">
     <header class="claim__header">
-      <h3 class="claim__title">Zusammenarbeit mit Umsetzungspartnern</h3>
+      <h3 class="claim__title">Innovationen werden in Zukunft in der Praxis umgesetzt.</h3>
     </header>
     <div class="figure">
-      <div class="figure__col"></div>
-      <p>In rund zwei Dritteln der Projekte wurde bereits mit potenziellen Umsetzungspartnern zusammengearbeitet. Start-ups und Spin-offs, die aus der Forschung hervorgehen, spielen eine wichtige Rolle im WTT. In 39 % der Projekte wurde eine solche Ausgründung bereits realisiert oder ist geplant.</p>
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ipr_umsetzung", mode: "single", rank: "pct1" })}</div>
+      <p>Innovationen besitzen mit hoher Wahrscheinlichkeit längerfristiges Potenzial für eine Markteinführung.</p>
+    </div>
+    <div class="figure">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ipr_imppartner", mode: "single", rank: "pct1" })}</div>
+      <p>Forschende arbeiten bereits mit potenziellen Umsetzungspartnern zusammen.</p>
+    </div>
+    <div class="figure">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ipr_imppartner", mode: "single", rank: "pct2" })}</div>
+      <p>Forschende realisierten oder planen die Ausgründung eines Start-ups.</p>
     </div>
     <a class="claim__link" href="/de/projekte-forschende">Zu den detaillierten Ergebnissen und Darstellungen <span class="claim__link-arrow">→</span></a>
   </section>
@@ -158,21 +169,33 @@ Das Förderangebot des Schweizerischen Nationalfonds (SNF) und Innosuisse zielt 
 
   <section class="claim">
     <header class="claim__header">
-      <h3 class="claim__title">Anwendungsorientierung</h3>
+      <h3 class="claim__title">Forschenungsgruppen machen Schritte in Richtung Umsetzung</h3>
     </header>
     <div class="figure">
-      <div class="figure__col"></div>
-      <p>Im Unterschied zu den Innovationsprojekten ohne Umsetzungspartner werden bei einer Mehrheit der Discovery-Projekte schlüssige Ergebnisse für die Umsetzung erzielt. Bei beiden Projektarten geht rund die Hälfte der Forschenden mit hoher Wahrscheinlichkeit davon aus, dass die Innovation auf dem Markt umgesetzt werden kann.</p>
+      <div class="figure__col">77%</div>
+      <p>Projekte haben die Machbarkeit geprüft.</p>
+    </div>
+    <div class="figure">
+      <div class="figure__col">53%</div>
+      <p>Projekte lieferen schlüssige Ergebnisse die es ermöglichen konkrete Umsetzungschritte vorzunehmen.</p>
     </div>
   </section>
 
   <section class="claim">
     <header class="claim__header">
-      <h3 class="claim__title">Zusammenarbeit mit Umsetzungspartnern</h3>
+      <h3 class="claim__title"> Auch Discovery-Projekte sind anwendungsorientiert, aber der Start-up-Pfad spielt eine untergeordnete Rolle</h3>
     </header>
+        <div class="figure">
+      <div class="figure__col">58%</div>
+      <p>Projekt wird mit hoher oder sehr hoher Wahrscheinlichkeit auf dem Markt umgesetzt.</p>
+    </div>
     <div class="figure">
-      <div class="figure__col"></div>
-      <p>3 von 4 der Forschungsgruppen haben bereits mit einem potenziellen Umsetzungspartner zusammengearbeitet, aber nur jede fünfte will ein eigenes Spin-off gründen.</p>
+      <div class="figure__col">${draw_bar(df_waffle, { title: "bd_imppartner", mode: "single", rank: "pct1" })}</div>
+      <p>Forschungsgruppen arbeiten mit potenziellen Umsetzungspartnern zusammen.</p>
+    </div>
+    <div class="figure">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "bd_imppartner", mode: "single", rank: "pct2" })}</div>
+      <p>Nur wenige realisierten oder planen die Ausgründung eines Start-ups oder Spin-offs.</p>
     </div>
     <a class="claim__link" href="/de/projekte-forschende#bridge-discovery">Zu den detaillierten Ergebnissen und Darstellungen <span class="claim__link-arrow">→</span></a>
   </section>
@@ -189,8 +212,8 @@ BRIDGE Proof of Concept bietet Forschenden ein Jahr Unterstützung, um Forschung
       <h3 class="claim__title">Gründung von Start-ups aus der Forschung</h3>
     </header>
     <div class="figure">
-      <div class="figure__col"></div>
-      <p>Rund 70 % der unterstützten Forschenden gründen nach der Förderung ein Start-up oder ein Spin-off (Start-up mit formeller IP-Lizenzierung).</p>
+      <div class="figure__col"><div class="figure__value">70%</div></div>
+      <p>Forschenden gründen nach der Förderung ein Start-up oder ein Spin-off (Start-up mit formeller IP-Lizenzierung).</p>
     </div>
     <a class="claim__link" href="/de/projekte-forschende#bridge-proof-of-concept">Zu den detaillierten Ergebnissen und Darstellungen <span class="claim__link-arrow">→</span></a>
   </section>

@@ -143,9 +143,9 @@ export function createColorScale(scaleKey) {
  */
 export function getBrandColors() {
   return {
-    blackInnosuisse: "#53565A",
-    greyInnosuisse: "#D9D9D6",
-    greyComment: "#828282",
+    blackInnosuisse: "#000000",
+    greyInnosuisse: "#E8E8E8",
+    greyComment: "#333333",
     greyBackground: "#E8E8E8"
   };
 }
@@ -158,7 +158,7 @@ export function getWaffleColorSet(theme = 'dark') {
     dark: [
       { inst: "Begleitung von Start-ups", standard: "#FF8674", shade: "#7B3433" },
       { inst: "Förderung für internationale Innovationsprojekte", standard: "#A2AFE9", shade: "#5C647C" },
-      { inst: "Förderung für Schweizer Innovationsprojekte", standard: "#06F7DA", shade: "#007C67" },
+      { inst: "Förderung für Schweizer Innovationsprojekte", standard: "#06F7DA", shade: "#06F7DA" },
       { inst: "Starthilfe für Projekte und Vernetzung", standard: "#FCE300", shade: "#867200" },
       { inst: "negative", standard: "#FED79F", shade: "#FEB040" },
       { inst: "negative_opposite", standard: "#65CDDF", shade: "#FEB040" }

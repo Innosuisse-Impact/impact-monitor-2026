@@ -98,7 +98,7 @@ h6 {
 
 .comment {
   font-size: var(--text-sm);
-  color: var(--color-muted);
+  color: var(--color-ink-soft);
 }
 
 .card h1{

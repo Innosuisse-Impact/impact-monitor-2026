@@ -452,7 +452,7 @@ export function n_subcluster() {
       }),
       Plot.text(
         df_subcluster_n.filter(
-          (d) => d.instrument === "Innovationsprojekte mit UP"
+          (d) => d.instrument === "Innovationsprojekte mit Umsetzungspartner"
         ),
         {
           fx: "subcluster",
@@ -1209,15 +1209,15 @@ export function draw_bar(
 
   const label = (subset, side) =>
     Plot.text(subset, {
-      x: side === "left" ? "pct" : undefined,
-      frameAnchor: side === "right" ? "right" : undefined,
-      dx: -2,
+      x: side === "left" && subset[0].pct > 20 ? "pct" : undefined,
+      frameAnchor: side === "right" ? "right" : "left",
+      dx: side === "left" && subset[0].pct <= 20 ? 2 : -2,
       dy: 20,
       text: formatPct,
       fill: "rank",
       fontSize: 13,
       fontWeight: "bold",
-      textAnchor: "end"
+      textAnchor: side === "left" && subset[0].pct <= 20 ? "start" : "end"
     });
 
   const marks = [
@@ -1270,7 +1270,7 @@ export function draw_bar(
     color: instLegend(colors, color_scale),
     x: { domain: [0, 100] },
     style: {
-      fontFamily: "sans-serif",
+      fontFamily: ["Frutiger LT", "Arial", "sans-serif"],
       fontWeight: 200,
       color: brand.blackInnosuisse
     },
