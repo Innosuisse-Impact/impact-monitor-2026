@@ -175,11 +175,11 @@ Das Förderangebot des Schweizerischen Nationalfonds (SNF) und Innosuisse zielt 
             <span class="claim__level">Output</span>
     </header>
     <div class="figure">
-      <div class="figure__col">77%</div>
+      <div class="figure__col">${draw_bar(df_waffle, { title: "bd_proj_stand", mode: "single", rank: "pct1" })}</div>
       <p>Projekte haben die Machbarkeit geprüft.</p>
     </div>
     <div class="figure">
-      <div class="figure__col">53%</div>
+      <div class="figure__col">${draw_bar(df_waffle, { title: "bd_proj_stand", mode: "single", rank: "pct2" })}</div>
       <p>Projekte liefern schlüssige Ergebnisse, die es ermöglichen, konkrete Umsetzungsschritte vorzunehmen.</p>
     </div>
   </section>
@@ -190,7 +190,7 @@ Das Förderangebot des Schweizerischen Nationalfonds (SNF) und Innosuisse zielt 
             <span class="claim__level">Outcome</span>
     </header>
         <div class="figure">
-      <div class="figure__col">58%</div>
+      <div class="figure__col">${draw_bar(df_waffle, { title: "bd_umsetzung", mode: "single", rank: "pct1" })}</div>
       <p>Projekt wird mit hoher oder sehr hoher Wahrscheinlichkeit auf dem Markt umgesetzt.</p>
     </div>
     <div class="figure">
