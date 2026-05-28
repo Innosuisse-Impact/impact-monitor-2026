@@ -13,7 +13,7 @@ import { draw_fin_plot, draw_fin_plot_legend, n_subcluster} from "../functions.j
 
 Der gegenwärtige Stand des Wirkungsmonitorings ist so aufgebaut, dass in allen Förderangebotskategorien mindestens zum jeweils finanziell gewichtigsten Förderangebot Aussagen zur Wirksamkeit und zu ausgewählten Vergleichen gemacht werden können. Die gegenwärtigen Lücken (in aufgehellter Farbe) werden schrittweise geschlossen werden (vgl. Kapitel [Weiterentwicklung des Wirkungsmonitorings](methodische-grundlagen#weiterentwicklung-des-wirkungsmonitorings)). 
  
-### Innosuisse Förderangebote
+### Projektförderung
 
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 5px;">
   <h5 style= "margin-bottom: 0;">Projekte von Unternehmen mit Forschenden</h5>
@@ -22,6 +22,11 @@ Der gegenwärtige Stand des Wirkungsmonitorings ist so aufgebaut, dass in allen 
   ${draw_fin_plot("Förderung","Projekte von Unternehmen", 25, false)}
   <h5 style= "margin-bottom: 0;">Projekte von Forschenden</h5>
   ${draw_fin_plot("Förderung","Projekte von Forschenden", 70, false)}
+</div>
+
+### Beratung und Vernetzung
+
+<div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 5px;">
   <h5 style= "margin-bottom: 0;">Starthilfe für Projekte und Vernetzung</h5>
   ${draw_fin_plot("Starthilfe für Projekte und Vernetzung",undefined,70,false)}
   <h5 style= "margin-bottom: 0;">Begleitung von Start-ups</h5>

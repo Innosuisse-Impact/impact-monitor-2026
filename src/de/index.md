@@ -11,21 +11,26 @@ import { draw_waffle, draw_bar } from "../functions.js"
 import { df_waffle } from "../data.js"
 ```
 
-<div style="background: rgb(6, 247, 218) no-repeat padding-box; min-height: 110px; max-width: 650px; padding-left: 40px; padding-top: 24px; padding-bottom: 5px;  margin-left: -48px; margin-top: -31px;">
+<div style="background: rgb(6, 247, 218) no-repeat padding-box; min-height: 110px; max-width: 650px; padding-left: 40px; padding-top: 5px; padding-bottom: 5px;  margin-left: -48px; margin-top: -31px;">
 
 # Wirkung der Innosuisse-Förderung<br>2023–2025
 <p class="comment">Version 2.0, letzte Änderungen: 27. Mai 2026</p>
 </div>
 <br>
 
-<details open>
-<summary>Projekt- und Programmförderung</summary>
-<div class="claims-wrapper">
+Innosuisse legt grosses Gewicht darauf die Wirksamkeit der Innovationsförderung transparent anhand folgender zwei Fragen darzulegen:
+
+* Welche Wirkungen erzielen die eingesetzten öffentlichen Mittel bei den Unternehmen, Start-ups und weiteren Organisationen?
+* Wird der Wissens- und Technologietransfer zwischen Organsisationen und der Forschung gestärkt und in welcher Form?
+
+Die wichtigsten Ergebnisse aus dem Wirkungsmonitoring sind nachfolgend pro Förderangebot kurz zusammengefasst. Im Hauptteil werden die Ergebnisse ausführlich dargestellt und kurz diskutiert.
+
+# Projektförderung
 
 ## Innovationsprojekte mit Umsetzungspartner
 
 Die nationalen Innovationsprojekte sind das wichtigste Förderinstrument von Innosuisse. Unternehmen und Organisationen aus der Wirtschaft und Gesellschaft kooperieren mit Forschungspartnern, um gemeinsam innovative Produkte, Dienstleistungen, Prozesse oder neue Geschäftsmodelle zu entwickeln.
-
+<div class="claims-wrapper">
   <section class="claim">
     <header class="claim__header">
       <h3 class="claim__title">Projekte decken das gesamte Spektrum der Innovation ab und führen zu neuen Produkten, Dienstleistungen und Prozessen.</h3>
@@ -84,7 +89,7 @@ Die nationalen Innovationsprojekte sind das wichtigste Förderinstrument von Inn
       </div>
       <p>EBP schätzt, dass jeder Schweizer Franken an Förderbeiträgen innerhalb von drei Jahren rund vier Franken an Wertschöpfung generiert.</p>
     </div>
-    <a class="claim__link" href="/de/projekte-unternehmen-forschende">Zu den detaillierten Ergebnissen und Darstellungen<span class="claim__link-arrow">→</span></a>
+    <a class="claim__link" href="/de/projekte-unternehmen-forschende">Zu den detaillierten Ergebnissen<span class="claim__link-arrow">→</span></a>
   </section>
 </div>
 
@@ -159,7 +164,7 @@ Innovationsprojekte ohne Umsetzungspartner zielen darauf ab, wissenschaftliche E
       <div class="figure__col">${draw_bar(df_waffle, { title: "ipr_imppartner", mode: "single", rank: "pct2" })}</div>
       <p>Forschende realisierten oder planen die Ausgründung eines Start-ups.</p>
     </div>
-    <a class="claim__link" href="/de/projekte-forschende">Zu den detaillierten Ergebnissen und Darstellungen <span class="claim__link-arrow">→</span></a>
+    <a class="claim__link" href="/de/projekte-forschende">Zu den detaillierten Ergebnissen <span class="claim__link-arrow">→</span></a>
   </section>
 </div>
 
@@ -201,7 +206,7 @@ Das Förderangebot des Schweizerischen Nationalfonds (SNF) und Innosuisse zielt 
       <div class="figure__col">${draw_bar(df_waffle, { title: "bd_imppartner", mode: "single", rank: "pct2" })}</div>
       <p>Nur wenige realisierten oder planen die Ausgründung eines Start-ups oder Spin-offs.</p>
     </div>
-    <a class="claim__link" href="/de/projekte-forschende#bridge-discovery">Zu den detaillierten Ergebnissen und Darstellungen <span class="claim__link-arrow">→</span></a>
+    <a class="claim__link" href="/de/projekte-forschende#bridge-discovery">Zu den detaillierten Ergebnissen <span class="claim__link-arrow">→</span></a>
   </section>
 </div>
 
@@ -217,16 +222,15 @@ BRIDGE Proof of Concept bietet Forschenden ein Jahr Unterstützung, um Forschung
       <span class="claim__level">Impact</span>
     </header>
     <div class="figure">
-      <div class="figure__col"><div class="figure__value">70%</div></div>
+      <div class="figure__col"><div class="figure__value">69%</div></div>
       <p>Forschenden gründen nach der Förderung ein Start-up oder ein Spin-off (Start-up mit formeller IP-Lizenzierung).</p>
     </div>
-    <a class="claim__link" href="/de/projekte-forschende#bridge-proof-of-concept">Zu den detaillierten Ergebnissen und Darstellungen <span class="claim__link-arrow">→</span></a>
+    <a class="claim__link" href="/de/projekte-forschende#bridge-proof-of-concept">Zu den detaillierten Ergebnissen <span class="claim__link-arrow">→</span></a>
   </section>
 </div>
-</details>
 
-<details open>
-<summary>Beratung und Vernetzung</summary>
+# Beratung und Vernetzung
+
 <div class="claims-wrapper">
 
 ## Innovation Booster
@@ -246,57 +250,56 @@ Bei den themenorientierten Innovation Booster werden neue und radikale Innovatio
 
   <section class="claim">
     <header class="claim__header">
-      <h3 class="claim__title">Weiterführung der Innovationsideen</h3>
+      <h3 class="claim__title">Innovationsideen werden zur Umsetzung gebracht</h3>
       <span class="claim__level">Outcome</span>
     </header>
     <div class="figure">
       <div class="figure__col">${draw_bar(df_waffle, { title: "ib_continued", mode: "single", rank: "pct1" })}</div>
       <p>Innovationsideen werden weiterverfolgt, oft mit neuen Lösungsansätzen. Es entstehen daraus durchschnittlich 26 Innovationsprojekte bei Innosuisse pro Jahr.</p>
     </div>
-    <a class="claim__link" href="/de/starthilfe-projekte-vernetzung">Zu den detaillierten Ergebnissen und Darstellungen<span class="claim__link-arrow">→</span></a>
+    <a class="claim__link" href="/de/starthilfe-projekte-vernetzung">Zu den detaillierten Ergebnissen<span class="claim__link-arrow">→</span></a>
   </section>
+</div>
+
+<div class="claims-wrapper">
 
 ## Start-up Coaching
 
+Das Coaching unterstützt Start-ups mit innovativen und wissenschaftsbasierten Geschäftsideen durch massgeschneiderte Begleitung in verschiedenen Gründungsphasen. Das Förderangebot gliedert sich in drei aufeinander abgestimmte Angebote – Initial, Core und Scale-up Coaching. Die Start-ups haben die Möglichkeit, an internationalen Camps und international bedeutenden Messen teilzunehmen. Die Ergebnisse des Wirkungsmonitorings betreffen das Start-up Core Coaching.
+
   <section class="claim">
     <header class="claim__header">
-      <h3 class="claim__title">Unterstützung der Start-ups im Core Coaching</h3>
+      <h3 class="claim__title">Das Core Coaching bringt den Start-up Mehrwert</h3>
       <span class="claim__level">Output</span>
     </header>
     <div class="figure">
       <div class="figure__col">${draw_bar(df_waffle, { title: "scc_support", mode: "single", rank: "pct1" })}</div>
-      <p>Rund vier von fünf gecoachten Start-ups bestätigen, dass das Core Coaching in mindestens einem für das Start-up zentralen Themenbereich einen massgeblichen Beitrag geleistet hat. Der Anteil der Start-ups, deren Erwartungen an den gesamten Coachingprozess mehrheitlich erfüllt wurden, liegt noch etwas höher.</p>
+      <p>Start-ups bestätigen, dass das Core Coaching in mindestens einem für sie zentralen Themenbereich einen massgeblichen Beitrag geleistet hat. Der Anteil der Start-ups, deren Erwartungen an den gesamten Coachingprozess mehrheitlich erfüllt wurden, liegt noch etwas höher.</p>
     </div>
   </section>
 
   <section class="claim">
     <header class="claim__header">
-      <h3 class="claim__title">Kapitalakquisition</h3>
+      <h3 class="claim__title">Start-ups im Coaching beschaffen erfolgreich Kapital</h3>
       <span class="claim__level">Outcome</span>
     </header>
     <div class="figure">
-      <div class="figure__col">${draw_bar(df_waffle, { title: "scc_capital", mode: "single", rank: "pct2" })}</div>
-      <p>Bis zum Abschluss des Core Coachings haben Start-ups über 5 Millionen Franken an Kapital akquiriert. Zwei Drittel erhielten im Core Coaching direkte und hilfreiche Unterstützung bei der Kapitalbeschaffung.</p>
+      <div class="figure__col">
+      ${draw_bar(df_waffle, { title: "scc_capital", mode: "single", rank: "pct1" })}
+      </div>
+      <p>Start-ups haben bis zum Abschluss des Coachings erfolgreich Risikokapital akquiriert.</p>
     </div>
-    <a class="claim__link" href="/de/begleitung-start-ups">Zu den detaillierten Ergebnissen und Darstellungen<span class="claim__link-arrow">→</span></a>
+    <div class="figure">
+      <div class="figure__col">
+      ${draw_bar(df_waffle, { title: "scc_capital", mode: "single", rank: "pct2" })}
+      </div>
+      <p>Gewisse Start-ups haben in diesem Zeitraum bereits über 5 Millionen Franken an Kapital akquiriert. Zwei Drittel erhielten im Core Coaching massgebliche Unterstützung bei der Kapitalbeschaffung.</p>
+    </div>
+    <a class="claim__link" href="/de/begleitung-start-ups">Zu den detaillierten Ergebnissen<span class="claim__link-arrow">→</span></a>
   </section>
 </div>
-</details>
 
-# Das Wirkungsmonitoring von Innosuisse
-
-Innosuisse legt grosses Gewicht darauf die Wirksamkeit der Innovationsförderung gegenüber den Stakeholdern, den politischen Entscheidungsträgern und der Öffentlichkeit transparent darzulegen.
-
-Folgende zwei Fragen stehen im Vordergrund:
-
-* Welche Wirkungen erzielen die eingesetzten öffentlichen Mittel bei den Fördernehmerinnen und Fördernehmer (Unternehmen, Organisationen und Start-ups)?
-* Wird der Wissens- und Technologietransfer zwischen Unternehmen und der Forschung gestärkt und in welcher Form?
-
-Der Bericht ist wie folgt strukturiert:
-
-Die wichtigsten Ergebnisse aus dem Wirkungsmonitoring sind nachfolgend kurz zusammengefasst. Im Editorial ordnen wir diese aus Sicht der Innosuisse ein. In den methodischen Grundlagen wird die Einbettung, Konzeption und Auswertung des Wirkungsmonitorings erläutert.
-
-Im Hauptteil werden die Ergebnisse ausführlich dargestellt und kurz diskutiert. Wir empfehlen direkt hier einzusteigen für die vertiefenden, graphisch illustrierten Abschnitte zu den Förderangeboten (siehe die Kapitel links unter Ergebnisse).
-
-* Das Kapitel Förderangebote und Inhalte zeigt auf, wie breit das Monitoring die Instrumente von Innosuisse abdeckt. In den vergleichenden Ergebnissen werden die Förderangebote untereinander verglichen.
+# Berichtsstruktur
+* Das Kapitel [Methodische Grundlagen](/de/methodische-grundlagen) erklärt die Einbettung und die Konzeption des Wirkungsmonitorings
+* Das Kapitel [Förderangebote und Inhalte](/de/foerderangebote-und-inhalte) zeigt auf, wie breit das Monitoring die Instrumente von Innosuisse abdeckt. In den [vergleichenden Ergebnissen](/de/vergleichende-ergebnisse) werden die Förderangebote untereinander verglichen.
 * Danach werden in einem Kapitel pro Förderangebot die Ergebnisse des Wirkungsmonitoring präsentiert und erläutert.

@@ -1,121 +1,305 @@
 ---
 title: The impact of Innosuisse funding
 style: ../styles.css
-toc: false
+toc: true
+sidebar: true
 ---
 
 ```js
 import { html } from "npm:htl";
-import { coloredUnderline} from "../functions.js";
+import { draw_waffle, draw_bar } from "../functions.js"
+import { df_waffle } from "../data.js"
 ```
 
-<div style="background: transparent linear-gradient(284deg, rgb(6, 247, 218) 0%, #FCE300 100%) no-repeat padding-box; height: 60px; width: 650px; padding-left: 40px; padding-top: 24px; padding-bottom: 30px;  margin-left: -40px; margin-top: -31px;">
+<div style="background: rgb(6, 247, 218) no-repeat padding-box; min-height: 110px; max-width: 650px; padding-left: 40px; padding-top: 5px; padding-bottom: 5px;  margin-left: -48px; margin-top: -31px;">
 
-# The impact of Innosuisse funding
+# The impact of Innosuisse funding<br>2023–2025
+<p class="comment">Version 2.0, last changes: 27 May 2026</p>
 </div>
 <br>
 
-## Results of the impact monitoring 2021–2023
+Innosuisse places great emphasis on transparently demonstrating the effectiveness of innovation promotion based on the following two questions:
 
-<p class="comment" style="margin-bottom: 30px">Version 1.1.3, last changes: April 14th, 2025</p>
+* What impact do the public funds used have on companies, start-ups and other organisations?
+* Is knowledge and technology transfer between organisations and research being strengthened, and in what way?
 
-Innosuisse – the Swiss Agency for Innovation Promotion – places great emphasis on transparently demonstrating the effectiveness of innovation promotion to stakeholders, political decision-makers and the public.
+The most important results from the impact monitoring are briefly summarised below for each support offer. The results are presented in detail and briefly discussed in the main section.
 
-The following two questions are at the forefront:
+# Project funding
 
-- What impact do the public funds used have on funding recipients (companies, organisations and start-ups)?
-- Is knowledge and technology transfer between companies and research being strengthened and in what way?
+## Innovation projects with implementation partners
 
-The report is structured as follows:
+National innovation projects are Innosuisse's most important funding instrument. Companies and organisations from business and society cooperate with research partners to jointly develop innovative products, services, processes or new business models.
+<div class="claims-wrapper">
+  <section class="claim">
+    <header class="claim__header">
+      <h3 class="claim__title">Projects cover the full spectrum of innovation and lead to new products, services and processes.</h3>
+      <span class="claim__level">Output</span>
+    </header>
+    <div class="figure">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ip_radikal_inkr", mode: "opposite" })}</div>
+      <p>Funded organisations classify their projects in almost equal shares as <span class="text-neutral-a">clearly incremental</span> and <span class="text-neutral-b">clearly radical</span>.</p>
+    </div>
+    <div class="figure">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ip_project_goals", mode: "opposite" })}</div>
+      <p>They achieve their project goals <span class="text-positive">fully or even exceed</span> them, while only a small share <span class="text-negative">fails to achieve them sufficiently</span>.</p>
+    </div>
+  </section>
 
-The most important results from the impact monitoring are briefly summarised below. In the editorial, we assess these from Innosuisse's point of view. The methodological principles explain the embedding, conception and evaluation of the impact monitoring.
+  <section class="claim">
+    <header class="claim__header">
+      <h3 class="claim__title">The results reach the market.</h3>
+      <span class="claim__level">Outcome</span>
+    </header>
+    <div class="figure">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ip_time_to_market", mode: "single", rank: "pct2" })}</div>
+      <p>Innovations are on the market at project completion or are expected to be launched within a year.</p>
+    </div>
+    <div class="figure">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ip_time_to_market", mode: "single", rank: "pct1" })}</div>
+      <p>Three years later, the innovations have already been implemented or their implementation is planned within two years.</p>
+    </div>
+  </section>
 
-The results are presented in detail and briefly discussed in the main part. We recommend starting here for the in-depth, graphically illustrated sections on the support offers (see the chapters on the left under Results).
-
-- The chapter on support offers and content shows how broadly the monitoring covers Innosuisse's instruments. The comparative results compare the support offers with each other.
-- After that, the results of the impact monitoring are presented and explained in a chapter for each support offer.
-
-In the first half of 2025, an update of the results will follow based on the 2024 monitoring.
-<br>
-
-<hr style="max-width: 640px;">
-
-## Key results at a glance
-
-<div class="card" style="max-width: 600px; --underline-color: #D3D3D3;">
-
-### [Comparitive impact results](/en/comparative-results)
-Selected monitoring results, which are collected in a standardised way, allow comparisons to be made across the support offers.
-
-- **Satisfaction**: Funding beneficiaries are satisfied or very satisfied with the services provided by Innosuisse and their implementation: 89% of Innovation Booster participants, around 90% of researchers and 80% of implementation partners among implementation partners, and 68% of start-ups in Core Coaching. The number of funding recipients who are not satisfied or only slightly satisfied with the funding offer is consistently low, ranging from 1% to 2%.
-- **Incremental and radical innovations**: Innosuisse funds both radical and incremental innovations. The respective shares differ depending on the support offer. In the case of innovation projects with implementation partners, 25% of innovations are clearly incremental and 27% clearly radical. For start-ups in coaching, the share of radical innovations is more than twice as high at 55%.
-
-<a href ="/en/comparative-results">→ Detailed results and charts</a>
-
+  <section class="claim">
+    <header class="claim__header">
+      <h3 class="claim__title">The economic impact is clear.</h3>
+      <span class="claim__level">Impact</span>
+    </header>
+    <div class="figure">
+      <div class="figure__col">
+        <div class="figure__title">Jobs</div>
+        <div class="figure__value">+ 18%</div>
+        <div class="figure__title">Sales</div>
+        <div class="figure__value">+ 21%</div>
+      </div>
+      <p>An independent scientific study by the KOF Swiss Economic Institute (ETH Zurich) provides the first causal evidence for the effectiveness of innovation projects. It compared funded companies with similar firms that received no funding. Over a five-year period, funded companies created an average of 18% more jobs and grew 21% faster.</p>
+    </div>
+    <div class="figure">
+      <div class="figure__col">
+        <div class="figure__title">Full-time positions</div>
+        <div class="figure__value">+ 2.5</div>
+      </div>
+      <p>Innosuisse's impact measurement associates each completed project with an average of 2.5 additional full-time positions three years after completion.</p>
+    </div>
+    <div class="figure">
+      <div class="figure__col">
+        <div class="figure__title">Value added<br>multiplier</div>
+        <div class="figure__value">x4</div>
+      </div>
+      <p>EBP estimates that each Swiss franc of funding generates around four francs of added value within three years.</p>
+    </div>
+    <a class="claim__link" href="/en/projects-companies-researchers">To the detailed results<span class="claim__link-arrow">→</span></a>
+  </section>
 </div>
-  
-<div class="card" style="max-width: 600px; --underline-color: #06F7DA;">
 
-### [Projects by companies with researchers](/en/projects-companies-researchers)
-#### [Innovation projects with implementation partners](/en/projects-companies-researchers)
-National innovation projects are Innosuisse's most important funding instrument. Companies and organisations from the economy and society cooperate with research partners to jointly develop innovative products, services, processes or new business models.
-- **Market launch**: Three years after the funding has ended, more than half of the funded innovations (57%) have either been launched on the market, implemented in the company or are scheduled to be launched in the next two years.
-- **Job creation**: A funded project leads to an average of 2.5 new and highly qualified jobs over the years 2021–2023. Three years after the funding comes to an end, the projects will have created around 800 to 900 full-time positions. This positive impact of the funding has also been confirmed by a scientific study conducted by the KOF Swiss Economic Institute at ETH Zurich. Three years after completion, companies that have received Innosuisse funding report 18% higher employment than comparable innovative companies without Innosuisse funding.
-- **The leverage effect of funding creates added value**: Through the newly created jobs, funding leads directly to additional added value at the funded companies: Each franc of funding brings the economy directly around four francs of added value, measured three years after the funding and totalled for three further years.
-- **Strengthening of knowledge and technology transfer**: The knowledge and technology transfer (KTT) also has a long-term effect: almost half of the companies continue to work with their research partners three years after the end of the project. 15% additionally take on research staff who were involved in the project. This enables them to strengthen their internal knowledge and innovation base.
+<div class="claims-wrapper">
 
-<a href ="/en/projects-companies-researchers">→ Detailed results and charts</a>
+## Innovation cheques
 
-#### [Innovation cheque](projects-companies-researchers#innovation-cheques)
 The innovation cheque offers SMEs and start-ups low-threshold funding. The aim is to carry out feasibility and market studies as well as technological clarifications.
-- **Cooperation with research**: Thanks to the innovation cheque, more than half of the participating companies can be introduced to knowledge and technology transfer with research. 70% of SMEs continue to work with their research partner after the project is completed.
-- **Results achieved**: The collaboration with research partners is successfully tested in almost all cases. 63% of companies have successfully tested and further developed their innovation idea and fully achieved this goal. Around a quarter of innovation cheques subsequently carry out an innovation project.
 
-<a href ="/en/projects-companies-researchers#innovation-cheques">→ Detailed results and charts</a>
+  <section class="claim">
+    <header class="claim__header">
+      <h3 class="claim__title">SMEs begin structured cooperation with research partners</h3>
+      <span class="claim__level">Output</span>
+    </header>
+    <div class="figure">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "is_connection", mode: "single", rank: "pct1" })}</div>
+      <p>SMEs work with a research partner at a university or research institution for the first time.</p>
+    </div>
+  </section>
 
+  <section class="claim">
+    <header class="claim__header">
+      <h3 class="claim__title">The results are useful and lead to the implementation of innovations</h3>
+      <span class="claim__level">Outcome</span>
+    </header>
+    <div class="figure">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "is_ideas", mode: "single", rank: "pct1" })}</div>
+      <p>SMEs continue to develop their innovation idea after completion with the same research partner.</p>
+    </div>
+    <div class="figure">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "is_ideas", mode: "single", rank: "pct2" })}</div>
+      <p>Some apply for or concretely plan a full Innosuisse innovation project within a year.</p>
+    </div>
+  </section>
 </div>
 
-<div class="card" style="max-width: 600px;">
+<div class="claims-wrapper">
 
-### [Projects by researchers](/en/projects-researchers)
-#### [Innovation projects without implementation partner](/en/projects-researchers)
-Innovation projects without implementation partners aim to develop scientific findings into applications for high-risk projects with high innovation potential and to take the first steps towards implementation.
-- **Application orientation**: Half of the funded projects provide conclusive results for further implementation steps and half of the projects are highly likely to have longer-term potential for a market launch.
-- **Collaboration with implementation partners**: More than two-thirds of the projects have already worked with potential implementation partners. Start-ups and spin-offs that emerge from research play an important role in KTT. In 38% of the projects, such a spin-off has already been or is planned.
+## Innovation projects without implementation partner
 
+Innovation projects without implementation partners aim to develop scientific findings from high-risk projects with high innovation potential towards application and to take first steps towards implementation.
 
-<a href ="/en/projects-researchers">→ Detailed results and charts</a>
+  <section class="claim">
+    <header class="claim__header">
+      <h3 class="claim__title">Researchers take steps towards implementation</h3>
+            <span class="claim__level">Output</span>
+    </header>
+    <div class="figure">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ipr_proj_stand", mode: "single", rank: "pct1" })}</div>
+      <p>Projects successfully test the feasibility of the innovation idea. Concrete implementation steps become possible.</p>
+    </div>
+    <div class="figure">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ipr_proj_stand", mode: "single", rank: "pct2" })}</div>
+      <p>Projects achieve conclusive results for implementation.</p>
+    </div>
+  </section>
 
-#### [BRIDGE Proof of Concept](/en/projects-researchers#bridge-proof-of-concept)
-The support offers from the Swiss National Science Foundation (SNSF) and Innosuisse provide researchers with a year of support to develop research results into marketable products and prepare a career outside of research and universities.
-- **Founding start-ups from research**: Around 70% of the supported researchers found a start-up or spin-off after the funding (start-up with formal IP licensing).
-
-<a href ="/en/projects-researchers#bridge-proof-of-concept">→ Detailed results and charts</a>
+  <section class="claim">
+    <header class="claim__header">
+      <h3 class="claim__title">Innovations will be implemented in practice in the future.</h3>
+            <span class="claim__level">Outcome</span>
+    </header>
+    <div class="figure">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ipr_umsetzung", mode: "single", rank: "pct1" })}</div>
+      <p>Innovations have a high probability of longer-term potential for a market launch.</p>
+    </div>
+    <div class="figure">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ipr_imppartner", mode: "single", rank: "pct1" })}</div>
+      <p>Researchers are already working with potential implementation partners.</p>
+    </div>
+    <div class="figure">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ipr_imppartner", mode: "single", rank: "pct2" })}</div>
+      <p>Researchers have founded or are planning to spin off a start-up.</p>
+    </div>
+    <a class="claim__link" href="/en/projects-researchers">To the detailed results <span class="claim__link-arrow">→</span></a>
+  </section>
 </div>
 
-<div class="card" style="max-width: 600px;--underline-color: #FCE300;">
+<div class="claims-wrapper">
 
-### [Project set-up assistance and networking](/en/project-set-up-assistance-and-networking)
+## BRIDGE: Discovery
 
-#### [Innovation Booster](/en/project-set-up-assistance-and-networking)
+The support offer from the Swiss National Science Foundation (SNSF) and Innosuisse aims to develop research results at the interface between basic and applied research into scientifically excellent projects with high innovation potential, and to lay the foundations for implementation.
 
-At the topic-oriented Innovation Boosters, new and radical innovation ideas are developed in an open and network-based innovation process. The focus is on the early phase of experimental idea generation and testing of ideas. Promising innovation ideas are to be further pursued in projects.
-- **Skills and competencies of participants**: The vast majority of respondents (82 %) confirm that their participation in an Innovation Booster has increased their ability to develop and test radical ideas.
-- **Continuation of innovation ideas**: Every second funded innovation idea is pursued further, often with new approaches. This results in an average of 26 innovation projects at Innosuisse per year.
+  <section class="claim">
+    <header class="claim__header">
+      <h3 class="claim__title">Research groups take steps towards implementation</h3>
+            <span class="claim__level">Output</span>
+    </header>
+    <div class="figure">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "bd_proj_stand", mode: "single", rank: "pct1" })}</div>
+      <p>Projects have tested the feasibility.</p>
+    </div>
+    <div class="figure">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "bd_proj_stand", mode: "single", rank: "pct2" })}</div>
+      <p>Projects provide conclusive results that enable concrete implementation steps.</p>
+    </div>
+  </section>
 
-<a href ="/en/project-set-up-assistance-and-networking">→ Detailed results and charts</a>
-
+  <section class="claim">
+    <header class="claim__header">
+      <h3 class="claim__title">Discovery projects are also application-oriented, but the start-up path plays a secondary role</h3>
+            <span class="claim__level">Outcome</span>
+    </header>
+        <div class="figure">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "bd_umsetzung", mode: "single", rank: "pct1" })}</div>
+      <p>The project is likely or very likely to be implemented on the market.</p>
+    </div>
+    <div class="figure">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "bd_imppartner", mode: "single", rank: "pct1" })}</div>
+      <p>Research groups work with potential implementation partners.</p>
+    </div>
+    <div class="figure">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "bd_imppartner", mode: "single", rank: "pct2" })}</div>
+      <p>Only a few have founded or are planning to spin off a start-up or spin-off.</p>
+    </div>
+    <a class="claim__link" href="/en/projects-researchers#bridge-discovery">To the detailed results <span class="claim__link-arrow">→</span></a>
+  </section>
 </div>
 
-<div class="card" style="max-width: 600px; --underline-color: #FF8674;">
+<div class="claims-wrapper">
 
-### [Support for start-ups](/en/support-for-start-ups)
-#### [Start-up Coaching](/en/support-for-start-ups)
-The coaching supports start-ups with innovative and science-based business ideas by providing tailored support in various start-up phases. The support offers are divided into three coordinated offers – Initial, Core and Scale-up Coaching. Start-ups have the opportunity to participate in international camps and internationally important trade fairs. The results of the impact monitoring relate to Start-up Core Coaching.
-- **Support for start-ups in Core Coaching**: Around four out of five start-ups that received coaching confirm that Core Coaching has made a significant contribution to the development of the start-up in at least one key area (78%). The percentage of start-ups whose expectations of the overall coaching process were mostly met is even slightly higher at 84%.
-- **Capital acquisition**: By the time they completed their Core Coaching, 21% of start-ups had acquired over CHF 5 million in capital. Two-thirds received direct and helpful support in their fundraising efforts during Core Coaching.
+## BRIDGE: Proof of Concept
 
-<a href ="/en/support-for-start-ups">→ Detailed results and charts</a>
+BRIDGE Proof of Concept gives researchers a year of support to develop research results into marketable applications and to prepare a career outside research and universities.
 
+  <section class="claim">
+    <header class="claim__header">
+      <h3 class="claim__title">Founding start-ups from research</h3>
+      <span class="claim__level">Impact</span>
+    </header>
+    <div class="figure">
+      <div class="figure__col"><div class="figure__value">69%</div></div>
+      <p>Researchers found a start-up or spin-off (start-up with formal IP licensing) after the funding.</p>
+    </div>
+    <a class="claim__link" href="/en/projects-researchers#bridge-proof-of-concept">To the detailed results <span class="claim__link-arrow">→</span></a>
+  </section>
 </div>
+
+# Advisory services and networking
+
+<div class="claims-wrapper">
+
+## Innovation Booster
+
+In the topic-oriented Innovation Boosters, new and radical innovation ideas are developed in an open, network-based innovation process. The focus is on the early phase of experimental idea generation and testing. Promising innovation ideas are to be pursued further in projects.
+
+  <section class="claim">
+    <header class="claim__header">
+      <h3 class="claim__title">Skills and competencies of participants are enhanced</h3>
+      <span class="claim__level">Output</span>
+    </header>
+    <div class="figure">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_capabilities", mode: "single", rank: "pct1" })}</div>
+      <p>Respondents confirm that their participation in an Innovation Booster has increased their ability to develop and test radical ideas.</p>
+    </div>
+  </section>
+
+  <section class="claim">
+    <header class="claim__header">
+      <h3 class="claim__title">Innovation ideas are brought to implementation</h3>
+      <span class="claim__level">Outcome</span>
+    </header>
+    <div class="figure">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_continued", mode: "single", rank: "pct1" })}</div>
+      <p>Innovation ideas are pursued further, often with new approaches. This results in an average of 26 innovation projects at Innosuisse per year.</p>
+    </div>
+    <a class="claim__link" href="/en/project-set-up-assistance-and-networking">To the detailed results<span class="claim__link-arrow">→</span></a>
+  </section>
 </div>
+
+<div class="claims-wrapper">
+
+## Start-up Coaching
+
+The coaching supports start-ups with innovative and science-based business ideas through tailored support in various founding phases. The support offer is divided into three coordinated offers – Initial, Core and Scale-up Coaching. Start-ups have the opportunity to participate in international camps and internationally important trade fairs. The results of the impact monitoring relate to Start-up Core Coaching.
+
+  <section class="claim">
+    <header class="claim__header">
+      <h3 class="claim__title">Core Coaching creates added value for start-ups</h3>
+      <span class="claim__level">Output</span>
+    </header>
+    <div class="figure">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "scc_support", mode: "single", rank: "pct1" })}</div>
+      <p>Start-ups confirm that Core Coaching has made a significant contribution in at least one key area for them. The share of start-ups whose expectations of the overall coaching process were mostly met is even slightly higher.</p>
+    </div>
+  </section>
+
+  <section class="claim">
+    <header class="claim__header">
+      <h3 class="claim__title">Start-ups in coaching successfully raise capital</h3>
+      <span class="claim__level">Outcome</span>
+    </header>
+    <div class="figure">
+      <div class="figure__col">
+      ${draw_bar(df_waffle, { title: "scc_capital", mode: "single", rank: "pct1" })}
+      </div>
+      <p>Start-ups have successfully acquired risk capital by the time they complete the coaching.</p>
+    </div>
+    <div class="figure">
+      <div class="figure__col">
+      ${draw_bar(df_waffle, { title: "scc_capital", mode: "single", rank: "pct2" })}
+      </div>
+      <p>Some start-ups have already raised over 5 million francs in capital during this period. Two thirds received significant support with fundraising during Core Coaching.</p>
+    </div>
+    <a class="claim__link" href="/en/support-for-start-ups">To the detailed results<span class="claim__link-arrow">→</span></a>
+  </section>
+</div>
+
+# Report structure
+* The chapter [Methodology](/en/methodology) explains the embedding and conception of the impact monitoring.
+* The chapter [Support Offers and Content](/en/support-offers-and-content) shows how broadly the monitoring covers Innosuisse's instruments. The [Comparative Results](/en/comparative-results) compare the support offers with each other.
+* After that, the results of the impact monitoring are presented and explained in a chapter for each support offer.

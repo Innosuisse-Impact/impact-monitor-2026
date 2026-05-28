@@ -88,6 +88,7 @@ export default {
   .filter(l => l !== lang)
   .flatMap(l => [
     `#observablehq-sidebar li:has(a[href*="/${l}/"])`,
+    `#observablehq-sidebar ol:has(a[href*="/${l}/"])`,
     `#observablehq-sidebar details:has(a[href*="/${l}/"])`,
     `#observablehq-sidebar section:has(a[href*="/${l}/"])`
   ])
@@ -106,9 +107,9 @@ export default {
       ? "Agence suisse pour l'encouragement de l'innovation"
       : "Swiss Innovation Agency";
 
-    const deSty = lang === "de" ? " font-weight:bold; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: var(--color-neutral-a);" : "";
-    const enSty = lang === "en" ? " font-weight:bold; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: var(--color-neutral-a);" : "";
-    const frSty = lang === "fr" ? " font-weight:bold; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: var(--color-neutral-a);" : "";
+    const deSty = lang === "de" ? " font-weight:bold; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: var(--color-accent);" : "";
+    const enSty = lang === "en" ? " font-weight:bold; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: var(--color-accent);" : "";
+    const frSty = lang === "fr" ? " font-weight:bold; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: var(--color-accent);" : "";
 
     return `<div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; padding:0 1rem; height:100%; gap:1rem; width:100%;">
   <a href="https://www.innosuisse.admin.ch" class="logo" id="header-logo-container" aria-label="Open Homepage" style="display:flex; align-items:center; gap:0.5rem; text-decoration:none; color:inherit; flex-shrink:0;">

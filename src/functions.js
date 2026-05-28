@@ -232,22 +232,13 @@ const suDomain = lang === "en"
   ? ["Après la fin du projet", "Trois ans après la fin du projet"]
   : ["Nach Abschluss", "3 Jahre nach Abschluss"];
 
-// Waffle/bar color lookup: {standard, shade} per instrument key
-const waffleColors = {
-  "Förderung für Schweizer Innovationsprojekte":      { standard: "#06F7DA", shade: "#037C6D" },
-  "Förderung für internationale Innovationsprojekte": { standard: "#A2AFE9", shade: "#5C647C" },
-  "Starthilfe für Projekte und Vernetzung":           { standard: "#FCE300", shade: "#867200" },
-  "Begleitung von Start-ups":                         { standard: "#FF8674", shade: "#7B3433" },
-  "negative":                                         { standard: "#FED79F", shade: "#FEB040" },
-  "negative_opposite":                                { standard: "#65CDDF", shade: "#FEB040" },
-};
-
 // Lazy-load color_instrument to avoid Safari initialization issues with async data
 let color_instrument = null;
 const black_innosuisse = "#000000";
 const grey_innosuisse  = "#E8E8E8";
 const grey_background  = "#E8E8E8";
 const grey_comment     = "#333333";
+const plotStyle = { fontFamily: '"Frutiger LT", Arial, sans-serif', fontWeight: 200 };
 
 /*
 export async function coloredUnderline(text, domain) {
@@ -375,7 +366,7 @@ const data = aq
 
   return Plot.plot({
     marginLeft: lang === "de" ? 260 : 300,
-    marginRight: lang === "de" ? 0 : 55,
+    marginRight: lang === "de" ? 35 : 55,
     marginTop: displayXAxis ? 45 : -1,
     marginBottom: 0,
     caption: displayCaption
@@ -390,12 +381,7 @@ const data = aq
       label: displayXAxis ? s.fin_plot.xLabel : null
     },
     y: { label: null, tickSize: 0 },
-    style: {
-      fontFamily: "sans-serif",
-      fontSize: "12px",
-      fontWeight: 200,
-      color: black_innosuisse
-    },
+    style: { ...plotStyle, fontSize: "12px" },
     marks: [
       Plot.axisX({ anchor: "top", ticks: [0, 50, 100, 150, 200] }),
       Plot.gridX({ interval: 25 }),
@@ -441,7 +427,7 @@ export function n_subcluster() {
     marginBottom: 0,
     marginTop: 55,
     caption: html`<span style="font-size: 10px; color: #828282;">${ns.caption}</span>`,
-    style: { fontSize: "12px", fontFamily: "sans-serif", fontWeight: 200, color: black_innosuisse },
+    style: { ...plotStyle, fontSize: "12px" },
     width: 755,
     height: 270,
     color: {
@@ -517,7 +503,7 @@ export function n_subcluster() {
 }
 
 export function draw_result_zf_legend() {
-  return Plot.legend({ color: { type: "ordinal", domain: zufriedenDomain, range: palette.divPN3 }, swatchSize: 12, style: { fontSize: "12px", fontFamily: "sans-serif", fontWeight: 200, color: black_innosuisse } })
+  return Plot.legend({ color: { type: "ordinal", domain: zufriedenDomain, range: palette.divPN3 }, swatchSize: 12, style: { ...plotStyle, fontSize: "12px" } })
 }
 
 export function draw_result(data, instrument, x_axis = true, sy = 0) {
@@ -533,7 +519,7 @@ export function draw_result(data, instrument, x_axis = true, sy = 0) {
   return Plot.plot({
     height: x_axis ? 40 + 25 + sy : 40 + sy,
     x: x_axis_d,
-    style: {fontSize: "12px", fontFamily: "sans-serif", fontWeight: 200, color: black_innosuisse},
+    style: { ...plotStyle, fontSize: "12px" },
     marginBottom: x_axis ? 25 : 0,
     marginTop: 0,
     marginLeft: 180,
@@ -693,7 +679,7 @@ export function draw_innoart(plot = "type_2", width = 640, height = 150) {
       axis: "top"
     },
     fy: { label: null },
-    style: {fontSize: "12px", fontFamily: "sans-serif", fontWeight: 200, color: black_innosuisse},
+    style: { ...plotStyle, fontSize: "12px" },
     x: x_axis_d,
     y: { domain: df_order, label: null, tickSize: 0 },
     marks: marks
@@ -778,7 +764,7 @@ export function draw_inkr_radikal_diverging(width = 640, height = 240) {
     width: width,
     height: height,
     color: { type: "categorical", domain: ["inkrementelle", "neutral", "radikale"], range: palette.div3 },
-    style: {fontSize: "12px", fontFamily: "sans-serif", fontWeight: 200, color: black_innosuisse},
+    style: { ...plotStyle, fontSize: "12px" },
     x: {
       axis: "top",
       labelOffset: 25,
@@ -860,7 +846,6 @@ export function draw_dn(
     marginRight: 120,
     height: x_axis ? 85 + sy : 40 + sy,
     width: 800,
-    color: { type: "categorical", domain: instDomain, range: palette.cat },
     fx: {
       label: null,
       axis: "top",
@@ -868,14 +853,14 @@ export function draw_dn(
       domain: plot !== "digital" ? s.draw_dn_sustainability : undefined
     },
     fy: { label: null },
-    style: {fontSize: "12px", fontFamily: "sans-serif", fontWeight: 200, color: black_innosuisse},
+    style: { ...plotStyle, fontSize: "12px" },
     x: x_axis_d,
     y: { label: null, tickSize: 0, axis: "right", reverse: true },
     marks: [
       Plot.barX(df, {
         x: "pct",
         y: respondant,
-        fill: "inst",
+        fill: palette.accent,
         fx: type,
         fy: "instrument_n",
         opacity: 0.5,
@@ -885,7 +870,7 @@ export function draw_dn(
       Plot.barX(df_highlight, {
         x: "pct",
         y: respondant,
-        fill: "inst",
+        fill: palette.accent,
         fx: type,
         fy: "instrument_n",
         inset: 1,
@@ -993,7 +978,6 @@ export function drawMiniPlot(instrument, funding = true) {
   const label = df[0][labelCol];
 
   return Plot.plot({
-    color: { type: "categorical", domain: instDomain, range: palette.cat },
     height: 100,
     width: 110,
     marginTop: 35,
@@ -1007,12 +991,12 @@ export function drawMiniPlot(instrument, funding = true) {
       label: null,
       tickFormat: (d) => String(d)
     },
-    style: {fontFamily: "sans-serif", fontWeight: 200, color: black_innosuisse},
+    style: plotStyle,
     marks: [
       Plot.barY(df, {
         x: "year",
         y: funding ? "funding" : "n",
-        fill: "inst",
+        fill: palette.accent,
         sort: { x: "y", reverse: true }
       }),
       Plot.textY(df, {
@@ -1060,7 +1044,7 @@ export function drawMiniPlot1(instrument = instruments.CC, funding = false) {
       label: null,
       tickFormat: (d) => String(d)
     },
-    style: {fontFamily: "sans-serif", fontWeight: 200, color: black_innosuisse},
+    style: plotStyle,
     marks: [
       Plot.barY(df, {
         x: "year",
@@ -1089,8 +1073,7 @@ export function drawMiniPlot1(instrument = instruments.CC, funding = false) {
 export function draw_waffle(
   title = "ip_impuls",
   dy_text = 0,
-  dy_text2 = 0,
-  colors = waffleColors
+  dy_text2 = 0
 ) {
   const df = df_waffle.filter((d) => d.title === title);
   const df1 = df.filter((d) => d.rank === "pct1");
@@ -1099,12 +1082,11 @@ export function draw_waffle(
   // Dynamically select the correct text column based on the current language
   const text = `text_${lang}`;
 
-  const color_scale =
-    df[0].negative && df[0].opposites
-      ? "negative_opposite"
-      : df[0].negative && !df[0].opposites
-      ? "negative"
-      : df[0].inst;
+  const { negative, opposites } = df[0];
+  const colorRange = negative && opposites ? palette.divPN2
+    : negative ? palette.hueN2
+    : opposites ? palette.div2
+    : palette.hue2;
 
   const x1 = df2.length !== 0 ? getLastDigit(df2[0].pct) * 10 - 1 : null;
 
@@ -1122,11 +1104,11 @@ export function draw_waffle(
       { length: 1 },
       {
         y2: [100],
-        fill: colors === waffleColors ? "#E8E8E8" : "white",
+        fill: palette.background,
         rx: "100%",
         gap: 3.5,
         stroke: grey_innosuisse,
-        strokeWidth: colors === waffleColors ? 0 : 1
+        strokeWidth: 0
       }
     ),
     Plot.text(df1, {
@@ -1220,10 +1202,10 @@ export function draw_waffle(
     marginLeft: 0,
     marginRight: y2 === null ? 0 : 140,
     width: y2 === null ? 240 : 380,
-    color: instLegend(colors, color_scale),
+    color: Plot.scale({ color: { domain: ["pct1", "pct2"], range: colorRange, type: "ordinal" } }),
     x: { domain: [0, 100] },
     y: { domain: [0, 100] },
-    style: {fontFamily: "sans-serif", fontWeight: 200, color: black_innosuisse},
+    style: plotStyle,
     marks: marks
   });
 }
@@ -1233,19 +1215,17 @@ export function draw_bar(
   {
     title = "ip_impuls",
     mode = "single", // "single" | "opposite"
-    rank = "pct1", // "pct1" | "pct2" — only used when mode === "single"
-    colors = waffleColors
+    rank = "pct1"   // "pct1" | "pct2" — only used when mode === "single"
   } = {}
 ) {
   const df = data.filter((d) => d.title === title);
   if (df.length === 0) return null;
 
-  const { negative, opposites, inst } = df[0];
-  const color_scale = negative
-    ? opposites
-      ? "negative_opposite"
-      : "negative"
-    : inst;
+  const { negative, opposites } = df[0];
+  const colorRange = negative && opposites ? palette.divPN2
+    : negative ? palette.hueN2
+    : mode === "opposite" ? palette.div2
+    : [palette.accent];
 
   const formatPct = (d) =>
     (d.pct / 100).toLocaleString("fr-CH", { style: "percent" });
@@ -1266,7 +1246,7 @@ export function draw_bar(
   const marks = [
     Plot.barX(
       { length: 1 },
-      { x1: 0, x2: 100, fill: grey_background, insetTop: 1, insetBottom: 1 }
+      { x1: 0, x2: 100, fill: palette.background, insetTop: 1, insetBottom: 1 }
     )
   ];
 
@@ -1310,13 +1290,15 @@ export function draw_bar(
     width: 150,
     marginTop: 3,
     marginBottom: 15,
-    color: instLegend(colors, color_scale),
+    color: Plot.scale({
+      color: {
+        domain: ["pct1", "pct2"],
+        range: colorRange,
+        type: "ordinal"
+      }
+    }),
     x: { domain: [0, 100] },
-    style: {
-      fontFamily: ["Frutiger LT", "Arial", "sans-serif"],
-      fontWeight: 200,
-      color: black_innosuisse
-    },
+    style: plotStyle,
     marks
   });
 }
@@ -1325,17 +1307,6 @@ function getLastDigit(number) {
   const numStr = number.toString();
   const lastDigit = parseInt(numStr.slice(-1), 10);
   return lastDigit === 0 ? 9.5 : lastDigit;
-}
-
-function instLegend(colors, inst) {
-  const entry = colors[inst] ?? colors["negative"];
-  return Plot.scale({
-    color: {
-      domain: ["pct2", "pct1", "background"],
-      range: [entry.shade, entry.standard, "#F7F7F7"],
-      type: "ordinal"
-    }
-  });
 }
 
 export function draw_results(
@@ -1367,19 +1338,19 @@ export function draw_results(
     Plot.barX(df, {
       x: "pct",
       y: type,
-      fill: "inst",
+      fill: "highlight",
       inset: 0.5
     }),
-    Plot.barX(
-      df.filter((d) => d.highlight === true),
-      {
-        x: "pct",
-        y: type,
-        fill: black_innosuisse,
-        inset: 0.5,
-        sort: { y: "-x" }
-      }
-    ),
+    // Plot.barX(
+    //   df.filter((d) => d.highlight === true),
+    //   {
+    //     x: "pct",
+    //     y: type,
+    //     fill: black_innosuisse,
+    //     inset: 0.5,
+    //     sort: { y: "-x" }
+    //   }
+    // ),
     Plot.barX(df, {
       x1: "pct",
       x2: 100,
@@ -1426,9 +1397,9 @@ export function draw_results(
     marginLeft: marginLeft,
     marginRight: relevance ? 55 : 15,
     marginBottom: 10,
-    color: { type: "categorical", domain: instDomain, range: palette.cat },
+    color: { type: "categorical", range: palette.hue2 },
     caption: html`<span style="font-size: 10px; color: #828282;">${caption}</span>`,
-    style: {fontSize: "12px", fontFamily: "sans-serif", fontWeight: 200, color: black_innosuisse},
+    style: { ...plotStyle, fontSize: "12px" },
     x: {
       axis: "top",
       labelAnchor: "left",
@@ -1457,22 +1428,22 @@ export function leverage() {
   return Plot.plot({
     marginLeft: 0,
     marginRight: 0,
-    style: { fontSize: "20px", fontFamily: "sans-serif", fontWeight: 700, color: black_innosuisse },
+    style: { ...plotStyle, fontSize: "20px", fontWeight: 700 },
     axis: null,
     x: { domain: [50, 500] },
     y: { domain: [95, 108] },
     width: 640,
     height: 150,
-    color: { legend: true },
+    color: { legend: false, range: palette.hue2, type: "categorical", reverse: true },
     marks: [
       Plot.dot(
-        df_leverage.filter((d) => d.color === "Förderung"),
-        { x: "x", y: "y", r: 25, fill: "#06F7DA" }
+        df_leverage,
+        { x: "x", y: "y", r: 25, fill: "color"}
       ),
-      Plot.dot(
-        df_leverage.filter((d) => d.color === "Wertschöpfung"),
-        { x: "x", y: "y", r: 25, fill: "#06F7DA", opacity: 0.5 }
-      ),
+      // Plot.dot(
+      //   df_leverage.filter((d) => d.color === "Wertschöpfung"),
+      //   { x: "x", y: "y", r: 25, fill: "#06F7DA", opacity: 0.5 }
+      // ),
       Plot.arrow([{ x1: 150, y1: 100, x2: 250, y2: 100 }], {
         x1: "x1",
         y1: "y1",
@@ -1528,7 +1499,7 @@ export function kof_did_plot(nr) {
     },
     height: nr === undefined ? 600 : 350,
     width: 640,
-    style: { fontSize: "12px", fontFamily: "sans-serif", fontWeight: 200, color: black_innosuisse },
+    style: { ...plotStyle, fontSize: "12px" },
     marks: [
       Plot.rectX([{ x1: "t-2", y1: -0.75, x2: "t", y2: 0.85 }], {
         x1: "x1",
@@ -1652,8 +1623,9 @@ export function ib_toipis() {
   return Plot.plot({
     marginTop: 45,
     marginLeft: 120,
-    width: 330,
-    color: { type: "categorical", domain: instDomain, range: palette.cat },
+    marginRight: 0,
+    width: 400,
+    color: { type: "categorical", range: palette.cat },
     x: {
       axis: "top",
       labelAnchor: "left",
@@ -1662,8 +1634,8 @@ export function ib_toipis() {
       labelOffset: ibs.labelOffset,
       label: ibs.label
     },
-    y: { label: null },
-    style: { fontSize: "12px", fontFamily: "sans-serif", fontWeight: 200, color: black_innosuisse },
+    y: { label: null, tickSize: 0 },
+    style: { ...plotStyle, fontSize: "12px" },
     marks: [
       Plot.barX(df_toipis, {
         x: "pct",
@@ -1705,8 +1677,8 @@ export function su_vza() {
     marginBottom: 35,
     height: 120,
     marginLeft: 5,
-    color: { type: "categorical", domain: instDomain, range: palette.cat },
-    style: { fontSize: "12px", fontFamily: "sans-serif", fontWeight: 200, color: black_innosuisse },
+    color: { type: "categorical", range: palette.hue2 },
+    style: { ...plotStyle, fontSize: "12px" },
     x: {
       axis: "top",
       labelAnchor: "right",
@@ -1779,5 +1751,5 @@ export function su_vza() {
 }
 
 export function su_vza_legend() {
-  return Plot.legend({ color: { type: "categorical", domain: suDomain, range: ["#FF8674", "#7B3433"] }, style: { fontSize: "12px", fontFamily: "sans-serif", fontWeight: 200, color: black_innosuisse } })
+  return Plot.legend({ color: { type: "categorical", domain: suDomain, range: palette.hue2 }, style: { ...plotStyle, fontSize: "12px" } })
 }
