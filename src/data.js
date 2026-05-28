@@ -81,7 +81,7 @@ export const kof_did = await FileAttachment("data/daten_kof_did.txt")
     }))
   );
 
-const df_ziel_erfolg = await FileAttachment("data/daten_zielerreichung.txt").tsv({ typed: true });
+const df_ziel_erfolg = await FileAttachment("data/daten_zielerreichung.csv").csv({ typed: true });
 export const df_ziel = df_ziel_erfolg.filter((d) => d.category === "Zielerreichung");
 export const df_erfolg = df_ziel_erfolg.filter((d) => d.category === "Erfolg");
 
