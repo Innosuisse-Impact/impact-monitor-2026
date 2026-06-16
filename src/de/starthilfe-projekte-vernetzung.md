@@ -37,29 +37,23 @@ Zwei Drittel der geförderten Innovationsideen werden nach Abschluss der Förder
 <div>${ib_toipis()}</div></div>
 
 <div class="card" style="max-width: 640px">
-<h3>Evaluation belegt Wirkung der Innovation Booster</h3>
+  
+### Evaluation belegt Wirkung der Innovation Booster
 
 Die Wirkungsevaluation von Ecoplan ([2025](https://www.innosuisse.admin.ch/de/publication?id=TpGqSBI8N6Cl)) hat aufgezeigt, dass die Innovation Booster langfristige Innovationspartnerschaften, das Innovations-Knowhow und die Entwicklung neuer Ideen in vielfältigen Themenbereichen stärken. Die Zusammenarbeit und die nutzerorientierten Problemanalysen sind ihre Alleinstellungmerkmale. Diese werden künftig noch mehr Bedeutung erhalten.
-<table style="border-collapse: collapse; width: 100%;">
-  <tr>
-    <td style="border: none; width: 50%;">
-    <h4>Radikalere Ideen</h4>
-    Die Unternehmen und Organisationen entwickeln radikale Ideen, die Probleme auf neuartige Weise lösen.
-<div> ${draw_waffle("ib_radical", -85)}</div></td>
-    <td style="border: none; width: 50%;">
-    <h4>Vergrösserte Netzwerke</h4>
-    Die Unternehmen und Organisationen erweitern ihr Netzwerk über ihr bestehendes Umfeld hinaus.
-<div> ${draw_waffle("ib_new_contacts", -100)}</div></td>
-  </tr>
-    </tr>
-</table>
-<table style="border-collapse: collapse; width: 100%;">
-  <tr>
-    <td style="border: none; width: 50%;">
-    <h4>Gestärkte Lernkultur</h4>
-    Die Unternehmen und Organisationen übernehmen neues Know-how zu Innovationsmethoden und eine Kultur des Lernens und Fehlermachens.
-<div> ${draw_waffle("ib_learning_effects", -100)}</div></td>
-    <td style="border: none; width: 50%;"></td>
-  </tr>
-</table>
+
+#### Radikalere Ideen
+
+Die Unternehmen und Organisationen entwickeln radikale Ideen, die Probleme auf neuartige Weise lösen.
+<div>${draw_waffle("ib_radical", -45)}</div></td>
+
+#### Vergrösserte Netzwerke
+
+Die Unternehmen und Organisationen erweitern ihr Netzwerk über ihr bestehendes Umfeld hinaus.
+<div>${draw_waffle("ib_new_contacts", -85)}</div>
+
+#### Gestärkte Lernkultur
+
+Die Unternehmen und Organisationen übernehmen neues Know-how zu Innovationsmethoden und eine Kultur des Lernens und Fehlermachens.
+<div>${draw_waffle("ib_learning_effects", -100)}</div>
 </div>
