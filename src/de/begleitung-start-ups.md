@@ -15,7 +15,7 @@ import { drawMiniPlot, draw_waffle, draw_results, drawMiniPlot1, su_vza, su_vza_
 <div style="display: flex;">
   <div>${drawMiniPlot("Start-up Coaching")}</div>
   <div>${drawMiniPlot("Start-up Coaching")}</div>
-  <div>${drawMiniPlot("Start-up Core Coaching", false)}</div>
+  <div>${drawMiniPlot("Core Coaching", false)}</div>
 </div>
 
 <p style="font-size: 10px; color: #828282;">Der Betrag in Mio. Fr. und das Total der Coaching beziehen sich auf das Start-up Coaching insgesamt (Initial, Core und Scale-up Coaching). Bei der letzten Abbildung werden nur die Anzahl Core Coachings abgebildet.</p>
