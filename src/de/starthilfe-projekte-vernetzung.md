@@ -19,12 +19,9 @@ import { drawMiniPlot, draw_waffle, draw_results, ib_toipis} from "../functions.
 
 Die von Innosuisse geförderten Innovation Booster fokussieren jeweils auf ein bestimmtes Innovationsthema. Sie sind thematisch breit aufgestellt, von der künstlichen Intelligenz über Tourismus bis hin zu Foodtech.
 
-2023 unterstützte Innosuisse 17 aktive Innovation Booster in verschiedenen Themenbereichen. Im Herbst 2023 wurden weitere 8 Innovation Booster für die Jahre 2024-2027 bewilligt. Sie starteten im Januar 2024. Die Förderung der 2021 von geförderten Innovation Booster wird Ende 2024 abgeschlossen. Die hier präsentierten Ergebnisse beruhen auf bestehenden Monitoring-Daten in einem kürzeren Wirkungshorizont. 
-
 Die Innovation Booster entwickeln neue und radikale Innovationsideen und prüfen diese in einem offenen, netzwerkbasierten Innovationsprozess mit einer offenen Innovationskultur. Die Partner der geförderten Netzwerke kommen aus dem Forschungsumfeld, der Wirtschaft und der Gesellschaft. Der Fokus der Förderung liegt in der frühen Phase der Ideenfindung und -prüfung, wobei experimentelle Methoden wie «Design Thinking» und «Co-Creation» zum Einsatz kommen. 
 
-Die Weiterentwicklung von erfolgreich getesteten Innovationsideen, auch im Rahmen von geförderten Innovationsprojekten ist 
-ein zentrales Wirkungsziel der Innovation Booster. Damit werden wissenschaftsbasierte und nachhaltige Innovationen gefördert und den Umsetzungspartnern und dem Innovationsystem Schweiz konkreter Mehrwert und Wettbewerbsvorteile verschafft.
+Die Weiterentwicklung von erfolgreich getesteten Innovationsideen, auch im Rahmen von geförderten Innovationsprojekten ist ein zentrales Wirkungsziel der Innovation Booster. Damit werden wissenschaftsbasierte und nachhaltige Innovationen gefördert und den Umsetzungspartnern und dem Innovationsystem Schweiz konkreter Mehrwert und Wettbewerbsvorteile verschafft.
 
 ### Innovation Booster stärken die Innovationskompetenzen der Teilnehmenden
 Die Innovation Booster haben zum Ziel in der Challenge-Phase neue und auch radikale Innovationsideen zu entwickeln, um diese in einer weiteren Phase der Ideenprüfung auf Machbarkeit und Potenziale hinsichtlich Nachfrage und Nutzerorientierung zu testen.
@@ -48,7 +45,7 @@ Die Wirkungsevaluation von Ecoplan ([2025](https://www.innosuisse.admin.ch/de/pu
     <td style="border: none; width: 50%;">
     <h4>Radikalere Ideen</h4>
     Die Unternehmen und Organisationen entwickeln radikale Ideen, die Probleme auf neuartige Weise lösen.
-<div> ${draw_waffle("ib_radical", -115)}</div></td>
+<div> ${draw_waffle("ib_radical", -85)}</div></td>
     <td style="border: none; width: 50%;">
     <h4>Vergrösserte Netzwerke</h4>
     Die Unternehmen und Organisationen erweitern ihr Netzwerk über ihr bestehendes Umfeld hinaus.
@@ -65,9 +62,4 @@ Die Wirkungsevaluation von Ecoplan ([2025](https://www.innosuisse.admin.ch/de/pu
     <td style="border: none; width: 50%;"></td>
   </tr>
 </table>
-
-
-
-
-
 </div>
