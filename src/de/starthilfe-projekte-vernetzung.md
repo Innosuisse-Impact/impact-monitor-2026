@@ -45,7 +45,7 @@ Die Wirkungsevaluation von Ecoplan ([2025](https://www.innosuisse.admin.ch/de/pu
 #### Radikalere Ideen
 
 Die Unternehmen und Organisationen entwickeln radikale Ideen, die Probleme auf neuartige Weise lösen.
-<div>${draw_waffle("ib_radical", -45)}</div></td>
+<div>${draw_waffle("ib_radical", -50)}</div></td>
 
 #### Vergrösserte Netzwerke
 
@@ -55,5 +55,5 @@ Die Unternehmen und Organisationen erweitern ihr Netzwerk über ihr bestehendes 
 #### Gestärkte Lernkultur
 
 Die Unternehmen und Organisationen übernehmen neues Know-how zu Innovationsmethoden und eine Kultur des Lernens und Fehlermachens.
-<div>${draw_waffle("ib_learning_effects", -100)}</div>
+<div>${draw_waffle("ib_learning_effects", -115)}</div>
 </div>
