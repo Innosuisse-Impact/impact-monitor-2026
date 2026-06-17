@@ -52,7 +52,7 @@ Die Förderangebote von Innosuisse können in drei übergeordnete Förderbereich
 Die nachfolgende Übersicht zeigt, zu welchen fünf Stossrichtungen (Outcomes) von Innosuisse die Förderangebote beitragen sollen. Die in der Folge dargestellten Ergebnisse der Befragungen sollen Aussagen machen über die Zielerreichung der Innovationsförderung und bieten eine fundierte Grundlage, um die Wirksamkeit der Fördermassnahmen zu beurteilen und diese gezielt weiterzuentwickeln.
 
 <div class="card" style="width: 600px;">
-  <img src="../images/ziele_innosuisse.jpg" alt="Image">
+  <img src="../images/förderung_grafik.png" alt="Image">
 </div>
 
 Die Ergebnisse beinhalten einerseits kurz- bis mittelfristige Wirkungen bei Abschluss der Innovationsvorhaben oder kurz nach Projektabschluss. Andererseits werden auch längerfristige Wirkungen dargestellt, beispielsweise die Umsetzung auf dem Markt oder Beschäftigungswirkungen. 
