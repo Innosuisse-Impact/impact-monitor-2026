@@ -53,7 +53,7 @@ Innosuisse's funding offers can be divided into three overarching funding areas 
 The following overview shows the five Innosuisse thrusts (outcomes) to which the support offers should contribute. The results of the surveys presented below are intended to provide information on the achievement of objectives in innovation promotion and offer a sound basis for assessing the effectiveness of the support measures and developing them in a targeted manner.
 
 <div class="card" style="width: 600px;">
-  <img src="../images/ziele_en.jpg" alt="Image">
+  <img src="../images/funding_figure.png" alt="Image">
 </div>
 
 The results show short- to medium-term impacts at the end of the innovation project or shortly thereafter. They also show longer-term impacts, such as market implementation and employment effects.
