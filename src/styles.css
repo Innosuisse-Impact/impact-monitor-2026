@@ -111,6 +111,10 @@ h6 {
   margin-top: 1.2rem;
 }
 
+#observablehq-sidebar {
+  font-family: var(--font-sans);
+}
+
 .comment {
   font-size: var(--text-sm);
   color: var(--color-ink-soft);

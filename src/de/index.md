@@ -11,7 +11,7 @@ import { draw_waffle, draw_bar } from "../functions.js"
 import { df_waffle } from "../data.js"
 ```
 
-<div style="background: rgb(6, 247, 218) no-repeat padding-box; min-height: 110px; max-width: 650px; padding-left: 40px; padding-top: 5px; padding-bottom: 5px;  margin-left: -48px; margin-top: -31px;">
+<div style="background: rgb(6, 247, 218) no-repeat padding-box; min-height: 110px; max-width: 100%; padding-left: 40px; padding-top: 5px; padding-bottom: 5px;  margin-left: -48px; margin-top: -31px;">
 
 # Wirkung der Innosuisse-Förderung<br>2023–2025
 <p class="comment">Version 2.0, letzte Änderungen: 27. Mai 2026</p>
@@ -25,7 +25,7 @@ Innosuisse legt grosses Gewicht darauf die Wirksamkeit der Innovationsförderung
 
 Die wichtigsten Ergebnisse aus dem Wirkungsmonitoring sind nachfolgend pro Förderangebot kurz zusammengefasst. Im Hauptteil werden die Ergebnisse ausführlich dargestellt und kurz diskutiert.
 
-# Projektförderung
+# Förderung von Innovationsprojekten
 
 ## Innovationsprojekte mit Umsetzungspartner
 
@@ -123,6 +123,7 @@ Der Innovationsscheck bietet KMU und Start-ups eine niederschwellige Förderung.
       <div class="figure__col">${draw_bar(df_waffle, { title: "is_ideas", mode: "single", rank: "pct2" })}</div>
       <p>Einige beantragen oder planen konkret innerhalb eines Jahres ein vollwertiges Innosuisse Innovationsprojekt.</p>
     </div>
+    <a class="claim__link" href="/de/projekte-unternehmen-forschende#innovationsscheck">Zu den detaillierten Ergebnissen<span class="claim__link-arrow">→</span></a>
   </section>
 </div>
 

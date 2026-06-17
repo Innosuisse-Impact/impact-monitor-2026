@@ -13,7 +13,7 @@ import { coloredUnderline, draw_fin_plot, draw_fin_plot_legend, n_subcluster} fr
 
 L'état actuel du suivi de l'impact est tel que, pour toutes les catégories d'offres d'encouragement, il est possible de faire des déclarations sur l'efficacité et sur des comparaisons choisies, au moins pour l'offre d'encouragement la plus importante sur le plan financier. Pour les projets d'innovation pour start-up, il n'y a pas encore de projets achevés. Les lacunes actuelles (en couleur plus claire) seront progressivement comblées.
  
-### Offres d'encouragement Innosuisse
+### Financement de projets
 
 ```js
 draw_fin_plot_legend()
@@ -26,6 +26,11 @@ draw_fin_plot_legend()
   ${draw_fin_plot("Förderung","Projekte von Unternehmen", 25, false)}
   <h5 style= "margin-bottom: 0;">Projets de chercheurs</h5>
   ${draw_fin_plot("Förderung","Projekte von Forschenden", 68, false)}
+</div>
+
+### Conseil et mise en réseau
+
+<div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 5px;">
   <h5 style= "margin-bottom: 0;">Aide au démarrage de projets et mise en réseau</h5>
   ${draw_fin_plot("Starthilfe für Projekte und Vernetzung",undefined, 95,false)}
   <h5 style= "margin-bottom: 0;">Accompagnement de start-up</h5>

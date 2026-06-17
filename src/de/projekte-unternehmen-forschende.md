@@ -26,16 +26,16 @@ Der Wissens- und Technologietransfer zwischen der Forschung sowie der Wirtschaft
 
 ### Mehrheit der geförderten Innovationsprojekte wird auf dem Markt oder im Unternehmen eingeführt
 
-Bei Projektabschluss sind 45 % der geförderten Projekte auf dem Markt oder in der Organisation umgesetzt oder es ist geplant diese innerhalb eines Jahres umzusetzen. Rund ein Drittel der Projekte verfolgen Prozessinnovationen, die vergleichsweise schneller und in der Organisation umgesetzt werden.
+Bei Projektabschluss sind 41 % der geförderten Projekte auf dem Markt oder in der Organisation umgesetzt oder es ist geplant diese innerhalb eines Jahres umzusetzen. Rund ein Drittel der Projekte verfolgen Prozessinnovationen, die vergleichsweise schneller und in der Organisation umgesetzt werden.
 
 Drei Jahre nach Abschluss der Förderung sind über die Hälfte der geförderten Innovationen (57 %) eingeführt oder es ist geplant diese in den nächsten zwei Jahren einzuführen.
 
-Ein Teil der Projekte benötigt einen längeren Zeitraum für die Markteinführung oder das Innovationsprojekt wird in Folgeprojekten weitergeführt. 17 % der risikoreichen Förderprojekte sind drei Jahre nach Abschluss abgebrochen worden, mit anderen Worten sie werden nicht umgesetzt und auch nicht weitergeführt.
+Ein Teil der Projekte benötigt einen längeren Zeitraum für die Markteinführung oder das Innovationsprojekt wird in Folgeprojekten weitergeführt. 14 % der risikoreichen Förderprojekte sind drei Jahre nach Abschluss abgebrochen worden, mit anderen Worten sie werden nicht umgesetzt und auch nicht weitergeführt.
 
 <div>${draw_waffle("ip_time_to_market", -117)}</div>
 
-### Förderung erzielt bei über 60 % der KMU messbare und massgebliche wirtschaftliche Effekte
-Ausgewählte Kennzahlen belegen die Wirksamkeit hinsichtlich ökonomischer Effekte, welche ohne das geförderte Projekt nicht entstanden wären. Rund ein Drittel der KMU berichtet über ein Wachstum der Beschäftigung und schafft damit neue hochqualifizierte Arbeitsstellen. 3 von 10 Unternehmen stellen eine Umsatzsteigerung fest. Über ein Viertel der Unternehmen hat mehr in Forschung und Entwicklung (F&E) investiert, sei es in Beschäftigte im F&E-Bereich oder höhere F&E-Ausgaben getätigt. Uber Kosteneinsparungen berichten 12 % der Unternehmen.
+### Förderung erzielt rund 57 % der KMU messbare und massgebliche wirtschaftliche Effekte
+Ausgewählte Kennzahlen belegen die Wirksamkeit hinsichtlich ökonomischer Effekte, welche ohne das geförderte Projekt nicht entstanden wären. Rund 30 % der KMU berichtet über ein Wachstum der Beschäftigung und schafft damit neue hochqualifizierte Arbeitsstellen. 27 % der Unternehmen stellen eine Umsatzsteigerung fest. Fast ein Viertel der Unternehmen hat mehr in Forschung und Entwicklung (F&E) investiert, sei es in Beschäftigte im F&E-Bereich oder höhere F&E-Ausgaben getätigt. Uber Kosteneinsparungen berichten 12 % der Unternehmen.
 
 <div>${draw_results("Innovationsprojekte mit Umsetzungspartner", false)}</div>
 
@@ -86,16 +86,16 @@ Quelle:
 </div>
 
 ### Innosuisse unterstützt Weltmarktneuheiten und disruptive Innovationen
-33 % der geförderten Innovationsprojekte zielen darauf ab, Neuheiten für den internationalen und globalen Markt zu entwickeln. Schweizer Unternehmen werden damit unterstützt international wettbewerbsfähig zu werden oder zu bleiben. Zusätzlich haben rund 32 % der geförderten Projekte das Potenzial mit disruptiven Innovationen die Märkte stark zu beeinflussen oder neu zu definieren.
+32 % der geförderten Innovationsprojekte zielen darauf ab, Neuheiten für den internationalen und globalen Markt zu entwickeln. Schweizer Unternehmen werden damit unterstützt international wettbewerbsfähig zu werden oder zu bleiben. Zusätzlich haben rund 33 % der geförderten Projekte das Potenzial mit disruptiven Innovationen die Märkte stark zu beeinflussen oder neu zu definieren.
   <div style="display: flex; gap: 40px;">
   ${draw_waffle("ip_new_to_market", -70)}
   ${draw_waffle("ip_disruptive", -70)}
   </div>
 
 ### Unternehmen erreichen die Projektziele mehrheitlich oder übertreffen diese
-Die Mehrheit der beteiligten Projektpartner haben ihre Ziele vollständig erreicht oder sogar übertroffen. Nur ein kleiner Teil der geförderten Projekte hat die gesteckten Ziele nicht vollständig oder nicht erreicht. Innovationsvorhaben sind mit erheblichen technologischen Risiken und Unwägbarkeiten bei der Markumsetzung verbunden. Diese hohen Risikopotenziale unterstreichen die Notwendigkeit der öffentlichen Förderung, um den Wissens- und Technologietransfer zu unterstützen, da die Innovationsprojekte ohne Förderung nicht durchgeführt würden. 
+Ein Grossteil der beteiligten Projektpartner haben ihre Ziele vollständig erreicht oder sogar übertroffen. Nur ein kleiner Teil der geförderten Projekte hat die gesteckten Ziele nicht vollständig oder nicht erreicht. Innovationsvorhaben sind mit erheblichen technologischen Risiken und Unwägbarkeiten bei der Markumsetzung verbunden. Diese hohen Risikopotenziale unterstreichen die Notwendigkeit der öffentlichen Förderung, um den Wissens- und Technologietransfer zu unterstützen, da die Innovationsprojekte ohne Förderung nicht durchgeführt würden. 
 
-Dies belegen die tiefen Mitnahmeeffekte bei der Förderung: Nur 4 % der Unternehmen geben an, dass sie das Projekt auch ohne die Unterstützung von Innosuisse in derselben Form durchgeführt hätten. 16 % hätten es in veränderter oder reduzierter Form durchgeführt.
+Dies belegen die tiefen Mitnahmeeffekte bei der Förderung: Nur 3 % der Unternehmen geben an, dass sie das Projekt auch ohne die Unterstützung von Innosuisse in derselben Form durchgeführt hätten. 16 % hätten es in veränderter oder reduzierter Form durchgeführt.
   <div style="display: flex; gap: 15px;">
   <div>${draw_waffle("ip_project_goals",-85)}</div>
   <div>${draw_waffle("ip_mitnahme",-85,10)}</div>
@@ -113,11 +113,11 @@ Der WTT und die Zusammenarbeit zwischen den Unternehmen und der Forschung wird d
 ### Projektergebnisse sind wissenschaftlich verankert
 Der wissenschaftliche Output, der durch die Projekte entsteht, ist bemerkenswert. Aus über der Hälfte der Projekte entstehen Ko-Publikationen zwischen Umsetzungs- und Forschungspartnern. International belegt die Schweiz in dieser – für die Innovationsindizes wichtigen – Metrik den Spitzenplatz ([European Commission, 2025](https://projects.research-and-innovation.ec.europa.eu/en/statistics/performance-indicators/european-innovation-scoreboard/eis#/eis/indicators/3.2?country_scope=all&highlight=CH) & [WIPO, 2025](https://www.wipo.int/gii-ranking/en/switzerland/section/economy-profile)). Die Innovationsprojekte leisten dazu einen Beitrag. Die starke internationale Positionierung beim Wissens- und Technologietransfer zeigt auch die Ergebnisse einer Studie des SBFI ([SBFI, 2023](https://www.sbfi.admin.ch/sbfi/de/home/dienstleistungen/publikationen/publikationsdatenbank/wtt-endbericht-2023.html)).
 
-62 % der Forschungspartner publizieren ihre wissenschaftlichen Ergebnisse in einer Fachzeitschrift mit Peer-Review. In 21 % der geförderten Projekte werden Dissertationen geschrieben, zusätzlich zur Vielzahl an Bachelor- und Masterarbeiten. Diese Zahlen belegen die starke wissenschaftliche Verankerung der Innovationsprojekte und zeigen auch die Bedeutung der Projekte für die Forschungsseite und den Beitrag zur wissenschaftlichen Nachwuchsförderung. Die wissenschaftliche Qualität ist sehr hoch und die Weiterverbreitung der Projektergebnisse wird dadurch sichergestellt.
+61 % der Forschungspartner publizieren ihre wissenschaftlichen Ergebnisse in einer Fachzeitschrift mit Peer-Review. In 21 % der geförderten Projekte werden Dissertationen geschrieben, zusätzlich zur Vielzahl an Bachelor- und Masterarbeiten. Diese Zahlen belegen die starke wissenschaftliche Verankerung der Innovationsprojekte und zeigen auch die Bedeutung der Projekte für die Forschungsseite und den Beitrag zur wissenschaftlichen Nachwuchsförderung. Die wissenschaftliche Qualität ist sehr hoch und die Weiterverbreitung der Projektergebnisse wird dadurch sichergestellt.
 <div>${draw_waffle("ip_peer_pub", -100)}</div>
 
 ### Innosuisse-Förderung ermöglicht risikoreiche und interdisziplinäre Projekte
-Mit der Innosuisse-Förderung werden mehrheitlich komplexere und risikoreichere und auch interdisziplinäre Projekte unterstützt. Interdisziplinäre Projekte integrieren Wissen, Methoden und Technologien aus verschiedenen Fachrichtungen um gemeinsam neuartige Lösungen für komplexe Probleme zu entwickeln. Transdisziplinäre Projekte beziehen zusätzlich nicht-akademische Akteure aus Gesellschaft, Politik, Wirtschaft und Praxis aktiv in den Forschungsprozess ein, um gemeinsam gesellschaftlich relevante Probleme zu lösen und praxistaugliches Wissen zu generieren. Einen Hinweis auf den Risikograd der Innovationsprojekte zeigt sich im Anteil von 24 % an radikalen Innovationsprojekten. 
+Mit der Innosuisse-Förderung werden mehrheitlich komplexere und risikoreichere und auch interdisziplinäre Projekte unterstützt. Interdisziplinäre Projekte integrieren Wissen, Methoden und Technologien aus verschiedenen Fachrichtungen um gemeinsam neuartige Lösungen für komplexe Probleme zu entwickeln. Transdisziplinäre Projekte beziehen zusätzlich nicht-akademische Akteure aus Gesellschaft, Politik, Wirtschaft und Praxis aktiv in den Forschungsprozess ein, um gemeinsam gesellschaftlich relevante Probleme zu lösen und praxistaugliches Wissen zu generieren. Einen Hinweis auf den Risikograd der Innovationsprojekte zeigt sich im Anteil von 25 % an radikalen Innovationsprojekten. 
 <div style="display: flex; gap: 10px;">
 <div>${draw_waffle("ip_inter_trans", -70)}</div>
 <div>${draw_waffle("ip_radikal_inkr", -70)}</div>
@@ -125,7 +125,7 @@ Mit der Innosuisse-Förderung werden mehrheitlich komplexere und risikoreichere 
 
 ### Unternehmen geben mehrheitlich die Impulse für die Innovationsprojekte und setzen die Forschungsergebnisse in Wertschöpfung um
 
-Der Wissens- und Technologietransfer zwischen Umsetzungspartner und Forschungspartner ist wechselseitig. Die Unternehmen entwickeln risikoreiche Innovationsideen für die Forschung und Entwicklung und erhalten konkrete Ergebnisse aus der Forschung für ihre Umsetzung und die Inwertsetzung auf den Märkten (vgl. [Abschnitt zu den ökonomischen Effekten](https://observablehq.com/@ecosystem-monitor/wirkungsmonitoring#cell-808)).
+Der Wissens- und Technologietransfer zwischen Umsetzungspartner und Forschungspartner ist wechselseitig. Die Unternehmen entwickeln risikoreiche Innovationsideen für die Forschung und Entwicklung und erhalten konkrete Ergebnisse aus der Forschung für ihre Umsetzung und die Inwertsetzung auf den Märkten.
 <div>${draw_waffle("ip_impuls",-115)}</div>
 
 ### Innosuisse-Projekte sind für Forschungs- und Umsetzungspartner erfolgreich

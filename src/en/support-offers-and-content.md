@@ -13,7 +13,7 @@ import { coloredUnderline, draw_fin_plot, draw_fin_plot_legend, n_subcluster} fr
 
 The current status of the impact monitoring is structured in such a way that at least for the financially most significant support offer in each category of funding offers, statements can be made on the effectiveness and selected comparisons. The current gaps (in light colour) will be closed step by step (see chapter Further development of impact monitoring).
  
-### Innosuisse support offers
+### Project funding
 
 ```js
 draw_fin_plot_legend()
@@ -26,6 +26,11 @@ draw_fin_plot_legend()
   ${draw_fin_plot("Förderung","Projekte von Unternehmen", 25, false)}
   <h5 style= "margin-bottom: 0;">Projects by researchers</h5>
   ${draw_fin_plot("Förderung","Projekte von Forschenden", 68, false)}
+</div>
+
+### Advisory services and networking
+
+<div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 5px;">
   <h5 style= "margin-bottom: 0;">Project set-up assistance and networking</h5>
   ${draw_fin_plot("Starthilfe für Projekte und Vernetzung",undefined, 95,false)}
   <h5 style= "margin-bottom: 0;">Support for start-ups</h5>

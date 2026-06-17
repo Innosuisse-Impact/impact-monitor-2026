@@ -39,46 +39,54 @@ export default {
   // hidden by CSS in head({path}) using href-based selectors.
   pages: [
     // === DEUTSCH ===
-    { name: "Zusammenfassung",              path: "/de/index",                  pager: "de" },
-    { name: "Methodische Grundlagen",  path: "/de/methodische-grundlagen", pager: "de" },
-    { name: "Ergebnisse", pager: "de", pages: [
-      { name: "Förderangebote und Inhalte",                  path: "/de/foerderangebote-und-inhalte" },
-      { name: "Vergleichende Ergebnisse",                    path: "/de/vergleichende-ergebnisse" },
+    { name: "Zusammenfassung", path: "/de/index", pager: "de" },
+    { name: "Förderangebote und Inhalte",                  path: "/de/foerderangebote-und-inhalte" },
+    { name: "Vergleichende Ergebnisse",                    path: "/de/vergleichende-ergebnisse" },
+    { name: "Methodische Grundlagen",                      path: "/de/methodische-grundlagen", pager: "de" },
+    { name: "Projektförderung", pager: "de", pages: [
       { name: "Innovationsprojekte mit Umsetzungspartner",   path: "/de/projekte-unternehmen-forschende" },
       { name: "Innovationsscheck",                           path: "/de/projekte-unternehmen-forschende#innovationsscheck" },
       { name: "Innovationsprojekte ohne Umsetzungspartner",  path: "/de/projekte-forschende" },
       { name: "BRIDGE: Discovery",                           path: "/de/projekte-forschende#bridge-discovery" },
-      { name: "BRIDGE: Proof of Concept",                    path: "/de/projekte-forschende#bridge-proof-of-concept" },
+      { name: "BRIDGE: Proof of Concept",                    path: "/de/projekte-forschende#bridge-proof-of-concept" }
+    ]},
+       { name: "Beratung und Netzwerk", pager: "de", pages: [
       { name: "Innovation Booster",                          path: "/de/starthilfe-projekte-vernetzung" },
       { name: "Start-up Core Coaching",                      path: "/de/begleitung-start-ups" }
     ]},
 
     // === ENGLISH ===
-    { name: "Introduction", path: "/en/index",       pager: "en" },
-    { name: "Methodology",  path: "/en/methodology", pager: "en" },
-    { name: "Results", pager: "en", pages: [
-      { name: "Support offers and content",                        path: "/en/support-offers-and-content" },
-      { name: "Comparative results",                               path: "/en/comparative-results" },
+    { name: "Introduction",               path: "/en/index",                     pager: "en" },
+    { name: "Support offers and content",  path: "/en/support-offers-and-content" },
+    { name: "Comparative results",         path: "/en/comparative-results" },
+    { name: "Methodology",                path: "/en/methodology",               pager: "en" },
+    { name: "Project funding", pager: "en", pages: [
       { name: "Innovation projects with implementation partners",   path: "/en/projects-companies-researchers" },
       { name: "Innovation cheques",                                path: "/en/projects-companies-researchers#innovation-cheques" },
       { name: "Innovation projects without implementation partner", path: "/en/projects-researchers" },
-      { name: "BRIDGE Proof of Concept",                           path: "/en/projects-researchers#bridge-proof-of-concept" },
-      { name: "Innovation Booster",                                path: "/en/project-set-up-assistance-and-networking" },
-      { name: "Start-up Core Coaching",                            path: "/en/support-for-start-ups" }
+      { name: "BRIDGE: Discovery",                                  path: "/en/projects-researchers#bridge-discovery" },
+      { name: "BRIDGE: Proof of Concept",                           path: "/en/projects-researchers#bridge-proof-of-concept" }
+    ]},
+    { name: "Advisory services and networking", pager: "en", pages: [
+      { name: "Innovation Booster",     path: "/en/project-set-up-assistance-and-networking" },
+      { name: "Start-up Core Coaching", path: "/en/support-for-start-ups" }
     ]},
 
     // === FRANÇAIS ===
-    { name: "Introduction",           path: "/fr/index",                  pager: "fr" },
-    { name: "Bases méthodologiques",  path: "/fr/bases-methodologiques",  pager: "fr" },
-    { name: "Résultats", pager: "fr", pages: [
-      { name: "Offres d'encouragement et contenus",   path: "/fr/offres-dencouragement-et-contenus" },
-      { name: "Résultats comparatifs",                path: "/fr/resultats-comparatifs" },
+    { name: "Introduction",                    path: "/fr/index",                         pager: "fr" },
+    { name: "Offres d'encouragement et contenus", path: "/fr/offres-dencouragement-et-contenus" },
+    { name: "Résultats comparatifs",              path: "/fr/resultats-comparatifs" },
+    { name: "Bases méthodologiques",           path: "/fr/bases-methodologiques",         pager: "fr" },
+    { name: "Financement de projets", pager: "fr", pages: [
       { name: "Projets d'innovation avec partenaire", path: "/fr/projets-entreprises-chercheurs" },
       { name: "Chèque innovation",                    path: "/fr/projets-entreprises-chercheurs#cheque-d-innovation" },
       { name: "Projets d'innovation sans partenaire", path: "/fr/projets-chercheurs" },
-      { name: "BRIDGE Proof of Concept",              path: "/fr/projets-chercheurs#bridge-proof-of-concept" },
-      { name: "Innovation Booster",                   path: "/fr/aide-au-demarrage-projets-mise-en-reseau" },
-      { name: "Start-up Core Coaching",               path: "/fr/accompagnement-de-start-up" }
+      { name: "BRIDGE: Discovery",                    path: "/fr/projets-chercheurs#bridge-discovery" },
+      { name: "BRIDGE: Proof of Concept",             path: "/fr/projets-chercheurs#bridge-proof-of-concept" }
+    ]},
+    { name: "Conseil et mise en réseau", pager: "fr", pages: [
+      { name: "Innovation Booster",     path: "/fr/aide-au-demarrage-projets-mise-en-reseau" },
+      { name: "Start-up Core Coaching", path: "/fr/accompagnement-de-start-up" }
     ]}
   ],
 
