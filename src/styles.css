@@ -196,6 +196,7 @@ select[class$="-inputs"]:focus {
   margin-left: -48px;
   border-bottom: none;
   box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.18);
+  height: 2.6rem;
 }
 
 li {
@@ -270,6 +271,12 @@ li {
 .text-negative  { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: var(--color-negative);}
 .text-neutral-a { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: var(--color-accent);}
 .text-neutral-b { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: var(--color-neutral-b);}
+.text-cat-1 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: #06F7DA;}
+.text-cat-2 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: #A2AFE9;}
+.text-cat-3 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: #FF8674;}
+.text-cat-4 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: #FCE300;}
+.text-cat-5 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: #777777;}
+.text-cat-6 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: #cdcdcd;}
 
 .figure {
   display: flex;

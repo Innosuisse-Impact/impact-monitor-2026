@@ -9,8 +9,8 @@ import { html } from "npm:htl";
 import { plot_erhebung} from "../functions.js"
 ```
 
-## Methodology
-### Conceptual foundation of the impact monitoring
+# Methodology
+## Conceptual foundation of the impact monitoring
 
 After the conceptual foundations were developed, impact monitoring was introduced at the Innovation projects with implementation partners with systematic surveys in 2021 and has since been continuously expanded to include further instruments. The objectives of impact measurement set out in the principles have been achieved and a large amount of meaningful data is now available. They allow well-founded statements to be formulated about the diverse impacts of innovation promotion.
 
@@ -18,7 +18,7 @@ Innosuisse's impact monitoring is based on mandatory and exhaustive surveys of a
 
 <div>${plot_erhebung()}</div>
 
-### Details of the surveys
+## Details of the surveys
 In the surveys and self-assessments of funding beneficiaries, scale ratings on a scale of 1 to 6 are generally used (e.g. (1) no significance, (2) low significance, (3) rather low significance, (4) rather high significance, (5) high significance, (6) very high significance). Where appropriate, yes/no questions are asked and selected economic indicators are collected.
 
 The surveys are designed in such a way that the self-assessment of the funding beneficiaries is focused on the detailed characterisation of the innovation projects and on the direct impact of the funding.
@@ -44,11 +44,11 @@ For innovation projects with implementation partners, the mean value of the moni
 
 The response rate to the surveys is between around 50% and over 75%, thus allowing statistically valid statements to be made.
 
-### Table of the results
+## Table of the results
 
 The detailed results can be found in a table ([⤓&nbsp;Excel](/_file/data//wirkungsindikatoren-2021-2023.xlsx), in German), broken down by instrument, funding target group, the five impact-oriented thrusts and a differentiated categorisation of the impact.
   
-### Innosuisse funding offers and impact objectives (outcomes)
+## Innosuisse funding offers and impact objectives (outcomes)
 Innosuisse's funding offers can be divided into two overarching funding areas (see overview below):
 1. [Funding for innovation projects](/en/projects-companies-researchers)
 2. [Advice and Networking](/en/advisory-and-networks)
@@ -63,7 +63,7 @@ The results show short- to medium-term impacts at the end of the innovation proj
 
 The assignment to the five thrusts is not explicitly shown in this report, but is made transparent in the tabular summary (see above). This also applies to the scale ratings used to calculate the reported indicators.
 
-### Further development of impact monitoring
+## Further development of impact monitoring
 
 This impact monitoring will be gradually expanded. The focus of the further development is on the [Start-up innovation projects](/en/projects-companies-researchers), the [internationally funded projects](/en/support-offers-and-content), the [Flagship Initiative](/en/projects-companies-researchers) and the two funding lines of the [BRIDGE programme](/en/projects-companies-researchers), which is run jointly with the Swiss National Science Foundation (SNSF).
 

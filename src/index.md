@@ -2,6 +2,7 @@
 title: Innosuisse | Wirkungsmonitor / Impact monitor / Moniteur d'impact
 toc: false
 sidebar: false
+style: styles.css
 ---
 
 ```js
@@ -16,9 +17,9 @@ setTimeout(() => { window.location.href = `${lang}/`; }, 100);
     Innosuisse<br>
     <span style="font-size:1rem; font-weight:normal;">Wirkungsmonitor / Impact monitor / Moniteur d'impact</span>
   </h1>
-  <nav style="display:flex; gap:1.5rem; font-size:1.1rem;">
-    <a href="de/" style="padding:8px 20px; border:1px solid #ccc; border-radius:4px; text-decoration:none; color:#53565A;">Deutsch</a>
-    <a href="en/" style="padding:8px 20px; border:1px solid #ccc; border-radius:4px; text-decoration:none; color:#53565A;">English</a>
-    <a href="fr/" style="padding:8px 20px; border:1px solid #ccc; border-radius:4px; text-decoration:none; color:#53565A;">Français</a>
+  <nav style="display:flex; gap:0.5rem; font-size:0.9rem;">
+    <a href="de/" style="padding:3px 8px; text-decoration:none; color:#333333;">Deutsch</a>
+    <a href="en/" style="padding:3px 8px; text-decoration:none; color:#333333;">English</a>
+    <a href="fr/" style="padding:3px 8px; text-decoration:none; color:#333333;">Français</a>
   </nav>
 </div>

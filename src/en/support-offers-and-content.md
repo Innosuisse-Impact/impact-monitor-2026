@@ -9,11 +9,11 @@ import { html } from "npm:htl";
 import { draw_fin_plot, draw_fin_plot_legend, n_subcluster} from "../functions.js"
 ```
 
-## Overview of support offers and content of the impact monitoring
+## Overview of support offers and content
 
 The current status of the impact monitoring is structured in such a way that at least for the financially most significant support offer in each category of funding offers, statements can be made on the effectiveness and selected comparisons. The current gaps (in light colour) will be closed step by step (see chapter Further development of impact monitoring).
  
-### Project funding
+## Funding of Innovation Projects
 
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 5px;">
   <h5 style= "margin-bottom: 0;">Projects by companies with researchers</h5>
@@ -24,23 +24,23 @@ The current status of the impact monitoring is structured in such a way that at 
   ${draw_fin_plot("Förderung","Projekte von Forschenden", 68, false)}
 </div>
 
-### Advisory services and networking
+## Advisory and Networking
 
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 5px;">
   <h5 style= "margin-bottom: 0;">Project set-up assistance and networking</h5>
   ${draw_fin_plot("Starthilfe für Projekte und Vernetzung",undefined, 95,false)}
   <h5 style= "margin-bottom: 0;">Support for start-ups</h5>
-  ${draw_fin_plot("Begleitung von Start-ups",undefined,80, false)}
+  ${draw_fin_plot("Begleitung von Start-ups",undefined,55, false)}
 </div>
 
 <p class="comment">Source: Cockpit/PowerBI Innosuisse (2025)
 <br>* The results of the impact monitoring for the highlighted instruments are presented subsequently. The 'Swiss Accelerator' funding programme (2023-2024) is not listed (funding volume 2023: CHF 111.8 million). It was a temporary replacement measure in response to the non-association with Horizon Europe.</p>
 
-The majority of Innosuisse funding goes to [national](/en/projects-companies-researchers) and [international innovation projects](/en/support-offers-and-content). The greatest importance is attached here to standard innovation projects between companies¹ and researchers, in which the research institutions are primarily compensated for the remuneration of research staff. The participating companies and organisations, for their part, contribute at least 50% of the total project costs.
+The majority of Innosuisse funding goes to national and international innovation projects. The greatest importance is attached here to standard innovation projects between companies¹ and researchers, in which the research institutions are primarily compensated for the remuneration of research staff. The participating companies and organisations, for their part, contribute at least 50% of the total project costs.
 
-In addition, companies are supported in initiating innovation projects by means of [Innovation Boosters](/en/advisory-and-networks), [mentoring](/en/advisory-and-networks), the [Enterprise Europe Network (partner search)](/en/advisory-and-networks), and other events. Start-ups can benefit from [coaching](/en/advisory-and-networks), [training](/en/advisory-and-networks) and [internationalisation](/en/advisory-and-networks) offers. The results of the impact monitoring of the Innovation Boosters and Start-up Core Coaching are presented here.
+In addition, companies are supported in initiating innovation projects by means of Innovation Boosters, mentoring, the Enterprise Europe Network (partner search), and other events. Start-ups can benefit from coaching, training and internationalisation offers. The results of the impact monitoring of the Innovation Boosters and Start-up Core Coaching are presented here.
 
-Results can also be presented for [innovation projects by researchers without implementation partners](/en/projects-researchers).
+Results can also be presented for innovation projects by researchers without implementation partners.
 
 The inclusion of international innovation projects in the impact monitoring is planned for the 2025 reporting year. The projects in which start-ups and SMEs are directly supported (Start-up innovation projects and Swiss Accelerator) will be integrated into the monitoring at a later date, as none of the projects have yet been completed. This applies equally to the Flagship Initiative projects.
 
@@ -49,10 +49,10 @@ The inclusion of international innovation projects in the impact monitoring is p
 ### Thematic areas of the innovation projects 2021–2023
 The approved innovation projects can be categorised into five different thematic areas, which are also shown in the chart below, broken down by support offers. The chart shows the percentage share of the thematic areas in the approved innovation projects as an average for the years 2021–2023. The percentage shares by instrument differ, sometimes significantly.
 
-- Engineering has a higher and comparable share in [Innovation projects with implementation partners](/en/projects-companies-researchers) (37%), [Innovation cheques](/en/projects-companies-researchers#innovation-cheques) (32%) and in [BRIDGE Proof of Concept](/en/projects-researchers#bridge-proof-of-concept) (31%).
-- Life Sciences, on the other hand, accounts for a very high proportion of [innovation projects without implementation partners](/en/projects-researchers) (66%) and an above-average proportion of [start-ups in coaching](/en/advisory-and-networks) (38%). It is the most important subject area in [BRIDGE Proof of Concept](/en/projects-researchers#bridge-proof-of-concept) (34%).
-- Information and communication technologies ICT is the most important area for [start-ups in coaching](/en/advisory-and-networks) (30%).
-- The differences for 'Energy & environment' are smaller, ranging between 9% for [innovation projects without implementation partner](/en/projects-researchers) and 17% for [innovation projects with implementation partner](/en/projects-companies-researchers).
-- 'Social sciences & business management' is most strongly represented in [innovation cheques](/en/projects-companies-researchers#innovation-cheques) (21%); otherwise, the proportions are comparatively smaller.
+- <span class="text-cat-1">Engineering</span> has a higher and comparable share in Innovation projects with implementation partners (37%), Innovation cheques (32%) and in BRIDGE Proof of Concept (31%).
+- <span class="text-cat-2">Life Sciences</span>, on the other hand, accounts for a very high proportion of innovation projects without implementation partners (66%) and an above-average proportion of start-ups in coaching (38%). It is the most important subject area in BRIDGE Proof of Concept (34%).
+- <span class="text-cat-3">Information and communication technologies ICT</span> is the most important area for start-ups in coaching (30%).
+- The differences for '<span class="text-cat-4">Energy & environment</span>' are smaller, ranging between 9% for innovation projects without implementation partner and 17% for innovation projects with implementation partner.
+- <span class="text-cat-5">Social sciences & business management'</span> is most strongly represented in innovation cheques (21%); otherwise, the proportions are comparatively smaller.
 
 <div>${n_subcluster()}</div>

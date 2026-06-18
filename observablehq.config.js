@@ -59,7 +59,7 @@ export default {
     { name: "Support offers and content",  path: "/en/support-offers-and-content" },
     { name: "Comparative results",         path: "/en/comparative-results" },
     { name: "Methodology",                path: "/en/methodology",               pager: "en" },
-    { name: "Project funding", pager: "en", pages: [
+    { name: "Funding of Innovation Projects", pager: "en", pages: [
       { name: "Innovation projects with implementation partners",   path: "/en/projects-companies-researchers" },
       { name: "Innovation cheques",                                path: "/en/projects-companies-researchers#innovation-cheques" },
       { name: "Innovation projects without implementation partner", path: "/en/projects-researchers" },
@@ -76,7 +76,7 @@ export default {
     { name: "Offres d'encouragement et contenus", path: "/fr/offres-dencouragement-et-contenus" },
     { name: "Résultats comparatifs",              path: "/fr/resultats-comparatifs" },
     { name: "Bases méthodologiques",           path: "/fr/bases-methodologiques",         pager: "fr" },
-    { name: "Financement de projets", pager: "fr", pages: [
+    { name: "Encouragement des projets d'innovation", pager: "fr", pages: [
       { name: "Projets d'innovation avec partenaire", path: "/fr/projets-entreprises-chercheurs" },
       { name: "Chèque innovation",                    path: "/fr/projets-entreprises-chercheurs#cheque-d-innovation" },
       { name: "Projets d'innovation sans partenaire", path: "/fr/projets-chercheurs" },

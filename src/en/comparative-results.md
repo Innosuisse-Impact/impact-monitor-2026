@@ -10,8 +10,8 @@ import { draw_result, draw_innoart, draw_dn, draw_result_zf_legend} from "../fun
 import { df_zufrieden } from "../data.js"
 ```
 
-## Comparative results for Innosuisse's support offers
-### Satisfaction with Innosuisse's support offers is consistently high
+# Comparative results
+## Satisfaction with Innosuisse's support offers is consistently high
 Innosuisse's funding beneficiaries are satisfied to very satisfied with Innosuisse's innovation promotion and its implementation. The proportions of the instruments presented here are over 80%, and for [Start-up Core Coaching](/en/advisory-and-networks) it is more than two thirds. Only a very small proportion (≤ 1%) are dissatisfied with Innosuisse's instruments.
 
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 0px;">
@@ -24,7 +24,7 @@ Innosuisse's funding beneficiaries are satisfied to very satisfied with Innosuis
   ${draw_result(df_zufrieden,"Start-up Core Coaching", false)}
 </div>
 
-### Innosuisse promotes both incremental and radical innovations
+## Innosuisse promotes both incremental and radical innovations
 
 <div>${draw_innoart("inkr_radikal", 550, 250)}</div>
 <p class="comment">
@@ -35,7 +35,7 @@ In the case of [innovation projects with implementation partners](/en/projects-c
 
 ****Radical innovations**** (27%) are funded to the same extent as incremental innovations. In contrast to incremental innovations, radical innovations strive for fundamental innovations and changes through revolutionary or radical new ideas and technologies. They account for at least a quarter of the [projects](/en/projects-companies-researchers) and [innovation ideas](/en/advisory-and-networks) across all instruments – with the exception of [Innovation cheques](/en/projects-companies-researchers#innovation-cheques). Among [start-ups in coaching](/en/advisory-and-networks), more than half of the start-ups aim to introduce radical innovations with their business models.
 
-### Innovations can have a strong influence on markets
+## Innovations can have a strong influence on markets
 
 <div>${draw_innoart("disruptiv", 380, 180)}</div>
 <p class="comment">
@@ -46,7 +46,7 @@ These should be distinguished from ****disruptive innovations****. Here, the foc
 
 Around a third of companies have the potential to disrupt the market with [innovation projects with implementation partners](/en/projects-companies-researchers) and [innovation cheques](/en/projects-companies-researchers#innovation-cheques). Among start-ups in [Core Coaching](/en/advisory-and-networks), as many as two-thirds of start-ups pursue disruptive innovations with the business model of their newly founded company.
 
-### Innosuisse promotes innovation diversity
+## Innosuisse promotes innovation diversity
 The following figure also illustrates the diversity of the forms of innovation supported. Often, several innovations are pursued simultaneously, for example, when a product innovation is combined with a business model or process innovation.
 
 Product innovations are most important in [Start-up Core Coaching](/en/advisory-and-networks) (88%). The shares for process innovations are between 24% and 35%. Compared to other instruments, business model innovations are most important for start-ups (17%). These are often linked to aspects of digital transformation. Innosuisse also funds social innovations. However, their share is comparatively low.
@@ -58,7 +58,7 @@ ${draw_innoart("type_1", 640, 180)}
 ${draw_innoart("type_2",475, 180)}
 </div>
 
-### Digital transformation is a core aspect of innovation promotion
+## Digital transformation is a core aspect of innovation promotion
 Digitisation is aimed at important future digital technologies (blockchain, robotics, quantum computing, artificial intelligence, etc.) as well as the development of digital business models (software/platform/infrastructure as a service, big data, etc.). Both are highly relevant to the Swiss economy. The economic opportunities and the competition in terms of innovation are exceptionally high in this area.
 
 Around 55% of the [innovation projects](/en/projects-companies-researchers) funded by Innosuisse make a significant contribution to the digital transformation of the economy through digital technologies and/or digital business models. The application of new digital technologies is more important than the implementation of a digital business model. The importance of digitisation is significantly higher among the [start-ups in coaching](/en/advisory-and-networks).
@@ -71,7 +71,7 @@ Around 55% of the [innovation projects](/en/projects-companies-researchers) fund
 </div>
 <p class="comment">Question asked: Is the project funded by Innosuisse based on new digital technologies or new digital business models? Assessment by the funding recipients using a six-point rating scale with predefined definitions: (5) strongly, (6) very strongly.</p>
 
-### Innovation has a key role to play in the development of sustainable solutions
+## Innovation has a key role to play in the development of sustainable solutions
 The support offers enable companies and organisations to test innovative approaches and technologies for the development of sustainable solutions at an early stage and to develop them to the point of implementation, whether at national or global level. Innosuisse thus makes a central and forward-looking contribution to overcoming global challenges such as energy and resource efficiency, climate change or social issues. Innovation promotion is one of the drivers of the transformation towards a sustainable business and society.
 
 Around 60% of the [innovation projects](/en/projects-companies-researchers) that receive funding show the potential to contribute to sustainable development, either in terms of environmental or social sustainability or both, when implemented in a specific way. For the [start-ups in the coaching programme](/en/advisory-and-networks), the figures are slightly higher at 67%.
