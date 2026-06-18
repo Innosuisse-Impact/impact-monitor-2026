@@ -45,7 +45,7 @@ Parmi les projets d'innovation avec des partenaires chargés de la mise en valeu
 <div>${draw_innoart("disruptiv", 380, 180)}</div>
 <p class="comment">
 Appréciations des bénéficiaires de l'encouragement sur la base d'une échelle d'évaluation à six niveaux avec des définitions prédéfinies : (5) innovations de rupture, (6) innovations fortement disruptives.
-</p> 
+</p>
 
 ### Innosuisse encourage la diversité de l'innovation
 Le graphique suivant illustre également la diversité des formes d'innovation soutenues. Il arrive souvent que plusieurs innovations soient poursuivies simultanément, par exemple lorsqu'une innovation de produit est combinée à une innovation de modèle d'entreprise ou de processus.
