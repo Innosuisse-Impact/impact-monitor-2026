@@ -258,7 +258,7 @@ In the topic-oriented Innovation Boosters, new and radical innovation ideas are 
       <div class="figure__col">${draw_bar(df_waffle, { title: "ib_continued", mode: "single", rank: "pct1" })}</div>
       <p>Innovation ideas are pursued further, often with new approaches. This results in an average of 26 innovation projects at Innosuisse per year.</p>
     </div>
-    <a class="claim__link" href="/en/project-set-up-assistance-and-networking">To the detailed results<span class="claim__link-arrow">→</span></a>
+    <a class="claim__link" href="/en/advisory-and-networks">To the detailed results<span class="claim__link-arrow">→</span></a>
   </section>
 </div>
 
@@ -296,7 +296,7 @@ The coaching supports start-ups with innovative and science-based business ideas
       </div>
       <p>Some start-ups have already raised over 5 million francs in capital during this period. Two thirds received significant support with fundraising during Core Coaching.</p>
     </div>
-    <a class="claim__link" href="/en/support-for-start-ups">To the detailed results<span class="claim__link-arrow">→</span></a>
+    <a class="claim__link" href="/en/advisory-and-networks">To the detailed results<span class="claim__link-arrow">→</span></a>
   </section>
 </div>
 

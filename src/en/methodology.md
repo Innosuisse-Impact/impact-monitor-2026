@@ -14,7 +14,7 @@ import { plot_erhebung} from "../functions.js"
 
 After the conceptual foundations were developed, impact monitoring was introduced at the Innovation projects with implementation partners with systematic surveys in 2021 and has since been continuously expanded to include further instruments. The objectives of impact measurement set out in the principles have been achieved and a large amount of meaningful data is now available. They allow well-founded statements to be formulated about the diverse impacts of innovation promotion.
 
-Innosuisse's impact monitoring is based on mandatory and exhaustive surveys of all implementation and research partners of the [innovation projects](/en/projects-companies-researchers), SMEs with [Innovation cheques](/en/projects-companies-researchers#innovation-cheques) and all start-ups participating in [Core Coaching](/en/support-for-start-ups). The surveys of the implementation partners of the innovation projects and the start-ups in the coaching programme are carried out at the end of the funding period and again three years after completion. For the [Innovation Boosters](/en/project-set-up-assistance-and-networking) and the [BRIDGE Proof of Concept projects](/en/projects-researchers#bridge-proof-of-concept), the results are based on monitoring data from all ongoing initiatives.
+Innosuisse's impact monitoring is based on mandatory and exhaustive surveys of all implementation and research partners of the [innovation projects](/en/projects-companies-researchers), SMEs with [Innovation cheques](/en/projects-companies-researchers#innovation-cheques) and all start-ups participating in [Core Coaching](/en/advisory-and-networks). The surveys of the implementation partners of the innovation projects and the start-ups in the coaching programme are carried out at the end of the funding period and again three years after completion. For the [Innovation Boosters](/en/advisory-and-networks) and the [BRIDGE Proof of Concept projects](/en/projects-researchers#bridge-proof-of-concept), the results are based on monitoring data from all ongoing initiatives.
 
 <div>${plot_erhebung()}</div>
 
@@ -25,6 +25,8 @@ The surveys are designed in such a way that the self-assessment of the funding b
 
 The indicators presented are based on the following data:
 
+<div class="card" style="width: 600px;">
+
 | Support offer                           | Data basis / reporting year                                         |
 |----------------------------------|------------------------------------------------|
 | Implementation partners in innovation projects | Mean value for reporting years 2021–2023           |
@@ -33,6 +35,8 @@ The indicators presented are based on the following data:
 | BRIDGE Proof of Concept         | Funding data and queries in the commercial register, reporting year 2023    |
 | Innovation Booster              | Funding data and annual surveys of the 'Leading Houses', reporting year 2023 |
 | Start-up Core Coaching               | Mean value for reporting years 2023 and 2024         |
+
+</div>
 
 The surveys are based on differentiated assessments of the surveyed target groups and, where available, on mean values over several survey years. The reference years for monitoring differ according to the individual support offers and depend on data availability:
 
@@ -45,10 +49,9 @@ The response rate to the surveys is between around 50% and over 75%, thus allowi
 The detailed results can be found in a table ([⤓&nbsp;Excel](/_file/data//wirkungsindikatoren-2021-2023.xlsx), in German), broken down by instrument, funding target group, the five impact-oriented thrusts and a differentiated categorisation of the impact.
   
 ### Innosuisse funding offers and impact objectives (outcomes)
-Innosuisse's funding offers can be divided into three overarching funding areas (see overview below):
+Innosuisse's funding offers can be divided into two overarching funding areas (see overview below):
 1. [Funding for innovation projects](/en/projects-companies-researchers)
-2. [Project set-up assistance and networking](/en/project-set-up-assistance-and-networking)
-3. [Support for start-ups](/en/support-for-start-ups)
+2. [Advice and Networking](/en/advisory-and-networks)
   
 The following overview shows the five Innosuisse thrusts (outcomes) to which the support offers should contribute. The results of the surveys presented below are intended to provide information on the achievement of objectives in innovation promotion and offer a sound basis for assessing the effectiveness of the support measures and developing them in a targeted manner.
 

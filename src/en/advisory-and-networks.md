@@ -1,15 +1,46 @@
 ---
-title: Support for start-ups
+title: Advice and Networking
 style: ../styles.css
 toc: false
 ---
 
 ```js
 import { html } from "npm:htl";
-import { drawMiniPlot, draw_waffle, draw_results, drawMiniPlot1, su_vza, su_vza_legend} from "../functions.js"
+import { drawMiniPlot, draw_waffle, draw_results, ib_toipis, su_vza, su_vza_legend} from "../functions.js"
 ```
 
-# Support for start-ups
+# Knowledge and Networks
+## Innovation Booster
+<div style="display: flex;">
+  <div>${drawMiniPlot("Innovation Booster")}</div>
+  <div>${drawMiniPlot("Innovation Booster", false)}</div>
+  </div>
+  <p class = "comment">In contrast to the other mini-charts, these charts show the amounts invested rather than the amounts approved, and the active rather than the approved Innovation Boosters.</p>
+
+The Innovation Boosters funded by Innosuisse each focus on a specific innovation topic. They cover a wide range of topics, from artificial intelligence to tourism and food tech.
+
+In 2023, Innosuisse supported 17 active Innovation Boosters in various thematic areas. In autumn 2023, a further eight Innovation Boosters were approved for the period 2024–2027. They started in January 2024. Funding for the Innovation Boosters supported in 2021 will be completed by the end of 2024. The results presented here are based on existing monitoring data with a shorter impact horizon.
+
+The Innovation Boosters develop new and radical innovation ideas and test them in an open, network-based innovation process with an open innovation culture. The partners of the funded networks come from research, business and society. The focus of the funding is on the early phase of idea generation and testing, using experimental methods such as design thinking and co-creation.
+
+A key objective of the Innovation Boosters is to further develop successfully tested innovation ideas, including within the framework of funded innovation projects. This promotes science-based and sustainable innovations and provides implementation partners and the Swiss innovation system with concrete added value and competitive advantages.
+
+### Innovation Boosters strengthen the innovation skills of the participants
+The aim of the Innovation Boosters is to develop new and radical innovation ideas during the challenge phase, which are then tested for feasibility and potential in terms of demand and user orientation in a further phase of idea testing.
+
+The vast majority of respondents (81%) confirm that their participation in an Innovation Booster has increased their ability and competence to develop and test radical ideas.
+
+<div>${draw_waffle("ib_capabilities", -100, 0)}</div>
+
+### Radical innovation ideas from the Innovation Boosters are pursued further, including with Innosuisse funding
+Two-thirds of the innovation ideas that receive funding are pursued further after the funding period ends, often with new approaches and even more radical orientations. In 2022–24, the Innovation Boosters led to an average of 31 approved Innovation cheques and 25 approved innovation projects per year. With an Innovation cheque, the idea is examined in more detail with a research partner in terms of feasibility. In the case of innovation projects, the innovation ideas are pursued in a scientifically sound manner with the aim of implementing them in the long term.
+
+<div style="display: flex; column-gap: 20px;">
+<div> ${draw_waffle("ib_continued", -85)}</div>
+<div>${ib_toipis()}</div>
+</div>
+
+# Innovation Management and Advisory
 ## Start-up Coaching
 
 <div style="display: flex;">
@@ -39,12 +70,12 @@ Core Coaching at Innosuisse is the central phase in Start-up Coaching, in which 
 ### Start-ups rate Core Coaching as helpful for their further development
 Core Coaching covers a wide range of topics that are specifically tailored to the concerns of start-ups. The topics are ranked in descending order of their relevance to start-ups (see percentages in light grey). The chart shows the percentage of supported start-ups that rate Core Coaching as helpful or very helpful in the relevant topic areas.
 
-The topic area of greatest importance for coaching, ‘development of the business model’ (91%), also shows the highest proportion of start-ups that rate the support as helpful (81%). Support in acquiring capital, which is also highly relevant (85%), was perceived as helpful by two-thirds of start-ups (66%). Help with market entry was rated similarly (65%). The rating for support in scaling the business model was somewhat lower (55%), which probably indicates that many start-ups are not yet in the actual scaling phase when the coaching is completed.
+The topic area of greatest importance for coaching, 'development of the business model' (91%), also shows the highest proportion of start-ups that rate the support as helpful (81%). Support in acquiring capital, which is also highly relevant (85%), was perceived as helpful by two-thirds of start-ups (66%). Help with market entry was rated similarly (65%). The rating for support in scaling the business model was somewhat lower (55%), which probably indicates that many start-ups are not yet in the actual scaling phase when the coaching is completed.
 
 <div>${draw_results("Start-up Core Coaching", true, 280)}</div>
 
 ### Start-ups' coaching expectations are being met
-Around four out of five start-ups that received coaching confirmed that Core Coaching had made an important contribution in at least one relevant area (78 %), with this being rated as ‘supportive’ or ‘very supportive’. The proportion of start-ups whose expectations were largely met was similarly high at 84 %.
+Around four out of five start-ups that received coaching confirmed that Core Coaching had made an important contribution in at least one relevant area (78 %), with this being rated as 'supportive' or 'very supportive'. The proportion of start-ups whose expectations were largely met was similarly high at 84 %.
 
 For around half of the start-ups, the coaching made a significant contribution in at least three important start-up topics (54%). Almost as high is the proportion of start-ups for which expectations were fully met or even exceeded (48%).
 
@@ -75,7 +106,7 @@ For start-ups, fundraising is crucial to continuing their business idea and scal
 <div>${draw_waffle("scc_capital", -70)}</div>
 
 ### Three years after the coaching, start-ups have created over eleven full-time positions.
-For start-ups, growth is a key indicator of success. Three years after completing the coaching programme, the start-ups have created an average of over eleven additional full-time positions. Around half of these are in Switzerland. It is particularly evident in start-ups in the ‘Life Sciences’ sector and those with high-risk innovations that market entry and sustainable growth often only occur later.
+For start-ups, growth is a key indicator of success. Three years after completing the coaching programme, the start-ups have created an average of over eleven additional full-time positions. Around half of these are in Switzerland. It is particularly evident in start-ups in the 'Life Sciences' sector and those with high-risk innovations that market entry and sustainable growth often only occur later.
 
 <div>
 ${su_vza()}
@@ -100,3 +131,4 @@ Half of the start-ups that take advantage of Innosuisse's Core Coaching originat
 <div style="display: flex; gap: 10px;">
 ${draw_waffle("scc_start_spin", -70)}
 ${draw_waffle("scc_patent", -70)}
+</div>

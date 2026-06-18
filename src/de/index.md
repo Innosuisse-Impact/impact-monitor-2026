@@ -258,7 +258,7 @@ Bei den themenorientierten Innovation Booster werden neue und radikale Innovatio
       <div class="figure__col">${draw_bar(df_waffle, { title: "ib_continued", mode: "single", rank: "pct1" })}</div>
       <p>Innovationsideen werden weiterverfolgt, oft mit neuen Lösungsansätzen. Es entstehen daraus durchschnittlich 26 Innovationsprojekte bei Innosuisse pro Jahr.</p>
     </div>
-    <a class="claim__link" href="/de/starthilfe-projekte-vernetzung">Zu den detaillierten Ergebnissen<span class="claim__link-arrow">→</span></a>
+    <a class="claim__link" href="/de/beratung-und-netzwerk">Zu den detaillierten Ergebnissen<span class="claim__link-arrow">→</span></a>
   </section>
 </div>
 
@@ -296,7 +296,7 @@ Das Coaching unterstützt Start-ups mit innovativen und wissenschaftsbasierten G
       </div>
       <p>Gewisse Start-ups haben in diesem Zeitraum bereits über 5 Millionen Franken an Kapital akquiriert. Zwei Drittel erhielten im Core Coaching massgebliche Unterstützung bei der Kapitalbeschaffung.</p>
     </div>
-    <a class="claim__link" href="/de/begleitung-start-ups">Zu den detaillierten Ergebnissen<span class="claim__link-arrow">→</span></a>
+    <a class="claim__link" href="/de/beratung-und-netzwerk">Zu den detaillierten Ergebnissen<span class="claim__link-arrow">→</span></a>
   </section>
 </div>
 

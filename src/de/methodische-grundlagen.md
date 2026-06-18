@@ -14,7 +14,7 @@ import { plot_erhebung} from "../functions.js"
 
 Nach einer Erarbeitung von konzeptionellen Grundlagen wurde 2021 das Wirkungsmonitoring bei den Umsetzungspartnern der Innovationsprojekte mit systematischen Befragungen eingeführt und seither kontinuierlich auf weitere Instrumente ausgedehnt. Die in den Grundlagen festgelegten Ziele der Wirkungsmessung sind erreicht worden und mittlerweile liegen eine Vielzahl aussagekräftiger Daten vor. Sie erlauben fundierte Aussagen zu den vielfältigen Wirkungen der Innovationsförderung zu formulieren.
 
-Das Wirkungsmonitoring von Innosuisse basiert auf obligatorischen Befragungen und Vollerhebungen bei allen Umsetzungs- und Forschungspartnern der [Innovationsprojekte](/de/projekte-unternehmen-forschende), der KMU bei den [Innovationsschecks](/de/projekte-unternehmen-forschende#innovationsscheck) sowie bei allen am [Core Coaching](/de/begleitung-start-ups) teilnehmenden Start-ups. Die Erhebungen erfolgen bei den Umsetzungspartnern der Innovationsprojekte und den Start-ups im Coaching jeweils beim Abschluss der Förderung und zusätzlich drei Jahre nach Abschluss. Bei den [Innovation Booster](/de/starthilfe-projekte-vernetzung) und den [BRIDGE Proof of Concept-Projekten](/de/projekte-forschende#bridge-proof-of-concept) beruhen die Ergebnisse auf Monitoring-Daten aller laufenden Initiativen. 
+Das Wirkungsmonitoring von Innosuisse basiert auf obligatorischen Befragungen und Vollerhebungen bei allen Umsetzungs- und Forschungspartnern der [Innovationsprojekte](/de/projekte-unternehmen-forschende), der KMU bei den [Innovationsschecks](/de/projekte-unternehmen-forschende#innovationsscheck) sowie bei allen am [Core Coaching](/de/beratung-und-netzwerk) teilnehmenden Start-ups. Die Erhebungen erfolgen bei den Umsetzungspartnern der Innovationsprojekte und den Start-ups im Coaching jeweils beim Abschluss der Förderung und zusätzlich drei Jahre nach Abschluss. Bei den [Innovation Booster](/de/beratung-und-netzwerk) und den [BRIDGE Proof of Concept-Projekten](/de/projekte-forschende#bridge-proof-of-concept) beruhen die Ergebnisse auf Monitoring-Daten aller laufenden Initiativen. 
 
 <div>${plot_erhebung()}</div>
 
@@ -24,6 +24,8 @@ Bei den Befragungen und Selbsteinschätzungen der Fördernehmerinnen und Förder
 Die Erhebungen sind so konzipiert, dass die Selbsteinschätzung der Fördernehmerinnen und Fördernehmer fokussiert ist auf die detaillierte Charakterisierung der Innovationsvorhaben und auf die direkte Wirkung der Förderung.
 
 Die dargestellten Indikatoren basieren auf folgenden Datengrundlagen:
+
+<div class="card" style="width: 600px;">
 
 | Förderangebot                            | Datengrundlage                                         |
 |----------------------------------|------------------------------------------------|
@@ -35,6 +37,8 @@ Die dargestellten Indikatoren basieren auf folgenden Datengrundlagen:
 | BRIDGE Proof of Concept         | Förderdaten und Abfragen im Handelsregister, Berichtsjahr 2023–24    |
 | Innovation Booster              | Förderdaten und jährliche Befragungen der "Leading Houses", Berichtsjahr 2023–24 |               
 
+</div>
+
 Die Befragungen basieren auf differenzierten Bewertungen der befragten Zielgruppen und, dort wo vorhanden, auf Mittelwerten über mehrere Befragungsjahre. Die Bezugsjahre des Monitorings unterscheiden sich nach den einzelnen Förderangeboten und richten sich nach der Datenverfügbarkeit: 
 
 Für die [Innovationsprojekte](/de/projekte-unternehmen-forschende) bei den Umsetzungspartnern wird der Mittelwert über die drei aktuellsten Monitoringjahre dargestellt. Der Rücklauf der Befragungen liegt zwischen rund 50 % und über 75 % und erlaubt damit statistisch valide Aussagen. 
@@ -44,10 +48,9 @@ Für die [Innovationsprojekte](/de/projekte-unternehmen-forschende) bei den Umse
 Die detaillierten Ergebnisse finden sich in einer tabellarischen Zusammenstellung ([⤓&nbsp;Excel](/_file/data//wirkungsindikatoren-2021-2023.xlsx)), gegliedert nach Instrumenten, Zielgruppen der Förderung, fünf Stossrichtungen der Wirkungsorientierung und differenzierter Kategorisierung der Wirkung
   
 ### Förderangebote und Wirkungsziele von Innosuisse (Outcomes)
-Die Förderangebote von Innosuisse können in drei übergeordnete Förderbereiche gegliedert werden (vgl. nachfolgende Übersicht): 
+Die Förderangebote von Innosuisse können in zwei übergeordnete Förderbereiche gegliedert werden (vgl. nachfolgende Übersicht): 
 1. [Förderung für Innovationsprojekte](/de/projekte-unternehmen-forschende)
-2. [Starthilfe für Projekte und Vernetzung](/de/starthilfe-projekte-vernetzung)
-3. [Begleitung von Start-ups](/de/begleitung-start-ups).
+2. [Beratung und Vernetzung](/de/beratung-und-netzwerk)
   
 Die nachfolgende Übersicht zeigt, zu welchen fünf Stossrichtungen (Outcomes) von Innosuisse die Förderangebote beitragen sollen. Die in der Folge dargestellten Ergebnisse der Befragungen sollen Aussagen machen über die Zielerreichung der Innovationsförderung und bieten eine fundierte Grundlage, um die Wirksamkeit der Fördermassnahmen zu beurteilen und diese gezielt weiterzuentwickeln.
 

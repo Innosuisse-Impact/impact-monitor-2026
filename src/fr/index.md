@@ -258,7 +258,7 @@ Dans le cadre des Innovation Booster thématiques, des idées d'innovation nouve
       <div class="figure__col">${draw_bar(df_waffle, { title: "ib_continued", mode: "single", rank: "pct1" })}</div>
       <p>Les idées d'innovation sont poursuivies, souvent avec de nouvelles approches. Cela se traduit par une moyenne de 26 projets d'innovation par an chez Innosuisse.</p>
     </div>
-    <a class="claim__link" href="/fr/aide-au-demarrage-projets-mise-en-reseau">Vers les résultats détaillés<span class="claim__link-arrow">→</span></a>
+    <a class="claim__link" href="/fr/conseil-et-reseaux">Vers les résultats détaillés<span class="claim__link-arrow">→</span></a>
   </section>
 </div>
 
@@ -296,7 +296,7 @@ Le coaching soutient les start-up ayant des idées commerciales innovantes et ba
       </div>
       <p>Certaines start-up ont déjà levé plus de 5 millions de francs au cours de cette période. Les deux tiers ont bénéficié d'un soutien significatif pour la levée de fonds dans le cadre du Core Coaching.</p>
     </div>
-    <a class="claim__link" href="/fr/accompagnement-de-start-up">Vers les résultats détaillés<span class="claim__link-arrow">→</span></a>
+    <a class="claim__link" href="/fr/conseil-et-reseaux">Vers les résultats détaillés<span class="claim__link-arrow">→</span></a>
   </section>
 </div>
 
