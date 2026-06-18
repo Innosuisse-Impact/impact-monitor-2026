@@ -6,7 +6,6 @@ toc: false
 
 ```js
 import { html } from "npm:htl";
-import { coloredUnderline} from "../functions.js"
 ```
 
 ## Innosuisse funding sustainably drives business success and employment

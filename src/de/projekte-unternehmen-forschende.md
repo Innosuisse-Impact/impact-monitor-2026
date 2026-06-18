@@ -117,7 +117,7 @@ Der wissenschaftliche Output, der durch die Projekte entsteht, ist bemerkenswert
 <div>${draw_waffle("ip_peer_pub", -100)}</div>
 
 ### Innosuisse-Förderung ermöglicht risikoreiche und interdisziplinäre Projekte
-Mit der Innosuisse-Förderung werden mehrheitlich komplexere und risikoreichere und auch interdisziplinäre Projekte unterstützt. Interdisziplinäre Projekte integrieren Wissen, Methoden und Technologien aus verschiedenen Fachrichtungen um gemeinsam neuartige Lösungen für komplexe Probleme zu entwickeln. Transdisziplinäre Projekte beziehen zusätzlich nicht-akademische Akteure aus Gesellschaft, Politik, Wirtschaft und Praxis aktiv in den Forschungsprozess ein, um gemeinsam gesellschaftlich relevante Probleme zu lösen und praxistaugliches Wissen zu generieren. Einen Hinweis auf den Risikograd der Innovationsprojekte zeigt sich im Anteil von 25 % an radikalen Innovationsprojekten. 
+Mit der Innosuisse-Förderung werden mehrheitlich komplexere und risikoreichere und auch interdisziplinäre Projekte unterstützt. Interdisziplinäre Projekte integrieren Wissen, Methoden und Technologien aus verschiedenen Fachrichtungen um gemeinsam neuartige Lösungen für komplexe Probleme zu entwickeln. Transdisziplinäre Projekte beziehen zusätzlich nicht-akademische Akteure aus Gesellschaft, Politik, Wirtschaft und Praxis aktiv in den Forschungsprozess ein, um gemeinsam gesellschaftlich relevante Probleme zu lösen und praxistaugliches Wissen zu generieren. Einen Hinweis auf den Risikograd der Innovationsprojekte zeigt sich im Anteil von 23 % an radikalen Innovationsprojekten. 
 <div style="display: flex; gap: 10px;">
 <div>${draw_waffle("ip_inter_trans", -70)}</div>
 <div>${draw_waffle("ip_radikal_inkr", -70)}</div>

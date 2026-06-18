@@ -14,7 +14,7 @@ import { drawMiniPlot, draw_waffle, draw_results, drawMiniPlot1, su_vza, su_vza_
 
 <div style="display: flex;">
   <div>${drawMiniPlot("Start-up Coaching")}</div>
-  <div>${drawMiniPlot("Start-up Coaching")}</div>
+  <div>${drawMiniPlot("Start-up Coaching", false)}</div>
   <div>${drawMiniPlot("Core Coaching", false)}</div>
 </div>
 

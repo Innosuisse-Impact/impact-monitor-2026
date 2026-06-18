@@ -1,12 +1,12 @@
 ---
 title: Support for start-ups
-style: ../styles-ch-startup.css
+style: ../styles.css
 toc: false
 ---
 
 ```js
 import { html } from "npm:htl";
-import { coloredUnderline, drawMiniPlot, draw_waffle, draw_results, drawMiniPlot1, su_vza, su_vza_legend} from "../functions.js"
+import { drawMiniPlot, draw_waffle, draw_results, drawMiniPlot1, su_vza, su_vza_legend} from "../functions.js"
 ```
 
 # Support for start-ups
@@ -14,8 +14,8 @@ import { coloredUnderline, drawMiniPlot, draw_waffle, draw_results, drawMiniPlot
 
 <div style="display: flex;">
   <div>${drawMiniPlot("Start-up Coaching")}</div>
-  <div>${drawMiniPlot1()}</div>
   <div>${drawMiniPlot("Start-up Coaching", false)}</div>
+  <div>${drawMiniPlot("Core Coaching", false)}</div>
 </div>
 
 <p style="font-size: 10px; color: #828282;">The amount in millions of francs and the total number of coaching sessions relate to Start-up Coaching as a whole (Initial, Core and Scale-up Coaching). The last figure shows only the number of Core Coachings.</p>

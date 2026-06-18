@@ -6,7 +6,6 @@ toc: false
 
 ```js
 import { html } from "npm:htl";
-import { coloredUnderline} from "../functions.js"
 ```
 
 ## L'encouragement d'Innosuisse : un levier durable pour la réussite et l’emploi des entreprises 

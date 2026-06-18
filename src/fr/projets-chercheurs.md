@@ -1,12 +1,12 @@
 ---
 title: Projets de chercheurs
-style: ../styles-ch-projekte.css
+style: ../styles.css
 toc: false
 ---
 
 ```js
 import { html } from "npm:htl";
-import { coloredUnderline, drawMiniPlot, draw_waffle, draw_results} from "../functions.js"
+import { drawMiniPlot, draw_waffle, draw_results} from "../functions.js"
 ```
 
 # Projets de chercheurs

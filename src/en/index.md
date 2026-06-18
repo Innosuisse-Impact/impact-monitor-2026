@@ -11,7 +11,7 @@ import { draw_waffle, draw_bar } from "../functions.js"
 import { df_waffle } from "../data.js"
 ```
 
-<div style="background: rgb(6, 247, 218) no-repeat padding-box; min-height: 110px; max-width: 650px; padding-left: 40px; padding-top: 5px; padding-bottom: 5px;  margin-left: -48px; margin-top: -31px;">
+<div style="background: rgb(6, 247, 218) no-repeat padding-box; min-height: 110px; max-width: 100%; padding-left: 40px; padding-top: 5px; padding-bottom: 5px;  margin-left: -48px; margin-top: -31px;">
 
 # The impact of Innosuisse funding<br>2023–2025
 <p class="comment">Version 2.0, last changes: 27 May 2026</p>
@@ -25,7 +25,7 @@ Innosuisse places great emphasis on transparently demonstrating the effectivenes
 
 The most important results from the impact monitoring are briefly summarised below for each support offer. The results are presented in detail and briefly discussed in the main section.
 
-# Project funding
+# Innovation project funding
 
 ## Innovation projects with implementation partners
 
@@ -123,6 +123,7 @@ The innovation cheque offers SMEs and start-ups low-threshold funding. The aim i
       <div class="figure__col">${draw_bar(df_waffle, { title: "is_ideas", mode: "single", rank: "pct2" })}</div>
       <p>Some apply for or concretely plan a full Innosuisse innovation project within a year.</p>
     </div>
+    <a class="claim__link" href="/en/projects-companies-researchers#innovation-cheques">To the detailed results<span class="claim__link-arrow">→</span></a>
   </section>
 </div>
 

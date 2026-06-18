@@ -922,7 +922,7 @@ export function drawMiniPlot(instrument, funding = true) {
   const instrCol = `instrument_${lang}`;
   const pre_df =
     instrument !== "Innovation Booster"
-      ? daten_controlling.filter((d) => d.instrument_de === instrument)
+      ? daten_controlling.filter((d) => d.instrument_de === instrument || d.label_de === instrument)
       : [
           {
             FA: "Starthilfe für Projekte und Vernetzung",

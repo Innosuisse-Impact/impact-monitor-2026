@@ -11,7 +11,7 @@ import { draw_waffle, draw_bar } from "../functions.js"
 import { df_waffle } from "../data.js"
 ```
 
-<div style="background: rgb(6, 247, 218) no-repeat padding-box; min-height: 110px; max-width: 650px; padding-left: 40px; padding-top: 5px; padding-bottom: 5px;  margin-left: -48px; margin-top: -31px;">
+<div style="background: rgb(6, 247, 218) no-repeat padding-box; min-height: 110px; max-width: 100%; padding-left: 40px; padding-top: 5px; padding-bottom: 5px;  margin-left: -48px; margin-top: -31px;">
 
 # L'impact de l'encouragement d'Innosuisse 2023–2025
 <p class="comment">Version 2.0, dernières modifications : 27 mai 2026</p>
@@ -25,7 +25,7 @@ Innosuisse accorde une grande importance à la présentation transparente de l'e
 
 Les principaux résultats du suivi de l'impact sont brièvement résumés ci-dessous par offre d'encouragement. Dans la partie principale, les résultats sont présentés en détail et brièvement discutés.
 
-# Financement de projets
+# Financement des projets d'innovation
 
 ## Projets d'innovation avec partenaire chargé de la mise en valeur
 
@@ -123,6 +123,7 @@ Le chèque d'innovation offre aux PME et aux start-up un soutien à bas seuil. L
       <div class="figure__col">${draw_bar(df_waffle, { title: "is_ideas", mode: "single", rank: "pct2" })}</div>
       <p>Certaines déposent ou planifient concrètement un projet d'innovation Innosuisse complet dans un délai d'un an.</p>
     </div>
+    <a class="claim__link" href="/fr/projets-entreprises-chercheurs#chèque-dinnovation">Vers les résultats détaillés<span class="claim__link-arrow">→</span></a>
   </section>
 </div>
 

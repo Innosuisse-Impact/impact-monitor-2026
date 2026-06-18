@@ -6,7 +6,7 @@ toc: false
 
 ```js
 import { html } from "npm:htl";
-import { coloredUnderline, plot_erhebung} from "../functions.js"
+import { plot_erhebung} from "../functions.js"
 ```
 
 ## Bases méthodologiques
@@ -14,7 +14,7 @@ import { coloredUnderline, plot_erhebung} from "../functions.js"
 
 Après l'élaboration des bases conceptuelles, le suivi de l'impact a été introduit en 2021 auprès des partenaires chargés de la mise en valeur des projets d'innovation par le biais d'enquêtes systématiques, et a depuis été continuellement étendu à d'autres instruments. Les objectifs de mesure de l'impact définis dans les bases ont été atteints et un grand nombre de données significatives sont désormais disponibles. Ils permettent de formuler des déclarations fondées sur les multiples impacts de l'encouragement de l'innovation.
 
-Le suivi de l'impact d'Innosuisse repose sur des enquêtes obligatoires et exhaustifs auprès de tous les partenaires chargés de la mise en valeur et de recherche des ${coloredUnderline("projets d'innovation","Förderung für Schweizer Innovationsprojekte")}, des PME bénéficiant des ${coloredUnderline("Chèques d'innovation","Innovationsscheck")} ainsi que de toutes les start-ups participant au ${coloredUnderline("Core Coaching","Begleitung von Start-ups")}. Les enquêtes sont menées auprès des partenaires chargés de la mise en valeur des projets d'innovation et des start-ups en coaching, à la fin de la période d'encouragement et trois ans après. Pour les ${coloredUnderline("Innovation Booster","Starthilfe für Projekte und Vernetzung")} et les projets ${coloredUnderline("BRIDGE Proof of Concept","BRIDGE Proof of Concept")}, les résultats sont basés sur les données de suivi de toutes les initiatives en cours.
+Le suivi de l'impact d'Innosuisse repose sur des enquêtes obligatoires et exhaustifs auprès de tous les partenaires chargés de la mise en valeur et de recherche des [projets d'innovation](/fr/projets-entreprises-chercheurs), des PME bénéficiant des [Chèques d'innovation](/fr/projets-entreprises-chercheurs#cheque-d-innovation) ainsi que de toutes les start-ups participant au [Core Coaching](/fr/accompagnement-de-start-up). Les enquêtes sont menées auprès des partenaires chargés de la mise en valeur des projets d'innovation et des start-ups en coaching, à la fin de la période d'encouragement et trois ans après. Pour les [Innovation Booster](/fr/aide-au-demarrage-projets-mise-en-reseau) et les projets [BRIDGE Proof of Concept](/fr/projets-chercheurs#bridge-proof-of-concept), les résultats sont basés sur les données de suivi de toutes les initiatives en cours.
 
 <div>${plot_erhebung()}</div>
 
@@ -31,12 +31,12 @@ Les indicateurs présentés sont basés sur les données suivantes :
 | Chèques d'innovation               | Année de référence 2023                              |
 | Partenaires de recherche dans les projets d'innovation | Année de référence 2023                           |
 | BRIDGE Proof of Concept         | Données de financement et consultations du registre du commerce, année de référence 2023    |
-| Innovation Booster              | Données d'encouragement et enquêtes annuelles auprès des « Leading Houses », année de référence 2023 |
+| Innovation Booster              | Données d'encouragement et enquêtes annuelles auprès des « Leading Houses », année de référence 2023 |
 | Start-up Core Coaching               | Moyenne des années de référence 2023 et 2024         |   
 
 Les enquêtes se basent sur des évaluations différenciées des groupes cibles interrogés et, le cas échéant, sur des valeurs moyennes sur plusieurs années d'enquête. Les années de référence du suivi diffèrent selon les offres d'encouragement individuelles et dépendent de la disponibilité des données :
 
-Pour les ${coloredUnderline("projets d'innovation des partenaires chargés de la mise en valeur","Förderung für Schweizer Innovationsprojekte")}, la moyenne des années de suivi 2021-2023 est présentée. Les résultats des start-ups dans le ${coloredUnderline("Core Coaching","Begleitung von Start-ups")} sont basés sur la moyenne des années de suivi 2023 et 2024, car les évaluations pour 2024 sont déjà disponibles. Les autres indicateurs sont basés sur l'année de suivi 2023.
+Pour les [projets d'innovation des partenaires chargés de la mise en valeur](/fr/projets-entreprises-chercheurs), la moyenne des années de suivi 2021-2023 est présentée. Les résultats des start-ups dans le [Core Coaching](/fr/accompagnement-de-start-up) sont basés sur la moyenne des années de suivi 2023 et 2024, car les évaluations pour 2024 sont déjà disponibles. Les autres indicateurs sont basés sur l'année de suivi 2023.
 
 Le taux de réponse aux enquêtes se situe entre environ 50 % et plus de 75 %, ce qui permet de tirer des conclusions statistiquement valables.
 
@@ -46,14 +46,14 @@ Les résultats détaillés sont présentés sous forme de tableau ([⤓&nbsp;Exc
   
 ### Offres d'encouragement et objectifs d'impact d'Innosuisse (outcomes)
 Les offres d'encouragement d'Innosuisse peuvent être classées en trois domaines d'encouragement principaux (voir l'illustration ci-dessous) :
-1. ${coloredUnderline("Encouragement de projets d'innovation","Förderung für Schweizer Innovationsprojekte")}
-2. ${coloredUnderline("Aide au démarrage de projets et mise en réseau","Starthilfe für Projekte und Vernetzung")}
-3. ${coloredUnderline("Accompagnement de start-up","Begleitung von Start-ups")}
+1. [Encouragement de projets d'innovation](/fr/projets-entreprises-chercheurs)
+2. [Aide au démarrage de projets et mise en réseau](/fr/aide-au-demarrage-projets-mise-en-reseau)
+3. [Accompagnement de start-up](/fr/accompagnement-de-start-up)
   
 Le tableau ci-dessous montre les cinq orientations (outcomes) d'Innosuisse auxquelles les offres d'encouragement doivent contribuer. Les résultats des enquêtes présentés ci-après visent à fournir des informations sur l'atteinte des objectifs de l'encouragement de l'innovation et à offrir une base solide pour évaluer l'efficacité des mesures d'encouragement et les développer de manière ciblée.
 
 <div class="card" style="width: 600px;">
-  <img src="../images/ziele_fr.jpg" alt="Image">
+  <img src="../images/encouragement_graphique.png" alt="Image">
 </div>
 
 Les résultats comprennent d'une part les impacts à court et moyen terme à la fin des projets innovants ou peu après la fin du projet. D'autre part, les impacts à plus long terme sont également présentés, par exemple la mise en œuvre sur le marché ou les effets sur l'emploi.
@@ -62,7 +62,7 @@ L'attribution aux cinq axes présentés n'est pas explicitée dans le présent r
 
 ### Développement du suivi de l'impact
 
-Le présent suivi de l'impact sera progressivement étendu. L'accent sera mis sur les ${coloredUnderline("projets d'innovation pour start-up","Förderung für Schweizer Innovationsprojekte")}, les ${coloredUnderline("projets soutenus au niveau international", "Förderung für internationale Innovationsprojekte")}, l'${coloredUnderline("Initiative Flagship","Förderung für Schweizer Innovationsprojekte")} et les deux lignes de financement du ${coloredUnderline("programme BRIDGE","Förderung für Schweizer Innovationsprojekte")}, mis en œuvre conjointement avec le Fonds national suisse (FNS).
+Le présent suivi de l'impact sera progressivement étendu. L'accent sera mis sur les [projets d'innovation pour start-up](/fr/projets-entreprises-chercheurs), les [projets soutenus au niveau international](/fr/offres-dencouragement-et-contenus), l'[Initiative Flagship](/fr/projets-entreprises-chercheurs) et les deux lignes de financement du [programme BRIDGE](/fr/projets-entreprises-chercheurs), mis en œuvre conjointement avec le Fonds national suisse (FNS).
 
 Aucune donnée n'est encore disponible pour les instruments nouvellement introduits au cours de la période FRI 2021-2024 et pour certains instruments importants sur le plan financier (Initiative Flagship, Projets d'innovation pour start-up, Swiss Accelerator), car les premiers projets ne seront achevés qu'en 2025. Les projets internationaux et le programme BRIDGE seront inclus dans le rapport à partir de l'année de financement 2025, les autres instruments à partir de 2026 et des années suivantes.
 

@@ -1,12 +1,12 @@
 ---
 title: Projects by companies with researchers
-style: ../styles-ch-projekte.css
+style: ../styles.css
 toc: false
 ---
 
 ```js
 import { html } from "npm:htl";
-import { coloredUnderline, drawMiniPlot, draw_waffle, draw_results, leverage, kof_did_plot} from "../functions.js"
+import { drawMiniPlot, draw_waffle, draw_results, leverage, kof_did_plot} from "../functions.js"
 ```
 
 # Projects by companies with researchers
@@ -25,16 +25,16 @@ This strengthens knowledge and technology transfer between research, business an
 
 ### The majority of funded innovation projects are introduced to the market or within the company
 
-Upon completion, 45% of the funded projects have been implemented on the market or in the organisation, or it is planned to implement them within a year. Around a third of the projects pursue process innovations, which are implemented comparatively faster.
+Upon completion, 41% of the funded projects have been implemented on the market or in the organisation, or it is planned to implement them within a year. Around a third of the projects pursue process innovations, which are implemented comparatively faster.
 
 Three years after the funding ended, more than half of the funded innovations (57%) had been introduced or there are plans to introduce them in the next two years.
 
-Some of the projects require a longer period of time to be introduced to the market or the innovation project is continued in follow-up projects. 17% of the high-risk funded projects were abandoned three years after completion; in other words, they are not being implemented and are not being continued.
+Some of the projects require a longer period of time to be introduced to the market or the innovation project is continued in follow-up projects. 14% of the high-risk funded projects were abandoned three years after completion; in other words, they are not being implemented and are not being continued.
 
 <div>${draw_waffle("ip_time_to_market", -100)}</div>
 
-### Funding achieves measurable and significant economic effects in over 60% of SMEs
-Selected key figures prove the effectiveness in terms of economic effects that would not have occurred without the funded project. Around one third of the SMEs report an increase in employment, creating new, highly skilled jobs. Three out of ten companies report an increase in sales. More than a quarter of the companies have invested more in research and development (R&D), either in R&D employees or in R&D spending. 12% of the companies report cost savings.
+### Funding achieves measurable and significant economic effects in around 57% of SMEs
+Selected key figures prove the effectiveness in terms of economic effects that would not have occurred without the funded project. Around 30% of the SMEs report an increase in employment, creating new, highly skilled jobs. 27% of the companies report an increase in sales. Almost a quarter of the companies have invested more in research and development (R&D), either in R&D employees or in R&D spending. 12% of the companies report cost savings.
 
 <div>${draw_results("Innovationsprojekte mit Umsetzungspartner", false)}</div>
 
@@ -84,16 +84,16 @@ Source:
 <div class="card" style="background-color: white">${kof_did_plot(1)}</div></div>
 
 ### Innosuisse supports world market firsts and disruptive innovations
-33% of the funded innovation projects aim to develop innovations for the international and global market. Swiss companies are thus supported in becoming or remaining internationally competitive. In addition, around 32% of the projects funded have the potential to significantly influence or redefine markets with disruptive innovations.
+32% of the funded innovation projects aim to develop innovations for the international and global market. Swiss companies are thus supported in becoming or remaining internationally competitive. In addition, around 33% of the projects funded have the potential to significantly influence or redefine markets with disruptive innovations.
   <div style="display: flex; gap: 40px;">
   ${draw_waffle("ip_new_to_market", -70)}
   ${draw_waffle("ip_disruptive", -70)}
   </div>
 
 ### Companies either meet or exceed their project goals
-The majority of the project partners involved have fully achieved or even exceeded their goals. Only a small proportion of the funded projects have not fully achieved or have not achieved the set goals. Innovation projects involve considerable technological risks and uncertainties in terms of market implementation. These high-risk potentials underline the need for public funding to support knowledge and technology transfer, as the innovation projects would not be carried out without funding.
+A large proportion of the project partners involved have fully achieved or even exceeded their goals. Only a small proportion of the funded projects have not fully achieved or have not achieved the set goals. Innovation projects involve considerable technological risks and uncertainties in terms of market implementation. These high-risk potentials underline the need for public funding to support knowledge and technology transfer, as the innovation projects would not be carried out without funding.
 
-This is confirmed by the low level of windfall effects in funding: only 4% of companies state that they would have carried out the project in the same way without Innosuisse's support. 16% would have carried it out in a modified or reduced form.
+This is confirmed by the low level of windfall effects in funding: only 3% of companies state that they would have carried out the project in the same way without Innosuisse's support. 16% would have carried it out in a modified or reduced form.
 
   <div style="display: flex; gap: 15px;">
   <div>${draw_waffle("ip_project_goals",-70, 20)}</div>
@@ -112,18 +112,18 @@ KTT and cooperation between companies and research is promoted and strengthened 
 ### Project results are based on science
 The scientific output generated by the projects is remarkable. More than half of the projects result in co-publications between implementation and research partners. Internationally, Switzerland ranks first in this metric, which is important for the innovation indices ([European Commission, 2025](https://projects.research-and-innovation.ec.europa.eu/en/statistics/performance-indicators/european-innovation-scoreboard/eis#/eis/indicators/3.2?country_scope=all&highlight=CH) & [WIPO, 2025](https://www.wipo.int/gii-ranking/en/switzerland/section/economy-profile)). The innovation projects contribute to this. The strong international positioning in knowledge and technology transfer is also shown by the results of a study by the SBFI ([SBFI, 2023](https://www.sbfi.admin.ch/sbfi/de/home/dienstleistungen/publikationen/publikationsdatenbank/wtt-endbericht-2023.html)).
 
-62% of research partners publish their scientific results in a peer-reviewed journal. In 21% of the funded projects, dissertations are written, in addition to a large number of bachelor's and master's theses. These figures demonstrate the strong scientific basis of the innovation projects and also show the importance of the projects for the research side and the contribution to the promotion of young scientists. The scientific quality is very high and the further dissemination of the project results is ensured.
+61% of research partners publish their scientific results in a peer-reviewed journal. In 21% of the funded projects, dissertations are written, in addition to a large number of bachelor's and master's theses. These figures demonstrate the strong scientific basis of the innovation projects and also show the importance of the projects for the research side and the contribution to the promotion of young scientists. The scientific quality is very high and the further dissemination of the project results is ensured.
 <div>${draw_waffle("ip_peer_pub", -70)}</div>
 
 ### Innosuisse enables high-risk and interdisciplinary projects
-Innosuisse funding is used to support more complex and higher-risk projects, as well as interdisciplinary projects. Interdisciplinary projects integrate knowledge, methods and technologies from different disciplines to jointly develop novel solutions to complex problems. Transdisciplinary projects also actively involve non-academic stakeholders from society, politics, business and practice in the research process in order to jointly solve socially relevant problems and generate practical knowledge. The 24% share of radical innovation projects indicates the degree of risk involved in innovation projects. 
+Innosuisse funding is used to support more complex and higher-risk projects, as well as interdisciplinary projects. Interdisciplinary projects integrate knowledge, methods and technologies from different disciplines to jointly develop novel solutions to complex problems. Transdisciplinary projects also actively involve non-academic stakeholders from society, politics, business and practice in the research process in order to jointly solve socially relevant problems and generate practical knowledge. The 25% share of radical innovation projects indicates the degree of risk involved in innovation projects. 
 <div style="display: flex; gap: 10px;">
 <div>${draw_waffle("ip_inter_trans", -55)}</div>
 <div>${draw_waffle("ip_radikal_inkr", -55)}</div>
 </div>
 
 ### Companies provide the majority of the impetus for the innovation projects and turn the research results into value added
-The knowledge and technology transfer between implementation partners and research partners is reciprocal. The companies develop high-risk innovation ideas for research and development and receive concrete research results for their implementation and commercialisation on the markets (see [section on economic effects](#funding-achieves-measurable-and-significant-economic-effects-in-over-60-of-smes)).
+The knowledge and technology transfer between implementation partners and research partners is reciprocal. The companies develop high-risk innovation ideas for research and development and receive concrete research results for their implementation and commercialisation on the markets.
 <div>${draw_waffle("ip_impuls",-100)}</div>
 
 ### Innosuisse projects are successful for both research and implementation partners

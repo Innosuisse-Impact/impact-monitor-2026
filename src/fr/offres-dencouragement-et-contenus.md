@@ -6,7 +6,7 @@ toc: false
 
 ```js
 import { html } from "npm:htl";
-import { coloredUnderline, draw_fin_plot, draw_fin_plot_legend, n_subcluster} from "../functions.js"
+import { draw_fin_plot, draw_fin_plot_legend, n_subcluster} from "../functions.js"
 ```
 
 ## Aperçu des offres d'encouragement et du contenu du suivi de l'impact
@@ -40,11 +40,11 @@ draw_fin_plot_legend()
 <p class="comment">Source: Cockpit/PowerBI Innosuisse (2025)
 <br>* Pour les instruments marqués, les résultats du suivi de l'impact sont expliqués ci-après. L'offre d'encouragement « Swiss Accelerator » (2023-2024) n'est pas mentionnée (volume d'encouragement 2023 : 111,8 millions de francs). Il s'agissait d'une mesure de remplacement limitée dans le temps en réaction à la non-association à Horizon Europe.</p>
 
-La majeure partie des encouragements d'Innosuisse est consacrée aux ${coloredUnderline("projets d'innovation nationaux", "Förderung für Schweizer Innovationsprojekte")} et ${coloredUnderline("internationaux", "Förderung für internationale Innovationsprojekte")}. Les projets d'innovation standard entre entreprises¹ et chercheurs, dans le cadre desquels les institutions de recherche sont rémunérées principalement pour le personnel de recherche, sont les plus importants. Les entreprises et organisations participantes contribuent pour leur part à hauteur d'au moins 50 % aux coûts totaux du projet.
+La majeure partie des encouragements d'Innosuisse est consacrée aux [projets d'innovation nationaux](/fr/projets-entreprises-chercheurs) et [internationaux](/fr/offres-dencouragement-et-contenus). Les projets d'innovation standard entre entreprises¹ et chercheurs, dans le cadre desquels les institutions de recherche sont rémunérées principalement pour le personnel de recherche, sont les plus importants. Les entreprises et organisations participantes contribuent pour leur part à hauteur d'au moins 50 % aux coûts totaux du projet.
 
-En outre, les entreprises sont soutenues dans le lancement de projets d'innovation par le biais de l'${coloredUnderline("Innovation Booster","Starthilfe für Projekte und Vernetzung")}, du ${coloredUnderline("mentoring","Starthilfe für Projekte und Vernetzung")}, du ${coloredUnderline("réseau Enterprise Europe Network (recherche de partenaires)","Starthilfe für Projekte und Vernetzung")} et d'autres événements. Les start-up peuvent bénéficier d'offres de ${coloredUnderline("coaching","Begleitung von Start-ups")}, de ${coloredUnderline("formation","Begleitung von Start-ups")} et d'${coloredUnderline("internationalisation","Begleitung von Start-ups")}. Les résultats du suivi de l'impact de l'Innovation Booster et du Start-up Core Coaching seront présentés ici.
+En outre, les entreprises sont soutenues dans le lancement de projets d'innovation par le biais de l'[Innovation Booster](/fr/aide-au-demarrage-projets-mise-en-reseau), du [mentoring](/fr/aide-au-demarrage-projets-mise-en-reseau), du [réseau Enterprise Europe Network (recherche de partenaires)](/fr/aide-au-demarrage-projets-mise-en-reseau) et d'autres événements. Les start-up peuvent bénéficier d'offres de [coaching](/fr/accompagnement-de-start-up), de [formation](/fr/accompagnement-de-start-up) et d'[internationalisation](/fr/accompagnement-de-start-up). Les résultats du suivi de l'impact de l'Innovation Booster et du Start-up Core Coaching seront présentés ici.
 
-Les résultats des ${coloredUnderline("projets d'innovation des chercheurs sans partenaire chargé de la mise en valeur", "Förderung für Schweizer Innovationsprojekte")} peuvent également être présentés.
+Les résultats des [projets d'innovation des chercheurs sans partenaire chargé de la mise en valeur](/fr/projets-chercheurs) peuvent également être présentés.
 
 L'intégration des projets d'innovation internationaux dans le suivi de l'impact est prévue pour l'année de référence 2025. Les projets dans lesquels les start-up et les PME sont directement soutenues (Projets d'innovation pour start-up et Swiss Accelerator) seront intégrés ultérieurement dans le suivi, car les projets ne sont pas encore terminés. Il en va de même pour les projets de l'Initiative Flagship.
 
@@ -53,10 +53,10 @@ L'intégration des projets d'innovation internationaux dans le suivi de l'impact
 ### Thématiques des projets innovants 2021–2023
 Les projets innovants approuvés peuvent être classés en cinq thématiques différentes, qui sont également représentées dans la figure suivante en fonction des offres d'encouragement. La figure montre la part en pourcentage des thématiques dans les projets innovants approuvés en moyenne pour les années 2021–2023. Les pourcentages par instrument diffèrent parfois considérablement. 
 
-- « Engineering » présente des pourcentages plus élevés et comparables pour les ${coloredUnderline("projets d'innovation avec partenaire chargé de la mise en valeur (37 %)","Innovationsprojekte mit Umsetzungspartner")}, les ${coloredUnderline("Chèques d'innovation","Innovationsscheck")} (32 %) et ${coloredUnderline("BRIDGE Proof of Concept","BRIDGE Proof of Concept")} (31 %).
-- Les « Life Sciences » affichent en revanche une part très élevée dans les ${coloredUnderline("projets d'innovation sans partenaire chargé de la mise en valeur","Innovationsprojekte ohne Umsetzungspartner")} (66 %) et une part supérieure à la moyenne dans les ${coloredUnderline("start-up en coaching","Start-up Core Coaching")} (38 %). C'est le domaine thématique le plus important dans le cadre de ${coloredUnderline("BRIDGE Proof of Concept","BRIDGE Proof of Concept")} (34 %).
-- Le domaine « Information and communication technologies ICT » est le plus important dans les ${coloredUnderline("start-up en coaching","Start-up Core Coaching")} (30 %).
-- Les différences dans le domaine « Energy & environment » sont plus faibles et varient entre 9 % pour les ${coloredUnderline("projets d'innovation sans partenaire chargé de la mise en valeur","Innovationsprojekte ohne Umsetzungspartner")} et 17 % pour les ${coloredUnderline("projets d'innovation avec partenaire chargé de la mise en valeur","Innovationsprojekte mit Umsetzungspartner")}.
-- Les « Social sciences & business management » sont les plus représentées dans les ${coloredUnderline("Chèques d'innovation","Innovationsscheck")} (21 %), sinon les pourcentages sont comparativement plus faibles.
+- « Engineering » présente des pourcentages plus élevés et comparables pour les [projets d'innovation avec partenaire chargé de la mise en valeur (37 %)](/fr/projets-entreprises-chercheurs), les [Chèques d'innovation](/fr/projets-entreprises-chercheurs#cheque-d-innovation) (32 %) et [BRIDGE Proof of Concept](/fr/projets-chercheurs#bridge-proof-of-concept) (31 %).
+- Les « Life Sciences » affichent en revanche une part très élevée dans les [projets d'innovation sans partenaire chargé de la mise en valeur](/fr/projets-chercheurs) (66 %) et une part supérieure à la moyenne dans les [start-up en coaching](/fr/accompagnement-de-start-up) (38 %). C'est le domaine thématique le plus important dans le cadre de [BRIDGE Proof of Concept](/fr/projets-chercheurs#bridge-proof-of-concept) (34 %).
+- Le domaine « Information and communication technologies ICT » est le plus important dans les [start-up en coaching](/fr/accompagnement-de-start-up) (30 %).
+- Les différences dans le domaine « Energy & environment » sont plus faibles et varient entre 9 % pour les [projets d'innovation sans partenaire chargé de la mise en valeur](/fr/projets-chercheurs) et 17 % pour les [projets d'innovation avec partenaire chargé de la mise en valeur](/fr/projets-entreprises-chercheurs).
+- Les « Social sciences & business management » sont les plus représentées dans les [Chèques d'innovation](/fr/projets-entreprises-chercheurs#cheque-d-innovation) (21 %), sinon les pourcentages sont comparativement plus faibles.
 
 <div>${n_subcluster()}</div>

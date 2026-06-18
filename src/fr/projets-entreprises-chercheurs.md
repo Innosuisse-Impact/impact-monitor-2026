@@ -1,12 +1,12 @@
 ---
 title: Projets d'entreprises avec des chercheurs
-style: ../styles-ch-projekte.css
+style: ../styles.css
 toc: false
 ---
 
 ```js
 import { html } from "npm:htl";
-import { coloredUnderline, drawMiniPlot, draw_waffle, draw_results, leverage, kof_did_plot} from "../functions.js"
+import { drawMiniPlot, draw_waffle, draw_results, leverage, kof_did_plot} from "../functions.js"
 ```
 
 # Projets d'entreprises avec des chercheurs
@@ -25,16 +25,16 @@ Le transfert de savoir et de technologie entre la recherche, l'économie et la s
 
 ### La majorité des projets d'innovation financés sont introduits sur le marché ou dans les entreprises
 
-À la fin du projet, 45 % des projets soutenus sont mis en œuvre sur le marché ou dans l'organisation, ou il est prévu de les mettre en œuvre dans un délai d'un an. Environ un tiers des projets portent sur des innovations de processus qui sont mises en œuvre plus rapidement et au sein de l'organisation.
+À la fin du projet, 41 % des projets soutenus sont mis en œuvre sur le marché ou dans l'organisation, ou il est prévu de les mettre en œuvre dans un délai d'un an. Environ un tiers des projets portent sur des innovations de processus qui sont mises en œuvre plus rapidement et au sein de l'organisation.
 
 Trois ans après la fin de l'encouragement, plus de la moitié des innovations encouragées (57 %) ont été introduites ou il est prévu de les introduire dans les deux prochaines années.
 
-Une partie des projets nécessite une période plus longue pour la mise sur le marché ou le projet d'innovation est poursuivi dans des projets de suivi. 17 % des projets d'encouragement à haut risque ont été interrompus trois ans après leur achèvement, en d'autres termes, ils ne sont pas mis en œuvre et ne sont pas poursuivis.
+Une partie des projets nécessite une période plus longue pour la mise sur le marché ou le projet d'innovation est poursuivi dans des projets de suivi. 14 % des projets d'encouragement à haut risque ont été interrompus trois ans après leur achèvement, en d'autres termes, ils ne sont pas mis en œuvre et ne sont pas poursuivis.
 
 <div>${draw_waffle("ip_time_to_market", -100)}</div>
 
-### L'encouragement génère des retombées économiques tangibles et significatifs sur plus de 60 % des PME
-Une sélection de chiffres clés prouve l'efficacité en termes d'effets économiques qui n'auraient pas Certains chiffres clés témoignent de l'efficacité des effets économiques qui n'auraient pas pu être obtenus sans le projet soutenu. Environ un tiers des PME font état d'une croissance de l'emploi et créent ainsi de nouveaux postes hautement qualifiés. 3 entreprises sur 10 constatent une augmentation de leur chiffre d'affaires. Plus d'un quart des entreprises ont investi davantage dans la recherche et le développement (R&D), que ce soit en termes d'employés dans le domaine de la R&D ou de dépenses de R&D. 12 % des entreprises font état de réductions de coûts.
+### L'encouragement génère des retombées économiques tangibles et significatifs sur environ 57 % des PME
+Une sélection de chiffres clés prouve l'efficacité en termes d'effets économiques qui n'auraient pas Certains chiffres clés témoignent de l'efficacité des effets économiques qui n'auraient pas pu être obtenus sans le projet soutenu. Environ 30 % des PME font état d'une croissance de l'emploi et créent ainsi de nouveaux postes hautement qualifiés. 27 % des entreprises constatent une augmentation de leur chiffre d'affaires. Près d'un quart des entreprises ont investi davantage dans la recherche et le développement (R&D), que ce soit en termes d'employés dans le domaine de la R&D ou de dépenses de R&D. 12 % des entreprises font état de réductions de coûts.
 
 <div>${draw_results("Innovationsprojekte mit Umsetzungspartner", false)}</div>
 
@@ -84,16 +84,16 @@ Quelle:
 </div>
 
 ### Innosuisse soutient des nouveautés sur le marché mondial et les innovations disruptives
-33 % des projets d'innovation soutenus visent à développer des nouveautés pour le marché international et mondial. Les entreprises suisses bénéficient ainsi d'un soutien pour devenir ou rester compétitives à l'échelle internationale. En outre, environ 32 % des projets soutenus ont le potentiel d'influencer fortement ou de redéfinir les marchés grâce à des innovations disruptives.
+32 % des projets d'innovation soutenus visent à développer des nouveautés pour le marché international et mondial. Les entreprises suisses bénéficient ainsi d'un soutien pour devenir ou rester compétitives à l'échelle internationale. En outre, environ 33 % des projets soutenus ont le potentiel d'influencer fortement ou de redéfinir les marchés grâce à des innovations disruptives.
   <div style="display: flex; gap: 40px;">
   ${draw_waffle("ip_new_to_market", -85)}
   ${draw_waffle("ip_disruptive", -85)}
   </div>
 
-### La majorité des entreprises atteignent ou dépassent les objectifs du projet
+### Une grande partie des entreprises atteignent ou dépassent les objectifs du projet
 La majorité des partenaires de projet impliqués ont entièrement atteint, voire dépassé leurs objectifs. Seule une petite partie des projets soutenus n'ont pas entièrement atteint ou n'ont pas atteint les objectifs fixés. Les projets innovants sont associés à des risques technologiques considérables et à des impondérables lors de la mise en œuvre sur le marché. Ces risques potentiels élevés soulignent la nécessité d'un encouragement public pour soutenir le transfert de savoir et de technologie, car les projets d'innovation ne seraient pas réalisés sans encouragement.
 
-Les faibles effets d’aubaine de l'encouragement le confirment : seules 4 % des entreprises déclarent qu'elles auraient réalisé le projet sous la même forme sans le soutien d'Innosuisse. 16 % l'auraient réalisé sous une forme modifiée ou réduite.
+Les faibles effets d’aubaine de l'encouragement le confirment : seules 3 % des entreprises déclarent qu'elles auraient réalisé le projet sous la même forme sans le soutien d'Innosuisse. 16 % l'auraient réalisé sous une forme modifiée ou réduite.
   <div style="display: flex; gap: 15px;">
   <div>${draw_waffle("ip_project_goals",-70, 20)}</div>
   <div>${draw_waffle("ip_mitnahme",-70,5)}</div>
@@ -111,18 +111,18 @@ Les projets d'innovation encouragent et renforcent le TST et la coopération ent
 ### Les résultats des projets sont basés sur la science
 L'output scientifique généré par les projets est remarquable. Plus de la moitié des projets donnent lieu à des co-publications entre les partenaires chargés de la mise en valeur et les partenaires de recherche. Au niveau international, la Suisse occupe la première place dans ce domaine, qui est important pour les indices d'innovation ([Commission européenne, 2025](https://projects.research-and-innovation.ec.europa.eu/en/statistics/performance-indicators/european-innovation-scoreboard/eis#/eis/indicators/3.2?country_scope=all&highlight=CH) & [OMPI, 2025](https://www.wipo.int/gii-ranking/en/switzerland/section/economy-profile)). Les projets d'innovation y contribuent. Le solide positionnement international en matière de transfert de savoir et de technologie est également mis en évidence par les résultats d'une étude du SEFRI ([SEFRI, 2023](https://www.sbfi.admin.ch/sbfi/de/home/dienstleistungen/publikationen/publikationsdatenbank/wtt-endbericht-2023.html)).
 
-62 % des partenaires de recherche publient leurs résultats scientifiques dans une revue spécialisée avec comité de lecture. Dans 21 % des projets financés, des thèses sont rédigées, en plus des nombreux travaux de bachelor et de master. Ces chiffres témoignent de l'ancrage scientifique solide des projets d'innovation et montrent également l'importance des projets pour la recherche et la contribution à la promotion de la relève scientifique. La qualité scientifique est très élevée et la diffusion des résultats des projets est ainsi assurée.
+61 % des partenaires de recherche publient leurs résultats scientifiques dans une revue spécialisée avec comité de lecture. Dans 21 % des projets financés, des thèses sont rédigées, en plus des nombreux travaux de bachelor et de master. Ces chiffres témoignent de l'ancrage scientifique solide des projets d'innovation et montrent également l'importance des projets pour la recherche et la contribution à la promotion de la relève scientifique. La qualité scientifique est très élevée et la diffusion des résultats des projets est ainsi assurée.
 <div>${draw_waffle("ip_peer_pub", -100)}</div>
 
 ### Innosuisse permet de réaliser des projets à haut risque et interdisciplinaires
-L'encouragement d'Innosuisse permet de soutenir principalement des projets complexes, à haut risque et interdisciplinaires. Les projets interdisciplinaires intègrent des connaissances, des méthodes et des technologies issues de différentes disciplines afin de développer ensemble des solutions innovantes à des problèmes complexes. Les projets transdisciplinaires impliquent en outre activement dans le processus de recherche des acteurs non universitaires issus de la société, de la politique, de l'économie et de la pratique, afin de résoudre ensemble des problèmes d'importance sociale et de générer des connaissances applicables dans la pratique. La proportion de 24 % de projets d'innovation radicale donne une indication du degré de risque des projets d'innovation. 
+L'encouragement d'Innosuisse permet de soutenir principalement des projets complexes, à haut risque et interdisciplinaires. Les projets interdisciplinaires intègrent des connaissances, des méthodes et des technologies issues de différentes disciplines afin de développer ensemble des solutions innovantes à des problèmes complexes. Les projets transdisciplinaires impliquent en outre activement dans le processus de recherche des acteurs non universitaires issus de la société, de la politique, de l'économie et de la pratique, afin de résoudre ensemble des problèmes d'importance sociale et de générer des connaissances applicables dans la pratique. La proportion de 23 % de projets d'innovation radicale donne une indication du degré de risque des projets d'innovation. 
 <div style="display: flex; gap: 10px;">
 <div>${draw_waffle("ip_inter_trans", -70)}</div>
 <div>${draw_waffle("ip_radikal_inkr", -70)}</div>
 </div>
 
 ### Les entreprises sont majoritairement à l'origine des projets d'innovation et transforment les résultats de la recherche en valeur ajoutée
-Le transfert de savoir et de technologie entre le partenaire chargé de la mise en valeur et le partenaire de recherche est réciproque. Les entreprises développent des idées d'innovation à haut risque pour la recherche et le développement et obtiennent des résultats concrets de la recherche pour leur mise en œuvre et leur valorisation sur les marchés (voir [la section sur les effets économiques](#l-encouragement-genere-des-retombees-economiques-tangibles-et-significatifs-sur-plus-de-60-des-pme)).
+Le transfert de savoir et de technologie entre le partenaire chargé de la mise en valeur et le partenaire de recherche est réciproque. Les entreprises développent des idées d'innovation à haut risque pour la recherche et le développement et obtiennent des résultats concrets de la recherche pour leur mise en œuvre et leur valorisation sur les marchés.
 <div>${draw_waffle("ip_impuls",-117)}</div>
 
 ### Les projets Innosuisse sont un succès pour les partenaires de recherche et de mise en œuvre
