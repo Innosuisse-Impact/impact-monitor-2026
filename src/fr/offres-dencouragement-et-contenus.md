@@ -17,20 +17,20 @@ L'état actuel du suivi de l'impact est tel que, pour toutes les catégories d'o
 
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 5px;">
   <h5 style= "margin-bottom: 0;">Projets d'entreprises avec des chercheurs</h5>
-  ${draw_fin_plot("Förderung","Projekte von Unternehmen mit Forschenden",100,false)}
+  ${draw_fin_plot("Förderung von Innovationsprojekten","Projekte von Unternehmen mit Forschenden",115,true)}
   <h5 style= "margin-bottom: 0;">Projets d'entreprises</h5>
-  ${draw_fin_plot("Förderung","Projekte von Unternehmen", 25, false)}
+  ${draw_fin_plot("Förderung von Innovationsprojekten","Projekte von Unternehmen", 25, false)}
   <h5 style= "margin-bottom: 0;">Projets de chercheurs</h5>
-  ${draw_fin_plot("Förderung","Projekte von Forschenden", 68, false)}
+  ${draw_fin_plot("Förderung von Innovationsprojekten","Projekte von Forschenden", 70, false)}
 </div>
 
 ## Conseil et mise en réseau
 
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 5px;">
-  <h5 style= "margin-bottom: 0;">Aide au démarrage de projets et mise en réseau</h5>
-  ${draw_fin_plot("Starthilfe für Projekte und Vernetzung",undefined, 95,false)}
-  <h5 style= "margin-bottom: 0;">Accompagnement de start-up</h5>
-  ${draw_fin_plot("Begleitung von Start-ups",undefined,55, false)}
+  <h5 style= "margin-bottom: 0;">Savoir et réseaux</h5>
+  ${draw_fin_plot("Beratung und Vernetzung","Wissen und Netzwerke",70,false)}
+  <h5 style= "margin-bottom: 0;">Gestion de l'innovation et conseil</h5>
+  ${draw_fin_plot("Beratung und Vernetzung","Innovationsmanagement und Beratung",55, false)}
 </div>
 
 <p class="comment">Source: Cockpit/PowerBI Innosuisse (2025)

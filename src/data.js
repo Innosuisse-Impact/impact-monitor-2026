@@ -108,7 +108,7 @@ export const df_zufrieden = df_ziel_erfolg
           : baseInstr;
     return {
       ...d,
-      [`instrument_${lang}`]: instrument_display
+      //[`instrument_${lang}`]: instrument_display
     };
   });
 

@@ -17,20 +17,20 @@ The current status of the impact monitoring is structured in such a way that at 
 
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 5px;">
   <h5 style= "margin-bottom: 0;">Projects by companies with researchers</h5>
-  ${draw_fin_plot("Förderung","Projekte von Unternehmen mit Forschenden",100, false)}
-  <h5 style= "margin-bottom: 0;">Projects by comapnies</h5>
-  ${draw_fin_plot("Förderung","Projekte von Unternehmen", 25, false)}
+  ${draw_fin_plot("Förderung von Innovationsprojekten","Projekte von Unternehmen mit Forschenden",115,true)}
+  <h5 style= "margin-bottom: 0;">Projects by companies</h5>
+  ${draw_fin_plot("Förderung von Innovationsprojekten","Projekte von Unternehmen", 25, false)}
   <h5 style= "margin-bottom: 0;">Projects by researchers</h5>
-  ${draw_fin_plot("Förderung","Projekte von Forschenden", 68, false)}
+  ${draw_fin_plot("Förderung von Innovationsprojekten","Projekte von Forschenden", 70, false)}
 </div>
 
 ## Advisory and Networking
 
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 5px;">
-  <h5 style= "margin-bottom: 0;">Project set-up assistance and networking</h5>
-  ${draw_fin_plot("Starthilfe für Projekte und Vernetzung",undefined, 68,false)}
-  <h5 style= "margin-bottom: 0;">Support for start-ups</h5>
-  ${draw_fin_plot("Begleitung von Start-ups",undefined,48, false)}
+  <h5 style= "margin-bottom: 0;">Knowledge and Network</h5>
+  ${draw_fin_plot("Beratung und Vernetzung","Wissen und Netzwerke",70,false)}
+  <h5 style= "margin-bottom: 0;">Innovation Management and Advisory</h5>
+  ${draw_fin_plot("Beratung und Vernetzung","Innovationsmanagement und Beratung",55, false)}
 </div>
 
 <p class="comment">Source: Cockpit/PowerBI Innosuisse (2025)

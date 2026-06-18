@@ -72,7 +72,7 @@ export default {
     ]},
 
     // === FRANÇAIS ===
-    { name: "Introduction",                    path: "/fr/index",                         pager: "fr" },
+    { name: "Résumé",                    path: "/fr/index",                         pager: "fr" },
     { name: "Offres d'encouragement et contenus", path: "/fr/offres-dencouragement-et-contenus" },
     { name: "Résultats comparatifs",              path: "/fr/resultats-comparatifs" },
     { name: "Bases méthodologiques",           path: "/fr/bases-methodologiques",         pager: "fr" },
@@ -125,8 +125,8 @@ export default {
   </a>
   <nav style="display:flex; gap:0.25rem; font-size:0.85rem; flex-shrink:0; margin-left:auto;">
     <a href="${links.de}" style="padding:3px 8px; text-decoration:none; color:#333333;${deSty}">DE</a>
+        <a href="${links.fr}" style="padding:3px 8px; text-decoration:none; color:#333333;${frSty}">FR</a>
     <a href="${links.en}" style="padding:3px 8px; text-decoration:none; color:#333333;${enSty}">EN</a>
-    <a href="${links.fr}" style="padding:3px 8px; text-decoration:none; color:#333333;${frSty}">FR</a>
   </nav>
 </div>`;
   },

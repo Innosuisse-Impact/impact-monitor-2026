@@ -40,6 +40,7 @@ const strings = {
       marginLeft: 150
     },
     draw_dn_sustainability: ["soziale Nachhaltigkeit", "ökologische Nachhaltigkeit", "Nachhaltigkeit"],
+    draw_dn_digital: ["Digitale Geschäftsmodelle", "Digitale Technologien", "Digitalisierung"],
     draw_inkr_radikal: "←  Anteil klar inkrementelle  |  radikale Projekte →                               ",
     draw_results_relevance: "← Relevanz",
     leverage: { funding: "1 Fr. Förderung", value: "4 Fr. Wertschöpfung" },
@@ -91,11 +92,13 @@ const strings = {
         "Innovation cheque",
         "Innovation projects without\nimplementation partner",
         "BRIDGE Proof of Concept",
-        "Start-up Core Coaching"
+        "BRIDGE Discovery",
+        "Start-up Coaching"
       ],
       marginLeft: 170
     },
     draw_dn_sustainability: ["social sustainability", "environmental sustainability", "sustainability"],
+    draw_dn_digital: ["digital business models", "digital technologies", "digitisation"],
     draw_inkr_radikal: "←  Share of clearly incremental  |  radical projects →                               ",
     draw_results_relevance: "← Relevance",
     leverage: { funding: "1 CHF funding", value: "4 CHF of value added" },
@@ -147,11 +150,13 @@ const strings = {
         "Chèque d'innovation",
         "Projets d'innovation sans\npartenaire de mise en œuvre",
         "BRIDGE Proof of Concept",
-        "Start-up Core Coaching"
+        "BRIDGE Discovery",
+        "Start-up Coaching"
       ],
       marginLeft: 170
     },
     draw_dn_sustainability: ["durabilité sociale", "durabilité environnementale", "durabilité"],
+    draw_dn_digital: ["modèles d'entreprise numériques", "technologies numériques", "numérisation"],
     draw_inkr_radikal: "←  Part de projets clairement incrémentaux  |  radicaux →                               ",
     draw_results_relevance: "← Pertinence",
     leverage: { funding: "1 franc\nd'encouragement", value: "4 francs\nde valeur ajoutée" },
@@ -346,11 +351,6 @@ const data = aq
 
   const bridgePOC = instruments.BP;
   const bridgeDisc = instruments.BD;
-  const startupSpecial = lang === "de"
-    ? "Start-up Innovationsprojekte"
-    : lang === "fr"
-    ? "Projets d'innovation pour start-up"
-    : "Start-up innovation projects";
 
   const fmtFunding = lang === "de"
     ? (v) => `⌀ ${v.toLocaleString("fr-CH")} Mio. Fr.`
@@ -358,32 +358,25 @@ const data = aq
     ? (v) => `⌀ ${v.toLocaleString("fr-CH")} mio. de francs`
     : (v) => `⌀ CHF ${v.toLocaleString("de-CH")} mn`;
 
-  const fmtFundingSpecial = lang === "de"
-    ? (v) => `${v.toLocaleString("fr-CH")} Mio. Fr. (2023)`
-    : lang === "fr"
-    ? (v) => `${v.toLocaleString("fr-CH")} mio. de francs (2023)`
-    : (v) => `CHF ${v.toLocaleString("de-CH")} mn (2023)`;
-
   return Plot.plot({
     marginLeft: lang === "de" ? 260 : 300,
-    marginRight: lang === "de" ? 35 : 55,
-    marginTop: -1,
+    marginRight: 0,
+    marginTop: displayXAxis ? 20 : -1,
     marginBottom: 0,
     caption: displayCaption
       ? html`<span style="font-size: 10px; color: #828282;">${s.fin_plot.caption}</span>`
       : undefined,
     height: height,
+    width: 640,
     x: {
       domain: [0, 200],
-      tickSize: 0,
-      tickSpacing: 50,
-      labelOffset: 45,
+      axis: null,
       label: null
     },
     y: { label: null, tickSize: 0 },
     style: { ...plotStyle, fontSize: "12px" },
     marks: [
-      Plot.axisX({ anchor: "top", ticks: [0, 50, 100, 150, 200] }),
+      displayXAxis ? Plot.axisX({ anchor: "top", tickSize: 0, ticks: [], label: s.fin_plot.xLabel }) : null,
       //Plot.gridX({ interval: 25 }),
       Plot.barX(df, {
         x: "mean_funding",
@@ -404,12 +397,7 @@ const data = aq
       Plot.textX(df, {
         x: "mean_funding",
         y: (d) => (d.monitoring === "Ja" ? `*${d[instrCol]}` : d[instrCol]),
-        text: (d) =>
-          d[instrCol] === startupSpecial
-            ? fmtFundingSpecial(d.mean_funding)
-            : d[instrCol] === bridgePOC || d[instrCol] === bridgeDisc
-            ? `${fmtFunding(d.mean_funding)} (${s.fin_plot.snsf})`
-            : fmtFunding(d.mean_funding),
+        text: (d) => fmtFunding(d.mean_funding),
         textAnchor: "start",
         dx: 5,
         sort: { y: "x", reverse: true }
@@ -470,12 +458,21 @@ export function n_subcluster() {
     marks: [
       Plot.axisFx({ textAnchor: "start", dx: -50, tickSize: 0, lineWidth: 10 }),
       Plot.barX(df_subcluster_n, {
+        x: 1,
+        y: "instrument_n",
+        fx: "subcluster",
+        fill: grey_background,
+        insetTop: 3,
+        insetBottom: 3,
+        sort: { y: "x", reverse: true }
+      }),
+      Plot.barX(df_subcluster_n, {
         x: "obs_value",
         y: "instrument_n",
         fx: "subcluster",
         fill: "subcluster",
-        insetTop: 5,
-        insetBottom: 5,
+        insetTop: 3,
+        insetBottom: 3,
         sort: { y: "x", reverse: true }
       }),
       Plot.textX(df_subcluster_n, {
@@ -485,19 +482,7 @@ export function n_subcluster() {
         text: (d) => d3.format("0.0%")(d.obs_value),
         textAnchor: "start",
         dx: 5
-      }),
-      Plot.text(
-        df_subcluster_n.filter(
-          (d) => d.instrument === "Innovationsprojekte mit Umsetzungspartner"
-        ),
-        {
-          fx: "subcluster",
-          y: "instrument_n",
-          text: "subcluster_n",
-          frameAnchor: "top-left",
-          dy: -45
-        }
-      )
+      })
     ]
   })
 }
@@ -532,7 +517,7 @@ export function draw_result(data, instrument, x_axis = true, sy = 0) {
       reverse: false
     },
     fy: {
-      axis: "left",
+      axis: null,
       label: null,
       ticks: null
     },
@@ -542,6 +527,7 @@ export function draw_result(data, instrument, x_axis = true, sy = 0) {
       ? { type: "ordinal", domain: zufriedenDomain, range: palette.divPN3 }
       : { type: "ordinal", domain: erfolgDomain, range: divPN4 },
     marks: [
+      Plot.axisFy({ lineWidth: 15, anchor: "left" }),
       Plot.barX(df, {
         x: (d) => d.pct/100,
         y: respondant,
@@ -570,7 +556,7 @@ export function draw_innoart(plot = "type_2", width = 640, height = 150) {
 
   const x_axis_d = {
     axis: "top",
-    labelOffset: 55,
+    labelOffset: 40,
     labelAnchor: "left",
     domain: [0, 100],
     ticks: [],
@@ -667,13 +653,13 @@ export function draw_innoart(plot = "type_2", width = 640, height = 150) {
   }
 
   return Plot.plot({
-    marginTop: 65,
+    marginTop: 45,
     marginLeft: 170,
     marginBottom: 0,
-    marginRight: plot === "inkr_radikal" ? 65 : 0,
+    marginRight: plot === "inkr_radikal" ? 65 : 15,
     width: width,
     height: height,
-    color: { type: "categorical", range: palette.cat },
+    color: { type: "categorical", range: (plot === "type_2" && width === 482) ? palette.cat.slice(3) : palette.cat },
     fx: {
       label: null,
       axis: "top"
@@ -850,7 +836,7 @@ export function draw_dn(
       label: null,
       axis: "top",
       reverse: true,
-      domain: plot !== "digital" ? s.draw_dn_sustainability : undefined
+      domain: plot !== "digital" ? s.draw_dn_sustainability : s.draw_dn_digital
     },
     fy: { label: null },
     style: { ...plotStyle, fontSize: "12px" },
