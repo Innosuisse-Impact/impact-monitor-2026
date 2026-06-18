@@ -42,7 +42,7 @@ export default {
     { name: "Förderangebote und Inhalte",                  path: "/de/foerderangebote-und-inhalte" },
     { name: "Vergleichende Ergebnisse",                    path: "/de/vergleichende-ergebnisse" },
     { name: "Methodische Grundlagen",                      path: "/de/methodische-grundlagen", pager: "de" },
-    { name: "Projektförderung", pager: "de", pages: [
+    { name: "Förderung von Innovationsprojekten", pager: "de", pages: [
       { name: "Innovationsprojekte mit Umsetzungspartner",   path: "/de/projekte-unternehmen-forschende" },
       { name: "Innovationsscheck",                           path: "/de/projekte-unternehmen-forschende#innovationsscheck" },
       { name: "Innovationsprojekte ohne Umsetzungspartner",  path: "/de/projekte-forschende" },

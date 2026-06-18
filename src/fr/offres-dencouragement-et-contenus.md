@@ -17,7 +17,7 @@ L'état actuel du suivi de l'impact est tel que, pour toutes les catégories d'o
 
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 5px;">
   <h5 style= "margin-bottom: 0;">Projets d'entreprises avec des chercheurs</h5>
-  ${draw_fin_plot("Förderung","Projekte von Unternehmen mit Forschenden",135,true)}
+  ${draw_fin_plot("Förderung","Projekte von Unternehmen mit Forschenden",100,false)}
   <h5 style= "margin-bottom: 0;">Projets d'entreprises</h5>
   ${draw_fin_plot("Förderung","Projekte von Unternehmen", 25, false)}
   <h5 style= "margin-bottom: 0;">Projets de chercheurs</h5>

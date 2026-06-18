@@ -367,7 +367,7 @@ const data = aq
   return Plot.plot({
     marginLeft: lang === "de" ? 260 : 300,
     marginRight: lang === "de" ? 35 : 55,
-    marginTop: displayXAxis ? 45 : -1,
+    marginTop: -1,
     marginBottom: 0,
     caption: displayCaption
       ? html`<span style="font-size: 10px; color: #828282;">${s.fin_plot.caption}</span>`
@@ -375,16 +375,16 @@ const data = aq
     height: height,
     x: {
       domain: [0, 200],
-      tickSize: displayXAxis ? 1 : 0,
+      tickSize: 0,
       tickSpacing: 50,
       labelOffset: 45,
-      label: displayXAxis ? s.fin_plot.xLabel : null
+      label: null
     },
     y: { label: null, tickSize: 0 },
     style: { ...plotStyle, fontSize: "12px" },
     marks: [
       Plot.axisX({ anchor: "top", ticks: [0, 50, 100, 150, 200] }),
-      Plot.gridX({ interval: 25 }),
+      //Plot.gridX({ interval: 25 }),
       Plot.barX(df, {
         x: "mean_funding",
         y: (d) => (d.monitoring === "Ja" ? `*${d[instrCol]}` : d[instrCol]),

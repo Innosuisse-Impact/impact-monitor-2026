@@ -17,7 +17,7 @@ Der gegenwärtige Stand des Wirkungsmonitorings ist so aufgebaut, dass in allen 
 
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 5px;">
   <h5 style= "margin-bottom: 0;">Projekte von Unternehmen mit Forschenden</h5>
-  ${draw_fin_plot("Förderung","Projekte von Unternehmen mit Forschenden",135,true)}
+  ${draw_fin_plot("Förderung","Projekte von Unternehmen mit Forschenden",100,false)}
   <h5 style= "margin-bottom: 0;">Projekte von Unternehmen</h5>
   ${draw_fin_plot("Förderung","Projekte von Unternehmen", 25, false)}
   <h5 style= "margin-bottom: 0;">Projekte von Forschenden</h5>

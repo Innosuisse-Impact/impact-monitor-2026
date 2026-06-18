@@ -17,7 +17,7 @@ The current status of the impact monitoring is structured in such a way that at 
 
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 5px;">
   <h5 style= "margin-bottom: 0;">Projects by companies with researchers</h5>
-  ${draw_fin_plot("Förderung","Projekte von Unternehmen mit Forschenden",135,true)}
+  ${draw_fin_plot("Förderung","Projekte von Unternehmen mit Forschenden",100, false)}
   <h5 style= "margin-bottom: 0;">Projects by comapnies</h5>
   ${draw_fin_plot("Förderung","Projekte von Unternehmen", 25, false)}
   <h5 style= "margin-bottom: 0;">Projects by researchers</h5>
@@ -28,9 +28,9 @@ The current status of the impact monitoring is structured in such a way that at 
 
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 5px;">
   <h5 style= "margin-bottom: 0;">Project set-up assistance and networking</h5>
-  ${draw_fin_plot("Starthilfe für Projekte und Vernetzung",undefined, 95,false)}
+  ${draw_fin_plot("Starthilfe für Projekte und Vernetzung",undefined, 68,false)}
   <h5 style= "margin-bottom: 0;">Support for start-ups</h5>
-  ${draw_fin_plot("Begleitung von Start-ups",undefined,55, false)}
+  ${draw_fin_plot("Begleitung von Start-ups",undefined,48, false)}
 </div>
 
 <p class="comment">Source: Cockpit/PowerBI Innosuisse (2025)
