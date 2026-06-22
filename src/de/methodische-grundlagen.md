@@ -14,7 +14,7 @@ import { plot_erhebung} from "../functions.js"
 
 Nach einer Erarbeitung von konzeptionellen Grundlagen wurde 2021 das Wirkungsmonitoring bei den Umsetzungspartnern der Innovationsprojekte mit systematischen Befragungen eingeführt und seither kontinuierlich auf weitere Instrumente ausgedehnt. Die in den Grundlagen festgelegten Ziele der Wirkungsmessung sind erreicht worden und mittlerweile liegen eine Vielzahl aussagekräftiger Daten vor. Sie erlauben fundierte Aussagen zu den vielfältigen Wirkungen der Innovationsförderung zu formulieren.
 
-Das Wirkungsmonitoring von Innosuisse basiert auf obligatorischen Befragungen und Vollerhebungen bei allen Umsetzungs- und Forschungspartnern der [Innovationsprojekte](/de/projekte-unternehmen-forschende), der KMU bei den [Innovationsschecks](/de/projekte-unternehmen-forschende#innovationsscheck) sowie bei allen am [Core Coaching](/de/beratung-und-netzwerk) teilnehmenden Start-ups. Die Erhebungen erfolgen bei den Umsetzungspartnern der Innovationsprojekte und den Start-ups im Coaching jeweils beim Abschluss der Förderung und zusätzlich drei Jahre nach Abschluss. Bei den [Innovation Booster](/de/beratung-und-netzwerk) und den [BRIDGE Proof of Concept-Projekten](/de/projekte-forschende#bridge-proof-of-concept) beruhen die Ergebnisse auf Monitoring-Daten aller laufenden Initiativen. 
+Das Wirkungsmonitoring von Innosuisse basiert auf obligatorischen Befragungen und Vollerhebungen bei allen Umsetzungs- und Forschungspartnern der *Innovationsprojekte*, der KMU bei den *Innovationsschecks* sowie bei allen am *Core Coaching* teilnehmenden Start-ups. Die Erhebungen erfolgen bei den Umsetzungspartnern der Innovationsprojekte und den Start-ups im Coaching jeweils beim Abschluss der Förderung und zusätzlich drei Jahre nach Abschluss. Bei den *Innovation Booster* und den *BRIDGE Proof of Concept*-Projekten beruhen die Ergebnisse auf Monitoring-Daten der laufenden Initiativen. 
 
 <div>${plot_erhebung()}</div>
 
@@ -29,23 +29,21 @@ Die dargestellten Indikatoren basieren auf folgenden Datengrundlagen:
 
 | Förderangebot                            | Datengrundlage                                         |
 |----------------------------------|------------------------------------------------|
-| Umsetzungspartner bei Innovationsprojekten | Mittelwert Berichtsjahre 2022–24           |
-| Forschungspartner bei Innovationsprojekten | Berichtsjahr 2023–24                           |
-| Start-up Core Coaching               | Mittelwert Berichtsjahre 2023–24         |
-| Innovationsscheck               | Berichtsjahr 2023–24                              |
-| BRIDGE Discovery         | Berichtsjahr 2024    |
-| BRIDGE Proof of Concept         | Förderdaten und Abfragen im Handelsregister, Berichtsjahr 2023–24    |
-| Innovation Booster              | Förderdaten und jährliche Befragungen der "Leading Houses", Berichtsjahr 2023–24 |               
+| Umsetzungspartner bei Innovationsprojekten | Mittelwert Berichtsjahre 2023–25           |
+| Forschungspartner bei Innovationsprojekten | Berichtsjahr 2023–25                           |
+| Start-up Core Coaching               | Mittelwert Berichtsjahre 2023–25         |
+| Innovationsscheck               | Mittelwert Berichtsjahre 2023–25                              |
+| BRIDGE Discovery         | Mittelwert Berichtsjahre 2023–25    |
+| BRIDGE Proof of Concept         | Eigene Recherche, Berichtsjahre bis 2025    |
+| Innovation Booster              | Mittelwert Berichtsjahre 2023–25 |               
 
 </div>
 
-Die Befragungen basieren auf differenzierten Bewertungen der befragten Zielgruppen und, dort wo vorhanden, auf Mittelwerten über mehrere Befragungsjahre. Die Bezugsjahre des Monitorings unterscheiden sich nach den einzelnen Förderangeboten und richten sich nach der Datenverfügbarkeit: 
-
-Für die [Innovationsprojekte](/de/projekte-unternehmen-forschende) bei den Umsetzungspartnern wird der Mittelwert über die drei aktuellsten Monitoringjahre dargestellt. Der Rücklauf der Befragungen liegt zwischen rund 50 % und über 75 % und erlaubt damit statistisch valide Aussagen. 
+Die Befragungen basieren auf differenzierten Bewertungen der befragten Zielgruppen und, dort wo vorhanden, auf Mittelwerten über mehrere Befragungsjahre. Die Bezugsjahre des Monitorings unterscheiden sich nach den einzelnen Förderangeboten und richten sich nach der Datenverfügbarkeit: Für die *Innovationsprojekte mit Umsetzungspartner* z. B. wird der Mittelwert über die drei aktuellsten Monitoringjahre dargestellt. Der Rücklauf der Befragungen liegt zwischen rund 50 % und über 75 % und erlaubt damit statistisch valide Aussagen. 
 
 ## Tabellarische Zusammenstellung der Ergebnisse
 
-Die detaillierten Ergebnisse finden sich in einer tabellarischen Zusammenstellung ([⤓&nbsp;Excel](/_file/data//wirkungsindikatoren-2021-2023.xlsx)), gegliedert nach Instrumenten, Zielgruppen der Förderung, fünf Stossrichtungen der Wirkungsorientierung und differenzierter Kategorisierung der Wirkung
+Die detaillierten Ergebnisse finden sich in einer tabellarischen Zusammenstellung ([⤓&nbsp;Excel](/_file/data//wirkungsindikatoren-2023-2025.xlsx)), gegliedert nach Instrumenten, Zielgruppen der Förderung, fünf Stossrichtungen der Wirkungsorientierung und differenzierter Kategorisierung der Wirkung
   
 ## Förderangebote und Wirkungsziele von Innosuisse (Outcomes)
 Die Förderangebote von Innosuisse können in zwei übergeordnete Förderbereiche gegliedert werden (vgl. nachfolgende Übersicht): 
@@ -58,11 +56,9 @@ Die nachfolgende Übersicht zeigt, zu welchen fünf Stossrichtungen (Outcomes) v
   <img src="../images/förderung_grafik.png" alt="Image">
 </div>
 
-Die Ergebnisse beinhalten einerseits kurz- bis mittelfristige Wirkungen bei Abschluss der Innovationsvorhaben oder kurz nach Projektabschluss. Andererseits werden auch längerfristige Wirkungen dargestellt, beispielsweise die Umsetzung auf dem Markt oder Beschäftigungswirkungen. 
-
-Die Zuordnung zu den fünf dargestellten Stossrichtungen wird in der hier vorliegenden Berichterstattung nicht explizit dargestellt, wird aber in der tabellarischen Zusammenstellung (siehe oben) transparent gemacht. Dies gilt ebenso für die verwendeten Skalenbewertungen für die Berechnungen der ausgewiesenen Indikatoren. 
+Die Ergebnisse beinhalten einerseits kurz- bis mittelfristige Wirkungen bei Abschluss der Innovationsvorhaben oder kurz nach Projektabschluss. Andererseits werden auch längerfristige Wirkungen dargestellt, beispielsweise die Umsetzung auf dem Markt oder Beschäftigungswirkungen. Die Zuordnung zu den fünf dargestellten Stossrichtungen wird in der hier vorliegenden Berichterstattung nicht explizit dargestellt, wird aber in der tabellarischen Zusammenstellung (siehe oben) transparent gemacht. Dies gilt ebenso für die verwendeten Skalenbewertungen für die Berechnungen der ausgewiesenen Indikatoren. 
 
 ## Weiterentwicklung des Wirkungsmonitorings
-Das vorliegende Wirkungsmonitoring wird schrittweise erweitert werden. Der Fokus bei der Weiterentwicklung liegt bei den [Start-up Innovationsprojekten](/de/projekte-unternehmen-forschende), den [international geförderten Projekten](/de/foerderangebote-und-inhalte), der [Flagship Initiative](/de/projekte-unternehmen-forschende) und dem mit dem Schweizerischen Nationalfonds (SNF) durchgeführten [BRIDGE Proof of Concept](/de/projekte-unternehmen-forschende). 
+Das vorliegende Wirkungsmonitoring wird schrittweise erweitert. Der Fokus bei der Weiterentwicklung liegt bei den *Start-up Innovationsprojekten*, den *internationalen Projekten*, der *Flagship Initiative* und dem mit dem Schweizerischen Nationalfonds (SNF) durchgeführten *BRIDGE Proof of Concept*. 
 
-Für die in der vergangenen BFI-Periode 2021–2024 neu eingeführten Instrumente und zum Teil finanziell gewichtigen Instrumente (Flagship Initiative, Start-up Innovationsprojekte, Swiss Accelerator) liegen noch keine Daten vor, da die ersten Projekte erst im Berichtsjahr 2025 abgeschlossen werden. Die internationalen Projekte, die Start-up Innovationsprojekte und das BRIDGE Proof of Concept Programm werden ab Förderjahr 2026 in die Berichterstattung miteinbezogen, die übrigen Instrumente in den Folgejahren.
+Für die in der vergangenen BFI-Periode 2021–2024 neu eingeführten Instrumente und zum Teil finanziell gewichtigen Instrumente (*Flagship Initiative*, *Start-up Innovationsprojekte*, *Swiss Accelerator*) liegen noch keine Daten vor, da die ersten Projekte erst im Berichtsjahr 2025 abgeschlossen werden. Die *internationalen Projekte*, die *Start-up Innovationsprojekte* und das *BRIDGE Proof of Concept* Programm werden ab Förderjahr 2027 in die Berichterstattung miteinbezogen, die übrigen Instrumente in den Folgejahren.
