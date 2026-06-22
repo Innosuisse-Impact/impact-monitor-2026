@@ -205,7 +205,7 @@ The support offer from the Swiss National Science Foundation (SNSF) and Innosuis
     </div>
     <div class="figure">
       <div class="figure__col">${draw_bar(df_waffle, { title: "bd_imppartner", mode: "single", rank: "pct2" })}</div>
-      <p>Only a few have founded or are planning to spin off a start-up or spin-off.</p>
+      <p>Research groups have founded or are planning to spin off a start-up or spin-off.</p>
     </div>
     <a class="claim__link" href="/en/projects-researchers#bridge-discovery">To the detailed results <span class="claim__link-arrow">→</span></a>
   </section>
