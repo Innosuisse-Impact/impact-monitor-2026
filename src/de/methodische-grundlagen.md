@@ -30,7 +30,7 @@ Die dargestellten Indikatoren basieren auf folgenden Datengrundlagen:
 | Förderangebot                            | Datengrundlage                                         |
 |----------------------------------|------------------------------------------------|
 | Umsetzungspartner bei Innovationsprojekten | Mittelwert Berichtsjahre 2023–25           |
-| Forschungspartner bei Innovationsprojekten | Berichtsjahr 2023–25                           |
+| Forschungspartner bei Innovationsprojekten | Mittelwert Berichtsjahre 2023–25                           |
 | Start-up Core Coaching               | Mittelwert Berichtsjahre 2023–25         |
 | Innovationsscheck               | Mittelwert Berichtsjahre 2023–25                              |
 | BRIDGE Discovery         | Mittelwert Berichtsjahre 2023–25    |
