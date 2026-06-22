@@ -326,7 +326,7 @@ export function draw_fin_plot(
   displayCaption = false
 ) {
   const instrCol = `instrument_${lang}`;
-  const hrefCol = `href_${de}`;
+  const hrefCol = `href_${lang}`;
 
 const data = aq
   .from(daten_controlling)
