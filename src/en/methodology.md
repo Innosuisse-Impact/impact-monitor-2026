@@ -10,7 +10,7 @@ import { plot_erhebung} from "../functions.js"
 ```
 
 # Methodology
-## Design of the Impact Monitoring System
+## Conceptual framework of the impact monitoring system
 
 Following the development of a conceptual framework, an impact monitoring system was introduced in 2021 amongst the implementation partners of the innovation projects through systematic surveys and has since been continuously expanded to include further instruments. The impact measurement objectives set out in the framework have been achieved, and a wealth of meaningful data is now available. This data enables conclusions to be drawn regarding the diverse impacts of innovation promotion.
 
