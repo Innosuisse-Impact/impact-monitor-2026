@@ -38,7 +38,7 @@ export default {
   // hidden by CSS in head({path}) using href-based selectors.
   pages: [
     // === DEUTSCH ===
-    { name: "Zusammenfassung", path: "/de/index", pager: "de" },
+    { name: "Auf einen Blick", path: "/de/index", pager: "de" },
     { name: "Förderangebote und Inhalte",                  path: "/de/foerderangebote-und-inhalte" },
     { name: "Vergleichende Ergebnisse",                    path: "/de/vergleichende-ergebnisse" },
     { name: "Methodische Grundlagen",                      path: "/de/methodische-grundlagen", pager: "de" },
@@ -55,7 +55,7 @@ export default {
     ]},
 
     // === ENGLISH ===
-    { name: "Summary",               path: "/en/index",                     pager: "en" },
+    { name: "At a glance",               path: "/en/index",                     pager: "en" },
     { name: "Support offers and content",  path: "/en/support-offers-and-content" },
     { name: "Comparative results",         path: "/en/comparative-results" },
     { name: "Methodology",                path: "/en/methodology",               pager: "en" },
@@ -72,7 +72,7 @@ export default {
     ]},
 
     // === FRANÇAIS ===
-    { name: "Résumé",                    path: "/fr/index",                         pager: "fr" },
+    { name: "En bref",                    path: "/fr/index",                         pager: "fr" },
     { name: "Offres d'encouragement et contenus", path: "/fr/offres-dencouragement-et-contenus" },
     { name: "Résultats comparatifs",              path: "/fr/resultats-comparatifs" },
     { name: "Bases méthodologiques",           path: "/fr/bases-methodologiques",         pager: "fr" },
