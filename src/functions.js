@@ -391,7 +391,7 @@ const data = aq
           x: "mean_funding",
           y: (d) => (d.monitoring === "Ja" ? `*${d[instrCol]}` : d[instrCol]),
           sort: { y: "x", reverse: true },
-          opacity: 0.6.
+          opacity: 0.6,
           fill: "white"
         }
       ),
