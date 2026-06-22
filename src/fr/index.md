@@ -205,7 +205,7 @@ L'offre d'encouragement du Fonds national suisse (FNS) et d'Innosuisse vise à d
     </div>
     <div class="figure">
       <div class="figure__col">${draw_bar(df_waffle, { title: "bd_imppartner", mode: "single", rank: "pct2" })}</div>
-      <p>Seuls quelques-uns ont réalisé ou envisagent la création d'une start-up ou d'un spin-off.</p>
+      <p>Les groupes de recherche ont réalisé ou envisagent la création d'une start-up ou d'un spin-off.</p>
     </div>
     <a class="claim__link" href="/fr/projets-chercheurs#bridge-discovery">Vers les résultats détaillés <span class="claim__link-arrow">→</span></a>
   </section>
