@@ -326,7 +326,7 @@ export function draw_fin_plot(
   displayCaption = false
 ) {
   const instrCol = `instrument_${lang}`;
-  //const labelCol = `label_${lang}`;
+  const hrefCol = `href_${de}`;
 
 const data = aq
   .from(daten_controlling)
@@ -391,6 +391,7 @@ const data = aq
           y: (d) => (d.monitoring === "Ja" ? `*${d[instrCol]}` : d[instrCol]),
           sort: { y: "x", reverse: true },
           opacity: 0.6,
+          href: hrefCol,
           fill: "white"
         }
       ),
