@@ -382,7 +382,8 @@ const data = aq
         x: "mean_funding",
         y: (d) => (d.monitoring === "Ja" ? `*${d[instrCol]}` : d[instrCol]),
         sort: { y: "x", reverse: true },
-        fill: palette.accent
+        fill: palette.accent,
+        href: hrefCol
       }),
       Plot.barX(
         df.filter((d) => d.monitoring !== "Ja"),
@@ -390,8 +391,7 @@ const data = aq
           x: "mean_funding",
           y: (d) => (d.monitoring === "Ja" ? `*${d[instrCol]}` : d[instrCol]),
           sort: { y: "x", reverse: true },
-          opacity: 0.6,
-          href: hrefCol,
+          opacity: 0.6.
           fill: "white"
         }
       ),
