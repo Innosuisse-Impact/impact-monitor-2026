@@ -205,7 +205,7 @@ Das Förderangebot des Schweizerischen Nationalfonds (SNF) und Innosuisse zielt 
     </div>
     <div class="figure">
       <div class="figure__col">${draw_bar(df_waffle, { title: "bd_imppartner", mode: "single", rank: "pct2" })}</div>
-      <p>Nur wenige realisierten oder planen die Ausgründung eines Start-ups oder Spin-offs.</p>
+      <p>Forschungsgruppen realisierten oder planen die Ausgründung eines Start-ups oder Spin-offs.</p>
     </div>
     <a class="claim__link" href="/de/projekte-forschende#bridge-discovery">Zu den detaillierten Ergebnissen <span class="claim__link-arrow">→</span></a>
   </section>
