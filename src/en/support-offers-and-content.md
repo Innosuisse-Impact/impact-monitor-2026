@@ -28,7 +28,7 @@ The current status of the impact monitoring is structured in such a way that at 
 
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 5px;">
   <h5 style= "margin-bottom: 0;">Knowledge and Network</h5>
-  ${draw_fin_plot("Beratung und Vernetzung","Wissen und Netzwerke",70,false)}
+  ${draw_fin_plot("Beratung und Vernetzung","Wissen und Netzwerke",55,false)}
   <h5 style= "margin-bottom: 0;">Innovation Management and Advisory</h5>
   ${draw_fin_plot("Beratung und Vernetzung","Innovationsmanagement und Beratung",55, false)}
 </div>
