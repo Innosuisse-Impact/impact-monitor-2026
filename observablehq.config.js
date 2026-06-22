@@ -55,7 +55,7 @@ export default {
     ]},
 
     // === ENGLISH ===
-    { name: "Introduction",               path: "/en/index",                     pager: "en" },
+    { name: "Summary",               path: "/en/index",                     pager: "en" },
     { name: "Support offers and content",  path: "/en/support-offers-and-content" },
     { name: "Comparative results",         path: "/en/comparative-results" },
     { name: "Methodology",                path: "/en/methodology",               pager: "en" },
