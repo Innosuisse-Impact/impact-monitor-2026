@@ -123,7 +123,7 @@ export default {
     return `<div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; padding:0 1rem; height:100%; gap:1rem; width:100%;">
   <a href="https://www.innosuisse.admin.ch" class="logo" id="header-logo-container" aria-label="Open Homepage" style="display:flex; align-items:center; gap:0.5rem; text-decoration:none; color:inherit; flex-shrink:0;">
     <img src="/images/swiss-logo-flag.svg" class="logo_flag" style="height:40px;" alt="Swiss cross logo">
-    <div role="separator" aria-hidden="true" style="overflow: visible;background-color: rgb(209 213 219);"></div>
+    <div role="separator" aria-hidden="true" style="overflow: visible;background-color: rgb(209 213 219);margin-left: 0.5rem;margin-right: 0.5rem;width: 1px;height: 2.5rem;"></div>
     <span style="font-size:1rem; line-height:1.25; color:#000000;">Innosuisse<br>${agencyName}</span>
   </a>
   <nav style="display:flex; gap:0.25rem; font-size:0.85rem; flex-shrink:0; margin-left:auto; align-items:center;">
