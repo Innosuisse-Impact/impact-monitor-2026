@@ -140,11 +140,11 @@ Innovationsprojekte ohne Umsetzungspartner zielen darauf ab, wissenschaftliche E
     </header>
     <div class="figure">
       <div class="figure__col">${draw_bar(df_waffle, { title: "ipr_proj_stand", mode: "single", rank: "pct1" })}</div>
-      <p>Projekte prüfen erfolgreich die Machbarkeit der Innovationsidee. Konkrete Umsetzungsschritte sind möglich.</p>
+      <p>Projekte haben erfolgreich die Machbarkeit der Projektziele geprüft. Konkrete Umsetzungsschritte sind durchaus möglich.</p>
     </div>
     <div class="figure">
       <div class="figure__col">${draw_bar(df_waffle, { title: "ipr_proj_stand", mode: "single", rank: "pct2" })}</div>
-      <p>Projekte erzielen schlüssige Ergebnisse für die Umsetzung.</p>
+      <p>Projekte haben schlüssige Ergebnisse erzielt, die es ermöglichen, konkrete weitere Umsetzungsschritte vorzunehmen.</p>
     </div>
   </section>
 
@@ -182,11 +182,11 @@ Das Förderangebot des Schweizerischen Nationalfonds (SNF) und Innosuisse zielt 
     </header>
     <div class="figure">
       <div class="figure__col">${draw_bar(df_waffle, { title: "bd_proj_stand", mode: "single", rank: "pct1" })}</div>
-      <p>Projekte haben die Machbarkeit geprüft.</p>
+      <p>Projekte haben erfolgreich die Machbarkeit der Projektziele geprüft. Konkrete Umsetzungsschritte sind durchaus möglich.</p>
     </div>
     <div class="figure">
       <div class="figure__col">${draw_bar(df_waffle, { title: "bd_proj_stand", mode: "single", rank: "pct2" })}</div>
-      <p>Projekte liefern schlüssige Ergebnisse, die es ermöglichen, konkrete Umsetzungsschritte vorzunehmen.</p>
+      <p>Projekte haben schlüssige Ergebnisse erzielt, die es ermöglichen, konkrete weitere Umsetzungsschritte vorzunehmen.</p>
     </div>
   </section>
 
