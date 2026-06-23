@@ -121,6 +121,15 @@ h6 {
   color: var(--color-ink-soft);
 }
 
+.card {
+    background: var(--theme-background-alt);
+    border: solid 0px var(--theme-foreground-faintest);
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 0;
+    font: 14px var(--sans-serif);
+}
+  
 .card h1{
   font-size: var(--text-md);
   font-family: var(--font-sans);
