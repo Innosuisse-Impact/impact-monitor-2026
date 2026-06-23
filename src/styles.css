@@ -22,6 +22,7 @@
 
 :root {
   --font-sans: "Frutiger LT", "Arial", sans-serif;
+  --sans-serif: "Frutiger LT", "Arial", sans-serif;
   --color-text: #000000;
   --color-accent: #06F7DA;
   --color-muted: #828282;
@@ -193,6 +194,7 @@ select[class$="-inputs"]:focus {
 
 /* Negative margin compensates for sidebar offset */
 #observablehq-header {
+  font-family: var(--font-sans);
   margin-left: -48px;
   border-bottom: none;
   box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.18);
