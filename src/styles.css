@@ -24,7 +24,7 @@
   --font-sans: "Frutiger LT", "Arial", sans-serif;
   --sans-serif: "Frutiger LT", "Arial", sans-serif;
   --color-text: #000000;
-  --theme-foreground-focus: #06F7DA;
+  --theme-foreground-focus: rgb(3, 124, 109);
   --color-accent: #06F7DA;
   --color-muted: #828282;
   --color-bg-button: #f2f2f2;
