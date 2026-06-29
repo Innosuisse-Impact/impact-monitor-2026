@@ -25,9 +25,9 @@ Innosuisse places great emphasis on transparently demonstrating the effectivenes
 
 The most important results from the impact monitoring are briefly summarised below for each support offer. The results are presented in detail and briefly discussed in the main section.
 
-# Innovation project funding
+## Innovation project funding
 
-## Innovation projects with implementation partners
+### Innovation projects with implementation partners
 
 National innovation projects are Innosuisse's most important funding instrument. Companies and organisations from business and society cooperate with research partners to jointly develop innovative products, services, processes or new business models.
 <div class="claims-wrapper">
@@ -95,7 +95,7 @@ National innovation projects are Innosuisse's most important funding instrument.
 
 <div class="claims-wrapper">
 
-## Innovation cheques
+### Innovation cheques
 
 The innovation cheque offers SMEs and start-ups low-threshold funding. The aim is to carry out feasibility and market studies as well as technological clarifications.
 
@@ -129,7 +129,7 @@ The innovation cheque offers SMEs and start-ups low-threshold funding. The aim i
 
 <div class="claims-wrapper">
 
-## Innovation projects without implementation partner
+### Innovation projects without implementation partner
 
 Innovation projects without implementation partners aim to develop scientific findings from high-risk projects with high innovation potential towards application and to take first steps towards implementation.
 
@@ -171,7 +171,7 @@ Innovation projects without implementation partners aim to develop scientific fi
 
 <div class="claims-wrapper">
 
-## BRIDGE: Discovery
+### BRIDGE: Discovery
 
 The support offer from the Swiss National Science Foundation (SNSF) and Innosuisse aims to develop research results at the interface between basic and applied research into scientifically excellent projects with high innovation potential, and to lay the foundations for implementation.
 
@@ -213,7 +213,7 @@ The support offer from the Swiss National Science Foundation (SNSF) and Innosuis
 
 <div class="claims-wrapper">
 
-## BRIDGE: Proof of Concept
+### BRIDGE: Proof of Concept
 
 BRIDGE Proof of Concept gives researchers a year of support to develop research results into marketable applications and to prepare a career outside research and universities.
 
@@ -230,11 +230,11 @@ BRIDGE Proof of Concept gives researchers a year of support to develop research 
   </section>
 </div>
 
-# Advisory services and networking
+## Advisory services and networking
 
 <div class="claims-wrapper">
 
-## Innovation Booster
+### Innovation Booster
 
 In the topic-oriented Innovation Boosters, new and radical innovation ideas are developed in an open, network-based innovation process. The focus is on the early phase of experimental idea generation and testing. Promising innovation ideas are to be pursued further in projects.
 
@@ -264,7 +264,7 @@ In the topic-oriented Innovation Boosters, new and radical innovation ideas are 
 
 <div class="claims-wrapper">
 
-## Start-up Coaching
+### Start-up Coaching
 
 The coaching supports start-ups with innovative and science-based business ideas through tailored support in various founding phases. The support offer is divided into three coordinated offers – Initial, Core and Scale-up Coaching. Start-ups have the opportunity to participate in international camps and internationally important trade fairs. The results of the impact monitoring relate to Start-up Core Coaching.
 
@@ -300,7 +300,7 @@ The coaching supports start-ups with innovative and science-based business ideas
   </section>
 </div>
 
-# Report structure
+## Report structure
 * The chapter [Methodology](/en/methodology) explains the embedding and conception of the impact monitoring.
 * The chapter [Support Offers and Content](/en/support-offers-and-content) shows how broadly the monitoring covers Innosuisse's instruments. The [Comparative Results](/en/comparative-results) compare the support offers with each other.
 * After that, the results of the impact monitoring are presented and explained in a chapter for each support offer.

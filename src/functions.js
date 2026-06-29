@@ -551,13 +551,12 @@ export function draw_result(data, instrument, x_axis = true, sy = 0) {
 
 export function draw_innoart(plot = "type_2", width = 640, height = 150) {
   const df = df_innovationsart.filter((d) => d.plot === plot && d.pct !== null);
-
   const type = `type_${lang}_n`;
   const labelKey = `label_${lang}`;
 
   const x_axis_d = {
     axis: "top",
-    labelOffset: 40,
+    labelOffset: lang === "fr" ? 55 : 45,
     labelAnchor: "left",
     domain: [0, 100],
     ticks: [],
@@ -654,7 +653,7 @@ export function draw_innoart(plot = "type_2", width = 640, height = 150) {
   }
 
   return Plot.plot({
-    marginTop: 45,
+    marginTop: lang === "fr" ? 55 : 50,
     marginLeft: 170,
     marginBottom: 0,
     marginRight: plot === "inkr_radikal" ? 65 : 15,
@@ -907,50 +906,7 @@ export function draw_dn(
 export function drawMiniPlot(instrument, funding = true) {
   const labelCol = `label_${lang}`;
   const instrCol = `instrument_${lang}`;
-  const pre_df =
-    instrument !== "Innovation Booster"
-      ? daten_controlling.filter((d) => d.instrument_de === instrument || d.label_de === instrument)
-      : [
-          {
-            FA: "Starthilfe für Projekte und Vernetzung",
-            inst: "Starthilfe für Projekte und Vernetzung",
-            type: "Starthilfe für Projekte und Vernetzung",
-            instrument_de: "Innovation Booster",
-            year: 2021,
-            funding: 4.9,
-            n: 12,
-            label_de: "Innovation Booster",
-            label_en: "Innovation Booster",
-            label_fr: "Innovation Booster",
-            monitoring: "Ja"
-          },
-          {
-            FA: "Starthilfe für Projekte und Vernetzung",
-            inst: "Starthilfe für Projekte und Vernetzung",
-            type: "Starthilfe für Projekte und Vernetzung",
-            instrument_de: "Innovation Booster",
-            year: 2022,
-            funding: 8,
-            n: 18,
-            label_de: "Innovation Booster",
-            label_en: "Innovation Booster",
-            label_fr: "Innovation Booster",
-            monitoring: "Ja"
-          },
-          {
-            FA: "Starthilfe für Projekte und Vernetzung",
-            inst: "Starthilfe für Projekte und Vernetzung",
-            type: "Starthilfe für Projekte und Vernetzung",
-            instrument_de: "Innovation Booster",
-            year: 2023,
-            funding: 7,
-            n: 17,
-            label_de: "Innovation Booster",
-            label_en: "Innovation Booster",
-            label_fr: "Innovation Booster",
-            monitoring: "Ja"
-          }
-        ];
+  const pre_df = daten_controlling.filter((d) => d.instrument_de === instrument || d.label_de === instrument);
 
   const df =  instrument !== "Start-up Coaching" ? pre_df : aq
   .from(pre_df)
@@ -1328,16 +1284,6 @@ export function draw_results(
       fill: "highlight",
       inset: 0.5
     }),
-    // Plot.barX(
-    //   df.filter((d) => d.highlight === true),
-    //   {
-    //     x: "pct",
-    //     y: type,
-    //     fill: black_innosuisse,
-    //     inset: 0.5,
-    //     sort: { y: "-x" }
-    //   }
-    // ),
     Plot.barX(df, {
       x1: "pct",
       x2: 100,
@@ -1345,7 +1291,7 @@ export function draw_results(
       fill: grey_background,
       inset: 0.5
     }),
-    Plot.gridX({ stroke: "white", strokeOpacity: 1, interval: 25 }),
+    Plot.ruleX([50], { stroke: "white", strokeOpacity: 1 }),
     Plot.textX(df, {
       x: "pct",
       y: type,
@@ -1380,7 +1326,7 @@ export function draw_results(
   ];
 
   return Plot.plot({
-    marginTop: 45,
+    marginTop: 30,
     marginLeft: marginLeft,
     marginRight: relevance ? 55 : 15,
     marginBottom: 10,
@@ -1391,7 +1337,9 @@ export function draw_results(
       axis: "top",
       labelAnchor: "left",
       domain: [0, 100],
-      ticks: [0, 25, 50, 75, 100],
+      tickSize: 0,
+      ticks: [],
+      labelOffset: 25,
       label: label
     },
     y: {

@@ -23,7 +23,7 @@ ${draw_result(df_zufrieden,"Innovationsscheck", false)}
 ${draw_result(df_zufrieden,"Innovationsprojekte ohne Umsetzungspartner", false)}
 ${draw_result(df_zufrieden,"BRIDGE Discovery", false)}
 ${draw_result(df_zufrieden,"Innovation Booster", false)}
-${draw_result(df_zufrieden,"Start-up Core Coaching")}
+${draw_result(df_zufrieden,"Start-up Core Coaching", false)}
 </div>
 
 ### Innosuisse fördert sowohl inkrementelle wie auch radikale Innovationen

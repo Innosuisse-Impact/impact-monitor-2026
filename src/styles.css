@@ -93,6 +93,7 @@ h2 {
   font-weight: 700;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
+  text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: #06F7DA;
 }
 
 h1 + h2 {

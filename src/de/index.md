@@ -25,9 +25,9 @@ Innosuisse legt grosses Gewicht darauf die Wirksamkeit der Innovationsförderung
 
 Die wichtigsten Ergebnisse aus dem Wirkungsmonitoring sind nachfolgend pro Förderangebot kurz zusammengefasst. Im Hauptteil werden die Ergebnisse ausführlich dargestellt und kurz diskutiert.
 
-# Förderung von Innovationsprojekten
+## Förderung von Innovationsprojekten
 
-## Innovationsprojekte mit Umsetzungspartner
+### Innovationsprojekte mit Umsetzungspartner
 
 Die nationalen Innovationsprojekte sind das wichtigste Förderinstrument von Innosuisse. Unternehmen und Organisationen aus der Wirtschaft und Gesellschaft kooperieren mit Forschungspartnern, um gemeinsam innovative Produkte, Dienstleistungen, Prozesse oder neue Geschäftsmodelle zu entwickeln.
 <div class="claims-wrapper">
@@ -95,7 +95,7 @@ Die nationalen Innovationsprojekte sind das wichtigste Förderinstrument von Inn
 
 <div class="claims-wrapper">
 
-## Innovationsscheck
+### Innovationsscheck
 
 Der Innovationsscheck bietet KMU und Start-ups eine niederschwellige Förderung. Ziel ist es, Machbarkeits- und Marktstudien sowie technologische Abklärungen durchzuführen.
 
@@ -129,7 +129,7 @@ Der Innovationsscheck bietet KMU und Start-ups eine niederschwellige Förderung.
 
 <div class="claims-wrapper">
 
-## Innovationsprojekte ohne Umsetzungspartner
+### Innovationsprojekte ohne Umsetzungspartner
 
 Innovationsprojekte ohne Umsetzungspartner zielen darauf ab, wissenschaftliche Erkenntnisse zu risikoreichen Projekten mit hohem Innovationspotenzial in Richtung Anwendung zu entwickeln und erste Schritte in die Umsetzung zu unternehmen.
 
@@ -171,7 +171,7 @@ Innovationsprojekte ohne Umsetzungspartner zielen darauf ab, wissenschaftliche E
 
 <div class="claims-wrapper">
 
-## BRIDGE: Discovery
+### BRIDGE: Discovery
 
 Das Förderangebot des Schweizerischen Nationalfonds (SNF) und Innosuisse zielt darauf ab, Forschungsresultate an der Schnittstelle zwischen Grundlagenforschung und angewandter Forschung zu wissenschaftlich exzellenten Projekten mit hohem Innovationspotenzial zu entwickeln und die Grundlagen für die Umsetzung zu schaffen.
 
@@ -213,7 +213,7 @@ Das Förderangebot des Schweizerischen Nationalfonds (SNF) und Innosuisse zielt 
 
 <div class="claims-wrapper">
 
-## BRIDGE: Proof of Concept
+### BRIDGE: Proof of Concept
 
 BRIDGE Proof of Concept bietet Forschenden ein Jahr Unterstützung, um Forschungsergebnisse anwendungsorientiert zur Marktreife zu führen und eine Karriere ausserhalb der Forschung und der Hochschulen vorzubereiten.
 
@@ -230,11 +230,11 @@ BRIDGE Proof of Concept bietet Forschenden ein Jahr Unterstützung, um Forschung
   </section>
 </div>
 
-# Beratung und Vernetzung
+## Beratung und Vernetzung
 
 <div class="claims-wrapper">
 
-## Innovation Booster
+### Innovation Booster
 
 Bei den themenorientierten Innovation Booster werden neue und radikale Innovationsideen in einem offenen und netzwerkbasierten Innovationsprozess entwickelt. Der Fokus liegt in der frühen Phase der experimentellen Ideenfindung und dem Testen von Ideen. Erfolgsversprechende Innovationsideen sollen in Projekten weitergeführt werden.
 
@@ -264,7 +264,7 @@ Bei den themenorientierten Innovation Booster werden neue und radikale Innovatio
 
 <div class="claims-wrapper">
 
-## Start-up Coaching
+### Start-up Coaching
 
 Das Coaching unterstützt Start-ups mit innovativen und wissenschaftsbasierten Geschäftsideen durch massgeschneiderte Begleitung in verschiedenen Gründungsphasen. Das Förderangebot gliedert sich in drei aufeinander abgestimmte Angebote – Initial, Core und Scale-up Coaching. Die Start-ups haben die Möglichkeit, an internationalen Camps und international bedeutenden Messen teilzunehmen. Die Ergebnisse des Wirkungsmonitorings betreffen das Start-up Core Coaching.
 
@@ -300,7 +300,7 @@ Das Coaching unterstützt Start-ups mit innovativen und wissenschaftsbasierten G
   </section>
 </div>
 
-# Berichtsstruktur
+## Berichtsstruktur
 * Das Kapitel [Methodische Grundlagen](/de/methodische-grundlagen) erklärt die Einbettung und die Konzeption des Wirkungsmonitorings
 * Das Kapitel [Förderangebote und Inhalte](/de/foerderangebote-und-inhalte) zeigt auf, wie breit das Monitoring die Instrumente von Innosuisse abdeckt. In den [vergleichenden Ergebnissen](/de/vergleichende-ergebnisse) werden die Förderangebote untereinander verglichen.
 * Danach werden in einem Kapitel pro Förderangebot die Ergebnisse des Wirkungsmonitoring präsentiert und erläutert.

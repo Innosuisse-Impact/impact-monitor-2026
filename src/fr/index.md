@@ -25,9 +25,9 @@ Innosuisse accorde une grande importance à la présentation transparente de l'e
 
 Les principaux résultats du suivi de l'impact sont brièvement résumés ci-dessous par offre d'encouragement. Dans la partie principale, les résultats sont présentés en détail et brièvement discutés.
 
-# Financement des projets d'innovation
+## Financement des projets d'innovation
 
-## Projets d'innovation avec partenaire chargé de la mise en valeur
+### Projets d'innovation avec partenaire chargé de la mise en valeur
 
 Les projets d'innovation nationaux sont le principal instrument d'encouragement d'Innosuisse. Des entreprises et des organisations issues de l'économie et de la société coopèrent avec des partenaires de recherche afin de développer ensemble des produits, des services, des processus ou des modèles commerciaux innovants.
 <div class="claims-wrapper">
@@ -95,7 +95,7 @@ Les projets d'innovation nationaux sont le principal instrument d'encouragement 
 
 <div class="claims-wrapper">
 
-## Chèque d'innovation
+### Chèque d'innovation
 
 Le chèque d'innovation offre aux PME et aux start-up un soutien à bas seuil. L'objectif est de réaliser des études de faisabilité et de marché ainsi que des études technologiques.
 
@@ -129,7 +129,7 @@ Le chèque d'innovation offre aux PME et aux start-up un soutien à bas seuil. L
 
 <div class="claims-wrapper">
 
-## Projets d'innovation sans partenaire chargé de la mise en valeur
+### Projets d'innovation sans partenaire chargé de la mise en valeur
 
 Les projets d'innovation sans partenaire chargé de la mise en valeur visent à développer des connaissances scientifiques pour des projets à haut risque et à fort potentiel d'innovation en vue d'une application pratique et à faire les premiers pas vers la mise en œuvre.
 
@@ -171,7 +171,7 @@ Les projets d'innovation sans partenaire chargé de la mise en valeur visent à 
 
 <div class="claims-wrapper">
 
-## BRIDGE: Discovery
+### BRIDGE: Discovery
 
 L'offre d'encouragement du Fonds national suisse (FNS) et d'Innosuisse vise à développer des résultats de recherche à l'interface entre la recherche fondamentale et la recherche appliquée pour en faire des projets scientifiquement excellents à fort potentiel d'innovation, et à créer les bases pour leur mise en œuvre.
 
@@ -213,7 +213,7 @@ L'offre d'encouragement du Fonds national suisse (FNS) et d'Innosuisse vise à d
 
 <div class="claims-wrapper">
 
-## BRIDGE: Proof of Concept
+### BRIDGE: Proof of Concept
 
 BRIDGE Proof of Concept offre aux chercheurs un an de soutien pour mener les résultats de recherche vers la maturité commerciale en les orientant vers des applications pratiques et pour préparer une carrière en dehors de la recherche et des hautes écoles.
 
@@ -230,11 +230,11 @@ BRIDGE Proof of Concept offre aux chercheurs un an de soutien pour mener les ré
   </section>
 </div>
 
-# Conseil et mise en réseau
+## Conseil et mise en réseau
 
 <div class="claims-wrapper">
 
-## Innovation Booster
+### Innovation Booster
 
 Dans le cadre des Innovation Booster thématiques, des idées d'innovation nouvelles et radicales sont développées dans un processus d'innovation ouvert et basé sur le travail en réseau. L'accent est mis sur la phase initiale de la recherche expérimentale d'idées et du test des idées. Les idées d'innovation prometteuses doivent être poursuivies dans le cadre de projets.
 
@@ -264,7 +264,7 @@ Dans le cadre des Innovation Booster thématiques, des idées d'innovation nouve
 
 <div class="claims-wrapper">
 
-## Start-up Coaching
+### Start-up Coaching
 
 Le coaching soutient les start-up ayant des idées commerciales innovantes et basées sur la science grâce à un accompagnement personnalisé dans différentes phases de création. L'offre d'encouragement se divise en trois offres coordonnées – Initial, Core et Scale-up Coaching. Les start-up ont la possibilité de participer à des camps internationaux et à des salons internationaux importants. Les résultats du suivi de l'impact concernent le Start-up Core Coaching.
 
@@ -300,7 +300,7 @@ Le coaching soutient les start-up ayant des idées commerciales innovantes et ba
   </section>
 </div>
 
-# Structure du rapport
+## Structure du rapport
 * Le chapitre [Bases méthodologiques](/fr/bases-methodologiques) explique l'intégration et la conception du suivi de l'impact.
 * Le chapitre [Offres d'encouragement et contenus](/fr/offres-dencouragement-et-contenus) montre dans quelle mesure le monitoring couvre les instruments d'Innosuisse. Les [résultats comparatifs](/fr/resultats-comparatifs) permettent de comparer les offres d'encouragement entre elles.
 * Ensuite, les résultats du suivi de l'impact sont présentés et expliqués dans un chapitre par offre d'encouragement.
