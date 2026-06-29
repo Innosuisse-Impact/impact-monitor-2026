@@ -21,7 +21,7 @@ The aim of innovation projects without implementation partners is to transfer sc
 Innovation projects without implementation partners thus promote application-oriented research and innovation projects and aim for commercial implementation in the longer term.
 
 ### Successful steps towards implementation
-Two thirds of the innovation projects have successfully demonstrated feasibility. Every second funded project is highly likely to introduce the innovation to the market, and 4 out of 10 deliver conclusive results for further implementation steps.
+Around four out of five innovation projects have successfully tested their feasibility. One in two funded projects delivers conclusive results for further implementation steps and/or is highly likely to bring the innovation to market.
 
 <div>${draw_results("Innovationsprojekte ohne Umsetzungspartner", false, 450)}</div>
 
@@ -36,7 +36,7 @@ ${draw_waffle("ipr_inter_trans",-70)}
 </div>
 
 #### Innovation projects without implementation partners are research- and implementation-oriented.
-in almost two-thirds of the projects , cooperation with potential implementation partners was already underway. In addition to the transfer of knowledge and technology to established companies, start-ups and spin-offs emerging from research play an important role in KTT. In 39% of the projects, such a spin-off has already been founded or is planned.
+In three out of five projects , cooperation with potential implementation partners was already underway. In addition to the transfer of knowledge and technology to established companies, start-ups and spin-offs emerging from research play an important role in KTT. In 45% of the projects, such a spin-off has already been founded or is planned.
 
 <div>${draw_waffle("ipr_imppartner", -70)}</div>
 
@@ -50,8 +50,8 @@ ${draw_waffle("ipr_impl_goals",-70,5)}
 
 ## BRIDGE Discovery
 <div style="display: flex;">
-  <div>${drawMiniPlot(‘BRIDGE Discovery’)}</div>
-  <div>${drawMiniPlot(‘BRIDGE Discovery’, false)}</div>
+  <div>${drawMiniPlot("BRIDGE Discovery")}</div>
+  <div>${drawMiniPlot("BRIDGE Discovery", false)}</div>
 </div>
 
 BRIDGE Discovery aims to identify and explore the innovative potential of research results and translate them into applications. The programme enables experienced researchers to implement scientifically excellent projects with a clear vision of future application and to develop the scientific foundations for innovative products, services or societal solutions. Funding is conditional upon a convincing implementation strategy and high economic or societal potential.
@@ -59,25 +59,25 @@ BRIDGE Discovery aims to identify and explore the innovative potential of resear
 BRIDGE Discovery thus funds projects at the interface between basic research and applied research and aims, in the longer term, to realise the innovation in business or society.
 
 ### Results achieved for implementation
-In contrast to [innovation projects without implementation partners](#innovation-projects-without-implementation-partner), the majority of Discovery projects achieve conclusive results for implementation, and feasibility has already been assessed in three out of four projects. For both types of project, around half of the researchers expect the innovation to be brought to market. The probability of market implementation is also assessed as being slightly higher.
-<div>${draw_results(‘BRIDGE Discovery’, false, 450)}</div>
+Compared with innovation projects without implementation partners, the proportion of projects that have assessed feasibility, achieved conclusive results for implementation, or where the researchers expect the innovation to be brought to market is around 10 percentage points higher.
+<div>${draw_results("BRIDGE Discovery", false, 450)}</div>
 
 ### Very high scientific output
 In the vast majority of cases, BRIDGE Discovery also involves excellent research being conducted and published. The proportion is once again significantly higher for Discovery projects than for innovation projects without implementation partners. The proportion of inter- and transdisciplinary projects is similarly high to that of innovation projects without implementation partners.
 <div style="display: flex; gap: 15px;">
-${draw_waffle(‘bd_peer_review’,-100)}
-${draw_waffle(‘bd_inter_trans’,-100)}
+${draw_waffle("bd_peer_review",-100)}
+${draw_waffle("bd_inter_trans",-100)}
 </div>
 
 ### BRIDGE Discovery projects are practice-oriented
-BRIDGE Discovery projects, too, focus primarily on collaboration with implementation partners (76 per cent) and, secondarily, on establishing a spin-off (53 per cent). This is slightly higher than for innovation projects without implementation partners (63 per cent collaboration vs. 39 per cent spin-off).
-<div>${draw_waffle(‘bd_imppartner’, -85)}</div>
+BRIDGE Discovery projects, too, focus primarily on collaboration with implementation partners (76%) and, secondarily, on establishing a spin-off (53%). This is slightly higher than for innovation projects without implementation partners (58% collaboration vs. 45% spin-off).
+<div>${draw_waffle("bd_imppartner", -85)}</div>
 
 ### The achievement of objectives is high
 Unlike innovation projects without implementation partners, most Discovery projects not only fully achieve but also exceed both their research- and application-oriented targets.
 <div style="display: flex; gap: 15px;">
-${draw_waffle(‘bd_research_goals’,-100)}
-${draw_waffle(‘bd_impl_goals’,-100)}
+${draw_waffle("bd_research_goals",-100)}
+${draw_waffle("bd_impl_goals",-100)}
 </div>
 
 ## BRIDGE Proof of Concept

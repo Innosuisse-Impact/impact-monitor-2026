@@ -22,7 +22,7 @@ Les projets d'innovation sans partenaire chargé de la mise en valeur visent à 
 Les projets d'innovation sans partenaire chargé de la mise en valeur soutiennent ainsi des projets de recherche et d'innovation axés sur l'application et visent à long terme une mise en œuvre économique.
 
 ### Des étapes réussies vers la mise en œuvre
-Les deux tiers des projets d'innovation ont démontré leur faisabilité avec succès. Un projet subventionné sur deux a de fortes chances d'introduire l'innovation sur le marché et 4 sur 10 fournissent des résultats concluants pour la suite de la mise en œuvre.
+Quatre projets d'innovation sur cinq ont tésté leur faisabilité avec succès. La moitié des projets ont abouti à des résultats probants pour la prochaine étape de mise en œuvre et/ou ont de fortes chances d'introduire l'innovation sur le marché.
 
 <div>${draw_results("Innovationsprojekte ohne Umsetzungspartner", false, 450)}</div>
 
@@ -36,7 +36,7 @@ ${draw_waffle("ipr_inter_trans",-100)}
 </div>
 
 #### Les projets d'innovation sans partenaire chargé de la mise en valeur sont axés sur la recherche et la mise en œuvre.
-Dans près des deux tiers des projets, une collaboration avec des partenaires potentiels pour la mise en œuvre a déjà été engagée. Outre le transfert de savoir et de technologie vers des entreprises établies, les start-up et les spin-off issues de la recherche jouent un rôle important dans le TST. Dans 39 % des projets, un tel essaimage a déjà été réalisé ou est prévu.
+Dans trois sur cinq projets, une collaboration avec des partenaires potentiels pour la mise en œuvre a déjà été engagée. Outre le transfert de savoir et de technologie vers des entreprises établies, les start-up et les spin-off issues de la recherche jouent un rôle important dans le TST. Dans 45 % des projets, un tel essaimage a déjà été réalisé ou est prévu.
 <div>${draw_waffle("ipr_imppartner", -85)}</div>
 
 ### L'atteinte des objectifs est élevée dans le domaine de la recherche, mais plus faible dans le domaine de l'application et de la mise en œuvre.
@@ -57,7 +57,7 @@ BRIDGE Discovery vise à identifier et à explorer le potentiel d’innovation d
 BRIDGE Discovery soutient ainsi des projets situés à l’interface entre la recherche fondamentale et la recherche appliquée et vise, à long terme, la concrétisation de l’innovation dans l’économie ou la société.
 
 ### Résultats obtenus en matière de mise en œuvre
-Contrairement aux [projets d’innovation sans partenaire de mise en œuvre](#projets-de-chercheurs), la majorité des projets Discovery aboutissent à des résultats concluants en vue de la mise en œuvre, et la faisabilité a déjà été vérifiée pour trois projets sur quatre. Pour ces deux types de projets, environ la moitié des chercheurs partent du principe que l’innovation sera mise en œuvre sur le marché. La probabilité d’une mise en œuvre sur le marché est également estimée comme légèrement plus élevée.
+Par rapport aux projets d'innovation sans partenaire de mise en œuvre, la proportion de projets dont la faisabilité a été testée, qui ont abouti à des résultats concluants en vue de la mise en œuvre ou pour lesquels les chercheurs estiment que l'innovation sera commercialisée est supérieure d'environ 10 points de pourcentage.
 <div>${draw_results("BRIDGE Discovery", false, 450)}</div>
 
 ### Production scientifique très élevée
@@ -68,14 +68,14 @@ ${draw_waffle("bd_inter_trans",-100)}
 </div>
 
 ### Les projets BRIDGE Discovery sont axés sur la pratique
-Les projets BRIDGE Discovery misent eux aussi en premier lieu sur la coopération avec des partenaires de mise en œuvre (76 %) et, en second lieu, sur la création d’une spin-off (53 %). Ces chiffres sont légèrement supérieurs à ceux des projets d’innovation sans partenaires de mise en œuvre (63 % de coopération contre 39 % de spin-off).
+Les projets BRIDGE Discovery misent eux aussi en premier lieu sur la coopération avec des partenaires de mise en œuvre (76 %) et, en second lieu, sur la création d’une spin-off (53 %). Ces chiffres sont légèrement supérieurs à ceux des projets d’innovation sans partenaires de mise en œuvre (58 % de coopération contre 45 % de spin-off).
 <div>${draw_waffle("bd_imppartner", -85)}</div>
 
 ### L’atteinte des objectifs est élevée
 Contrairement aux projets d’innovation sans partenaire de mise en œuvre, la plupart des projets Discovery atteignent pleinement, voire dépassent, non seulement leurs objectifs de recherche, mais aussi leurs objectifs orientés vers l’application.
 <div style="display: flex; gap: 15px;">
-${draw_waffle("bd_research_goals",-100)}
-${draw_waffle("bd_impl_goals",-100)}
+${draw_waffle("bd_research_goals",-100, 17)}
+${draw_waffle("bd_impl_goals",-100,8)}
 </div>
 
 ## BRIDGE Proof of Concept
