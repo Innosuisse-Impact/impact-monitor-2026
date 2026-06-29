@@ -46,6 +46,38 @@ ${draw_waffle("ipr_research_goals",-100,15)}
 ${draw_waffle("ipr_impl_goals",-100,10)}
 </div>
 
+## BRIDGE Discovery
+<div style="display: flex;">
+  <div>${drawMiniPlot("BRIDGE Discovery")}</div>
+  <div>${drawMiniPlot("BRIDGE Discovery", false)}</div>
+</div>
+
+BRIDGE Discovery vise à identifier et à explorer le potentiel d’innovation des résultats de recherche, puis à les transposer en applications concrètes. Cet instrument permet à des chercheurs expérimentés de mettre en œuvre des projets d’excellence scientifique dotés d’une vision claire d’une application future, et de développer les fondements scientifiques de produits, de services ou de solutions sociétales innovants. Pour bénéficier d’un encouragement, les projets doivent présenter une stratégie de mise en œuvre convaincante ainsi qu’un fort potentiel économique ou sociétal.
+
+BRIDGE Discovery soutient ainsi des projets situés à l’interface entre la recherche fondamentale et la recherche appliquée et vise, à long terme, la concrétisation de l’innovation dans l’économie ou la société.
+
+### Résultats obtenus en matière de mise en œuvre
+Contrairement aux [projets d’innovation sans partenaire de mise en œuvre](#projets-de-chercheurs), la majorité des projets Discovery aboutissent à des résultats concluants en vue de la mise en œuvre, et la faisabilité a déjà été vérifiée pour trois projets sur quatre. Pour ces deux types de projets, environ la moitié des chercheurs partent du principe que l’innovation sera mise en œuvre sur le marché. La probabilité d’une mise en œuvre sur le marché est également estimée comme légèrement plus élevée.
+<div>${draw_results("BRIDGE Discovery", false, 450)}</div>
+
+### Production scientifique très élevée
+Dans la grande majorité des cas, BRIDGE Discovery permet également de mener et de publier d’excellentes recherches. La proportion est encore nettement plus élevée pour les projets « Discovery » que pour les projets d’innovation sans partenaire de mise en œuvre. La proportion de projets interdisciplinaires et transdisciplinaires est similaire à celle observée dans les projets d’innovation sans partenaire de mise en œuvre.
+<div style="display: flex; gap: 15px;">
+${draw_waffle("bd_peer_review",-100)}
+${draw_waffle("bd_inter_trans",-100)}
+</div>
+
+### Les projets BRIDGE Discovery sont axés sur la pratique
+Les projets BRIDGE Discovery misent eux aussi en premier lieu sur la coopération avec des partenaires de mise en œuvre (76 %) et, en second lieu, sur la création d’une spin-off (53 %). Ces chiffres sont légèrement supérieurs à ceux des projets d’innovation sans partenaires de mise en œuvre (63 % de coopération contre 39 % de spin-off).
+<div>${draw_waffle("bd_imppartner", -85)}</div>
+
+### L’atteinte des objectifs est élevée
+Contrairement aux projets d’innovation sans partenaire de mise en œuvre, la plupart des projets Discovery atteignent pleinement, voire dépassent, non seulement leurs objectifs de recherche, mais aussi leurs objectifs orientés vers l’application.
+<div style="display: flex; gap: 15px;">
+${draw_waffle("bd_research_goals",-100)}
+${draw_waffle("bd_impl_goals",-100)}
+</div>
+
 ## BRIDGE Proof of Concept
 <div style="display: flex;">
   <div>${drawMiniPlot("BRIDGE Proof of Concept")}</div>
