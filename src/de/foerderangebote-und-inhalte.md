@@ -52,8 +52,8 @@ Die bewilligten Innovationsvorhaben lassen sich in fünf verschiedene Themengebi
 
 - «<span class="text-cat-1">Engineering</span>» weist bei den Innovationsprojekten mit Umsetzungspartnern (37 %), den Innovationsschecks (32 %) und bei BRIDGE Proof of Concept (31 %) höhere und vergleichbare Anteile auf. 
 - «<span class="text-cat-2">Life Sciences</span>» hingegen zeigen einen sehr hohen Anteil bei den Innovationsprojekten ohne Umsetzungspartner (66 %) und einen überdurchschnittlichen Anteil bei den Start-ups im Coaching (38 %). Bei BRIDGE Proof of Concept ist es der wichtigste Themenbereich (34 %).
-- Dem Bereich «<span class="text-cat-3">Information and communication technologies ICT</span>» kommt bei den Start-ups im Coaching das grösste Gewicht zu (30 %). 
-- Die Unterschiede bei «<span class="text-cat-4">Energy & environment</span>» sind geringer und bewegen sich zwischen 9 % bei den Innovationsprojekten ohne Umsetzungspartner und 17 % bei den Innovationsprojekten mit Umsetzungspartnern. 
+- Die Unterschiede bei «<span class="text-cat-3">Energy & environment</span>» sind geringer und bewegen sich zwischen 9 % bei den Innovationsprojekten ohne Umsetzungspartner und 17 % bei den Innovationsprojekten mit Umsetzungspartnern. 
+- Dem Bereich «<span class="text-cat-4">Information and communication technologies ICT</span>» kommt bei den Start-ups im Coaching das grösste Gewicht zu (30 %). 
 - «<span class="text-cat-5">Social sciences & business management</span>» sind bei den Innovationsschecks (21 %) am stärksten vertreten, ansonsten sind die Anteile vergleichsweise klein.
 
 <div>${(n_subcluster())}</div>

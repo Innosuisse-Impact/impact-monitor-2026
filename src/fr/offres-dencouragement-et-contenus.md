@@ -51,8 +51,8 @@ Les projets innovants approuvés peuvent être classés en cinq thématiques dif
 
 - « <span class="text-cat-1">Engineering</span>  » présente des pourcentages plus élevés et comparables pour les projets d'innovation avec partenaire chargé de la mise en valeur (37 %), les Chèques d'innovation (32 %) et BRIDGE Proof of Concept (31 %).
 - Les « <span class="text-cat-2">Life Sciences</span>  » affichent en revanche une part très élevée dans les projets d'innovation sans partenaire chargé de la mise en valeur (66 %) et une part supérieure à la moyenne dans les start-up en coaching (38 %). C'est le domaine thématique le plus important dans le cadre de BRIDGE Proof of Concept (34 %).
-- Le domaine « <span class="text-cat-3">Information and communication technologies ICT</span>  » est le plus important dans les start-up en coaching (30 %).
-- Les différences dans le domaine « <span class="text-cat-4">Energy & environment</span>  » sont plus faibles et varient entre 9 % pour les projets d'innovation sans partenaire chargé de la mise en valeur et 17 % pour les projets d'innovation avec partenaire chargé de la mise en valeur.
+- Les différences dans le domaine « <span class="text-cat-3">Energy & environment</span>  » sont plus faibles et varient entre 9 % pour les projets d'innovation sans partenaire chargé de la mise en valeur et 17 % pour les projets d'innovation avec partenaire chargé de la mise en valeur.
+- Le domaine « <span class="text-cat-4">Information and communication technologies ICT</span>  » est le plus important dans les start-up en coaching (30 %).
 - Les « <span class="text-cat-5">Social sciences & business management</span>  » sont les plus représentées dans les Chèques d'innovation (21 %), sinon les pourcentages sont comparativement plus faibles.
 
 <div>${n_subcluster()}</div>

@@ -51,8 +51,8 @@ The approved innovation projects can be categorised into five different thematic
 
 - <span class="text-cat-1">Engineering</span> has a higher and comparable share in Innovation projects with implementation partners (37%), Innovation cheques (32%) and in BRIDGE Proof of Concept (31%).
 - <span class="text-cat-2">Life Sciences</span>, on the other hand, accounts for a very high proportion of innovation projects without implementation partners (66%) and an above-average proportion of start-ups in coaching (38%). It is the most important subject area in BRIDGE Proof of Concept (34%).
-- <span class="text-cat-3">Information and communication technologies ICT</span> is the most important area for start-ups in coaching (30%).
-- The differences for '<span class="text-cat-4">Energy & environment</span>' are smaller, ranging between 9% for innovation projects without implementation partner and 17% for innovation projects with implementation partner.
+- The differences for '<span class="text-cat-3">Energy & environment</span>' are smaller, ranging between 9% for innovation projects without implementation partner and 17% for innovation projects with implementation partner.
+- <span class="text-cat-4">Information and communication technologies ICT</span> is the most important area for start-ups in coaching (30%).
 - <span class="text-cat-5">Social sciences & business management'</span> is most strongly represented in innovation cheques (21%); otherwise, the proportions are comparatively smaller.
 
 <div>${n_subcluster()}</div>

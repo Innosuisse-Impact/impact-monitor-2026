@@ -395,15 +395,15 @@ const data = aq
           fill: "white"
         }
       ),
+      Plot.ruleX([0]),
       Plot.textX(df, {
         x: "mean_funding",
         y: (d) => (d.monitoring === "Ja" ? `*${d[instrCol]}` : d[instrCol]),
-        text: (d) => fmtFunding(d.mean_funding),
+        text: (d) => fmtFunding(Math.round(d.mean_funding, 0)),
         textAnchor: "start",
         dx: 5,
         sort: { y: "x", reverse: true }
-      }),
-      Plot.ruleX([0])
+      })
     ]
   });
 }
