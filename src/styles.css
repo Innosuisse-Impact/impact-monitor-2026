@@ -130,6 +130,7 @@ h6 {
     padding: 1rem;
     margin: 1rem 0;
     font: 14px var(--sans-serif);
+    box-shadow: 4px 4px 6px -4px rgba(0, 0, 0, 0.18);
 }
   
 .card h1{
@@ -137,10 +138,12 @@ h6 {
   font-family: var(--font-sans);
   font-weight: 700;
   color: var(--color-text);
-  text-decoration: underline;
+  /* text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 2px;
-  text-decoration-color: var(--color-accent);
+  text-decoration-color: var(--color-accent); */
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 button {

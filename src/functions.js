@@ -349,9 +349,6 @@ const data = aq
       ? data.filter((d) => d.FA === funding)
       : data.filter((d) => (d.type === type) & (d.FA === funding));
 
-  const bridgePOC = instruments.BP;
-  const bridgeDisc = instruments.BD;
-
   const fmtFunding = lang === "de"
     ? (v) => `⌀ ${v.toLocaleString("fr-CH")} Mio. Fr.`
     : lang === "fr"
@@ -377,7 +374,6 @@ const data = aq
     style: { ...plotStyle, fontSize: "12px" },
     marks: [
       displayXAxis ? Plot.axisX({ anchor: "top", tickSize: 0, ticks: [], label: s.fin_plot.xLabel }) : null,
-      //Plot.gridX({ interval: 25 }),
       Plot.barX(df, {
         x: "mean_funding",
         y: (d) => (d.monitoring === "Ja" ? `*${d[instrCol]}` : d[instrCol]),

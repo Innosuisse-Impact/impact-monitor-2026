@@ -48,7 +48,8 @@ The additional jobs created lead directly to value creation in the companies. Th
 <div>${leverage()}</div>
 
 <div class="card" style="max-width: 640px">
-<h4>Scientific study proves direct impact of innovation promotion on sales and employment</h4>
+
+# Scientific study proves direct impact of innovation promotion on sales and employment
 
 Results from the KOF Swiss Economic Institute at ETH Zurich show that funding for innovation projects increases the **sales** of the participating companies by an average of **21%** over the following five years. The comparison is based on Swiss companies that have not received or applied for funding from Innosuisse, but which otherwise have similar characteristics, such as spending on research and development, the level of education of the workforce or the competitive environment.
 
@@ -58,6 +59,8 @@ With this study, the KOF has provided scientific proof of the link between innov
 
 The results confirm the economic impacts of Innosuisse project funding presented in the impact monitoring.
 
+<div class="card" style="background-color: white">${kof_did_plot(0)}</div>
+<div class="card" style="background-color: white">${kof_did_plot(1)}</div>
 
 <div style="font-size: 12px;">
 Source: 
@@ -80,8 +83,7 @@ Source:
 </ul>
 </div>
 
-<div class="card" style="background-color: white">${kof_did_plot(0)}</div>
-<div class="card" style="background-color: white">${kof_did_plot(1)}</div></div>
+</div>
 
 ### Innosuisse supports world market firsts and disruptive innovations
 32% of the funded innovation projects aim to develop innovations for the international and global market. Swiss companies are thus supported in becoming or remaining internationally competitive. In addition, around 33% of the projects funded have the potential to significantly influence or redefine markets with disruptive innovations.

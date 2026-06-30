@@ -6,7 +6,8 @@ toc: false
 
 ```js
 import { html } from "npm:htl";
-import { drawMiniPlot, draw_waffle, draw_results, ib_toipis, su_vza, su_vza_legend} from "../functions.js"
+import { drawMiniPlot, draw_waffle, draw_bar, draw_results, ib_toipis, su_vza, su_vza_legend} from "../functions.js"
+import { df_waffle } from "../data.js"
 ```
 
 # Wissen und Netzwerke
@@ -36,26 +37,59 @@ Zwei Drittel der geförderten Innovationsideen werden nach Abschluss der Förder
 <div> ${draw_waffle("ib_continued", -100)}</div>
 <div>${ib_toipis()}</div></div>
 
-<div class="card" style="max-width: 640px">
+<div class="card" style="max-width: 620px">
   
-### Evaluation belegt Wirkung der Innovation Booster
+# Evaluation belegt Wirkung der Innovation Booster
 
 Die Wirkungsevaluation von Ecoplan ([2025](https://www.innosuisse.admin.ch/de/publication?id=TpGqSBI8N6Cl)) hat aufgezeigt, dass die Innovation Booster langfristige Innovationspartnerschaften, das Innovations-Knowhow und die Entwicklung neuer Ideen in vielfältigen Themenbereichen stärken. Die Zusammenarbeit und die nutzerorientierten Problemanalysen sind ihre Alleinstellungmerkmale. Diese werden künftig noch mehr Bedeutung erhalten.
 
-#### Radikalere Ideen
+## Radikalere Ideen
 
 Die Unternehmen und Organisationen entwickeln radikale Ideen, die Probleme auf neuartige Weise lösen.
-<div>${draw_waffle("ib_radical", -50)}</div></td>
+<div class="claims-wrapper">
+ <section class="claim" style="margin-bottom: 0px">
+    <div class="figure" style="align-items:center">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_radical", mode: "opposite" })}</div>
+      <p>Der Anteil der Organisationen, die ihre Innovationsideen als <span class="text-neutral-b">eindeutig radikal</span> einschätzen, ist mehr als doppelt so hoch wie jener, der sie als <span class="text-neutral-a">eindeutig inkrementell</span> bewertet.
+      </p>
+    </div>
+  </section>
+</div>
+<!-- <div>${draw_waffle("ib_radical", -50)}</div> -->
 
-#### Vergrösserte Netzwerke
+## Vergrösserte Netzwerke
 
 Die Unternehmen und Organisationen erweitern ihr Netzwerk über ihr bestehendes Umfeld hinaus.
-<div>${draw_waffle("ib_new_contacts", -85)}</div>
 
-#### Gestärkte Lernkultur
+<div class="claims-wrapper">
+ <section class="claim" style="margin-bottom: 0px">
+    <div class="figure" style="align-items:center">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_new_contacts", mode: "single", mode: "single", rank: "pct1" })}</div>
+      <p>Organisationen arbeiten mit Partnern ausserhalb der bestehenden Kontakte zusammen.
+      </p>
+    </div>
+    <div class="figure" style="align-items:center">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_new_contacts", mode: "single", mode: "single", rank: "pct2" })}</div>
+      <p>Organisation können nützliche neue Konkakte knüpfen.
+      </p>
+    </div>
+</section>
+</div>
+<!-- <div>${draw_waffle("ib_new_contacts", -85)}</div> -->
+
+## Gestärkte Lernkultur
 
 Die Unternehmen und Organisationen übernehmen neues Know-how zu Innovationsmethoden und eine Kultur des Lernens und Fehlermachens.
-<div>${draw_waffle("ib_learning_effects", -115)}</div>
+
+<div class="claims-wrapper">
+ <section class="claim" style="margin-bottom: 0px">
+    <div class="figure" style="align-items:center">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_learning_effects", mode: "single", mode: "single", rank: "pct1" })}</div>
+      <p>Organisationen nehmen eher bis sehr hohe längerfristige Lerneffekte zu Innovationsprozessen wahr.
+      </p>
+    </div>
+  </section>
+</div>
 </div>
 
 # Innovationsmanagement und Beratung
@@ -134,7 +168,7 @@ ${su_vza_legend()}
 ### Coaching widerspiegelt und stärkt die Vielfalt des Ökosystems
 Der Anteil von weiblichen Gründerinnen bei den Start-ups mit Coachingabschluss liegt bei 17 %. In 36 % der Gründungsteams sind weibliche Mitglieder vertreten, Tendenz zunehmend. Zudem weisen die Gründungsteams eine hohe Internationalität auf: Zwei Drittel der Start-ups haben mindestens ein Gründungsmitglied mit ausländischem Bürgerrecht und insgesamt sind durchschnittlich 41 % der Gründungsteams ausländische Mitglieder. Dies unterstreicht den internationalen Charakter der Schweizer Start-up-Szene.
 
-Thematisch liegt im Start-up Bereich ein starker Fokus auf dem Themenbereich «Life Sciences», inklusive Medtech und Healthcare (31 %) und ICT (28 %), siehe [Förderangebote und Inhalte](/de/foerderangebote-und-inhalte#themengebiete-der-innovationsvorhaben-2021-2023). Gleichzeitig sind auch die übrigen Technologie- und Innovationsbereiche vielfältig und breit vertreten. Die nachfolgenden Ausführungen zeigen zudem, dass den Spin-offs und direkten Ausgründungen aus der Forschungslandschaft und den Hochschulen eine hohe Bedeutung zukommt. Die Internationalität spielt dabei eine wesentliche Rolle. 
+Thematisch liegt im Start-up Bereich ein starker Fokus auf dem Themenbereich «Life Sciences», inklusive Medtech und Healthcare (31 %) und ICT (28 %), siehe [Förderangebote und Inhalte](/de/foerderangebote-und-inhalte#themengebiete-der-innovationsvorhaben-2023-2025). Gleichzeitig sind auch die übrigen Technologie- und Innovationsbereiche vielfältig und breit vertreten. Die nachfolgenden Ausführungen zeigen zudem, dass den Spin-offs und direkten Ausgründungen aus der Forschungslandschaft und den Hochschulen eine hohe Bedeutung zukommt. Die Internationalität spielt dabei eine wesentliche Rolle. 
 
 Diese Diversität der geförderten Start-ups trägt wesentlich zur wirtschaftlichen und technologischen Dynamik des Start-up-Ökosystems und der Stärkung in der schweizerischen Volkswirtschaft bei.
 <div style="display: flex; gap: 10px;">

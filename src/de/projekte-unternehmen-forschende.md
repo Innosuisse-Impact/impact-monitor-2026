@@ -7,7 +7,6 @@ toc: false
 ```js
 import { html } from "npm:htl";
 import { drawMiniPlot, draw_waffle, draw_results, leverage, kof_did_plot} from "../functions.js"
-import { df_waffle, df_ergebnisse } from "../data.js"
 ```
 
 # Projekte von Unternehmen mit Forschenden
@@ -34,7 +33,7 @@ Ein Teil der Projekte benötigt einen längeren Zeitraum für die Markteinführu
 
 <div>${draw_waffle("ip_time_to_market", -117)}</div>
 
-### Förderung erzielt rund 57 % der KMU messbare und massgebliche wirtschaftliche Effekte
+### Förderung erzielt für rund 57 % der KMU messbare und massgebliche wirtschaftliche Effekte
 Ausgewählte Kennzahlen belegen die Wirksamkeit hinsichtlich ökonomischer Effekte, welche ohne das geförderte Projekt nicht entstanden wären. Rund 30 % der KMU berichtet über ein Wachstum der Beschäftigung und schafft damit neue hochqualifizierte Arbeitsstellen. 27 % der Unternehmen stellen eine Umsatzsteigerung fest. Fast ein Viertel der Unternehmen hat mehr in Forschung und Entwicklung (F&E) investiert, sei es in Beschäftigte im F&E-Bereich oder höhere F&E-Ausgaben getätigt. Uber Kosteneinsparungen berichten 12 % der Unternehmen.
 
 <div>${draw_results("Innovationsprojekte mit Umsetzungspartner", false)}</div>
@@ -49,7 +48,8 @@ Die zusätzlich geschaffenen Arbeitsstellen führen direkt zu Wertschöpfung bei
 <div>${leverage()}</div>
 
 <div class="card" style="max-width: 640px">
-<h4>Wissenschaftliche Studie belegt direkte Wirkung von Innovationsförderung auf Umsatz und Beschäftigung</h4>
+
+# Wissenschaftliche Studie belegt direkte Wirkung von Innovationsförderung auf Umsatz und Beschäftigung
 
 Ergebnisse der Konjunkturforschungsstelle (KOF) der ETH Zürich zeigen, dass die Förderung von Innovationsprojekten den **Umsatz** der beteiligten Unternehmen in den darauffolgenden fünf Jahren um durchschnittlich **21 %** steigert. Der Vergleich bezieht sich auf Schweizer Unternehmen, die keine Förderung von Innosuisse erhalten oder beantragt haben, aber ansonsten ähnliche Merkmale aufweisen, wie zum Beispiel Ausgaben für Forschung und Entwicklung, Bildungsstand der Belegschaft oder Wettbewerbsumfeld. 
 
@@ -59,6 +59,9 @@ Die positiven Auswirkungen sowohl auf Umsatz als auch auf Beschäftigung verstä
 Mit dieser Studie hat die KOF einen wissenschaftlichen Nachweis des Zusammenhangs zwischen Innovationsförderung in der Schweiz und ihrer Wirkung erbracht. Dabei wählten die Forschenden der KOF einen in der internationalen Forschungsgemeinschaft anerkannten methodischen Ansatz mit möglichst geringen Verzerrungen. Der sogenannte «Differenz-von-Differenzen-Ansatz» vergleicht Unternehmen, die Förderung von Innosuisse erhalten, mit ähnlichen Unternehmen ohne Förderung. 
 
 Die Ergebnisse bestätigen die im Wirkungsmonitoring dargestellten ökonomischen Wirkungen der Projektförderung von Innosuisse.
+
+<div class="card" style="background-color: white">${kof_did_plot(0)}</div>
+<div class="card" style="background-color: white">${kof_did_plot(1)}</div>
 
 <div style="font-size: 12px;">
 Quelle: 
@@ -81,8 +84,6 @@ Quelle:
 </ul>
 </div>
 
-<div class="card" style="background-color: white">${kof_did_plot(0)}</div>
-<div class="card" style="background-color: white">${kof_did_plot(1)}</div>
 </div>
 
 ### Innosuisse unterstützt Weltmarktneuheiten und disruptive Innovationen

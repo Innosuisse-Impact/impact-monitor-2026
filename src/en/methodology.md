@@ -47,8 +47,8 @@ The detailed results can be found in a tabular summary ([⤓&nbsp;Excel](/_file/
   
 ## Innosuisse’s support offers and impact objectives (Outcomes)
 Innosuisse’s support offers can be divided into two overarching funding areas (see the overview below): 
-1. [Funding of Innovation Projects](/de/projekte-unternehmen-forschende)
-2. [Advice and Networking](/de/beratung-und-netzwerk)
+1. [Funding of Innovation Projects](/en/projects-companies-researchers)
+2. [Advice and Networking](/en/advisory-and-networks)
   
 The overview below shows the five thrusts (outcomes) of Innosuisse to which the support offers are intended to make a contribution. The survey results presented are intended to provide insights into the achievement of innovation promotion objectives and offer a sound basis for assessing the effectiveness of the support measures and developing them further in a targeted manner.
 

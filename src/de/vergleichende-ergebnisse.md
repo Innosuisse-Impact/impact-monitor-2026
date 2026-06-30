@@ -6,7 +6,7 @@ toc: false
 
 ```js
 import { html } from "npm:htl";
-import { draw_result, draw_innoart, draw_dn, draw_result_zf_legend, draw_inkr_radikal_diverging} from "../functions.js"
+import { draw_result, draw_innoart, draw_dn, draw_result_zf_legend} from "../functions.js"
 import { df_zufrieden } from "../data.js"
 ```
 
@@ -31,8 +31,6 @@ ${draw_result(df_zufrieden,"Start-up Core Coaching", false)}
 Bei den Innovationsprojekten mit Umsetzungspartnern und den Innovationsschecks verfolgen rund ein Viertel der Innovationsvorhaben klar inkrementelle Innovationen. Hier wird primär die Weiterentwicklung oder Optimierung von Bestehendem (Produkte, Dienstleistungen, Prozesse, Geschäftsmodelle etc.) verfolgt.
 
 <span class="text-neutral-b">Radikale Innovationen</span> (23%) werden bei der Projektförderung in gleichem Ausmass gefördert wie <span class="text-neutral-a">inkrementelle Innovationen</span> (25%). Radikale Innovationen streben im Gegensatz zu inkrementellen Innovationen grundlegende Neuerungen und Veränderungen durch revolutionäre oder radikale neue Ideen und Technologien an. Sie machen bei allen Instrumenten – mit Ausnahme der Innovationsschecks – mindestens ein Viertel der Projekte und Innovationsideen aus. Bei den Start-ups im Coaching und den Forschenden der Discovery-Projekte verfolgen rund die Hälfte den Anspruch mit ihren Geschäftsmodellen radikale Innovationen einzuführen, nur eine Minderheit verfolgt klar inkrementelle Innovationen.
-
-<!-- <div>${draw_inkr_radikal_diverging()}</div> -->
 
 <div>${draw_innoart("inkr_radikal", 640, 250)}</div>
 <p class="comment">

@@ -68,7 +68,7 @@ ${draw_waffle("bd_inter_trans",-100)}
 </div>
 
 ### BRIDGE Discovery Projekte sind praxisorientiert
-Auch BRIDGE Discovery-Projekte setzen primär auf die Zusammenarbeit mit Umsetzungspartnern (76 %) und in zweiter Linie auf die Gründung eines Spin-offs (53 %). Das ist leicht höher als bei den Innovationsprojekten ohne Partner (63 % Kooperation vs. 39 % Spin-off).
+Auch BRIDGE Discovery-Projekte setzen primär auf die Zusammenarbeit mit Umsetzungspartnern (76 %) und in zweiter Linie auf die Gründung eines Spin-offs (53 %). Das ist leicht höher als bei den Innovationsprojekten ohne Partner (58 % Kooperation vs. 45 % Spin-off).
 <div>${draw_waffle("bd_imppartner", -85)}</div>
 
 ### Die Zielerreichung ist hoch
@@ -87,6 +87,6 @@ ${draw_waffle("bd_impl_goals",-100)}
 BRIDGE ist das gemeinsame Förderprogramm von Innosuisse und dem Schweizerischen Nationalfonds (SNF) und verbindet Grundlagenforschung und anwendungsorientierte Forschung mit der Umsetzung. Das Förderangebot BRIDGE Proof of Concept richtet sich an Nachwuchsforschende, die an der Schnittstelle von Grundlagenforschung und wissenschaftsbasierter Innovation arbeiten. Das Programm bietet ein Jahr lang Unterstützung, um Forschungsergebnisse anwendungsorientiert weiterzuentwickeln, mit dem Ziel, diese zur Marktreife zu führen und die Forschenden auf eine Karriere ausserhalb der Akademie vorzubereiten.
 
 ### BRIDGE Proof of Concept führt zu Start-ups und Spin-offs
-BRIDGE Proof of Concept zeigt seine Wirkung am Anteil der Unterstützungen, die zu einer Ausgründung führen. Mehr als zwei von drei unterstützten Forschenden gründen in der Folge ein Start-up oder ein Spin-off (Start-up mit formeller IP-Lizenzierung). Das ist beinahe doppelt so hoch wie bei den Innovationsprojekten ohne Umsetzungspartner. Allerdings ist zu beachten, dass die Erhebung unterschiedlich ist. Bei den Innovationsprojekten ohne Umsetzungspartner findet die Befragung bei Projektabschluss, bei BRIDGE Proof of Concept wurde eine eigene Erhebung gemacht, welche einen sehr aktuellen Stand hat (2024) und somit einen längeren Zeitraum abdeckt.
+BRIDGE Proof of Concept zeigt seine Wirkung am Anteil der Unterstützungen, die zu einer Ausgründung führen. Mehr als zwei von drei unterstützten Forschenden gründen in der Folge ein Start-up oder ein Spin-off (Start-up mit formeller IP-Lizenzierung). Das ist beinahe doppelt so hoch wie bei den Innovationsprojekten ohne Umsetzungspartner. Allerdings ist zu beachten, dass die Erhebung unterschiedlich ist. Bei den Innovationsprojekten ohne Umsetzungspartner findet die Befragung bei Projektabschluss, bei BRIDGE Proof of Concept wurde eine eigene Erhebung gemacht, welche einen sehr aktuellen Stand hat (2025) und somit einen längeren Zeitraum abdeckt.
 
 ${draw_waffle("br_spinoffs", -100)}

@@ -34,7 +34,7 @@ Une partie des projets nécessite une période plus longue pour la mise sur le m
 <div>${draw_waffle("ip_time_to_market", -100)}</div>
 
 ### L'encouragement génère des retombées économiques tangibles et significatifs sur environ 57 % des PME
-Une sélection de chiffres clés prouve l'efficacité en termes d'effets économiques qui n'auraient pas Certains chiffres clés témoignent de l'efficacité des effets économiques qui n'auraient pas pu être obtenus sans le projet soutenu. Environ 30 % des PME font état d'une croissance de l'emploi et créent ainsi de nouveaux postes hautement qualifiés. 27 % des entreprises constatent une augmentation de leur chiffre d'affaires. Près d'un quart des entreprises ont investi davantage dans la recherche et le développement (R&D), que ce soit en termes d'employés dans le domaine de la R&D ou de dépenses de R&D. 12 % des entreprises font état de réductions de coûts.
+Une sélection de chiffres clés prouve l'efficacité en termes d'effets économiques qui n'auraient pas pu être obtenus sans le projet soutenu. Environ 30 % des PME font état d'une croissance de l'emploi et créent ainsi de nouveaux postes hautement qualifiés. 27 % des entreprises constatent une augmentation de leur chiffre d'affaires. Près d'un quart des entreprises ont investi davantage dans la recherche et le développement (R&D), que ce soit en termes d'employés dans le domaine de la R&D ou de dépenses de R&D. 12 % des entreprises font état de réductions de coûts.
 
 <div>${draw_results("Innovationsprojekte mit Umsetzungspartner", false)}</div>
 
@@ -43,12 +43,13 @@ En moyenne, un projet d'innovation conduit à la création de près de 2,5 emplo
 
 <div style="font-size: 20px; font-weight: 700; max-width: 500px; padding-top: 10px; padding-bottom: 20px; text-align: center">+ 800 – 900 emplois à temps plein par an</div>
 
-Les emplois supplémentaires créés génèrent directement de la valeur ajoutée pour les entreprises. L'effet de levier de l'encouragement est considérable : chaque franc d'encouragement rapporte à l'économie environ quatre francs de valeur ajoutée, mesurés trois ans après l'encouragement et cumulés sur trois années supplémentaires. Les autres effets multiplicateurs indirects au sein des entreprises, par exemple les dépenses supplémentaires pour les prestations préalables des entreprises, ne sont pas pris en compte ici. En outre, les résultats présentés dans ce rapport montrent que les effets de l'encouragement de l'innovation vont bien au-delà des effets économiques immédiats <a href="/_file/data/methodik-volkswirtschaft-innosuisse-ebp.pdf" target="_blank">(EBP, 2025)</a>.
+Les emplois supplémentaires créés génèrent directement de la valeur ajoutée pour les entreprises. L'effet de levier de l'encouragement est considérable : chaque franc d'encouragement rapporte à l'économie environ quatre francs de valeur ajoutée, mesurés trois ans après l'encouragement et cumulés sur trois années supplémentaires. Les autres effets multiplicateurs indirects au sein des entreprises, par exemple les dépenses supplémentaires pour les prestations préalables des entreprises, ne sont pas pris en compte ici. Si l'on tient compte des effets indirects, le multiplicateur est estimé à environ 11 francs. En outre, les résultats présentés dans ce rapport montrent que les effets de l'encouragement de l'innovation vont bien au-delà des effets économiques immédiats <a href="/_file/data/methodik-volkswirtschaft-innosuisse-ebp.pdf" target="_blank">(EBP, 2025)</a>.
 
 <div>${leverage()}</div>
 
 <div class="card" style="max-width: 640px">
-<h4>Une étude scientifique démontre l'impact direct de l'ecouragement de l'innovation sur les ventes et l'emploi</h4>
+
+# Une étude scientifique démontre l'impact direct de l'encouragement de l'innovation sur les ventes et l'emploi
 
 Les résultats du KOF Centre de recherches conjoncturelles de l'ETH Zurich montrent que l'encouragement de projets d'innovation augmente en moyenne de **21 %** les **ventes** des entreprises participantes au cours des cinq années suivantes. La comparaison porte sur des entreprises suisses qui n'ont pas reçu ou demandé d'encouragement d'Innosuisse, mais qui présentent des caractéristiques similaires, telles que les dépenses de recherche et développement, le niveau de formation de la main-d'œuvre ou l'environnement concurrentiel.
 
@@ -58,8 +59,10 @@ Avec cette étude, le KOF a apporté la preuve scientifique du lien entre l'enco
 
 Les résultats confirment les impacts économiques de l'encouragement de projets par Innosuisse présentés dans le suivi de l'impact.
 
+<div class="card" style="background-color: white">${kof_did_plot(0)}</div>
+<div class="card" style="background-color: white">${kof_did_plot(1)}</div>
 <div style="font-size: 12px;">
-Quelle: 
+Source: 
 <ul>
     <li>
         <a href="https://www.innosuisse.admin.ch/de/publication?id=veYrGjAgZwmP" target="_blank">
@@ -78,9 +81,6 @@ Quelle:
     </li>
 </ul>
 </div>
-
-<div class="card" style="background-color: white">${kof_did_plot(0)}</div>
-<div class="card" style="background-color: white">${kof_did_plot(1)}</div>
 </div>
 
 ### Innosuisse soutient des nouveautés sur le marché mondial et les innovations disruptives

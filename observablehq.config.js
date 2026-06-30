@@ -14,8 +14,7 @@ const pageSlugMap = [
   { de: "/de/vergleichende-ergebnisse",       en: "/en/comparative-results",                           fr: "/fr/resultats-comparatifs" },
   { de: "/de/projekte-unternehmen-forschende",en: "/en/projects-companies-researchers",                fr: "/fr/projets-entreprises-chercheurs" },
   { de: "/de/projekte-forschende",            en: "/en/projects-researchers",                          fr: "/fr/projets-chercheurs" },
-  { de: "/de/beratung-und-netzwerk",           en: "/en/advisory-and-networks",                         fr: "/fr/conseil-et-reseaux" },
-  { de: "/de/editorial",                      en: "/en/editorial",                                     fr: "/fr/editorial" }
+  { de: "/de/beratung-und-netzwerk",          en: "/en/advisory-and-networks",                        fr: "/fr/conseil-et-reseaux" }
 ];
 
 function getLang(path) {

@@ -22,7 +22,7 @@ Les projets d'innovation sans partenaire chargé de la mise en valeur visent à 
 Les projets d'innovation sans partenaire chargé de la mise en valeur soutiennent ainsi des projets de recherche et d'innovation axés sur l'application et visent à long terme une mise en œuvre économique.
 
 ### Des étapes réussies vers la mise en œuvre
-Quatre projets d'innovation sur cinq ont tésté leur faisabilité avec succès. La moitié des projets ont abouti à des résultats probants pour la prochaine étape de mise en œuvre et/ou ont de fortes chances d'introduire l'innovation sur le marché.
+Quatre projets d'innovation sur cinq ont testé leur faisabilité avec succès. La moitié des projets ont abouti à des résultats probants pour la prochaine étape de mise en œuvre et/ou ont de fortes chances d'introduire l'innovation sur le marché.
 
 <div>${draw_results("Innovationsprojekte ohne Umsetzungspartner", false, 450)}</div>
 
@@ -35,12 +35,12 @@ ${draw_waffle("ipr_peer_review",-100)}
 ${draw_waffle("ipr_inter_trans",-100)}
 </div>
 
-#### Les projets d'innovation sans partenaire chargé de la mise en valeur sont axés sur la recherche et la mise en œuvre.
+### Les projets d'innovation sans partenaire chargé de la mise en valeur sont axés sur la recherche et la mise en œuvre.
 Dans trois sur cinq projets, une collaboration avec des partenaires potentiels pour la mise en œuvre a déjà été engagée. Outre le transfert de savoir et de technologie vers des entreprises établies, les start-up et les spin-off issues de la recherche jouent un rôle important dans le TST. Dans 45 % des projets, un tel essaimage a déjà été réalisé ou est prévu.
 <div>${draw_waffle("ipr_imppartner", -85)}</div>
 
 ### L'atteinte des objectifs est élevée dans le domaine de la recherche, mais plus faible dans le domaine de l'application et de la mise en œuvre.
-Les objectifs de recherche sont entièrement atteints, voire dépassés, dans la grande majorité des projets financés. L'atteinte des objectifs en matière d'application est nettement plus faible. Cela peut indiquer des risques élevés pour la mise sur le marché, ou peut-être que davantage de temps et de ressources sont nécessaires pour développer des solutions, ou encore que les porteurs de projets soient moins expérimentés pour mener un développement technologique ou une solution plus loin dans la mise en œuvre sur le marché.
+Les objectifs de recherche sont entièrement atteints, voire dépassés, dans les deux tiers des projets financés. L'atteinte des objectifs en matière d'application est nettement plus faible. Cela peut indiquer des risques élevés pour la mise sur le marché, ou peut-être que davantage de temps et de ressources sont nécessaires pour développer des solutions, ou encore que les porteurs de projets soient moins expérimentés pour mener un développement technologique ou une solution plus loin dans la mise en œuvre sur le marché.
 <div style="display: flex; gap: 15px;">
 ${draw_waffle("ipr_research_goals",-100,15)}
 ${draw_waffle("ipr_impl_goals",-100,10)}
@@ -87,6 +87,6 @@ ${draw_waffle("bd_impl_goals",-100,8)}
 BRIDGE est le programme de financement commun d'Innosuisse et du Fonds national suisse (FNS). Il associe la recherche fondamentale et la recherche appliquée à la mise en œuvre. L'offre d'encouragement BRIDGE Proof of Concept s'adresse aux jeunes chercheurs qui travaillent à l'interface entre la recherche fondamentale et l'innovation basée sur la science. Le programme offre un soutien d'un an pour développer les résultats de la recherche en vue d'une application pratique, dans le but de les commercialiser et de préparer une carrière en dehors du monde universitaire.
 
 ### BRIDGE Proof of Concept mène à la création de start-up et de spin-off
-BRIDGE Proof of Concept montre son efficacité à travers la part des soutiens qui aboutissent à une création d'entreprise. Plus de deux chercheurs sur trois ayant bénéficié d'un soutien créent par la suite une start-up ou un spin-off (start-up avec octroi de licence de propriété intellectuelle formelle). Ce chiffre est presque deux fois plus élevé que pour les projets d'innovation sans partenaire chargé de la mise en valeur. Il convient toutefois de noter que l'enquête est différente. Pour les projets d'innovation sans partenaire chargé de la mise en valeur, l'enquête a lieu à la fin du projet, tandis que pour BRIDGE Proof of Concept, une enquête distincte a été réalisée, qui est très actuelle (2024) et couvre donc une période plus longue.
+BRIDGE Proof of Concept montre son efficacité à travers la part des soutiens qui aboutissent à une création d'entreprise. Plus de deux chercheurs sur trois ayant bénéficié d'un soutien créent par la suite une start-up ou un spin-off (start-up avec octroi de licence de propriété intellectuelle formelle). Ce chiffre est presque deux fois plus élevé que pour les projets d'innovation sans partenaire chargé de la mise en valeur. Il convient toutefois de noter que l'enquête est différente. Pour les projets d'innovation sans partenaire chargé de la mise en valeur, l'enquête a lieu à la fin du projet, tandis que pour BRIDGE Proof of Concept, une recherche distincte a été réalisée, qui est très actuelle (2025) et couvre donc une période plus longue.
   
 ${draw_waffle("br_spinoffs", -115)}

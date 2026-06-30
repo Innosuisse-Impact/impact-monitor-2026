@@ -1,12 +1,12 @@
 ---
-titre : Bases méthodologiques
-style : ../styles.css
-toc : false
+title: Bases méthodologiques
+style: ../styles.css
+toc: false
 ---
 
 ```js
-import { html } from « npm:htl »;
-import { plot_erhebung } from « ../functions.js »
+import { html } from "npm:htl";
+import { plot_erhebung } from "../functions.js"
 ```
 
 # Bases méthodologiques
@@ -28,15 +28,14 @@ Les indicateurs présentés s’appuient sur les sources de données suivantes :
 <div class="card" style="width: 600px;">
 
 | Offre d’encouragement | Source de données |
-|------------------ ----------------|------------------------------------------------|
-| Partenaires de mise en œuvre dans les projets d’innovation | Moyenne pour les années de référence 2023–25 |
-| Chèques d’innovation | Moyenne pour les années de référence 2023–25 |
-| Partenaires de recherche dans les projets d’innovation | Moyenne pour les années de référence 2023–25 |
-| BRIDGE Discovery | Moyenne pour les années de référence 2023–25 |
+|------------------|----------------|
+| Partenaires de mise en œuvre dans les projets d’innovation | Moyenne, années de référence 2023–25 |
+| Chèques d’innovation | Moyenne, années de référence 2023–25 |
+| Partenaires de recherche dans les projets d’innovation | Moyenne, années de référence 2023–25 |
+| BRIDGE Discovery | Moyenne, années de référence 2023–25 |
 | BRIDGE Proof of Concept | Recherches internes, années de référence jusqu’en 2025 |
-| Innovation Booster | Moyenne pour les années de référence 2023–25 |
- 
-| Accompagnement de base des start-ups | Moyenne pour les années de référence 2023–25 |
+| Innovation Booster | Moyenne, années de référence 2023–25 |
+| Accompagnement de base des start-ups | Moyenne, années de référence 2023–25 |
 
 </div>
 
@@ -54,7 +53,7 @@ Les offres d’encouragement d’Innosuisse peuvent être réparties en deux gra
 La vue d’ensemble ci-dessous présente les cinq axes (résultats) d’Innosuisse auxquels les offres d’encouragement sont censées contribuer. Les résultats de l’enquête présentés ici visent à fournir des informations sur la réalisation des objectifs d’encouragement de l’innovation et à offrir une base solide pour évaluer l’efficacité des mesures d’encouragement et les développer de manière ciblée.
 
 <div class="card" style="width: 600px;">
-  <img src="../images/funding_figure.png" alt="Image">
+  <img src="../images/encouragement_graphique.png" alt="Image">
 </div>
 
 Les résultats portent, d’une part, sur les impacts à court et moyen terme, observés à l’issue des projets d’innovation ou peu après leur achèvement. D’autre part, des impacts à plus long terme sont également présentés, tels que la mise en œuvre sur le marché ou les retombées sur l’emploi. La répartition entre les cinq axes définis n’est pas explicitement indiquée dans le présent rapport, mais elle est clairement présentée dans le tableau récapitulatif (voir ci-dessus). Il en va de même pour les échelles d’évaluation utilisées pour le calcul des indicateurs présentés.

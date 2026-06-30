@@ -6,7 +6,8 @@ toc: false
 
 ```js
 import { html } from "npm:htl";
-import { drawMiniPlot, draw_waffle, draw_results, ib_toipis, su_vza, su_vza_legend} from "../functions.js"
+import { drawMiniPlot, draw_waffle, draw_bar, draw_results, ib_toipis, su_vza, su_vza_legend} from "../functions.js"
+import { df_waffle } from "../data.js"
 ```
 
 # Savoir et réseaux
@@ -18,8 +19,6 @@ import { drawMiniPlot, draw_waffle, draw_results, ib_toipis, su_vza, su_vza_lege
   <p class = "comment">Contrairement aux autres mini-graphiques, ce graphique ne présente pas les montants accordés, mais les montants investis ou les Innovation Booster actifs.</p>
 
 Les Innovation Booster soutenus par Innosuisse se concentrent chacun sur un thème d'innovation spécifique. Ils couvrent un large éventail de thèmes, allant de l'intelligence artificielle au tourisme en passant par la technologie alimentaire.
-
-En 2023, Innosuisse a soutenu 17 Innovation Booster actifs dans différents domaines thématiques. À l'automne 2023, 8 autres Innovation Booster ont été approuvés pour les années 2024-2027. Ils ont démarré en janvier 2024. L'encouragement des Innovation Booster soutenus en 2021 s'achèvera fin 2024. Les résultats présentés ici sont basés sur des données de suivi existantes dans un horizon d'impact plus court.
 
 Les Innovation Booster développent des idées d'innovation nouvelles et radicales et les testent dans le cadre d'un processus d'innovation ouvert et basé sur un réseau, avec une culture d'innovation ouverte. Les partenaires des réseaux soutenus sont issus du monde de la recherche, de l'économie et de la société. L'accent est mis sur la phase initiale de génération et de test d'idées, en utilisant des méthodes expérimentales telles que le « design thinking » et la « co-création ».
 
@@ -37,6 +36,59 @@ Deux tiers des idées innovantes soutenues sont poursuivies après la fin du fin
 <div style="display: flex; column-gap: 20px;">
 <div> ${draw_waffle("ib_continued", -85)}</div>
 <div>${ib_toipis()}</div>
+</div>
+
+<div class="card" style="max-width: 620px">
+
+# Une évaluation confirme l'efficacité des Innovation Booster
+
+L'évaluation d'impact réalisée par Ecoplan ([2025](https://www.innosuisse.admin.ch/de/publication?id=TpGqSBI8N6Cl)) a montré que les Innovation Booster renforcent les partenariats d'innovation à long terme, le savoir-faire en matière d'innovation et le développement de nouvelles idées dans des domaines thématiques variés. La collaboration et les analyses de problèmes axées sur les utilisateurs sont leurs caractéristiques distinctives. Ces aspects gagneront encore en importance à l'avenir.
+
+## Des idées plus radicales
+
+Les entreprises et les organisations développent des idées radicales qui résolvent les problèmes de manière innovante.
+<div class="claims-wrapper">
+ <section class="claim" style="margin-bottom: 0px">
+    <div class="figure" style="align-items:center">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_radical", mode: "opposite" })}</div>
+      <p>La proportion d'organisations qui considèrent leurs idées d'innovation comme <span class="text-neutral-b">clairement radicales</span> est plus de deux fois plus élevée que celle qui les considère comme <span class="text-neutral-a">clairement incrémentales</span>.
+      </p>
+    </div>
+  </section>
+</div>
+
+## Des réseaux élargis
+
+Les entreprises et les organisations élargissent leur réseau au-delà de leur environnement existant.
+
+<div class="claims-wrapper">
+ <section class="claim" style="margin-bottom: 0px">
+    <div class="figure" style="align-items:center">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_new_contacts", mode: "single", rank: "pct1" })}</div>
+      <p>Les organisations collaborent avec des partenaires en dehors de leurs contacts existants.
+      </p>
+    </div>
+    <div class="figure" style="align-items:center">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_new_contacts", mode: "single", rank: "pct2" })}</div>
+      <p>Les organisations peuvent nouer de nouveaux contacts utiles.
+      </p>
+    </div>
+</section>
+</div>
+
+## Une culture d'apprentissage renforcée
+
+Les entreprises et les organisations adoptent de nouveaux savoirs sur les méthodes d'innovation et une culture de l'apprentissage et de l'acceptation des erreurs.
+
+<div class="claims-wrapper">
+ <section class="claim" style="margin-bottom: 0px">
+    <div class="figure" style="align-items:center">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_learning_effects", mode: "single", rank: "pct1" })}</div>
+      <p>Les organisations perçoivent des effets d'apprentissage à long terme plutôt élevés à très élevés sur les processus d'innovation.
+      </p>
+    </div>
+  </section>
+</div>
 </div>
 
 # Gestion de l'innovation et conseil
@@ -70,14 +122,14 @@ Le Core Coaching chez Innosuisse est la phase centrale du Start-up Coaching, au 
 ### Les start-up trouvent que le Core Coaching est utile pour leur développement
 Le Core Coaching couvre un large éventail de sujets, qui sont spécifiquement adaptés aux besoins des start-up. Dans le tableau ci-dessous, les sujets sont classés par ordre décroissant de pertinence pour les start-up (voir les pourcentages en gris clair). Le tableau montre la proportion de start-up soutenues qui considèrent le Core Coaching comme utile ou très utile dans les domaines pertinents.
 
-Le domaine le plus important pour le coaching, « développement du modèle d'entreprise » (94 %), affiche également la plus forte proportion de start-up qui jugent le soutien utile (81 %). Les conseils en matière de la levée de capitaux, également très importants (91 %), ont été jugés utile par deux tiers des start-up (66 %). Le soutien à l'entrée sur le marché a été évalué de manière similaire (65 %). L'évaluation du soutien apporté à l'échelle du modèle d'entreprise a été un peu plus faible (55 %), ce qui indique probablement que de nombreuses start-up ne sont pas encore en phase d'échelle réelle à la fin du coaching.
+Le domaine le plus important pour le coaching, « développement du modèle d'entreprise » (93 %), affiche la deuxième plus forte proportion de start-up qui jugent le soutien utile (81 %). Les conseils en matière de la levée de capitaux, également très importants (90 %), ont été jugés utile par deux tiers des start-up (66 %). Le soutien à l'entrée sur le marché a été évalué de manière similaire (66 %). L'évaluation du soutien apporté à l'échelle du modèle d'entreprise a été un peu plus faible (58 %), ce qui indique probablement que de nombreuses start-up ne sont pas encore en phase d'échelle réelle à la fin du coaching.
 
 <div>${draw_results("Start-up Core Coaching", true, 280)}</div>
 
 ### Les attentes des start-up vis-à-vis du coaching sont satisfaites
-Environ quatre start-up sur cinq ayant bénéficié du coaching confirment que le Core Coaching a apporté une contribution importante dans au moins un domaine pertinent (78 %), cette contribution étant jugée « favorable » ou « très favorable ». La proportion de start-up dont les attentes ont été majoritairement satisfaites est tout aussi élevée, avec 84 %.
+Trois quarts des start-up ayant bénéficié du coaching confirment que le Core Coaching a apporté une contribution importante dans au moins un domaine pertinent (77 %), cette contribution étant jugée « favorable » ou « très favorable ». La proportion de start-up dont les attentes ont été majoritairement satisfaites est tout aussi élevée, avec 86 %.
 
-Pour environ la moitié des start-up, le coaching a apporté une contribution significative dans au moins trois domaines importants de la création d'entreprise (54 %). La proportion de start-up dont les attentes ont été entièrement satisfaites, voire dépassées, est presque aussi élevée (48 %).
+Pour environ la moitié des start-up, le coaching a apporté une contribution significative dans au moins trois domaines importants de la création d'entreprise (55 %). La proportion de start-up dont les attentes ont été entièrement satisfaites, voire dépassées, est tout aussi élevée (55 %).
 
 <div style="display: flex; gap: 15px;">
     ${draw_waffle("scc_support", -100)}
@@ -85,7 +137,7 @@ Pour environ la moitié des start-up, le coaching a apporté une contribution si
 </div>
 
 ### Les start-up poursuivent des idées commerciales radicales et disruptives ayant un impact sur les marchés internationaux
-Par rapport aux projets d'innovation, les start-up poursuivent généralement des innovations et des modèles commerciaux plus radicaux. Seules quelques-unes d'entre elles mettent clairement en œuvre des innovations et des modèles commerciaux incrémentaux. La majorité d'entre elles visent également à réaliser des innovations disruptives et à transformer considérablement le marché ou même à créer de nouveaux marchés grâce à leurs innovations. La proportion de start-up qui développent une nouveauté mondiale ou une nouveauté pour les marchés internationaux est donc élevée (77 %).
+Par rapport aux projets d'innovation, les start-up poursuivent généralement des innovations et des modèles commerciaux plus radicaux. Seules quelques-unes d'entre elles mettent clairement en œuvre des innovations et des modèles commerciaux incrémentaux. La majorité d'entre elles visent également à réaliser des innovations disruptives et à transformer considérablement le marché ou même à créer de nouveaux marchés grâce à leurs innovations. La proportion de start-up qui développent une nouveauté mondiale ou une nouveauté pour les marchés internationaux est donc élevée (82 %).
 
 <div style="display: flex; gap: 10px;">
     ${draw_waffle("scc_radikal_inkr", -70)}
@@ -93,7 +145,7 @@ Par rapport aux projets d'innovation, les start-up poursuivent généralement de
 </div>
 
 ### Les start-up réussissent leur entrée sur le marché – la rentabilité prend plus de temps
-Un facteur décisif pour la survie et la croissance des start-up est l'entrée concrète sur le marché, afin de faire évoluer le modèle d'affaires par la suite. À la fin du coaching, environ 80 % des jeunes entreprises ont pu lancer leur innovation sur le marché. La prochaine étape est la rentabilité, lorsque la start-up commence à réaliser des bénéfices. Environ une start-up sur dix est déjà dans cette situation à la fin du coaching. Trois ans plus tard, c'est déjà le cas de près d'une start-up sur trois.
+Un facteur décisif pour la survie et la croissance des start-up est l'entrée concrète sur le marché, afin de faire évoluer le modèle d'affaires par la suite. À la fin du coaching, environ 72 % des jeunes entreprises ont pu lancer leur innovation sur le marché ou prévoient de le faire dans l'année. La prochaine étape est la rentabilité, lorsque la start-up commence à réaliser des bénéfices. Environ une start-up sur dix est déjà dans cette situation à la fin du coaching. Trois ans plus tard, c'est déjà le cas de près d'une start-up sur trois.
 
 <div style="display: flex; gap: 40px;">
  ${draw_waffle("scc_market", -85)}
@@ -101,7 +153,7 @@ Un facteur décisif pour la survie et la croissance des start-up est l'entrée c
 </div>
 
 ### Les start-up en coaching lèvent des fonds avec succès
-Pour les start-up, la levée de fonds est une condition essentielle pour poursuivre leur idée commerciale et se développer sur les marchés. La recherche et le développement ainsi que la mise sur le marché d'une innovation nécessitent des investissements importants, c'est pourquoi la levée de fonds est un thème central du programme de coaching d'Innosuisse. À la fin du programme, 22 % des start-up coachées avaient levé plus de 5 millions de francs de nouveaux capitaux. Pour deux tiers des start-up, le coaching a [directement contribué](#les-start-up-trouvent-que-le-core-coaching-est-utile-pour-leur-développement) à la levée de fonds.
+Pour les start-up, la levée de fonds est une condition essentielle pour poursuivre leur idée commerciale et se développer sur les marchés. La recherche et le développement ainsi que la mise sur le marché d'une innovation nécessitent des investissements importants, c'est pourquoi la levée de fonds est un thème central du programme de coaching d'Innosuisse. À la fin du programme, 20 % des start-up coachées avaient levé plus de 5 millions de francs de nouveaux capitaux. Pour deux tiers des start-up, le coaching a [directement contribué](#les-start-up-trouvent-que-le-core-coaching-est-utile-pour-leur-développement) à la levée de fonds.
 
 <div>${draw_waffle("scc_capital", -55)}</div>
 
@@ -113,9 +165,9 @@ ${su_vza_legend()}
 </div>
 
 ### Le coaching reflète et renforce la diversité de l'écosystème
-La proportion de fondatrices dans les start-up ayant bénéficié d'un coaching est de 17 %. Les équipes de fondateurs comptent 35 % de femmes, et cette tendance est à la hausse. En outre, les équipes de fondateurs sont très cosmopolites : 67 % des start-up ont au moins un fondateur de nationalité étrangère, et au total, 43 % des équipes de fondateurs sont composées de membres étrangers en moyenne. Cela souligne le caractère international de la scène des start-up suisses.
+La proportion de fondatrices dans les start-up ayant bénéficié d'un coaching est de 17 %. Les équipes de fondateurs comptent 36 % de femmes, et cette tendance est à la hausse. En outre, les équipes de fondateurs sont très cosmopolites : 67 % des start-up ont au moins un fondateur de nationalité étrangère, et au total, 41 % des équipes de fondateurs sont composées de membres étrangers en moyenne. Cela souligne le caractère international de la scène des start-up suisses.
 
-Sur le plan thématique, le secteur des start-up se concentre fortement sur le domaine des «Life Sciences», y compris les technologies médicales et les soins de santé (38 %) et les TIC (30 %), voir [offres d'encouragement et contenus](offres-dencouragement-et-contenus#thematiques-des-projets-innovants-2021-2023). En même temps, les autres domaines de la technologie et de l'innovation sont également diversifiés et largement représentés. Les observations suivantes montrent en outre que les spin-off et les entreprises issues directement de la recherche et des universités revêtent une grande importance. Leur caractère international joue un rôle essentiel.
+Sur le plan thématique, le secteur des start-up se concentre fortement sur le domaine des «Life Sciences», y compris les technologies médicales et les soins de santé (31 %) et les TIC (28 %), voir [offres d'encouragement et contenus](offres-dencouragement-et-contenus#thematiques-des-projets-innovants-2023-2025). En même temps, les autres domaines de la technologie et de l'innovation sont également diversifiés et largement représentés. Les observations suivantes montrent en outre que les spin-off et les entreprises issues directement de la recherche et des universités revêtent une grande importance. Leur caractère international joue un rôle essentiel.
 
 Cette diversité des start-up soutenues contribue de manière significative à la dynamique économique et technologique de l'écosystème des start-up et au renforcement de l'économie suisse.
 
@@ -125,7 +177,7 @@ Cette diversité des start-up soutenues contribue de manière significative à l
     </div>
 
 ### De nombreuses start-up trouvent leur origine dans la recherche
-La moitié des start-up qui ont recours au Core Coaching d'Innosuisse ont vu le jour dans une université ou un institut de recherche. Environ une start-up sur trois est un spin-off qui souhaite exploiter commercialement la propriété intellectuelle issue de travaux de recherche et qui a réglé cela par contrat. Deux start-up sur trois indiquent qu'elles ont déjà protégé leur propriété intellectuelle par un brevet ou qu'elles prévoient de le faire dans un avenir proche.
+La moitié des start-up qui ont recours au Core Coaching d'Innosuisse ont vu le jour dans une université ou un institut de recherche. Environ une start-up sur trois est un spin-off qui souhaite exploiter commercialement la propriété intellectuelle issue de travaux de recherche et qui a réglé cela par contrat. Trois start-up sur quatre indiquent qu'elles ont déjà protégé leur propriété intellectuelle par un brevet ou qu'elles prévoient de le faire dans un avenir proche.
 
 <div style="display: flex; gap: 10px;">
 ${draw_waffle("scc_start_spin", -85)}

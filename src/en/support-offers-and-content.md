@@ -6,12 +6,12 @@ toc: false
 
 ```js
 import { html } from "npm:htl";
-import { draw_fin_plot, draw_fin_plot_legend, n_subcluster} from "../functions.js"
+import { draw_fin_plot, n_subcluster} from "../functions.js"
 ```
 
-## Overview of support offers and content
+# Overview of support offers and content
 
-The current status of the impact monitoring is structured in such a way that at least for the financially most significant support offer in each category of funding offers, statements can be made on the effectiveness and selected comparisons. The current gaps (in light colour) will be closed step by step (see chapter Further development of impact monitoring).
+The current status of the impact monitoring is structured in such a way that at least for the financially most significant support offer in each category of funding offers, statements can be made on the effectiveness and selected comparisons. The current gaps (in light colour) will be closed step by step.
  
 ## Funding of Innovation Projects
 
@@ -46,8 +46,8 @@ The inclusion of international innovation projects in the impact monitoring is p
 
 <p class="comment">¹ In the following, 'company' is often used as a synonym for 'implementation partner'. This is not entirely precise because the implementation partners can include companies as well as administrations, non-profit organisations and other private or public institutions. However, the vast majority of implementation partners are companies (SMEs, large companies and start-ups), which is why we are taking the liberty of simplifying here in order to make the texts easier to understand.<p>
 
-### Thematic areas of the innovation projects 2021–2023
-The approved innovation projects can be categorised into five different thematic areas, which are also shown in the chart below, broken down by support offers. The chart shows the percentage share of the thematic areas in the approved innovation projects as an average for the years 2021–2023. The percentage shares by instrument differ, sometimes significantly.
+## Thematic areas of the innovation projects 2023–2025
+The approved innovation projects can be categorised into five different thematic areas, which are also shown in the chart below, broken down by support offers. The chart shows the percentage share of the thematic areas in the approved innovation projects as an average for the years 2023–2025. The percentage shares by instrument differ, sometimes significantly.
 
 - <span class="text-cat-1">Engineering</span> has a higher and comparable share in Innovation projects with implementation partners (37%), Innovation cheques (32%) and in BRIDGE Proof of Concept (31%).
 - <span class="text-cat-2">Life Sciences</span>, on the other hand, accounts for a very high proportion of innovation projects without implementation partners (66%) and an above-average proportion of start-ups in coaching (38%). It is the most important subject area in BRIDGE Proof of Concept (34%).

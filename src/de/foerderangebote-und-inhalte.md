@@ -6,12 +6,12 @@ toc: false
 
 ```js
 import { html } from "npm:htl";
-import { draw_fin_plot, draw_fin_plot_legend, n_subcluster} from "../functions.js"
+import { draw_fin_plot, n_subcluster} from "../functions.js"
 ```
 
 # Förderangebote und Inhalte
 
-Der gegenwärtige Stand des Wirkungsmonitorings ist so aufgebaut, dass in allen Förderangebotskategorien mindestens zum jeweils finanziell gewichtigsten Förderangebot Aussagen zur Wirksamkeit und zu ausgewählten Vergleichen gemacht werden können. Die gegenwärtigen Lücken (in aufgehellter Farbe) werden schrittweise geschlossen werden (vgl. Kapitel [Weiterentwicklung des Wirkungsmonitorings](methodische-grundlagen#weiterentwicklung-des-wirkungsmonitorings)). 
+Der gegenwärtige Stand des Wirkungsmonitorings ist so aufgebaut, dass in allen Förderangebotskategorien mindestens zum jeweils finanziell gewichtigsten Förderangebot Aussagen zur Wirksamkeit und zu ausgewählten Vergleichen gemacht werden können. Die gegenwärtigen Lücken (in aufgehellter Farbe) werden schrittweise geschlossen werden. 
  
 ## Förderung von Innovationsprojekten
 
@@ -48,7 +48,7 @@ Die Projekte, in welchen die Start-ups und KMUs direkt unterstützt werden (Star
 <p class="comment">¹ In der Folge wird «Unternehmen» vielfach als Synonym für «Umsetzungspartner» verwendet. Das ist nicht ganz präzise, weil die Umsetzungspartner sowohl KMU, Grossunternehmen und Start-ups, wie auch Verwaltungen, Non-Profit-Organisationen und andere private oder öffentliche Institutionen umfassen können. Allerdings besteht die grosse Mehrheit der Umsetzungspartner aus Unternehmen (KMU, Grossunternehmen und Start-ups), darum erlauben wir uns diese Vereinfachung hier, um damit die Texte einfacher verständlich zu machen.<p>
 
 ## Themengebiete der Innovationsvorhaben 2023–2025
-Die bewilligten Innovationsvorhaben lassen sich in fünf verschiedene Themengebiete gliedern, welche in der nachfolgenden Abbildung zusätzlich nach Förderangeboten dargestellt sind. Die Abbildung zeigt den prozentualen Anteil der Themengebiete an den bewilligten Innovationsvorhaben im Durchschnitt der Jahre 2021–2023. Die prozentualen Anteile nach Instrumenten unterscheiden sich zum Teil deutlich. 
+Die bewilligten Innovationsvorhaben lassen sich in fünf verschiedene Themengebiete gliedern, welche in der nachfolgenden Abbildung zusätzlich nach Förderangeboten dargestellt sind. Die Abbildung zeigt den prozentualen Anteil der Themengebiete an den bewilligten Innovationsvorhaben im Durchschnitt der Jahre 2023–2025. Die prozentualen Anteile nach Instrumenten unterscheiden sich zum Teil deutlich. 
 
 - «<span class="text-cat-1">Engineering</span>» weist bei den Innovationsprojekten mit Umsetzungspartnern (37 %), den Innovationsschecks (32 %) und bei BRIDGE Proof of Concept (31 %) höhere und vergleichbare Anteile auf. 
 - «<span class="text-cat-2">Life Sciences</span>» hingegen zeigen einen sehr hohen Anteil bei den Innovationsprojekten ohne Umsetzungspartner (66 %) und einen überdurchschnittlichen Anteil bei den Start-ups im Coaching (38 %). Bei BRIDGE Proof of Concept ist es der wichtigste Themenbereich (34 %).
