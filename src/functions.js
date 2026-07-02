@@ -1251,8 +1251,10 @@ function getLastDigit(number) {
 export function draw_results(
   instrument = instruments.CC,
   relevance = true,
-  marginLeft = 200
+  marginLeft = 200,
+  width = 640
 ) {
+  const width_max = width > 640 ? 640 : width;
   const type = `type_${lang}`;
   const label_lng = `label_${lang}`;
   const caption_lng = `caption_${lang}`;
@@ -1326,6 +1328,7 @@ export function draw_results(
     marginLeft: marginLeft,
     marginRight: relevance ? 55 : 15,
     marginBottom: 10,
+    width: width_max,
     color: { type: "categorical", range: palette.hue2 },
     caption: html`<span style="font-size: 10px; color: #828282;">${caption}</span>`,
     style: { ...plotStyle, fontSize: "12px" },

@@ -24,13 +24,13 @@ Les projets d'innovation sans partenaire chargé de la mise en valeur soutiennen
 ### Des étapes réussies vers la mise en œuvre
 Quatre projets d'innovation sur cinq ont testé leur faisabilité avec succès. La moitié des projets ont abouti à des résultats probants pour la prochaine étape de mise en œuvre et/ou ont de fortes chances d'introduire l'innovation sur le marché.
 
-<div>${draw_results("Innovationsprojekte ohne Umsetzungspartner", false, 450)}</div>
+<div>${draw_results("Innovationsprojekte ohne Umsetzungspartner", false, 450, width)}</div>
 
 ### L'output scientifique est plus élevé que pour les projets avec des partenaires chargés de la mise en valeur
 Les résultats scientifiques publiés sont des formes importantes de transfert de savoir et de technologie (TST). Ils servent à diffuser les résultats du projet dans la recherche et l'application et renforcent le TST. Les thèses sont une indication de la nouveauté et de la qualité de la recherche et du risque associé à la recherche de solutions (technologiques) pour la mise en œuvre. 
 
 Par rapport aux projets d'innovation avec partenaire chargé de la mise en valeur, la part des résultats scientifiques publiés dans des revues spécialisées et la part des thèses de doctorat sont, comme on pouvait s'y attendre, nettement plus élevées. La part des projets interdisciplinaires est similaire, la part des projets transdisciplinaires est légèrement inférieure, car moins d'acteurs sont impliqués.
-  <div style="display: flex; gap: 15px;">
+  <div class="chart-pair">
 ${draw_waffle("ipr_peer_review",-100)}
 ${draw_waffle("ipr_inter_trans",-100)}
 </div>
@@ -41,7 +41,7 @@ Dans trois sur cinq projets, une collaboration avec des partenaires potentiels p
 
 ### L'atteinte des objectifs est élevée dans le domaine de la recherche, mais plus faible dans le domaine de l'application et de la mise en œuvre.
 Les objectifs de recherche sont entièrement atteints, voire dépassés, dans les deux tiers des projets financés. L'atteinte des objectifs en matière d'application est nettement plus faible. Cela peut indiquer des risques élevés pour la mise sur le marché, ou peut-être que davantage de temps et de ressources sont nécessaires pour développer des solutions, ou encore que les porteurs de projets soient moins expérimentés pour mener un développement technologique ou une solution plus loin dans la mise en œuvre sur le marché.
-<div style="display: flex; gap: 15px;">
+<div class="chart-pair">
 ${draw_waffle("ipr_research_goals",-100,15)}
 ${draw_waffle("ipr_impl_goals",-100,10)}
 </div>
@@ -58,11 +58,11 @@ BRIDGE Discovery soutient ainsi des projets situés à l’interface entre la re
 
 ### Résultats obtenus en matière de mise en œuvre
 Par rapport aux projets d'innovation sans partenaire de mise en œuvre, la proportion de projets dont la faisabilité a été testée, qui ont abouti à des résultats concluants en vue de la mise en œuvre ou pour lesquels les chercheurs estiment que l'innovation sera commercialisée est supérieure d'environ 10 points de pourcentage.
-<div>${draw_results("BRIDGE Discovery", false, 450)}</div>
+<div>${draw_results("BRIDGE Discovery", false, 450, width)}</div>
 
 ### Production scientifique très élevée
 Dans la grande majorité des cas, BRIDGE Discovery permet également de mener et de publier d’excellentes recherches. La proportion est encore nettement plus élevée pour les projets « Discovery » que pour les projets d’innovation sans partenaire de mise en œuvre. La proportion de projets interdisciplinaires et transdisciplinaires est similaire à celle observée dans les projets d’innovation sans partenaire de mise en œuvre.
-<div style="display: flex; gap: 15px;">
+<div class="chart-pair">
 ${draw_waffle("bd_peer_review",-100)}
 ${draw_waffle("bd_inter_trans",-100)}
 </div>
@@ -73,7 +73,7 @@ Les projets BRIDGE Discovery misent eux aussi en premier lieu sur la coopératio
 
 ### L’atteinte des objectifs est élevée
 Contrairement aux projets d’innovation sans partenaire de mise en œuvre, la plupart des projets Discovery atteignent pleinement, voire dépassent, non seulement leurs objectifs de recherche, mais aussi leurs objectifs orientés vers l’application.
-<div style="display: flex; gap: 15px;">
+<div class="chart-pair">
 ${draw_waffle("bd_research_goals",-100, 17)}
 ${draw_waffle("bd_impl_goals",-100,8)}
 </div>

@@ -24,13 +24,13 @@ Innovationsprojekte ohne Umsetzungspartner fördern damit anwendungsorientierte 
 ### Erfolgreiche Schritte in Richtung Umsetzung gemacht
 Rund vier von fünf Innovationsprojekten haben die Machbarkeit erfolgreich geprüft. Jedes zweite geförderte Projekt liefert schlüssige Ergebnisse für weitere Umsetzungsschritte und/oder wird mit hoher Wahrscheinlichkeit die Innovation auf dem Markt einführen.
 
-<div>${draw_results("Innovationsprojekte ohne Umsetzungspartner", false, 450)}</div>
+<div>${draw_results("Innovationsprojekte ohne Umsetzungspartner", false, 450, width)}</div>
 
 ### Wissenschaftlicher Output ist höher als bei Projekten mit Umsetzungspartnern
 Publizierte wissenschaftliche Ergebnisse sind wichtige Formen des Wissens- und Technologietransfers (WTT). Sie dienen der Weiterverbreitung der Projektergebnisse in Forschung und Anwendung und stärken den WTT. Die Dissertationen sind ein Hinweis auf die Neuartigkeit und Qualität der Forschung und damit verbundenen Risiko der (technologischen) Lösungsfindung für die Umsetzung. 
 
 Gegenüber den Innovationsprojekten mit Umsetzungspartner ist – wie zu erwarten – der Anteil der wissenschaftlichen Ergebnisse in Fachzeitschriften und der Anteil der Dissertationen signifikant höher. Der Anteil der interdisziplinären Projekte ist ähnlich hoch, der Anteil der Projekte, die transdisziplinär sind, leicht tiefer, da weniger Akteure involviert sind.
-  <div style="display: flex; gap: 15px;">
+  <div class="chart-pair">
 ${draw_waffle("ipr_peer_review",-100)}
 ${draw_waffle("ipr_inter_trans",-100)}
 </div>
@@ -41,7 +41,7 @@ In drei von fünf Projekten wurde bereits mit potenziellen Umsetzungspartnern zu
 
 ### Zielerreichung bei der Forschung ist hoch, bei anwendungs- und umsetzungsorientierten Zielen tiefer
 Die Forschungsziele werden bei zwei Drittel der geförderten Projekte vollständig erreicht oder gar übertroffen. Die Zielerreichung bei der Anwendungsorientierung liegt deutlich tiefer. Dies kann ein Hinweis auf hohe Risiken für die Markteinführung sein, oder möglicherweise wird noch mehr Zeit und Ressourcen benötigt für die Lösungsentwicklung, oder die Projektträger sind weniger erfahren, eine technologische Entwicklung oder eine Lösung weiter in die Marktumsetzung zu führen.
-<div style="display: flex; gap: 15px;">
+<div class="chart-pair">
 ${draw_waffle("ipr_research_goals",-100)}
 ${draw_waffle("ipr_impl_goals",-100)}
 </div>
@@ -58,11 +58,11 @@ BRIDGE Discovery fördert damit Projekte an der Schnittstelle zwischen Grundlage
 
 ### Ergebnisse für die Umsetzung erzielt
 Im Vergleich zu den Innovationsprojekten ohne Umsetzungspartner ist der Anteil der Projekte, welche die Machbarkeit geprüft, schlüssige Ergebnisse für die Umsetzung erzielt bzw. bei denen die Forschenden davon ausgehen, dass die Innovation auf dem Markt umgesetzt werden, um rund 10 Prozentpunkte höher.
-<div>${draw_results("BRIDGE Discovery", false, 450)}</div>
+<div>${draw_results("BRIDGE Discovery", false, 450, width)}</div>
 
 ### Sehr hoher wissenschaftlicher Output
 In der grossen Mehrheit der Fälle wird bei BRIDGE Discovery auch exzellente Forschung betrieben und publiziert. Der Anteil ist bei den Discovery-Projekte noch einmal deutlich höher als bei den Innovationsprojekten ohne Umsetzungspartnern. Der Anteil der inter- und transdisziplinären Projekte ist ähnlich hoch, wie bei den Innovationsprojekten ohne Umsetzungspartner.
-  <div style="display: flex; gap: 15px;">
+  <div class="chart-pair">
 ${draw_waffle("bd_peer_review",-100)}
 ${draw_waffle("bd_inter_trans",-100)}
 </div>
@@ -73,7 +73,7 @@ Auch BRIDGE Discovery-Projekte setzen primär auf die Zusammenarbeit mit Umsetzu
 
 ### Die Zielerreichung ist hoch
 Anders als Innovationsprojekte ohne Umsetzungspartner erreichen die meisten Discovery-Projekte nicht nur ihre forschungs-, sondern auch anwendungsorientierten Ziele vollständig oder übertreffen diese.
-<div style="display: flex; gap: 15px;">
+<div class="chart-pair">
 ${draw_waffle("bd_research_goals",-100)}
 ${draw_waffle("bd_impl_goals",-100)}
 </div>

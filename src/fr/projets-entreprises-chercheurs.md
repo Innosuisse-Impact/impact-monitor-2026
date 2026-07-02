@@ -36,7 +36,7 @@ Une partie des projets nécessite une période plus longue pour la mise sur le m
 ### L'encouragement génère des retombées économiques tangibles et significatifs sur environ 57 % des PME
 Une sélection de chiffres clés prouve l'efficacité en termes d'effets économiques qui n'auraient pas pu être obtenus sans le projet soutenu. Environ 30 % des PME font état d'une croissance de l'emploi et créent ainsi de nouveaux postes hautement qualifiés. 27 % des entreprises constatent une augmentation de leur chiffre d'affaires. Près d'un quart des entreprises ont investi davantage dans la recherche et le développement (R&D), que ce soit en termes d'employés dans le domaine de la R&D ou de dépenses de R&D. 12 % des entreprises font état de réductions de coûts.
 
-<div>${draw_results("Innovationsprojekte mit Umsetzungspartner", false)}</div>
+<div>${draw_results("Innovationsprojekte mit Umsetzungspartner", false, 200, width)}</div>
 
 ### Un franc d'encouragement a un effet de levier important
 En moyenne, un projet d'innovation conduit à la création de près de 2,5 emplois à temps plein supplémentaires au cours des années 2021–23. En extrapolant sur les 350 projets en moyenne menés à bien au cours de cette période, entre 800 et 900 nouveaux emplois à temps plein sont ainsi créés dans les entreprises en Suisse.
@@ -85,7 +85,7 @@ Source:
 
 ### Innosuisse soutient des nouveautés sur le marché mondial et les innovations disruptives
 32 % des projets d'innovation soutenus visent à développer des nouveautés pour le marché international et mondial. Les entreprises suisses bénéficient ainsi d'un soutien pour devenir ou rester compétitives à l'échelle internationale. En outre, environ 33 % des projets soutenus ont le potentiel d'influencer fortement ou de redéfinir les marchés grâce à des innovations disruptives.
-  <div style="display: flex; gap: 40px;">
+  <div class="chart-pair" style="--chart-pair-gap: var(--space-11)">
   ${draw_waffle("ip_new_to_market", -85)}
   ${draw_waffle("ip_disruptive", -85)}
   </div>
@@ -94,7 +94,7 @@ Source:
 La majorité des partenaires de projet impliqués ont entièrement atteint, voire dépassé leurs objectifs. Seule une petite partie des projets soutenus n'ont pas entièrement atteint ou n'ont pas atteint les objectifs fixés. Les projets innovants sont associés à des risques technologiques considérables et à des impondérables lors de la mise en œuvre sur le marché. Ces risques potentiels élevés soulignent la nécessité d'un encouragement public pour soutenir le transfert de savoir et de technologie, car les projets d'innovation ne seraient pas réalisés sans encouragement.
 
 Les faibles effets d’aubaine de l'encouragement le confirment : seules 3 % des entreprises déclarent qu'elles auraient réalisé le projet sous la même forme sans le soutien d'Innosuisse. 16 % l'auraient réalisé sous une forme modifiée ou réduite.
-  <div style="display: flex; gap: 15px;">
+  <div class="chart-pair">
   <div>${draw_waffle("ip_project_goals",-70, 20)}</div>
   <div>${draw_waffle("ip_mitnahme",-70,5)}</div>
   </div>
@@ -103,7 +103,7 @@ Les faibles effets d’aubaine de l'encouragement le confirment : seules 3 % des
 ### L'encouragement d'Innosuisse renforce le transfert de savoir et de technologie (TST) à long terme
 Les projets d'innovation encouragent et renforcent le TST et la coopération entre les entreprises et la recherche. Sept entreprises sur dix indiquent que le financement de projets a accéléré et renforcé leurs activités de recherche et développement. La coopération et le TST avec la recherche sont durables à long terme : près de la moitié des entreprises travaillent toujours avec leurs partenaires de recherche trois ans après la fin du projet. 13 % d'entre elles recrutent même du personnel de recherche ayant participé au projet, renforçant ainsi leur base interne de connaissances et d'innovation à long terme.
 
-  <div style="display: flex; gap: 15px;">
+  <div class="chart-pair">
     ${draw_waffle("ip_wtt",-100)}
     ${draw_waffle("ip_researchpartner",-100)}
 </div>
@@ -116,7 +116,7 @@ L'output scientifique généré par les projets est remarquable. Plus de la moit
 
 ### Innosuisse permet de réaliser des projets à haut risque et interdisciplinaires
 L'encouragement d'Innosuisse permet de soutenir principalement des projets complexes, à haut risque et interdisciplinaires. Les projets interdisciplinaires intègrent des connaissances, des méthodes et des technologies issues de différentes disciplines afin de développer ensemble des solutions innovantes à des problèmes complexes. Les projets transdisciplinaires impliquent en outre activement dans le processus de recherche des acteurs non universitaires issus de la société, de la politique, de l'économie et de la pratique, afin de résoudre ensemble des problèmes d'importance sociale et de générer des connaissances applicables dans la pratique. La proportion de 23 % de projets d'innovation radicale donne une indication du degré de risque des projets d'innovation. 
-<div style="display: flex; gap: 10px;">
+<div class="chart-pair" style="--chart-pair-gap: var(--space-3)">
 <div>${draw_waffle("ip_inter_trans", -70)}</div>
 <div>${draw_waffle("ip_radikal_inkr", -70)}</div>
 </div>
@@ -147,7 +147,7 @@ Avec le Chèque d'innovation, les entreprises participantes ont l'intention d'ob
 
 La coopération est testée avec succès dans presque tous les cas. 61 % des entreprises ont testé et développé avec succès leur idée d'innovation et ont pleinement atteint cet objectif. Environ 42 % des chèques permettent d'obtenir des résultats concrets et directement exploitables. Environ la moitié des Chèques d'innovation aboutissent à la préparation réussie d'un projet d'innovation auprès d'Innosuisse.
 
-<div>${draw_results("Innovationsscheck", true, 400)}</div>
+<div>${draw_results("Innovationsscheck", true, 400, width)}</div>
 
 ### Les idées de projets sont suivies
 Les idées d'innovation sont pertinentes pour les PME, c'est pourquoi elles sont poursuivies même après l'encouragement. Plus d'un quart des entreprises lancent un projet d'innovation Innosuisse après avoir reçu un Chèque d'innovation ou prévoient de le faire.
@@ -159,7 +159,7 @@ Le Chèque d'innovation est un important catalyseur pour le transfert de savoir 
 
 Les Chèques d'innovation apportent ainsi des avantages importants aux entreprises au-delà de la fin du projet. La grande majorité des PME continuent de travailler avec leur partenaire de recherche même après la fin du projet. Cela renforce la culture de l'innovation dans l'entreprise à long terme et pérennise le transfert de savoir et de technologie.
  
-<div style="display: flex; gap: 40px;">
+<div class="chart-pair" style="--chart-pair-gap: var(--space-11)">
 ${draw_waffle("is_connection", -85)}
 ${draw_waffle("is_wtt", -85)} 
 </div>
@@ -169,7 +169,7 @@ Deux tiers des PME atteignent complètement ou dépassent les objectifs fixés a
 
 Les effets d’aubaine montrent que les Chèques d'innovation permettent d’explorer des idées qui n’auraient pas vu le jour autrement. Seules 6 % des PME déclarent qu'elles auraient examiné l'idée d'innovation sous une forme similaire même sans encouragement. 22 % l'auraient examinée sous une forme légèrement modifiée.
 
-<div style="display: flex; gap: 15px;">
+<div class="chart-pair">
 ${draw_waffle("is_project_goals",  -100, 17)}
 ${draw_waffle("is_mitnahme", -100, 10)}
 </div>

@@ -23,14 +23,14 @@ Innovation projects without implementation partners thus promote application-ori
 ### Successful steps towards implementation
 Around four out of five innovation projects have successfully tested their feasibility. One in two funded projects delivers conclusive results for further implementation steps and/or is highly likely to bring the innovation to market.
 
-<div>${draw_results("Innovationsprojekte ohne Umsetzungspartner", false, 450)}</div>
+<div>${draw_results("Innovationsprojekte ohne Umsetzungspartner", false, 450, width)}</div>
 
 ### Scientific output is higher than in projects with implementation partners
 Published scientific results are an important form of knowledge and technology transfer (KTT). They serve to disseminate project results in research and application and strengthen KTT. The dissertations are an indication of the novelty and quality of the research and the associated risk of finding a (technological) solution for implementation. 
 
 As expected, the share of results published in scientific journals and the share of dissertations is significantly higher for innovation projects without implementation partners. The share of interdisciplinary projects is similarly high, and the share of transdisciplinary projects is slightly lower because fewer actors are involved.
 
-<div style="display: flex; gap: 15px;">
+<div class="chart-pair">
 ${draw_waffle("ipr_peer_review",-70)}
 ${draw_waffle("ipr_inter_trans",-70)}
 </div>
@@ -43,7 +43,7 @@ In three out of five projects , cooperation with potential implementation partne
 ### Achievement of objectives is high in research, but lower for application- and implementation-oriented objectives.
 The research objectives are fully achieved or even exceeded in two-thirds of the funded projects. The achievement of objectives in terms of application orientation is significantly lower. This may be an indication of high risks for market launch, or possibly more time and resources are needed to develop solutions, or the project partners are less experienced in taking a technological development or solution further towards market implementation.
 
-<div style="display: flex; gap: 15px;">
+<div class="chart-pair">
 ${draw_waffle("ipr_research_goals",-70,5)}
 ${draw_waffle("ipr_impl_goals",-70,5)}
 </div>
@@ -60,11 +60,11 @@ BRIDGE Discovery thus funds projects at the interface between basic research and
 
 ### Results achieved for implementation
 Compared with innovation projects without implementation partners, the proportion of projects that have assessed feasibility, achieved conclusive results for implementation, or where the researchers expect the innovation to be brought to market is around 10 percentage points higher.
-<div>${draw_results("BRIDGE Discovery", false, 450)}</div>
+<div>${draw_results("BRIDGE Discovery", false, 450, width)}</div>
 
 ### Very high scientific output
 In the vast majority of cases, BRIDGE Discovery also involves excellent research being conducted and published. The proportion is once again significantly higher for Discovery projects than for innovation projects without implementation partners. The proportion of inter- and transdisciplinary projects is similarly high to that of innovation projects without implementation partners.
-<div style="display: flex; gap: 15px;">
+<div class="chart-pair">
 ${draw_waffle("bd_peer_review",-100)}
 ${draw_waffle("bd_inter_trans",-100)}
 </div>
@@ -75,7 +75,7 @@ BRIDGE Discovery projects, too, focus primarily on collaboration with implementa
 
 ### The achievement of objectives is high
 Unlike innovation projects without implementation partners, most Discovery projects not only fully achieve but also exceed both their research- and application-oriented targets.
-<div style="display: flex; gap: 15px;">
+<div class="chart-pair">
 ${draw_waffle("bd_research_goals",-100)}
 ${draw_waffle("bd_impl_goals",-100)}
 </div>

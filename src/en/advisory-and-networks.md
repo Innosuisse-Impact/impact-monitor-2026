@@ -125,14 +125,14 @@ Core Coaching covers a wide range of topics that are specifically tailored to th
 
 The topic area of greatest importance for coaching, 'development of the business model' (93%), shows the second-highest proportion of start-ups that rate the support as helpful (81%). Support in acquiring capital, which is also highly relevant (90%), was perceived as helpful by two-thirds of start-ups (66%). Help with market entry was rated similarly (66%). The rating for support in scaling the business model was somewhat lower (58%), which probably indicates that many start-ups are not yet in the actual scaling phase when the coaching is completed.
 
-<div>${draw_results("Start-up Core Coaching", true, 280)}</div>
+<div>${draw_results("Start-up Core Coaching", true, 280, width)}</div>
 
 ### Start-ups' coaching expectations are being met
 Three quarters of start-ups that received coaching confirmed that Core Coaching had made an important contribution in at least one relevant area (77%), with this being rated as 'supportive' or 'very supportive'. The proportion of start-ups whose expectations were largely met was similarly high at 86%.
 
 For around half of the start-ups, the coaching made a significant contribution in at least three important start-up topics (55%). The proportion of start-ups for which expectations were fully met or even exceeded was similarly high (55%).
 
-<div style="display: flex; gap: 15px;">
+<div class="chart-pair">
     ${draw_waffle("scc_support", -85)}
     ${draw_waffle("scc_expection", -85)}
 </div>
@@ -140,7 +140,7 @@ For around half of the start-ups, the coaching made a significant contribution i
 ### Start-ups pursue radical and disruptive business ideas with an impact on international markets
 Compared to innovation projects, start-ups generally pursue more radical innovations and business models. Only a few implement clearly incremental innovations and business models. The majority also aim to realise disruptive innovations and significantly change the market or even create new markets with their innovations. The proportion of start-ups that develop a world market first or a first for international markets is correspondingly high (82%).
 
-<div style="display: flex; gap: 10px;">
+<div class="chart-pair" style="--chart-pair-gap: var(--space-3)">
     ${draw_waffle("scc_radikal_inkr", -70)}
     ${draw_waffle("scc_new_to_market", -70)}
 </div>
@@ -148,7 +148,7 @@ Compared to innovation projects, start-ups generally pursue more radical innovat
 ### Start-ups succeed in entering the market – profitability takes more time
 A decisive factor for the survival and growth of start-ups is to actually enter the market in order to scale the business model later. By the time the coaching was completed, around 72% of the young companies had launched their innovation on the market or planned to do so within a year. The next milestone is profitability, when the start-up begins to make a profit. This is already the case for about one in ten start-ups by the time the coaching programme is completed. Three years later, this applies to almost one in three start-ups.
 
-<div style="display: flex; gap: 40px;">
+<div class="chart-pair" style="--chart-pair-gap: var(--space-11)">
  ${draw_waffle("scc_market", -85)}
  ${draw_waffle("scc_profitable", -85)}
 </div>
@@ -173,7 +173,7 @@ In terms of topics, there is a strong focus in the start-up sector on the themat
 
 The diversity of the start-ups funded makes a significant contribution to the economic and technological dynamics of the start-up ecosystem and to strengthening the Swiss economy as a whole.
 
-<div style="display: flex; gap: 10px;">
+<div class="chart-pair" style="--chart-pair-gap: var(--space-3)">
     ${draw_waffle("scc_gender", -85)}
     ${draw_waffle("scc_foreign", -85)}
     </div>
@@ -181,7 +181,7 @@ The diversity of the start-ups funded makes a significant contribution to the ec
 ### Many start-ups have their origins in research
 Half of the start-ups that take advantage of Innosuisse's Core Coaching originate from a university or research institute. Around one in three start-ups is a spin-off that wants to exploit intellectual property from research work commercially and has contractually regulated this. Three out of four start-ups state that they have already protected their intellectual property with a patent or plan to do so in the near future.
 
-<div style="display: flex; gap: 10px;">
+<div class="chart-pair" style="--chart-pair-gap: var(--space-3)">
 ${draw_waffle("scc_start_spin", -70)}
 ${draw_waffle("scc_patent", -70)}
 </div>

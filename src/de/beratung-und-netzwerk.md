@@ -125,14 +125,14 @@ Das Core Coaching deckt ein breites Spektrum an Themen ab, die gezielt auf die s
 
 Der für das Coaching wichtigste Themenbereich, «Entwicklung des Geschäftsmodells» (93 %), zeigt den zweithöchsten Anteil an Start-ups, die die Unterstützung als hilfreich beurteilen (81 %). Die Unterstützung bei der Kapitalakquisition, die ebenfalls eine hohe Relevanz hat (90 %), wurde von zwei Dritteln der Start-ups (66 %) als hilfreich empfunden. Die Hilfe beim Markteintritt wurde ähnlich bewertet (66 %). Etwas niedriger fiel die Bewertung der Unterstützung bei der Skalierung des Geschäftsmodells aus (58 %), was vermutlich darauf hinweist, dass sich viele Start-ups beim Coachingabschluss noch nicht in der Phase der Skalierung befinden.
 
-<div>${draw_results("Start-up Core Coaching", true, 225)}</div>
+<div>${draw_results("Start-up Core Coaching", true, 225, width)}</div>
 
 ### Erwartungen der Start-ups an das Coaching werden erfüllt
 Drei Viertel der gecoachten Start-ups bestätigen, dass das Core Coaching in mindestens einem relevanten Bereich einen unterstützenden oder sehr unterstützenden Beitrag geleistet hat (77 %). Der Anteil der Start-ups, deren Erwartungen mehrheitlich erfüllt wurden, liegt mit 86 % ähnlich hoch.
 
 Für rund die Hälfte der Start-ups hat das Coaching in mindestens drei wichtigen Gründungsthemen einen wesentlichen Beitrag geleistet (55 %) bzw. wurden die Erwartungen vollständig erfüllt oder sogar noch übertroffen wurden (55 %).
 
-<div style="display: flex; gap: 15px;">
+<div class="chart-pair">
     ${draw_waffle("scc_support", -100)}
     ${draw_waffle("scc_expection", -100)}
 </div>
@@ -140,7 +140,7 @@ Für rund die Hälfte der Start-ups hat das Coaching in mindestens drei wichtige
 ### Start-ups verfolgen radikale und disruptive Geschäftsideen mit Wirkungen auf internationalen Märkten
 Im Vergleich zu Innovationsprojekten verfolgen die Start-ups in der Regel deutlich mehr radikale Innovationen und Geschäftsmodelle. Nur wenige setzen klar inkrementelle Innovationen und Geschäftsmodelle um. Drei von fünf Start-ups zielen zudem darauf ab, mit disruptive Innovationen den Markt erheblich zu verändern oder sogar neue Märkte zu schaffen. Entsprechend hoch ist der Anteil der Start-ups, die eine Weltmarktneuheit oder eine Neuheit für internationale Märkte entwickeln (82 %).
 
-<div style="display: flex; gap: 10px;">
+<div class="chart-pair" style="--chart-pair-gap: var(--space-3)">
     ${draw_waffle("scc_radikal_inkr", -85)}
     ${draw_waffle("scc_new_to_market", -85)}
 </div>
@@ -148,7 +148,7 @@ Im Vergleich zu Innovationsprojekten verfolgen die Start-ups in der Regel deutli
 ### Start-ups schaffen Markteintritt – Profitabilität braucht mehr Zeit
 Ein entscheidender Faktor für das Überleben und das Wachstum der Start-ups ist der konkrete Markteintritt, um später das Geschäftsmodell weiter zu skalieren. Bis zum Abschluss des Coachings konnten rund 72 % der Jungunternehmen ihre Innovation auf dem Markt lancieren oder planen es innerhalb eines Jahres. Der nächste Meilenstein ist die Profitabilität, wenn das Start-up beginnt, Gewinne zu erzielen. Bei etwa jedem zehnten Start-up ist dies bereits zum Abschluss des Coachings der Fall. Drei Jahre später ist es bereits fast jedes dritte Start-up.
 
-<div style="display: flex; gap: 40px;">
+<div class="chart-pair" style="--chart-pair-gap: var(--space-11)">
  ${draw_waffle("scc_market", -85)}
  ${draw_waffle("scc_profitable", -85)}
 </div>
@@ -171,14 +171,14 @@ Der Anteil von weiblichen Gründerinnen bei den Start-ups mit Coachingabschluss 
 Thematisch liegt im Start-up Bereich ein starker Fokus auf dem Themenbereich «Life Sciences», inklusive Medtech und Healthcare (31 %) und ICT (28 %), siehe [Förderangebote und Inhalte](/de/foerderangebote-und-inhalte#themengebiete-der-innovationsvorhaben-2023-2025). Gleichzeitig sind auch die übrigen Technologie- und Innovationsbereiche vielfältig und breit vertreten. Die nachfolgenden Ausführungen zeigen zudem, dass den Spin-offs und direkten Ausgründungen aus der Forschungslandschaft und den Hochschulen eine hohe Bedeutung zukommt. Die Internationalität spielt dabei eine wesentliche Rolle. 
 
 Diese Diversität der geförderten Start-ups trägt wesentlich zur wirtschaftlichen und technologischen Dynamik des Start-up-Ökosystems und der Stärkung in der schweizerischen Volkswirtschaft bei.
-<div style="display: flex; gap: 10px;">
+<div class="chart-pair" style="--chart-pair-gap: var(--space-3)">
     ${draw_waffle("scc_gender", -100)}
     ${draw_waffle("scc_foreign", -100)}
     </div>
 
 ### Viele Start-ups haben ihren Ursprung in der Forschung
 Die Hälfte der Start-ups, die das Core Coaching von Innosuisse in Anspruch nehmen, haben ihren Ursprung an einer Hochschule oder einem Forschungsinstitut. Rund jedes dritte Start-up ist ein Spin-off, das geistiges Eigentum aus der Forschungsarbeit wirtschaftlich nutzen möchte und dies vertraglich geregelt hat. Drei von vier Start-ups geben an, dass sie ihr geistiges Eigentum bereits mit einem Patent geschützt haben oder dies in naher Zukunft planen.
-  <div style="display: flex; gap: 10px;">
+  <div class="chart-pair" style="--chart-pair-gap: var(--space-3)">
     ${draw_waffle("scc_start_spin", -70)}
     ${draw_waffle("scc_patent", -70)}
 </div>

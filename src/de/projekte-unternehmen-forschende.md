@@ -36,7 +36,7 @@ Ein Teil der Projekte benötigt einen längeren Zeitraum für die Markteinführu
 ### Förderung erzielt für rund 57 % der KMU messbare und massgebliche wirtschaftliche Effekte
 Ausgewählte Kennzahlen belegen die Wirksamkeit hinsichtlich ökonomischer Effekte, welche ohne das geförderte Projekt nicht entstanden wären. Rund 30 % der KMU berichtet über ein Wachstum der Beschäftigung und schafft damit neue hochqualifizierte Arbeitsstellen. 27 % der Unternehmen stellen eine Umsatzsteigerung fest. Fast ein Viertel der Unternehmen hat mehr in Forschung und Entwicklung (F&E) investiert, sei es in Beschäftigte im F&E-Bereich oder höhere F&E-Ausgaben getätigt. Uber Kosteneinsparungen berichten 12 % der Unternehmen.
 
-<div>${draw_results("Innovationsprojekte mit Umsetzungspartner", false)}</div>
+<div>${draw_results("Innovationsprojekte mit Umsetzungspartner", false,0,width)}</div>
 
 ### Grosse Hebelwirkung eines Förderfrankens
 Ein Innovationsprojekt führt im Durchschnitt der Berichtsjahre 2021–23 zu knapp 2.5 zusätzlichen Vollzeitstellen. Hochgerechnet auf die in diesem Zeitraum durchschnittlich 350 abgeschlossenen Projekte, werden somit bei den Unternehmen in der Schweiz zwischen 800 und 900 neue Vollzeitstellen geschaffen.
@@ -88,7 +88,7 @@ Quelle:
 
 ### Innosuisse unterstützt Weltmarktneuheiten und disruptive Innovationen
 32 % der geförderten Innovationsprojekte zielen darauf ab, Neuheiten für den internationalen und globalen Markt zu entwickeln. Schweizer Unternehmen werden damit unterstützt international wettbewerbsfähig zu werden oder zu bleiben. Zusätzlich haben rund 33 % der geförderten Projekte das Potenzial mit disruptiven Innovationen die Märkte stark zu beeinflussen oder neu zu definieren.
-  <div style="display: flex; gap: 40px;">
+  <div class="chart-pair" style="--chart-pair-gap: var(--space-11)">
   ${draw_waffle("ip_new_to_market", -70)}
   ${draw_waffle("ip_disruptive", -70)}
   </div>
@@ -97,16 +97,16 @@ Quelle:
 Ein Grossteil der beteiligten Projektpartner haben ihre Ziele vollständig erreicht oder sogar übertroffen. Nur ein kleiner Teil der geförderten Projekte hat die gesteckten Ziele nicht vollständig oder nicht erreicht. Innovationsvorhaben sind mit erheblichen technologischen Risiken und Unwägbarkeiten bei der Markumsetzung verbunden. Diese hohen Risikopotenziale unterstreichen die Notwendigkeit der öffentlichen Förderung, um den Wissens- und Technologietransfer zu unterstützen, da die Innovationsprojekte ohne Förderung nicht durchgeführt würden. 
 
 Dies belegen die tiefen Mitnahmeeffekte bei der Förderung: Nur 3 % der Unternehmen geben an, dass sie das Projekt auch ohne die Unterstützung von Innosuisse in derselben Form durchgeführt hätten. 16 % hätten es in veränderter oder reduzierter Form durchgeführt.
-  <div style="display: flex; gap: 15px;">
+  <div class="chart-pair">
   <div>${draw_waffle("ip_project_goals",-85)}</div>
   <div>${draw_waffle("ip_mitnahme",-85,10)}</div>
   </div>
-
+${width}
 
 ### Innosuisse-Förderung stärkt den Wissens- und Technologietransfer (WTT) auch langfristig
 Der WTT und die Zusammenarbeit zwischen den Unternehmen und der Forschung wird durch die Innovationsprojekte gefördert und gestärkt. 7 von 10 Unternehmen geben an, dass die Projektförderung ihre Forschung und Entwicklung beschleunigt und gestärkt hat. Die Zusammenarbeit und der WTT mit der Forschung ist langfristig beständig: Fast die Hälfte der Unternehmen arbeitet drei Jahre nach Projektabschluss immer noch mit den Forschungspartnern zusammen. 13 % übernehmen sogar Forschungspersonal, das am Projekt beteiligt war und stärken somit ihre interne Wissens- und Innovationsbasis langfristig.
 
-  <div style="display: flex; gap: 15px;">
+  <div class="chart-pair">
     ${draw_waffle("ip_wtt",-115)}
     ${draw_waffle("ip_researchpartner",-115)}
 </div>
@@ -119,7 +119,7 @@ Der wissenschaftliche Output, der durch die Projekte entsteht, ist bemerkenswert
 
 ### Innosuisse-Förderung ermöglicht risikoreiche und interdisziplinäre Projekte
 Mit der Innosuisse-Förderung werden mehrheitlich komplexere und risikoreichere und auch interdisziplinäre Projekte unterstützt. Interdisziplinäre Projekte integrieren Wissen, Methoden und Technologien aus verschiedenen Fachrichtungen um gemeinsam neuartige Lösungen für komplexe Probleme zu entwickeln. Transdisziplinäre Projekte beziehen zusätzlich nicht-akademische Akteure aus Gesellschaft, Politik, Wirtschaft und Praxis aktiv in den Forschungsprozess ein, um gemeinsam gesellschaftlich relevante Probleme zu lösen und praxistaugliches Wissen zu generieren. Einen Hinweis auf den Risikograd der Innovationsprojekte zeigt sich im Anteil von 23 % an radikalen Innovationsprojekten. 
-<div style="display: flex; gap: 10px;">
+<div class="chart-pair" style="--chart-pair-gap: var(--space-3)">
 <div>${draw_waffle("ip_inter_trans", -70)}</div>
 <div>${draw_waffle("ip_radikal_inkr", -70)}</div>
 </div>
@@ -151,7 +151,7 @@ Die beteiligten Unternehmen beabsichtigen mit dem Innovationsscheck, bereits kon
 
 Die Zusammenarbeit wird in nahezu allen Fällen erfolgreich geprüft. 61 % der Unternehmen haben ihre Innovationsidee erfolgreich getestet und weiterentwickelt. Bei rund 42 % der Schecks werden konkrete und direkt nutzbare Ergebnisse erzielt. Die Hälfte der Innovationsschecks führt dazu, dass ein Innovationsprojekt bei Innosuisse erfolgreich vorbereitet wird.
 
-<div>${draw_results("Innovationsscheck", true, 350)}</div>
+<div>${draw_results("Innovationsscheck", true, 350, width)}</div>
 
 ### Projektideen werden weiterverfolgt
 Die Innovationsideen sind relevant für die KMU, darum werden sie auch nach der Förderung weiterverfolgt. Mehr als ein Viertel der Unternehmen startet nach Abschluss des Innovationsschecks ein Innosuisse-Innovationsprojekt oder plant dies zu tun. 
@@ -163,7 +163,7 @@ Der Innovationscheck ist ein wichtiger Initialzünder für den Wissens- und Tech
 
 Die Innovationsschecks stiften somit wichtige Nutzen für die Unternehmen über den Projektabschluss hinaus. Die grosse Mehrheit der KMU arbeiten auch nach dem Abschluss noch mit ihrem Forschungspartner zusammen. Damit wird die Innovationskultur im Unternehmen langfristig gestärkt und der Wissens- und Technologietransfer verstetigt.
  
-<div style="display: flex; gap: 40px;">
+<div class="chart-pair" style="--chart-pair-gap: var(--space-11)">
 ${draw_waffle("is_connection", -85)}
 ${draw_waffle("is_wtt", -85)} 
 </div>
@@ -172,7 +172,7 @@ ${draw_waffle("is_wtt", -85)}
 Zwei Drittel der KMU erreichen die gesetzten Ziele mit den Innovationsschecks vollständig oder übertreffen sie. Diese niederschwellige und unkomplizierte Förderung unterstützt damit die Prüfung der Machbarkeit der Innovationsideen und stärkt die weitere Umsetzung von inkrementellen und radikalen Innovationsideen.
 
 Die geringen Mitnahmeeffekte zeigen, dass mit den Innovationsschecks Ideen geprüft werden können, die ansonsten im Tagesgeschäft keinen Platz gehabt hätten. Nur 6 % der KMU geben an, dass sie die Innovationsidee auch ohne Förderung in einer ähnlichen Form geprüft hätten. 22 % hätten sie in leicht veränderter Form geprüft.
-    <div style="display: flex; gap: 15px;">
+    <div class="chart-pair">
 ${draw_waffle("is_project_goals", -85)}
 ${draw_waffle("is_mitnahme", -85, 5)}
 </div>

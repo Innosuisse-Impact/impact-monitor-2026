@@ -124,14 +124,14 @@ Le Core Coaching couvre un large éventail de sujets, qui sont spécifiquement a
 
 Le domaine le plus important pour le coaching, « développement du modèle d'entreprise » (93 %), affiche la deuxième plus forte proportion de start-up qui jugent le soutien utile (81 %). Les conseils en matière de la levée de capitaux, également très importants (90 %), ont été jugés utile par deux tiers des start-up (66 %). Le soutien à l'entrée sur le marché a été évalué de manière similaire (66 %). L'évaluation du soutien apporté à l'échelle du modèle d'entreprise a été un peu plus faible (58 %), ce qui indique probablement que de nombreuses start-up ne sont pas encore en phase d'échelle réelle à la fin du coaching.
 
-<div>${draw_results("Start-up Core Coaching", true, 280)}</div>
+<div>${draw_results("Start-up Core Coaching", true, 280, width)}</div>
 
 ### Les attentes des start-up vis-à-vis du coaching sont satisfaites
 Trois quarts des start-up ayant bénéficié du coaching confirment que le Core Coaching a apporté une contribution importante dans au moins un domaine pertinent (77 %), cette contribution étant jugée « favorable » ou « très favorable ». La proportion de start-up dont les attentes ont été majoritairement satisfaites est tout aussi élevée, avec 86 %.
 
 Pour environ la moitié des start-up, le coaching a apporté une contribution significative dans au moins trois domaines importants de la création d'entreprise (55 %). La proportion de start-up dont les attentes ont été entièrement satisfaites, voire dépassées, est tout aussi élevée (55 %).
 
-<div style="display: flex; gap: 15px;">
+<div class="chart-pair">
     ${draw_waffle("scc_support", -100)}
     ${draw_waffle("scc_expection", -100)}
 </div>
@@ -139,7 +139,7 @@ Pour environ la moitié des start-up, le coaching a apporté une contribution si
 ### Les start-up poursuivent des idées commerciales radicales et disruptives ayant un impact sur les marchés internationaux
 Par rapport aux projets d'innovation, les start-up poursuivent généralement des innovations et des modèles commerciaux plus radicaux. Seules quelques-unes d'entre elles mettent clairement en œuvre des innovations et des modèles commerciaux incrémentaux. La majorité d'entre elles visent également à réaliser des innovations disruptives et à transformer considérablement le marché ou même à créer de nouveaux marchés grâce à leurs innovations. La proportion de start-up qui développent une nouveauté mondiale ou une nouveauté pour les marchés internationaux est donc élevée (82 %).
 
-<div style="display: flex; gap: 10px;">
+<div class="chart-pair" style="--chart-pair-gap: var(--space-3)">
     ${draw_waffle("scc_radikal_inkr", -70)}
     ${draw_waffle("scc_new_to_market", -70)}
 </div>
@@ -147,7 +147,7 @@ Par rapport aux projets d'innovation, les start-up poursuivent généralement de
 ### Les start-up réussissent leur entrée sur le marché – la rentabilité prend plus de temps
 Un facteur décisif pour la survie et la croissance des start-up est l'entrée concrète sur le marché, afin de faire évoluer le modèle d'affaires par la suite. À la fin du coaching, environ 72 % des jeunes entreprises ont pu lancer leur innovation sur le marché ou prévoient de le faire dans l'année. La prochaine étape est la rentabilité, lorsque la start-up commence à réaliser des bénéfices. Environ une start-up sur dix est déjà dans cette situation à la fin du coaching. Trois ans plus tard, c'est déjà le cas de près d'une start-up sur trois.
 
-<div style="display: flex; gap: 40px;">
+<div class="chart-pair" style="--chart-pair-gap: var(--space-11)">
  ${draw_waffle("scc_market", -85)}
  ${draw_waffle("scc_profitable", -85)}
 </div>
@@ -171,7 +171,7 @@ Sur le plan thématique, le secteur des start-up se concentre fortement sur le d
 
 Cette diversité des start-up soutenues contribue de manière significative à la dynamique économique et technologique de l'écosystème des start-up et au renforcement de l'économie suisse.
 
-<div style="display: flex; gap: 10px;">
+<div class="chart-pair" style="--chart-pair-gap: var(--space-3)">
     ${draw_waffle("scc_gender", -85)}
     ${draw_waffle("scc_foreign", -85)}
     </div>
@@ -179,7 +179,7 @@ Cette diversité des start-up soutenues contribue de manière significative à l
 ### De nombreuses start-up trouvent leur origine dans la recherche
 La moitié des start-up qui ont recours au Core Coaching d'Innosuisse ont vu le jour dans une université ou un institut de recherche. Environ une start-up sur trois est un spin-off qui souhaite exploiter commercialement la propriété intellectuelle issue de travaux de recherche et qui a réglé cela par contrat. Trois start-up sur quatre indiquent qu'elles ont déjà protégé leur propriété intellectuelle par un brevet ou qu'elles prévoient de le faire dans un avenir proche.
 
-<div style="display: flex; gap: 10px;">
+<div class="chart-pair" style="--chart-pair-gap: var(--space-3)">
 ${draw_waffle("scc_start_spin", -85)}
 ${draw_waffle("scc_patent", -85)}
 </div>
