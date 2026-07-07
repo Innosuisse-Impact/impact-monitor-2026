@@ -16,7 +16,7 @@ Following the development of a conceptual framework, an impact monitoring system
 
 Innosuisse’s impact monitoring is based on mandatory and exhaustive surveys of all implementation and research partners of the *innovation projects*, the SMEs participating in the *innovation cheques* scheme, and all start-ups participating in *Core Coaching*. The surveys are carried out among the implementation partners of the innovation projects and the start-ups in coaching upon completion of the funding and again three years after completion. For the *Innovation Booster* and *BRIDGE Proof of Concept* projects, the results are based on monitoring data from the ongoing initiatives. 
 
-<div>${plot_erhebung()}</div>
+<div>${plot_erhebung(width)}</div>
 
 ## Details of the surveys
 In the surveys completed by funding beneficiaries, a 6-point scale is generally used (e.g. (1) no significance, (2) low significance, (3) somewhat low significance, (4) somewhat high significance, (5) high significance, (6) very high significance). Where appropriate, yes/no questions are asked and selected economic indicators are collected.

@@ -35,7 +35,7 @@ La grande majorité des personnes interrogées (81 %) confirment que leur partic
 Deux tiers des idées innovantes soutenues sont poursuivies après la fin du financement, souvent avec de nouvelles approches et une orientation plus radicale. De 2022–24, les Innovation Booster ont permis d'accorder en moyenne 31 Chèques d'innovation et 25 projets d'innovation par an. Avec un Chèque d'innovation, l'idée est à nouveau approfondie avec un partenaire de recherche pour en vérifier la faisabilité. Dans le cas des projets d'innovation, les idées d'innovation sont scientifiquement ancrées et poursuivies afin d'être mises en œuvre à long terme.
 <div style="display: flex; column-gap: 20px;">
 <div> ${draw_waffle("ib_continued", -85)}</div>
-<div>${ib_toipis()}</div>
+<div>${ib_toipis(width)}</div>
 </div>
 
 <div class="card" style="max-width: 620px">
@@ -160,7 +160,7 @@ Pour les start-up, la levée de fonds est une condition essentielle pour poursui
 ### Trois ans après le coaching, les start-up ont créé plus de onze emplois à temps plein
 Pour les start-up, la croissance est un indicateur clé de succès. Trois ans après la fin du programme de coaching, les start-up ont créé en moyenne plus de onze emplois à temps plein supplémentaires. Environ la moitié d'entre elles se trouvent en Suisse. Il apparaît que l'entrée sur le marché et une croissance durable ne se produisent souvent que plus tard, en particulier pour les start-up dans le domaine des « Life Sciences » et celles qui proposent des innovations à haut risque.
 <div>
-${su_vza()}
+${su_vza(width)}
 ${su_vza_legend()}
 </div>
 

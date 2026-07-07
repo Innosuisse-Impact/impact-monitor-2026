@@ -35,7 +35,7 @@ Die grosse Mehrheit der Befragten (81 %) bestätigt, dass sie aufgrund ihrer Tei
 Zwei Drittel der geförderten Innovationsideen werden nach Abschluss der Förderung weiterverfolgt, oft mit neuen Lösungsansätzen und auch radikalerer Ausrichtung. Die Innovation Booster haben 2022–24 durchschnittlich zu 31 bewilligten Innovationschecks und 25 bewilligten Innovationsprojekten pro Jahr geführt. Mit einem Innovationsscheck wird die Idee nochmals vertieft mit einem Forschungspartner hinsichtlich Machbarkeit geprüft, bei den Innovationsprojekten werden die Innovationsideen, wissenschaftlich verankert, weiterverfolgt um sie langfristig in die Umsetzung zu führen.
 <div style="display: flex; column-gap: 20px;">
 <div> ${draw_waffle("ib_continued", -100)}</div>
-<div>${ib_toipis()}</div></div>
+<div>${ib_toipis(width)}</div></div>
 
 <div class="card" style="max-width: 620px">
   
@@ -161,7 +161,7 @@ Für Start-ups ist die Kapitalbeschaffung eine entscheidende Voraussetzung, um i
 ### Drei Jahre nach dem Coaching werden bei den Start-ups über elf Vollzeitstellen geschaffen
 Für Start-ups ist das Wachstum ein zentraler Indikator für den Erfolg. Drei Jahre nach dem Abschluss des Coaching-Programms haben die Start-ups im Durchschnitt über elf zusätzliche Vollzeitstellen geschaffen. Rund die Hälfte davon in der Schweiz. Besonders bei Start-ups im Bereich «Life Sciences» und solchen mit hochriskanten Innovationen zeigt sich, dass der Markteintritt und ein tragendes Wachstum häufig erst später einsetzen.
 <div>
-${su_vza()}
+${su_vza(width)}
 ${su_vza_legend()}
 </div>
 

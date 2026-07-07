@@ -36,7 +36,7 @@ Ein Teil der Projekte benötigt einen längeren Zeitraum für die Markteinführu
 ### Förderung erzielt für rund 57 % der KMU messbare und massgebliche wirtschaftliche Effekte
 Ausgewählte Kennzahlen belegen die Wirksamkeit hinsichtlich ökonomischer Effekte, welche ohne das geförderte Projekt nicht entstanden wären. Rund 30 % der KMU berichtet über ein Wachstum der Beschäftigung und schafft damit neue hochqualifizierte Arbeitsstellen. 27 % der Unternehmen stellen eine Umsatzsteigerung fest. Fast ein Viertel der Unternehmen hat mehr in Forschung und Entwicklung (F&E) investiert, sei es in Beschäftigte im F&E-Bereich oder höhere F&E-Ausgaben getätigt. Uber Kosteneinsparungen berichten 12 % der Unternehmen.
 
-<div>${draw_results("Innovationsprojekte mit Umsetzungspartner", false,0,width)}</div>
+<div>${draw_results("Innovationsprojekte mit Umsetzungspartner", false, 200, width)}</div>
 
 ### Grosse Hebelwirkung eines Förderfrankens
 Ein Innovationsprojekt führt im Durchschnitt der Berichtsjahre 2021–23 zu knapp 2.5 zusätzlichen Vollzeitstellen. Hochgerechnet auf die in diesem Zeitraum durchschnittlich 350 abgeschlossenen Projekte, werden somit bei den Unternehmen in der Schweiz zwischen 800 und 900 neue Vollzeitstellen geschaffen.
@@ -45,7 +45,7 @@ Ein Innovationsprojekt führt im Durchschnitt der Berichtsjahre 2021–23 zu kna
 
 Die zusätzlich geschaffenen Arbeitsstellen führen direkt zu Wertschöpfung bei den Unternehmen. Die Hebelwirkung der Förderung ist beachtlich: Jeder Förderfranken bringt der Wirtschaft rund vier Wertschöpfungsfranken, gemessen drei Jahre nach der Förderung und summiert für drei weitere Jahre. Weitere indirekte Multiplikatoreffekte bei den Unternehmen, zum Beispiel über zusätzliche Ausgaben für Vorleistungen der Unternehmen, sind hier nicht eingerechnet. Mit den indirekten Effekten wird der Multiplikator auf rund 11 Franken geschätzt. Zudem verdeutlichen die in diesem Bericht präsentierten Ergebnisse, dass die Auswirkungen der Innovationsförderung weit über die unmittelbaren wirtschaftlichen Effekte hinausgehen <a href="/_file/data/methodik-volkswirtschaft-innosuisse-ebp.pdf" target="_blank">(EBP, 2025)</a>.
 
-<div>${leverage()}</div>
+<div>${leverage(width)}</div>
 
 <div class="card" style="max-width: 640px">
 
@@ -60,8 +60,8 @@ Mit dieser Studie hat die KOF einen wissenschaftlichen Nachweis des Zusammenhang
 
 Die Ergebnisse bestätigen die im Wirkungsmonitoring dargestellten ökonomischen Wirkungen der Projektförderung von Innosuisse.
 
-<div class="card" style="background-color: white">${kof_did_plot(0)}</div>
-<div class="card" style="background-color: white">${kof_did_plot(1)}</div>
+<div class="card" style="background-color: white">${kof_did_plot(0, width)}</div>
+<div class="card" style="background-color: white">${kof_did_plot(1, width)}</div>
 
 <div style="font-size: 12px;">
 Quelle: 
@@ -101,7 +101,6 @@ Dies belegen die tiefen Mitnahmeeffekte bei der Förderung: Nur 3 % der Unterne
   <div>${draw_waffle("ip_project_goals",-85)}</div>
   <div>${draw_waffle("ip_mitnahme",-85,10)}</div>
   </div>
-${width}
 
 ### Innosuisse-Förderung stärkt den Wissens- und Technologietransfer (WTT) auch langfristig
 Der WTT und die Zusammenarbeit zwischen den Unternehmen und der Forschung wird durch die Innovationsprojekte gefördert und gestärkt. 7 von 10 Unternehmen geben an, dass die Projektförderung ihre Forschung und Entwicklung beschleunigt und gestärkt hat. Die Zusammenarbeit und der WTT mit der Forschung ist langfristig beständig: Fast die Hälfte der Unternehmen arbeitet drei Jahre nach Projektabschluss immer noch mit den Forschungspartnern zusammen. 13 % übernehmen sogar Forschungspersonal, das am Projekt beteiligt war und stärken somit ihre interne Wissens- und Innovationsbasis langfristig.

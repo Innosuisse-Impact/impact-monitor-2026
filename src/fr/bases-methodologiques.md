@@ -16,7 +16,7 @@ import { plot_erhebung } from "../functions.js"
 
 Le suivi d’impact d’Innosuisse repose sur des enquêtes obligatoires et exhaustives menées auprès de tous les partenaires de mise en œuvre et de recherche des *projets d’innovation*, des PME participant au programme des *chèques d’innovation* et de toutes les start-ups participant au *Core Coaching*. Les enquêtes sont menées auprès des partenaires de mise en œuvre des projets d’innovation et des start-ups en coaching à la fin de la contribution, puis à nouveau trois ans après la fin de celle-ci. Pour les projets *Innovation Booster* et *BRIDGE Proof of Concept*, les résultats s’appuient sur les données de suivi issues des initiatives en cours. 
 
-<div>${plot_erhebung()}</div>
+<div>${plot_erhebung(width)}</div>
 
 ## Détails des enquêtes
 Dans les enquêtes remplies par les bénéficiaires de contributions, une échelle à 6 points est généralement utilisée (par exemple : (1) aucune importance, (2) faible importance, (3) importance plutôt faible, (4) importance plutôt élevée, (5) grande importance, (6) très grande importance). Le cas échéant, des questions fermées (oui/non) sont posées et certains indicateurs économiques sont recueillis.

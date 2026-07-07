@@ -36,7 +36,7 @@ Two-thirds of the innovation ideas that receive funding are pursued further afte
 
 <div style="display: flex; column-gap: 20px;">
 <div> ${draw_waffle("ib_continued", -85)}</div>
-<div>${ib_toipis()}</div>
+<div>${ib_toipis(width)}</div>
 </div>
 
 <div class="card" style="max-width: 620px">
@@ -162,7 +162,7 @@ For start-ups, fundraising is crucial to continuing their business idea and scal
 For start-ups, growth is a key indicator of success. Three years after completing the coaching programme, the start-ups have created an average of over eleven additional full-time positions. Around half of these are in Switzerland. It is particularly evident in start-ups in the 'Life Sciences' sector and those with high-risk innovations that market entry and sustainable growth often only occur later.
 
 <div>
-${su_vza()}
+${su_vza(width)}
 ${su_vza_legend()}
 </div>
 

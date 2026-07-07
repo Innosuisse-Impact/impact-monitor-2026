@@ -7,11 +7,24 @@ import { getLang } from "./lang.js";
 import { instruments } from "./constants.js";
 import {
   daten_controlling, df_subcluster_n, df_ziel,
-  df_innovationsart, df_zufrieden, df_waffle, df_ergebnisse, kof_did,
-  instrument_link
+  df_innovationsart, df_zufrieden, df_waffle, df_ergebnisse, kof_did
 } from "./data.js"
 
 const lang = getLang();
+
+// Clamp a responsive width: never wider than the design width, and never so
+// narrow that the drawable area (after fixed margins) drops below minPlot px.
+// Below the floor the whole SVG scales down via Plot's max-width: 100%.
+function clampWidth(width, design, marginLeft, marginRight = 0, minPlot = 150) {
+  const floor = Math.min(design, marginLeft + marginRight + minPlot);
+  return Math.max(Math.min(width, design), floor);
+}
+
+// Shared chart data — language-independent, single source of truth.
+// Approved follow-up applications from Innovation Boosters, ⌀ per year 2022–24
+const ibToipisData = { cheques: 31, projects: 25 };
+// Period covered by daten_subcluster.csv (matches the section heading/prose)
+const subclusterPeriod = "2023–2025";
 
 // Hardcoded annotation strings per language
 const strings = {
@@ -27,17 +40,8 @@ const strings = {
       snsf: "Betrag wird durch den SNF verdoppelt"
     },
     n_subcluster: {
-      xLabel: "Anteil bewilligte Innovationsvorhaben in % nach Themenbereich pro Förderangebot (⌀ 2022–2024)",
-      caption: "Quelle: Cockpit/PowerBI Innosuisse (2025)",
-      yDomain: [
-        "Innovationsprojekte mit\nUmsetzungspartner",
-        "Innovationsscheck",
-        "Innovationsprojekte ohne\nUmsetzungspartner",
-        "BRIDGE Proof of Concept",
-        "BRIDGE Discovery",
-        "Start-up Coaching"
-      ],
-      marginLeft: 150
+      xLabel: `Anteil bewilligte Innovationsvorhaben in % nach Themenbereich pro Förderangebot (⌀ ${subclusterPeriod})`,
+      caption: "Quelle: Cockpit/PowerBI Innosuisse (2025)"
     },
     draw_dn_sustainability: ["soziale Nachhaltigkeit", "ökologische Nachhaltigkeit", "Nachhaltigkeit"],
     draw_dn_digital: ["Digitale Geschäftsmodelle", "Digitale Technologien", "Digitalisierung"],
@@ -59,8 +63,6 @@ const strings = {
       label: "⌀ Anzahl bewilligte Gesuche aus einem Innovation Booster pro Jahr",
       cheques: "Innovationsschecks",
       projects: "Innovationsprojekte",
-      pct_cheques: 31,
-      pct_projects: 25,
       labelOffset: 25
     },
     su_vza: {
@@ -85,17 +87,8 @@ const strings = {
       snsf: "The amount is doubled by the SNSF"
     },
     n_subcluster: {
-      xLabel: "Share of approved innovation projects in % by subject area by support offer (⌀ 2021-2023)",
-      caption: "Source: Cockpit / PowerBI Innosuisse (2025)",
-      yDomain: [
-        "Innovation projects with\nimplementation partner",
-        "Innovation cheque",
-        "Innovation projects without\nimplementation partner",
-        "BRIDGE Proof of Concept",
-        "BRIDGE Discovery",
-        "Start-up Coaching"
-      ],
-      marginLeft: 170
+      xLabel: `Share of approved innovation projects in % by subject area by support offer (⌀ ${subclusterPeriod})`,
+      caption: "Source: Cockpit / PowerBI Innosuisse (2025)"
     },
     draw_dn_sustainability: ["social sustainability", "environmental sustainability", "sustainability"],
     draw_dn_digital: ["digital business models", "digital technologies", "digitisation"],
@@ -117,8 +110,6 @@ const strings = {
       label: "⌀ Number of approved applications from an\nInnovation Booster per year",
       cheques: "Innovation cheques",
       projects: "Innovation projects",
-      pct_cheques: 36,
-      pct_projects: 26,
       labelOffset: 35
     },
     su_vza: {
@@ -143,17 +134,8 @@ const strings = {
       snsf: "Le montant est doublé par le FNS"
     },
     n_subcluster: {
-      xLabel: "Part des projets innovants accordés en % selon le domaine thématique par offre d'encouragement (⌀ 2021-2023)",
-      caption: "Source: Cockpit / PowerBI Innosuisse (2025)",
-      yDomain: [
-        "Projets d'innovation avec\npartenaire de mise en œuvre",
-        "Chèque d'innovation",
-        "Projets d'innovation sans\npartenaire de mise en œuvre",
-        "BRIDGE Proof of Concept",
-        "BRIDGE Discovery",
-        "Start-up Coaching"
-      ],
-      marginLeft: 170
+      xLabel: `Part des projets innovants accordés en % selon le domaine thématique par offre d'encouragement (⌀ ${subclusterPeriod})`,
+      caption: "Source: Cockpit / PowerBI Innosuisse (2025)"
     },
     draw_dn_sustainability: ["durabilité sociale", "durabilité environnementale", "durabilité"],
     draw_dn_digital: ["modèles d'entreprise numériques", "technologies numériques", "numérisation"],
@@ -175,8 +157,6 @@ const strings = {
       label: "⌀ Nombre de demandes approuvées par an\nprovenant d'un Innovation Booster",
       cheques: "Chèque d'innovation",
       projects: "Projets d'innovation",
-      pct_cheques: 36,
-      pct_projects: 26,
       labelOffset: 35
     },
     su_vza: {
@@ -237,41 +217,17 @@ const suDomain = lang === "en"
   ? ["Après la fin du projet", "Trois ans après la fin du projet"]
   : ["Nach Abschluss", "3 Jahre nach Abschluss"];
 
-// Lazy-load color_instrument to avoid Safari initialization issues with async data
-let color_instrument = null;
 const black_innosuisse = "#000000";
 const grey_innosuisse  = "#E8E8E8";
 const grey_background  = "#E8E8E8";
 const grey_comment     = "#333333";
 const plotStyle = { fontFamily: '"Frutiger LT", Arial, sans-serif', fontWeight: 200 };
 
-/*
-export async function coloredUnderline(text, domain) {
-  // Replaced by CSS-based link styling in styles.css (a[href^="/"]).
-  // Kept for reference; call sites in /de/ pages converted to plain markdown links.
-  if (!color_instrument) {
-    const { instrument_link_hex } = await import("./data.js");
-    color_instrument = Plot.scale({
-      color: {
-        type: "categorical",
-        domain: instrument_link_hex.map(item => item.instrument),
-        range: instrument_link_hex.map(item => item.hex)
-      }
-    });
-  }
-
-  const colorScale = color_instrument.apply;
-  const color = colorScale(domain);
-  const link = instrument_link.get(domain);
-  return html`<a href="${link}" style="text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: ${color}; color: #3d3d3d">${text}</a>`;
-}
-*/
-
 // Methodische Grundlage / Methodology / Bases méthodologiques
-export function plot_erhebung() {
+export function plot_erhebung(width = 540) {
   return Plot.plot({
     height: 110,
-    width: 540,
+    width: clampWidth(width, 540, 25, 100, 250),
     marginTop: 35,
     marginBottom: 25,
     marginLeft: 25,
@@ -323,6 +279,7 @@ export function draw_fin_plot(
   type,
   height,
   displayXAxis,
+  width = 640,
   displayCaption = false
 ) {
   const instrCol = `instrument_${lang}`;
@@ -355,8 +312,11 @@ const data = aq
     ? (v) => `⌀ ${v.toLocaleString("fr-CH")} mio. de francs`
     : (v) => `⌀ CHF ${v.toLocaleString("de-CH")} mn`;
 
+  const w = Math.min(width, 640);
+  const mLeft = Math.min(280, Math.round(w * 0.5));
+
   return Plot.plot({
-    marginLeft: lang === "de" ? 260 : 300,
+    marginLeft: mLeft,
     marginRight: 0,
     marginTop: displayXAxis ? 20 : -1,
     marginBottom: 0,
@@ -364,15 +324,17 @@ const data = aq
       ? html`<span style="font-size: 10px; color: #828282;">${s.fin_plot.caption}</span>`
       : undefined,
     height: height,
-    width: 640,
+    width: w,
     x: {
       domain: [0, 200],
       axis: null,
       label: null
     },
-    y: { label: null, tickSize: 0 },
+    y: { label: null, axis: null },
     style: { ...plotStyle, fontSize: "12px" },
     marks: [
+      // wrap instrument names to the available margin (lineWidth is in ems)
+      Plot.axisY({ tickSize: 0, lineWidth: mLeft / 12 - 1 }),
       displayXAxis ? Plot.axisX({ anchor: "top", tickSize: 0, ticks: [], label: s.fin_plot.xLabel }) : null,
       Plot.barX(df, {
         x: "mean_funding",
@@ -404,16 +366,30 @@ const data = aq
   });
 }
 
-export function n_subcluster() {
+// Language-neutral row order for the subcluster chart, keyed by instrument_de;
+// translated to the current language via the data rows.
+const subclusterOrder = [
+  "Innovationsprojekte mit Umsetzungspartner",
+  "Innovationsscheck",
+  "Innovationsprojekte ohne Umsetzungspartner",
+  "BRIDGE Proof of Concept",
+  "BRIDGE Discovery",
+  "Start-up Coaching"
+];
+
+export function n_subcluster(width = 755) {
   const ns = s.n_subcluster;
+  const yDomain = subclusterOrder.map(
+    (de) => df_subcluster_n.find((d) => d.instrument_de === de)?.instrument_n ?? de
+  );
   return Plot.plot({
-    marginLeft: ns.marginLeft,
+    marginLeft: 170,
     marginRight: 50,
     marginBottom: 0,
     marginTop: 55,
     caption: html`<span style="font-size: 10px; color: #828282;">${ns.caption}</span>`,
     style: { ...plotStyle, fontSize: "12px" },
-    width: 755,
+    width: clampWidth(width, 755, 170, 50, 300), // 5 facets → ≥60px each
     height: 270,
     color: {
       type: "categorical",
@@ -449,10 +425,11 @@ export function n_subcluster() {
     },
     y: {
       label: "",
-      tickSize: 0,
-      domain: ns.yDomain
+      axis: null,
+      domain: yDomain
     },
     marks: [
+      Plot.axisY({ anchor: "left", tickSize: 0, lineWidth: 14 }),
       Plot.axisFx({ textAnchor: "start", dx: -50, tickSize: 0, lineWidth: 10 }),
       Plot.barX(df_subcluster_n, {
         x: 1,
@@ -488,7 +465,7 @@ export function draw_result_zf_legend() {
   return Plot.legend({ color: { type: "ordinal", domain: zufriedenDomain, range: palette.divPN3 }, swatchSize: 12, style: { ...plotStyle, fontSize: "12px" } })
 }
 
-export function draw_result(data, instrument, x_axis = true, sy = 0) {
+export function draw_result(data, instrument, x_axis = true, sy = 0, width = 640) {
   const df = data.filter((d) => d.instrument_de === instrument);
   const x_axis_d = x_axis
     ? { percent: true, label: "in %", ticks: [0, 25, 50, 75, 100] }
@@ -499,6 +476,7 @@ export function draw_result(data, instrument, x_axis = true, sy = 0) {
   const result_type = `result_type_${lang}`;
 
   return Plot.plot({
+    width: clampWidth(width, 640, 180, 170),
     height: x_axis ? 40 + 25 + sy : 40 + sy,
     x: x_axis_d,
     style: { ...plotStyle, fontSize: "12px" },
@@ -589,6 +567,8 @@ export function draw_innoart(plot = "type_2", width = 640, height = 150) {
   }
 
   const marks = [
+    Plot.axisY({ anchor: "left", tickSize: 0, lineWidth: 14 }),
+    Plot.axisFx({ anchor: "top", lineWidth: 10 }),
     Plot.barX(df, {
       x: "pct",
       y: "instrument_n",
@@ -655,138 +635,16 @@ export function draw_innoart(plot = "type_2", width = 640, height = 150) {
     marginRight: plot === "inkr_radikal" ? 65 : 15,
     width: width,
     height: height,
-    color: { type: "categorical", range: (plot === "type_2" && width === 482) ? palette.cat.slice(3) : palette.cat },
+    color: { type: "categorical", range: (plot === "type_2" && width <= 482) ? palette.cat.slice(3) : palette.cat },
     fx: {
       label: null,
-      axis: "top"
+      axis: null
     },
     fy: { label: null },
     style: { ...plotStyle, fontSize: "12px" },
     x: x_axis_d,
-    y: { domain: df_order, label: null, tickSize: 0 },
+    y: { domain: df_order, label: null, axis: null },
     marks: marks
-  });
-}
-
-// Likert helper function for diverging stacked bars
-function Likert(responses) {
-  const map = new Map(responses);
-  return {
-    order: Array.from(map.keys()),
-    offset(I, X1, X2, Z) {
-      for (const stacks of I) {
-        for (const stack of stacks) {
-          const k = d3.sum(stack, (i) => (X2[i] - X1[i]) * (1 - map.get(Z[i]))) / 2;
-          for (const i of stack) {
-            X1[i] -= k;
-            X2[i] -= k;
-          }
-        }
-      }
-    }
-  };
-}
-
-// Diverging stacked bar chart for incremental vs radical innovations (ported from DE)
-export function draw_inkr_radikal_diverging(width = 640, height = 240) {
-  const df_raw = df_innovationsart.filter((d) => d.plot === "inkr_radikal" && d.pct !== null);
-  const labelKey = `label_${lang}`;
-
-  const instSet = new Set(df_raw.map((d) => d.instrument_n));
-  const transformedData = [];
-  const differences = [];
-
-  instSet.forEach((inst) => {
-    const radikale_row = df_raw.find((d) => d.instrument_n === inst && d.type_de === "radikale");
-    const inkrementelle_row = df_raw.find((d) => d.instrument_n === inst && d.type_de === "inkrementelle");
-
-    if (radikale_row || inkrementelle_row) {
-      const radikale_pct = radikale_row ? radikale_row.pct : 0;
-      const inkrementelle_pct = inkrementelle_row ? inkrementelle_row.pct : 0;
-      const neutral_pct = 100 - radikale_pct - inkrementelle_pct;
-      const inst_value = radikale_row ? radikale_row.inst : inkrementelle_row.inst;
-
-      const diff = radikale_pct - inkrementelle_pct;
-      differences.push({ instrument_n: inst, difference: diff });
-
-      transformedData.push({
-        instrument_n: inst,
-        category: "inkrementelle",
-        value: inkrementelle_pct,
-        inst: inst_value,
-        label: df_raw[0][labelKey]
-      });
-      transformedData.push({
-        instrument_n: inst,
-        category: "neutral",
-        value: neutral_pct,
-        inst: inst_value,
-        label: df_raw[0][labelKey]
-      });
-      transformedData.push({
-        instrument_n: inst,
-        category: "radikale",
-        value: radikale_pct,
-        inst: inst_value,
-        label: df_raw[0][labelKey]
-      });
-    }
-  });
-
-  differences.sort((a, b) => a.difference - b.difference);
-  const instrument_order = differences.map((d) => d.instrument_n);
-
-  const likert = Likert([["inkrementelle", -1], ["neutral", 0], ["radikale", 1]]);
-
-  return Plot.plot({
-    marginTop: 45,
-    marginLeft: 180,
-    marginBottom: 0,
-    marginRight: 40,
-    width: width,
-    height: height,
-    color: { type: "categorical", domain: ["inkrementelle", "neutral", "radikale"], range: palette.div3 },
-    style: { ...plotStyle, fontSize: "12px" },
-    x: {
-      axis: "top",
-      labelOffset: 25,
-      labelAnchor: "center",
-      label: s.draw_inkr_radikal,
-      ticks: [],
-      grid: false
-    },
-    y: {
-      domain: instrument_order,
-      label: null,
-      tickSize: 0
-    },
-    marks: [
-      Plot.barX(transformedData, {
-        x: "value",
-        y: "instrument_n",
-        fill: "category",
-        order: likert.order,
-        offset: likert.offset,
-        z: "category",
-        inset: 0.5
-      }),
-      Plot.textX(
-        transformedData,
-        Plot.stackX({
-          x: "value",
-          y: "instrument_n",
-          z: "category",
-          text: (d) => {
-            if (d.category === "neutral" || d.value === 0) return "";
-            return `${d.value} %`;
-          },
-          fill: black_innosuisse,
-          order: likert.order,
-          offset: likert.offset
-        })
-      ),
-      Plot.ruleX([0], {stroke: black_innosuisse, strokeWidth: 1})
-    ]
   });
 }
 
@@ -794,7 +652,8 @@ export function draw_dn(
   plot = "digital",
   instrument = instruments.CC,
   x_axis = true,
-  sy = 0
+  sy = 0,
+  width = 800
 ) {
   const df = df_innovationsart.filter(
     (d) => d.plot === plot && instrument.includes(d.instrument_de)
@@ -827,18 +686,19 @@ export function draw_dn(
     marginLeft: 165,
     marginRight: 120,
     height: x_axis ? 85 + sy : 40 + sy,
-    width: 800,
+    width: clampWidth(width, 800, 165, 120, 240), // 3 facets → ≥80px each
     fx: {
       label: null,
       axis: "top",
       reverse: true,
       domain: plot !== "digital" ? s.draw_dn_sustainability : s.draw_dn_digital
     },
-    fy: { label: null },
+    fy: { label: null, axis: null },
     style: { ...plotStyle, fontSize: "12px" },
     x: x_axis_d,
     y: { label: null, tickSize: 0, axis: "right", reverse: true },
     marks: [
+      Plot.axisFy({ anchor: "left", lineWidth: 14 }),
       Plot.barX(df, {
         x: "pct",
         y: respondant,
@@ -936,59 +796,6 @@ export function drawMiniPlot(instrument, funding = true) {
         x: "year",
         y: funding ? "funding" : "n",
         fill: palette.accent,
-        sort: { x: "y", reverse: true }
-      }),
-      Plot.textY(df, {
-        x: "year",
-        y: funding ? "funding" : "n",
-        text: (d) =>
-          funding && d.funding > 100
-            ? d.funding.toFixed(0)
-            : funding
-            ? (d.funding.toFixed(1) * 1).toLocaleString("fr-CH")
-            : d.n,
-        dy: -9,
-        sort: { x: "y", reverse: true },
-        frameAnchor: "middle"
-      }),
-      Plot.ruleY([0])
-    ]
-  });
-}
-
-export function drawMiniPlot1(instrument = instruments.CC, funding = false) {
-  const df = aq
-  .from(daten_controlling.filter((d) => d.instrument_de === instrument))
-  .groupby("FA", "inst", "type", instrCol, "year", labelCol, "monitoring")
-  .rollup({
-    funding: (d) => aq.op.sum(d.funding),
-    n: (d) => aq.op.sum(d.n)
-  })
-  .objects();
-  
-  const label = df[0][labelCol];
-
-  return Plot.plot({
-    color: { type: "categorical", domain: instDomain, range: palette.cat },
-    height: 100,
-    width: 100,
-    marginTop: 35,
-    marginRight: 30,
-    marginLeft: 0,
-    y: funding ? { label: s.fundingUnit } : { label: label, domain: [0, 400] },
-    x: {
-      domain: [2023, 2024, 2025],
-      ticks: [2023, 2025],
-      tickSize: 0,
-      label: null,
-      tickFormat: (d) => String(d)
-    },
-    style: plotStyle,
-    marks: [
-      Plot.barY(df, {
-        x: "year",
-        y: funding ? "funding" : "n",
-        fill: "inst",
         sort: { x: "y", reverse: true }
       }),
       Plot.textY(df, {
@@ -1254,7 +1061,7 @@ export function draw_results(
   marginLeft = 200,
   width = 640
 ) {
-  const width_max = width > 640 ? 640 : width;
+  const width_max = clampWidth(width, 640, marginLeft, relevance ? 55 : 15);
   const type = `type_${lang}`;
   const label_lng = `label_${lang}`;
   const caption_lng = `caption_${lang}`;
@@ -1358,7 +1165,7 @@ const df_leverage = [
     { x: 410, y: 100, color: "Wertschöpfung" }
   ];
 
-export function leverage() {
+export function leverage(width = 640) {
   return Plot.plot({
     marginLeft: 0,
     marginRight: 0,
@@ -1366,7 +1173,7 @@ export function leverage() {
     axis: null,
     x: { domain: [50, 500] },
     y: { domain: [95, 108] },
-    width: 640,
+    width: Math.min(width, 640),
     height: 150,
     color: { legend: false, range: palette.hue2, type: "categorical", reverse: true },
     marks: [
@@ -1403,7 +1210,7 @@ export function leverage() {
   })
 };
 
-export function kof_did_plot(nr) {
+export function kof_did_plot(nr, width = 640) {
   const ks = s.kof_did;
   const domain_base = ks.domain;
   const domain = nr === undefined ? domain_base : [domain_base[nr]];
@@ -1432,7 +1239,7 @@ export function kof_did_plot(nr) {
       padding: nr === undefined ? 0.2 : 0.05
     },
     height: nr === undefined ? 600 : 350,
-    width: 640,
+    width: clampWidth(width, 640, ks.marginLeft, ks.marginRight),
     style: { ...plotStyle, fontSize: "12px" },
     marks: [
       Plot.rectX([{ x1: "t-2", y1: -0.75, x2: "t", y2: 0.85 }], {
@@ -1540,17 +1347,17 @@ export function kof_did_plot(nr) {
   })
 }
 
-export function ib_toipis() {
+export function ib_toipis(width = 400) {
   const ibs = s.ib_toipis;
   const df_toipis = [
     {
       type: ibs.cheques,
-      pct: ibs.pct_cheques,
+      pct: ibToipisData.cheques,
       instrument: "Starthilfe für Projekte und Vernetzung"
     },
     {
       type: ibs.projects,
-      pct: ibs.pct_projects,
+      pct: ibToipisData.projects,
       instrument: "Starthilfe für Projekte und Vernetzung"
     }
   ];
@@ -1558,7 +1365,7 @@ export function ib_toipis() {
     marginTop: 45,
     marginLeft: 120,
     marginRight: 0,
-    width: 400,
+    width: clampWidth(width, 400, 120),
     color: { type: "categorical", range: palette.cat },
     x: {
       axis: "top",
@@ -1604,9 +1411,10 @@ export function ib_toipis() {
   })
 };
 
-export function su_vza() {
+export function su_vza(width = 640) {
   const svs = s.su_vza;
   return Plot.plot({
+    width: Math.min(width, 640),
     marginTop: 45,
     marginBottom: 35,
     height: 120,

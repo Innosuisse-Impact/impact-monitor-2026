@@ -17,20 +17,20 @@ L'état actuel du suivi de l'impact est tel que, pour toutes les catégories d'o
 
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 5px;">
   <h5 style= "margin-bottom: 0;">Projets d'entreprises avec des chercheurs</h5>
-  ${draw_fin_plot("Förderung von Innovationsprojekten","Projekte von Unternehmen mit Forschenden",115,true)}
+  ${draw_fin_plot("Förderung von Innovationsprojekten","Projekte von Unternehmen mit Forschenden",115,true, width)}
   <h5 style= "margin-bottom: 0;">Projets d'entreprises</h5>
-  ${draw_fin_plot("Förderung von Innovationsprojekten","Projekte von Unternehmen", 25, false)}
+  ${draw_fin_plot("Förderung von Innovationsprojekten","Projekte von Unternehmen", 25, false, width)}
   <h5 style= "margin-bottom: 0;">Projets de chercheurs</h5>
-  ${draw_fin_plot("Förderung von Innovationsprojekten","Projekte von Forschenden", 70, false)}
+  ${draw_fin_plot("Förderung von Innovationsprojekten","Projekte von Forschenden", 70, false, width)}
 </div>
 
 ## Conseil et mise en réseau
 
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 5px;">
   <h5 style= "margin-bottom: 0;">Savoir et réseaux</h5>
-  ${draw_fin_plot("Beratung und Vernetzung","Wissen und Netzwerke",55,false)}
+  ${draw_fin_plot("Beratung und Vernetzung","Wissen und Netzwerke",55,false, width)}
   <h5 style= "margin-bottom: 0;">Gestion de l'innovation et conseil</h5>
-  ${draw_fin_plot("Beratung und Vernetzung","Innovationsmanagement und Beratung",55, false)}
+  ${draw_fin_plot("Beratung und Vernetzung","Innovationsmanagement und Beratung",55, false, width)}
 </div>
 
 <p class="comment">Source: Cockpit/PowerBI Innosuisse (2025)
@@ -55,4 +55,4 @@ Les projets innovants approuvés peuvent être classés en cinq thématiques dif
 - Le domaine « <span class="text-cat-4">Information and communication technologies ICT</span>  » est le plus important dans les start-up en coaching (30 %).
 - Les « <span class="text-cat-5">Social sciences & business management</span>  » sont les plus représentées dans les Chèques d'innovation (21 %), sinon les pourcentages sont comparativement plus faibles.
 
-<div>${n_subcluster()}</div>
+<div>${n_subcluster(width)}</div>

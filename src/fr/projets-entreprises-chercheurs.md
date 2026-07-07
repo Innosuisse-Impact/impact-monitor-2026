@@ -45,7 +45,7 @@ En moyenne, un projet d'innovation conduit à la création de près de 2,5 emplo
 
 Les emplois supplémentaires créés génèrent directement de la valeur ajoutée pour les entreprises. L'effet de levier de l'encouragement est considérable : chaque franc d'encouragement rapporte à l'économie environ quatre francs de valeur ajoutée, mesurés trois ans après l'encouragement et cumulés sur trois années supplémentaires. Les autres effets multiplicateurs indirects au sein des entreprises, par exemple les dépenses supplémentaires pour les prestations préalables des entreprises, ne sont pas pris en compte ici. Si l'on tient compte des effets indirects, le multiplicateur est estimé à environ 11 francs. En outre, les résultats présentés dans ce rapport montrent que les effets de l'encouragement de l'innovation vont bien au-delà des effets économiques immédiats <a href="/_file/data/methodik-volkswirtschaft-innosuisse-ebp.pdf" target="_blank">(EBP, 2025)</a>.
 
-<div>${leverage()}</div>
+<div>${leverage(width)}</div>
 
 <div class="card" style="max-width: 640px">
 
@@ -59,8 +59,8 @@ Avec cette étude, le KOF a apporté la preuve scientifique du lien entre l'enco
 
 Les résultats confirment les impacts économiques de l'encouragement de projets par Innosuisse présentés dans le suivi de l'impact.
 
-<div class="card" style="background-color: white">${kof_did_plot(0)}</div>
-<div class="card" style="background-color: white">${kof_did_plot(1)}</div>
+<div class="card" style="background-color: white">${kof_did_plot(0, width)}</div>
+<div class="card" style="background-color: white">${kof_did_plot(1, width)}</div>
 <div style="font-size: 12px;">
 Source: 
 <ul>

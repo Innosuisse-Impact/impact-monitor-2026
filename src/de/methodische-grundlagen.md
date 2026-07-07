@@ -16,7 +16,7 @@ Nach einer Erarbeitung von konzeptionellen Grundlagen wurde 2021 das Wirkungsmon
 
 Das Wirkungsmonitoring von Innosuisse basiert auf obligatorischen Befragungen und Vollerhebungen bei allen Umsetzungs- und Forschungspartnern der *Innovationsprojekte*, der KMU bei den *Innovationsschecks* sowie bei allen am *Core Coaching* teilnehmenden Start-ups. Die Erhebungen erfolgen bei den Umsetzungspartnern der Innovationsprojekte und den Start-ups im Coaching jeweils beim Abschluss der Förderung und zusätzlich drei Jahre nach Abschluss. Bei den *Innovation Booster* und den *BRIDGE Proof of Concept*-Projekten beruhen die Ergebnisse auf Monitoring-Daten der laufenden Initiativen. 
 
-<div>${plot_erhebung()}</div>
+<div>${plot_erhebung(width)}</div>
 
 ## Details der Befragungen und Vollerhebungen
 Bei den Befragungen und Selbsteinschätzungen der Fördernehmerinnen und Fördernehmer werden in der Regel Skalenbewertungen auf einer 6er-Skala (z.B. (1) keine Bedeutung, (2) geringe Bedeutung, (3) eher geringe Bedeutung, (4) eher hohe Bedeutung, (5) hohe Bedeutung, (6) sehr hohe Bedeutung verwendet). Dort wo sinnvoll, werden Ja-Nein-Fragen gestellt und ausgewählte Kennzahlen zu ökonomischen Kennzahlen erhoben.

@@ -1,5 +1,9 @@
+// Single source of truth for colors. The CSS custom properties
+// (--color-accent, --color-cat-1, …) are generated from this palette
+// in observablehq.config.js head() — do not redefine them in styles.css.
 export const palette = {
   accent: "#06F7DA",
+  accentInk: "#037C6D", // dark teal for accent-colored text (accent itself fails contrast on white)
   background: "#e8e8e8",
 
   cat: ["#06F7DA", "#A2AFE9", "#FF8674", "#FCE300", "#777777", "#cdcdcd"],

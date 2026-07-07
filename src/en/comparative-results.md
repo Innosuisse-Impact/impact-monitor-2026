@@ -16,12 +16,12 @@ Innosuisse's funding beneficiaries are <span class="text-positive">satisfied to 
 
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 0px;">
   ${draw_result_zf_legend()}
-${draw_result(df_zufrieden,"Innovationsprojekte mit Umsetzungspartner", false, 35)}
-${draw_result(df_zufrieden,"Innovationsscheck", false)}
-${draw_result(df_zufrieden,"Innovationsprojekte ohne Umsetzungspartner", false)}
-${draw_result(df_zufrieden,"BRIDGE Discovery", false)}
-${draw_result(df_zufrieden,"Innovation Booster", false)}
-${draw_result(df_zufrieden,"Start-up Core Coaching", false)}
+${draw_result(df_zufrieden,"Innovationsprojekte mit Umsetzungspartner", false, 35, width)}
+${draw_result(df_zufrieden,"Innovationsscheck", false, 0, width)}
+${draw_result(df_zufrieden,"Innovationsprojekte ohne Umsetzungspartner", false, 0, width)}
+${draw_result(df_zufrieden,"BRIDGE Discovery", false, 0, width)}
+${draw_result(df_zufrieden,"Innovation Booster", false, 0, width)}
+${draw_result(df_zufrieden,"Start-up Core Coaching", false, 0, width)}
 </div>
 
 ## Innosuisse promotes both incremental and radical innovations
@@ -29,7 +29,7 @@ In the case of innovation projects with implementation partners and Innovation c
 
 <span class="text-neutral-b">Radical innovations</span> (23%) are funded to the same extent as <span class="text-neutral-a">incremental innovations</span>. In contrast to incremental innovations, radical innovations strive for fundamental innovations and changes through revolutionary or radical new ideas and technologies. They account for at least a quarter of the projects and innovation ideas across all instruments – with the exception of Innovation cheques. Among start-ups in coaching and researchers in Discovery projects, around half aim to introduce radical innovations with their business models, while only a minority pursue clearly incremental innovations.
 
-<div>${draw_innoart("inkr_radikal", 640, 250)}</div>
+<div>${draw_innoart("inkr_radikal", Math.min(width, 640), 250)}</div>
 <p class="comment">
 Assessments of the funding recipients using a six-point evaluation scale with predefined definitions: (1) very incremental, (2) incremental innovations or (5) radical, (6) very radical innovations. 
 </p> 
@@ -39,7 +39,7 @@ These should be distinguished from <span class="text-neutral-a">disruptive innov
 
 Around a third of companies have the potential to disrupt the market with innovation projects with implementation partners and innovation cheques. Among start-ups in Core Coaching, as many as two-thirds of start-ups pursue disruptive innovations with the business model of their newly founded company.
 
-<div>${draw_innoart("disruptiv", 380, 180)}</div>
+<div>${draw_innoart("disruptiv", Math.min(width, 380), 180)}</div>
 <p class="comment">
 Assessments of the funding recipients using a six-point rating scale with predefined definitions: (5) disruptive innovations, (6) highly disruptive innovations.
 </p> 
@@ -52,8 +52,8 @@ The following figure also illustrates the diversity of the forms of innovation s
 The diversity of innovation is also an expression of the fact that Innosuisse promotes science-based innovation in a bottom-up and thematically open manner.
 
 <div>
-${draw_innoart("type_1", 640, 180)}
-${draw_innoart("type_2",482, 180)}
+${draw_innoart("type_1", Math.min(width, 640), 180)}
+${draw_innoart("type_2", Math.min(width, 482), 180)}
 </div>
 
 ## Digital transformation is a core aspect of innovation promotion
@@ -62,11 +62,11 @@ Digitisation is aimed at important future digital technologies (blockchain, robo
 Around half of the innovation projects funded by Innosuisse make a significant contribution to the digital transformation of the economy through digital technologies and/or digital business models. The application of new digital technologies is more important than the implementation of a digital business model. The importance of digitisation is significantly higher among the start-ups in coaching.
 
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 0px; width: 800px">
-  ${draw_dn("digital", "Innovationsprojekte mit Umsetzungspartner", true, 20)}
-  ${draw_dn("digital", "Innovationsscheck", false, -8)}
-  ${draw_dn("digital", "Innovationsprojekte ohne Umsetzungspartner", false, -8)}
-  ${draw_dn("digital", "BRIDGE Discovery", false, -8)}
-  ${draw_dn("digital", "Start-up Core Coaching", false, -8)}
+  ${draw_dn("digital", "Innovationsprojekte mit Umsetzungspartner", true, 20, width)}
+  ${draw_dn("digital", "Innovationsscheck", false, -8, width)}
+  ${draw_dn("digital", "Innovationsprojekte ohne Umsetzungspartner", false, -8, width)}
+  ${draw_dn("digital", "BRIDGE Discovery", false, -8, width)}
+  ${draw_dn("digital", "Start-up Core Coaching", false, -8, width)}
 </div>
 <p class="comment">Question asked: Is the project funded by Innosuisse based on new digital technologies or new digital business models? Assessment by the funding recipients using a six-point rating scale with predefined definitions: (5) strongly, (6) very strongly.</p>
 
@@ -76,11 +76,11 @@ The support offers enable companies and organisations to test innovative approac
 More than half of the innovation projects that receive funding show the potential to contribute to sustainable development, either in terms of environmental or social sustainability or both, when implemented in a specific way. For the start-ups in the coaching programme, the figures are slightly higher.
 
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 0px; width: 800px">
-  ${draw_dn("nachhaltig", "Innovationsprojekte mit Umsetzungspartner", true, 20)}
-  ${draw_dn("nachhaltig", "Innovationsscheck", false, -8)}
-  ${draw_dn("nachhaltig", "Innovationsprojekte ohne Umsetzungspartner", false, -8)}
-  ${draw_dn("nachhaltig", "BRIDGE Discovery", false, -8)}
-  ${draw_dn("nachhaltig", "Start-up Core Coaching", false, -8)}
+  ${draw_dn("nachhaltig", "Innovationsprojekte mit Umsetzungspartner", true, 20, width)}
+  ${draw_dn("nachhaltig", "Innovationsscheck", false, -8, width)}
+  ${draw_dn("nachhaltig", "Innovationsprojekte ohne Umsetzungspartner", false, -8, width)}
+  ${draw_dn("nachhaltig", "BRIDGE Discovery", false, -8, width)}
+  ${draw_dn("nachhaltig", "Start-up Core Coaching", false, -8, width)}
 </div>
 
 <p class="comment">Question asked: Can the project or project idea funded by Innosuisse make a contribution to environmental and/or social sustainability? Assessment by the funding recipients using a six-point rating scale with predefined definitions: (4) rather high contribution, (5) high contribution, (6) very high contribution.</p>

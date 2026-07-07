@@ -17,20 +17,20 @@ Der gegenwärtige Stand des Wirkungsmonitorings ist so aufgebaut, dass in allen 
 
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 5px;">
   <h5 style="margin-bottom: 0;">Projekte von Unternehmen mit Forschenden</h5>
-  ${draw_fin_plot("Förderung von Innovationsprojekten","Projekte von Unternehmen mit Forschenden",115,true)}
+  ${draw_fin_plot("Förderung von Innovationsprojekten","Projekte von Unternehmen mit Forschenden",115,true, width)}
   <h5 style="margin-bottom: 0;">Projekte von Unternehmen</h5>
-  ${draw_fin_plot("Förderung von Innovationsprojekten","Projekte von Unternehmen", 25, false)}
+  ${draw_fin_plot("Förderung von Innovationsprojekten","Projekte von Unternehmen", 25, false, width)}
   <h5 style="margin-bottom: 0;">Projekte von Forschenden</h5>
-  ${draw_fin_plot("Förderung von Innovationsprojekten","Projekte von Forschenden", 70, false)}
+  ${draw_fin_plot("Förderung von Innovationsprojekten","Projekte von Forschenden", 70, false, width)}
 </div>
 
 ## Beratung und Vernetzung
 
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 5px;">
   <h5 style="margin-bottom: 0;">Wissen und Netzwerke</h5>
-  ${draw_fin_plot("Beratung und Vernetzung","Wissen und Netzwerke",55,false)}
+  ${draw_fin_plot("Beratung und Vernetzung","Wissen und Netzwerke",55,false, width)}
   <h5 style="margin-bottom: 0;">Innovationsmanagement und Beratung</h5>
-  ${draw_fin_plot("Beratung und Vernetzung","Innovationsmanagement und Beratung",55, false)}
+  ${draw_fin_plot("Beratung und Vernetzung","Innovationsmanagement und Beratung",55, false, width)}
 </div>
 
 <p class="comment">Quelle: Cockpit/PowerBI Innosuisse (2025)
@@ -56,4 +56,4 @@ Die bewilligten Innovationsvorhaben lassen sich in fünf verschiedene Themengebi
 - Dem Bereich «<span class="text-cat-4">Information and communication technologies ICT</span>» kommt bei den Start-ups im Coaching das grösste Gewicht zu (30 %). 
 - «<span class="text-cat-5">Social sciences & business management</span>» sind bei den Innovationsschecks (21 %) am stärksten vertreten, ansonsten sind die Anteile vergleichsweise klein.
 
-<div>${(n_subcluster())}</div>
+<div>${(n_subcluster(width))}</div>

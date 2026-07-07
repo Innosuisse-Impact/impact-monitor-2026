@@ -45,7 +45,7 @@ On average, an innovation project leads to almost 2.5 additional full-time posit
 
 The additional jobs created lead directly to value creation in the companies. The leverage effect of the funding is considerable: each franc of funding brings the economy around four francs of value creation, measured three years after the funding and aggregated for three further years. Further indirect multiplier effects in the companies, for example through additional spending on inputs by the companies, are not included here. When the indirect effects are included, the multiplier is estimated to be around CHF 11. The results presented in this report also show that the impact of innovation promotion extends far beyond the immediate economic effects <a href="/_file/data/methodik-volkswirtschaft-innosuisse-ebp.pdf" target="_blank">(EBP, 2025)</a>.
 
-<div>${leverage()}</div>
+<div>${leverage(width)}</div>
 
 <div class="card" style="max-width: 640px">
 
@@ -59,8 +59,8 @@ With this study, the KOF has provided scientific proof of the link between innov
 
 The results confirm the economic impacts of Innosuisse project funding presented in the impact monitoring.
 
-<div class="card" style="background-color: white">${kof_did_plot(0)}</div>
-<div class="card" style="background-color: white">${kof_did_plot(1)}</div>
+<div class="card" style="background-color: white">${kof_did_plot(0, width)}</div>
+<div class="card" style="background-color: white">${kof_did_plot(1, width)}</div>
 
 <div style="font-size: 12px;">
 Source: 

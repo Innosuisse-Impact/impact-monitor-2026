@@ -8,9 +8,3 @@ export function getLang() {
   if (path.includes("/fr/")) return "fr";
   return "en";
 }
-
-export const langLabels = {
-  de: "Deutsch",
-  en: "English",
-  fr: "Français"
-};

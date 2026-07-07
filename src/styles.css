@@ -20,12 +20,14 @@
   font-style: normal;
 }
 
+/* Palette-derived variables (--color-accent, --color-accent-ink, --color-background,
+   --color-positive, --color-negative, --color-neutral-b, --color-cat-1…6) are
+   generated from src/colors.js in observablehq.config.js head() — define them there. */
 :root {
   --font-sans: "Frutiger LT", "Arial", sans-serif;
   --sans-serif: "Frutiger LT", "Arial", sans-serif;
   --color-text: #000000;
-  --theme-foreground-focus: rgb(3, 124, 109);
-  --color-accent: #06F7DA;
+  --theme-foreground-focus: var(--color-accent-ink);
   --color-muted: #828282;
   --color-bg-button: #f2f2f2;
   --color-border: #e5e5e5;
@@ -37,12 +39,7 @@
   --color-paper:         #ffffff;
   --color-page:          #f5f5f3;
   --color-rule:          #e3e3e3;
-    /* ── Color: semantic (valenced bars) ─────────────────── */
-  --color-positive:      #65CDDF;  /* blue — pos in divergent bar */
-  --color-negative:      #FEB040;  /* orange — neg in divergent bar */
-  /* ── Color: typological (non-valenced bars) ──────────── */
-  --color-neutral-b:     #A2AFE9;  /* other end of a typology (--color-accent is neutral-a) */
-  --color-neutral-mid:   #d6d6d6;  /* unclassified middle d6d6d6 */ 
+  --color-neutral-mid:   #d6d6d6;  /* unclassified middle d6d6d6 */
   /* Spacing (4px base) */
   --space-1:             4px;
   --space-2:             8px;
@@ -93,7 +90,7 @@ h2 {
   font-weight: 700;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
-  text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: #06F7DA;
+  text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: var(--color-accent);
 }
 
 h1 + h2 {
@@ -217,6 +214,64 @@ select[class$="-inputs"]:focus {
   height: 2.6rem;
 }
 
+/* Header content — markup generated in observablehq.config.js header() */
+.im-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  height: 100%;
+  gap: 1rem;
+  width: 100%;
+}
+.im-header-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+  flex-shrink: 0;
+}
+.im-header .logo_flag {
+  height: 32px;
+}
+.im-header-sep {
+  overflow: visible;
+  background-color: rgb(209 213 219);
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  width: 1px;
+  height: 2.5rem;
+}
+.im-header-title {
+  font-size: 14px;
+  line-height: 1.25;
+  color: #000000;
+}
+.im-lang-nav {
+  display: flex;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  margin-left: auto;
+  align-items: center;
+}
+.im-lang-nav a {
+  padding: 3px 8px;
+  text-decoration: none;
+  color: #333333;
+  line-height: 1;
+  display: inline-block;
+}
+.im-lang-nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+  text-decoration-color: var(--color-accent);
+}
+
 li {
   margin-bottom: 0.44rem;
 }
@@ -289,12 +344,12 @@ li {
 .text-negative  { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: var(--color-negative);}
 .text-neutral-a { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: var(--color-accent);}
 .text-neutral-b { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: var(--color-neutral-b);}
-.text-cat-1 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: #06F7DA;}
-.text-cat-2 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: #A2AFE9;}
-.text-cat-3 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: #FF8674;}
-.text-cat-4 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: #FCE300;}
-.text-cat-5 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: #777777;}
-.text-cat-6 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: #cdcdcd;}
+.text-cat-1 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: var(--color-cat-1);}
+.text-cat-2 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: var(--color-cat-2);}
+.text-cat-3 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: var(--color-cat-3);}
+.text-cat-4 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: var(--color-cat-4);}
+.text-cat-5 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: var(--color-cat-5);}
+.text-cat-6 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: var(--color-cat-6);}
 
 .figure {
   display: flex;
@@ -325,7 +380,7 @@ li {
   font-size: var(--text-lg);
   font-weight: var(--weight-semibold);
   letter-spacing: -0.02em;
-  color: var(--color-accent);
+  color: var(--color-accent-ink); /* accent cyan fails contrast on white for text */
   line-height: 1;
   min-width: 120px;
   text-align: right;

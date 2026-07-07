@@ -17,20 +17,20 @@ The current status of the impact monitoring is structured in such a way that at 
 
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 5px;">
   <h5 style= "margin-bottom: 0;">Projects by companies with researchers</h5>
-  ${draw_fin_plot("Förderung von Innovationsprojekten","Projekte von Unternehmen mit Forschenden",115,true)}
+  ${draw_fin_plot("Förderung von Innovationsprojekten","Projekte von Unternehmen mit Forschenden",115,true, width)}
   <h5 style= "margin-bottom: 0;">Projects by companies</h5>
-  ${draw_fin_plot("Förderung von Innovationsprojekten","Projekte von Unternehmen", 25, false)}
+  ${draw_fin_plot("Förderung von Innovationsprojekten","Projekte von Unternehmen", 25, false, width)}
   <h5 style= "margin-bottom: 0;">Projects by researchers</h5>
-  ${draw_fin_plot("Förderung von Innovationsprojekten","Projekte von Forschenden", 70, false)}
+  ${draw_fin_plot("Förderung von Innovationsprojekten","Projekte von Forschenden", 70, false, width)}
 </div>
 
 ## Advisory and Networking
 
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 5px;">
   <h5 style= "margin-bottom: 0;">Knowledge and Network</h5>
-  ${draw_fin_plot("Beratung und Vernetzung","Wissen und Netzwerke",55,false)}
+  ${draw_fin_plot("Beratung und Vernetzung","Wissen und Netzwerke",55,false, width)}
   <h5 style= "margin-bottom: 0;">Innovation Management and Advisory</h5>
-  ${draw_fin_plot("Beratung und Vernetzung","Innovationsmanagement und Beratung",55, false)}
+  ${draw_fin_plot("Beratung und Vernetzung","Innovationsmanagement und Beratung",55, false, width)}
 </div>
 
 <p class="comment">Source: Cockpit/PowerBI Innosuisse (2025)
@@ -55,4 +55,4 @@ The approved innovation projects can be categorised into five different thematic
 - <span class="text-cat-4">Information and communication technologies ICT</span> is the most important area for start-ups in coaching (30%).
 - <span class="text-cat-5">Social sciences & business management'</span> is most strongly represented in innovation cheques (21%); otherwise, the proportions are comparatively smaller.
 
-<div>${n_subcluster()}</div>
+<div>${n_subcluster(width)}</div>

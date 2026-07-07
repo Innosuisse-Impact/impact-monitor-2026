@@ -1,5 +1,19 @@
 // See https://observablehq.com/framework/config for documentation.
 
+import { palette } from "./src/colors.js";
+
+// CSS custom properties generated from the shared palette (single source of
+// truth in src/colors.js). styles.css must not redefine these.
+const paletteVars = `:root{
+  --color-accent: ${palette.accent};
+  --color-accent-ink: ${palette.accentInk};
+  --color-background: ${palette.background};
+  --color-positive: ${palette.divPN2[0]};
+  --color-negative: ${palette.divPN2[1]};
+  --color-neutral-b: ${palette.div2[1]};
+${palette.cat.map((c, i) => `  --color-cat-${i + 1}: ${c};`).join("\n")}
+}`;
+
 // Base path for GitHub Pages deployment.
 // Set to the repository name, e.g. "/impact-monitor-2025".
 // Use "" for root-domain or custom-domain deployments.
@@ -101,7 +115,7 @@ export default {
   .join(",") + "{display:none}";
     return `<link rel="icon" href="/images/swiss-logo-flag.svg" type="image/svg+xml">`
          + `<script>document.documentElement.lang="${lang}";</script>`
-         + `<style>${hide}</style>`;
+         + `<style>${paletteVars}${hide}</style>`;
   },
 
   header({path}) {
@@ -113,22 +127,18 @@ export default {
       ? "Agence suisse pour l'encouragement de l'innovation"
       : "Swiss Innovation Agency";
 
-    const activeSty = " font-weight:bold; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: var(--color-accent);";
+    const cls = (l) => (l === lang ? ' class="active"' : "");
 
-    const deSty = lang === "de" ? activeSty : "";
-    const enSty = lang === "en" ? activeSty : "";
-    const frSty = lang === "fr" ? activeSty : "";
-
-    return `<div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; padding:0 1rem; height:100%; gap:1rem; width:100%;">
-  <a href="https://www.innosuisse.admin.ch" class="logo" id="header-logo-container" aria-label="Open Homepage" style="display:flex; align-items:center; gap:0.5rem; text-decoration:none; color:inherit; flex-shrink:0;">
-    <img src="/images/swiss-logo-flag.svg" class="logo_flag" style="height:32px;" alt="Swiss cross logo">
-    <div role="separator" aria-hidden="true" style="overflow: visible;background-color: rgb(209 213 219);margin-left: 0.5rem;margin-right: 0.5rem;width: 1px;height: 2.5rem;"></div>
-    <span style="font-size:14px; line-height:1.25; color:#000000;">Innosuisse<br>${agencyName}</span>
+    return `<div class="im-header">
+  <a href="https://www.innosuisse.admin.ch" class="logo im-header-logo" id="header-logo-container" aria-label="Open Homepage">
+    <img src="/images/swiss-logo-flag.svg" class="logo_flag" alt="Swiss cross logo">
+    <div class="im-header-sep" role="separator" aria-hidden="true"></div>
+    <span class="im-header-title">Innosuisse<br>${agencyName}</span>
   </a>
-  <nav style="display:flex; gap:0.25rem; font-size:0.85rem; flex-shrink:0; margin-left:auto; align-items:center;">
-    <a href="${links.de}" style="padding:3px 8px; text-decoration:none; color:#333333; line-height:1; display:inline-block;${deSty}">DE</a>
-    <a href="${links.fr}" style="padding:3px 8px; text-decoration:none; color:#333333; line-height:1; display:inline-block;${frSty}">FR</a>
-    <a href="${links.en}" style="padding:3px 8px; text-decoration:none; color:#333333; line-height:1; display:inline-block;${enSty}">EN</a>
+  <nav class="im-lang-nav">
+    <a href="${links.de}"${cls("de")}>DE</a>
+    <a href="${links.fr}"${cls("fr")}>FR</a>
+    <a href="${links.en}"${cls("en")}>EN</a>
   </nav>
 </div>`;
   },
