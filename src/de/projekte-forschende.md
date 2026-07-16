@@ -19,7 +19,7 @@ import { drawMiniPlot, draw_waffle, draw_results} from "../functions.js"
 
 Innovationsprojekte ohne Umsetzungspartner zielen darauf ab, wissenschaftliche Erkenntnisse in praxisorientierte Lösungen zu überführen. Sie ermöglichen es den Forschenden, risikoreiche Projekte mit hohem Innovationspotenzial in Richtung Anwendung zu entwickeln und erste Schritte in die Umsetzung zu unternehmen. Voraussetzung für die Förderung ist ein klarer potenzieller Nutzen für die Wirtschaft oder Gesellschaft sowie die Umsetzungspotenziale für eine spätere Anwendung. 
 
-Innovationsprojekte ohne Umsetzungspartner fördern damit anwendungsorientierte Forschungs- und Innovationsvorhaben und zielen längerfristig auf eine wirtschaftliche Umsetzung.
+Innovationsprojekte ohne Umsetzungspartner fördern damit anwendungsorientierte Forschungs- und Innovationsvorhaben und zielen längerfristig auf eine wirtschaftliche Umsetzung in Wirtschaft und Gesellschaft.
 
 ### Erfolgreiche Schritte in Richtung Umsetzung gemacht
 Rund vier von fünf Innovationsprojekten haben die Machbarkeit erfolgreich geprüft. Jedes zweite geförderte Projekt liefert schlüssige Ergebnisse für weitere Umsetzungsschritte und/oder wird mit hoher Wahrscheinlichkeit die Innovation auf dem Markt einführen.
@@ -52,9 +52,9 @@ ${draw_waffle("ipr_impl_goals",-100)}
   <div>${drawMiniPlot("BRIDGE Discovery", false)}</div>
 </div>
 
-BRIDGE Discovery zielt darauf ab, das Innovationspotenzial von Forschungsresultaten zu identifizieren, zu erforschen und in Anwendungen zu überführen. Das Instrument ermöglicht es erfahrenen Forschenden, wissenschaftlich exzellente Projekte mit klarer Vision einer zukünftigen Anwendung umzusetzen und die wissenschaftlichen Grundlagen für innovative Produkte, Dienstleistungen oder gesellschaftliche Lösungen zu entwickeln. Voraussetzung für die Förderung ist eine überzeugende Umsetzungsstrategie sowie ein hohes wirtschaftliches oder gesellschaftliches Potenzial.
+BRIDGE ist das gemeinsame Förderprogramm von Innosuisse und dem Schweizerischen Nationalfonds (SNF) und verbindet Grundlagenforschung und anwendungsorientierte Forschung mit der Umsetzung. BRIDGE Discovery zielt darauf ab, das Innovationspotenzial von Forschungsresultaten zu identifizieren, gezielt weiterzuentwickeln und in Anwendungen zu überführen. Das Instrument ermöglicht es erfahrenen Forschenden, wissenschaftlich exzellente Projekte mit klarer Vision einer zukünftigen Anwendung umzusetzen und die wissenschaftlichen Grundlagen für innovative Produkte, Dienstleistungen oder gesellschaftliche Lösungen zu entwickeln. Voraussetzung für die Förderung ist eine überzeugende Umsetzungsstrategie sowie ein hohes wirtschaftliches oder gesellschaftliches Potenzial.
 
-BRIDGE Discovery fördert damit Projekte an der Schnittstelle zwischen Grundlagenforschung und angewandter Forschung und zielt längerfristig auf eine Realisierung der Innovation in Wirtschaft oder Gesellschaft.
+BRIDGE Discovery fördert damit Projekte an der Schnittstelle zwischen Grundlagenforschung und angewandter Forschung und zielt längerfristig auf eine Realisierung der Innovation in Wirtschaft oder Gesellschaft. BRIDGE Discovery schliesst damit eine wichtige Lücke zwischen anwendungsorientierter Forschung und konkreter Umsetzung. Die Förderung schafft die Grundlagen für spätere Transfer- und Umsetzungsschritte, deren Realisierung häufig erst nach Projektabschluss erfolgt.
 
 ### Ergebnisse für die Umsetzung erzielt
 Im Vergleich zu den Innovationsprojekten ohne Umsetzungspartner ist der Anteil der Projekte, welche die Machbarkeit geprüft, schlüssige Ergebnisse für die Umsetzung erzielt bzw. bei denen die Forschenden davon ausgehen, dass die Innovation auf dem Markt umgesetzt werden, um rund 10 Prozentpunkte höher.
@@ -68,7 +68,7 @@ ${draw_waffle("bd_inter_trans",-100)}
 </div>
 
 ### BRIDGE Discovery Projekte sind praxisorientiert
-Auch BRIDGE Discovery-Projekte setzen primär auf die Zusammenarbeit mit Umsetzungspartnern (76 %) und in zweiter Linie auf die Gründung eines Spin-offs (53 %). Das ist leicht höher als bei den Innovationsprojekten ohne Partner (58 % Kooperation vs. 45 % Spin-off).
+Auch BRIDGE Discovery-Projekte setzen primär auf die Zusammenarbeit mit Umsetzungspartnern (76 %) und in zweiter Linie auf die Gründung eines Spin-offs (53 %). Das ist leicht höher als bei den Innovationsprojekten ohne Partner (58 % Kooperation vs. 45 % Spin-off). Je nach Projekt führen unterschiedliche Umsetzungspfade über die Zusammenarbeit mit bestehenden Partnern, eine Ausgründung oder die Lizenzierung von Forschungsergebnissen.
 <div>${draw_waffle("bd_imppartner", -85)}</div>
 
 ### Die Zielerreichung ist hoch
@@ -84,7 +84,7 @@ ${draw_waffle("bd_impl_goals",-100)}
   <div>${drawMiniPlot("BRIDGE Proof of Concept", false)}</div>
   </div>
   
-BRIDGE ist das gemeinsame Förderprogramm von Innosuisse und dem Schweizerischen Nationalfonds (SNF) und verbindet Grundlagenforschung und anwendungsorientierte Forschung mit der Umsetzung. Das Förderangebot BRIDGE Proof of Concept richtet sich an Nachwuchsforschende, die an der Schnittstelle von Grundlagenforschung und wissenschaftsbasierter Innovation arbeiten. Das Programm bietet ein Jahr lang Unterstützung, um Forschungsergebnisse anwendungsorientiert weiterzuentwickeln, mit dem Ziel, diese zur Marktreife zu führen und die Forschenden auf eine Karriere ausserhalb der Akademie vorzubereiten.
+BRIDGE Proof of Concept richtet sich an Nachwuchsforschende, die an der Schnittstelle von Grundlagenforschung und wissenschaftsbasierter Innovation arbeiten. Das Programm bietet ein Jahr lang Unterstützung, um Forschungsergebnisse anwendungsorientiert weiterzuentwickeln, mit dem Ziel, diese zur Marktreife zu führen und die Forschenden auf eine Karriere ausserhalb der Akademie vorzubereiten.
 
 ### BRIDGE Proof of Concept führt zu Start-ups und Spin-offs
 BRIDGE Proof of Concept zeigt seine Wirkung am Anteil der Unterstützungen, die zu einer Ausgründung führen. Mehr als zwei von drei unterstützten Forschenden gründen in der Folge ein Start-up oder ein Spin-off (Start-up mit formeller IP-Lizenzierung). Das ist beinahe doppelt so hoch wie bei den Innovationsprojekten ohne Umsetzungspartner. Allerdings ist zu beachten, dass die Erhebung unterschiedlich ist. Bei den Innovationsprojekten ohne Umsetzungspartner findet die Befragung bei Projektabschluss, bei BRIDGE Proof of Concept wurde eine eigene Erhebung gemacht, welche einen sehr aktuellen Stand hat (2025) und somit einen längeren Zeitraum abdeckt.
