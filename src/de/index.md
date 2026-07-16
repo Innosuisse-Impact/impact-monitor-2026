@@ -112,7 +112,7 @@ Der Innovationsscheck bietet KMU und Start-ups eine niederschwellige Förderung.
 
   <section class="claim">
     <header class="claim__header">
-      <h3 class="claim__title">Die Ideen werden weiterverfolgt und führen in die Umsetzung</h3>
+      <h3 class="claim__title">Die Ideen werden weiterverfolgt und teilweise in Folgeprojekte überführt</h3>
       <span class="claim__level">Outcome</span>
     </header>
     <div class="figure">
