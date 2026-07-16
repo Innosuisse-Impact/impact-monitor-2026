@@ -192,7 +192,7 @@ Das Förderangebot des Schweizerischen Nationalfonds (SNF) und Innosuisse zielt 
 
   <section class="claim">
     <header class="claim__header">
-      <h3 class="claim__title">Auch Discovery-Projekte sind anwendungsorientiert und die Start-up-Gründung ist ein wichtiger Umsetzungspfad</h3>
+      <h3 class="claim__title">Discovery-Projekte sind anwendungsorientiert und die Start-up-Gründung ist ein wichtiger Umsetzungspfad</h3>
             <span class="claim__level">Outcome</span>
     </header>
         <div class="figure">
