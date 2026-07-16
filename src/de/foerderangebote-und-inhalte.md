@@ -40,12 +40,11 @@ Der Grossteil der Förderung von Innosuisse fliesst in die nationalen und intern
 
 Flankierend dazu werden Unternehmen mittels Innovation Booster, Mentoring, Enterprise Europe Network (Partnersuche) und weiteren Veranstaltung in der Initiierung von Innovationsprojekten unterstützt. Start-ups können von Coaching-, Trainings- und Internationalisierungsangeboten profitieren. Hier werden die Ergebnisse des Wirkungsmonitoring der Innovation Booster und des Start-up Core Coaching präsentiert.
 
-Bei den Innovationsprojekten von Forschenden ohne Umsetzungspartner können ebenfalls Ergebnisse präsentiert werden.
+Bei den Innovationsprojekten von Forschenden ohne Umsetzungspartner und dem BRIDGE Programme können ebenfalls Ergebnisse präsentiert werden.
 
-Die Aufnahme der internationalen Innovationsprojekte in das Wirkungsmonitoring ist für das Berichtsjahr 2025 vorgesehen.
-Die Projekte, in welchen die Start-ups und KMUs direkt unterstützt werden (Start-up Innovationsprojekte und Swiss Accelerator) werden zu einem späteren Zeitpunkt in das Monitoring integriert, da die Projekte noch nicht abgeschlossen sind. Dies gilt in gleicher Form für die Projekte der Flagship Initiative.
+Die Aufnahme der BRIDGE Proof of Concept-Projekte, der internationalen Innovationsprojekte, der Flagship Initiative und der Start-up Innovationsprojekte in das Wirkungsmonitoring ist für das Berichtsjahr 2027 vorgesehen.
 
-<p class="comment">¹ In der Folge wird «Unternehmen» vielfach als Synonym für «Umsetzungspartner» verwendet. Das ist nicht ganz präzise, weil die Umsetzungspartner sowohl KMU, Grossunternehmen und Start-ups, wie auch Verwaltungen, Non-Profit-Organisationen und andere private oder öffentliche Institutionen umfassen können. Allerdings besteht die grosse Mehrheit der Umsetzungspartner aus Unternehmen (KMU, Grossunternehmen und Start-ups), darum erlauben wir uns diese Vereinfachung hier, um damit die Texte einfacher verständlich zu machen.<p>
+<p class="comment">¹ In der Folge wird «Unternehmen» vielfach als Synonym für «Umsetzungspartner» verwendet. Das ist nicht ganz präzise, weil die Umsetzungspartner sowohl KMU, Grossunternehmen und Start-ups, wie auch Verwaltungen, Non-Profit-Organisationen und andere private oder öffentliche Institutionen umfassen können. Allerdings besteht die grosse Mehrheit der Umsetzungspartner aus Unternehmen (KMU, Grossunternehmen und Start-ups), darum erlauben wir uns diese Vereinfachung hier, um damit die Texte einfacher lesbar zu machen.<p>
 
 ## Themengebiete der Innovationsvorhaben 2023–2025
 Die bewilligten Innovationsvorhaben lassen sich in fünf verschiedene Themengebiete gliedern, welche in der nachfolgenden Abbildung zusätzlich nach Förderangeboten dargestellt sind. Die Abbildung zeigt den prozentualen Anteil der Themengebiete an den bewilligten Innovationsvorhaben im Durchschnitt der Jahre 2023–2025. Die prozentualen Anteile nach Instrumenten unterscheiden sich zum Teil deutlich. 
