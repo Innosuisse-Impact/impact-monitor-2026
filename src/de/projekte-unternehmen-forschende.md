@@ -87,7 +87,7 @@ Quelle:
 </div>
 
 ### Innosuisse unterstützt Weltmarktneuheiten und disruptive Innovationen
-32 % der geförderten Innovationsprojekte zielen darauf ab, Neuheiten für den internationalen und globalen Markt zu entwickeln. Schweizer Unternehmen werden damit unterstützt international wettbewerbsfähig zu werden oder zu bleiben. Zusätzlich haben rund 33 % der geförderten Projekte das Potenzial mit disruptiven Innovationen die Märkte stark zu beeinflussen oder neu zu definieren.
+32 % der geförderten Innovationsprojekte zielen darauf ab, Neuheiten für internationale Märkte bzw. den globalen Markt zu entwickeln. Schweizer Unternehmen werden damit unterstützt international wettbewerbsfähig zu werden oder zu bleiben. Dass es sich vielfach um besonders weitreichende Innovationen handelt, zeigt sich auch daran, dass rund 33 % der Projekte ein hohes disruptives Potenzial aufweisen.
   <div class="chart-pair" style="--chart-pair-gap: var(--space-11)">
   ${draw_waffle("ip_new_to_market", -70)}
   ${draw_waffle("ip_disruptive", -70)}
@@ -168,7 +168,7 @@ ${draw_waffle("is_wtt", -85)}
 </div>
 
 ### Zielerreichung ist hoch und es werden Innovationsideen umgesetzt, die sonst nicht angegangen worden wären
-Zwei Drittel der KMU erreichen die gesetzten Ziele mit den Innovationsschecks vollständig oder übertreffen sie. Diese niederschwellige und unkomplizierte Förderung unterstützt damit die Prüfung der Machbarkeit der Innovationsideen und stärkt die weitere Umsetzung von inkrementellen und radikalen Innovationsideen.
+Zwei Drittel der KMU und Start-ups erreichen die gesetzten Ziele mit den Innovationsschecks vollständig oder übertreffen sie. Diese niederschwellige und unkomplizierte Förderung unterstützt damit die Prüfung der Machbarkeit der Innovationsideen und stärkt die weitere Umsetzung von inkrementellen und radikalen Innovationsideen.
 
 Die geringen Mitnahmeeffekte zeigen, dass mit den Innovationsschecks Ideen geprüft werden können, die ansonsten im Tagesgeschäft keinen Platz gehabt hätten. Nur 6 % der KMU geben an, dass sie die Innovationsidee auch ohne Förderung in einer ähnlichen Form geprüft hätten. 22 % hätten sie in leicht veränderter Form geprüft.
     <div class="chart-pair">
