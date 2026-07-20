@@ -86,7 +86,7 @@ Source:
 </div>
 
 ### Innosuisse supports world market firsts and disruptive innovations
-32% of the funded innovation projects aim to develop innovations for the international and global market. Swiss companies are thus supported in becoming or remaining internationally competitive. In addition, around 33% of the projects funded have the potential to significantly influence or redefine markets with disruptive innovations.
+32% of the funded innovation projects aim to develop innovations for international markets or the global market. Swiss companies are thus supported in becoming or remaining internationally competitive. The fact that many of these are particularly far-reaching innovations is also reflected in the roughly 33% of projects that have high disruptive potential.
   <div class="chart-pair" style="--chart-pair-gap: var(--space-11)">
   ${draw_waffle("ip_new_to_market", -70)}
   ${draw_waffle("ip_disruptive", -70)}
@@ -168,7 +168,7 @@ ${draw_waffle("is_wtt", -70)}
 </div>
 
 ### The achievement of objectives is high and innovation ideas are implemented that would not otherwise have been tackled.
-Two-thirds of SMEs either fully achieve or exceed the set targets with the Innovation cheques. This low-threshold and uncomplicated funding thus supports the examination of the feasibility of innovation ideas and strengthens the further implementation of incremental and radical innovation ideas.
+Two-thirds of SMEs and start-ups either fully achieve or exceed the set targets with the Innovation cheques. This low-threshold and uncomplicated funding thus supports the examination of the feasibility of innovation ideas and strengthens the further implementation of incremental and radical innovation ideas.
 
 The low level of windfall gains shows that Innovation cheques enable ideas to be tested that would otherwise not have been considered in day-to-day business. Only 6% of SMEs state that they would have tested the innovation idea in a similar way even without funding. 22% would have tested it in a slightly different way.
 

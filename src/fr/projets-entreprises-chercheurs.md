@@ -84,7 +84,7 @@ Source:
 </div>
 
 ### Innosuisse soutient des nouveautés sur le marché mondial et les innovations disruptives
-32 % des projets d'innovation soutenus visent à développer des nouveautés pour le marché international et mondial. Les entreprises suisses bénéficient ainsi d'un soutien pour devenir ou rester compétitives à l'échelle internationale. En outre, environ 33 % des projets soutenus ont le potentiel d'influencer fortement ou de redéfinir les marchés grâce à des innovations disruptives.
+32 % des projets d'innovation soutenus visent à développer des nouveautés pour les marchés internationaux, voire le marché mondial. Les entreprises suisses bénéficient ainsi d'un soutien pour devenir ou rester compétitives à l'échelle internationale. Le fait qu'il s'agisse souvent d'innovations particulièrement importantes se reflète aussi dans le fait qu'environ 33 % des projets présentent un fort potentiel disruptif.
   <div class="chart-pair" style="--chart-pair-gap: var(--space-11)">
   ${draw_waffle("ip_new_to_market", -85)}
   ${draw_waffle("ip_disruptive", -85)}
@@ -165,7 +165,7 @@ ${draw_waffle("is_wtt", -85)}
 </div>
 
 ### L'atteinte des objectifs est élevée et des idées d'innovation qui n'auraient pas été abordées autrement sont mises en œuvre
-Deux tiers des PME atteignent complètement ou dépassent les objectifs fixés avec les Chèques d'innovation. Cet encouragement facile d'accès et simple permet ainsi de vérifier la faisabilité des idées d'innovation et renforce la mise en œuvre ultérieure d'idées d'innovation incrémentales et radicales.
+Deux tiers des PME et des start-up atteignent complètement ou dépassent les objectifs fixés avec les Chèques d'innovation. Cet encouragement facile d'accès et simple permet ainsi de vérifier la faisabilité des idées d'innovation et renforce la mise en œuvre ultérieure d'idées d'innovation incrémentales et radicales.
 
 Les effets d’aubaine montrent que les Chèques d'innovation permettent d’explorer des idées qui n’auraient pas vu le jour autrement. Seules 6 % des PME déclarent qu'elles auraient examiné l'idée d'innovation sous une forme similaire même sans encouragement. 22 % l'auraient examinée sous une forme légèrement modifiée.
 

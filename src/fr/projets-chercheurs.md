@@ -19,7 +19,7 @@ import { drawMiniPlot, draw_waffle, draw_results} from "../functions.js"
 
 Les projets d'innovation sans partenaire chargé de la mise en valeur visent à transformer les découvertes scientifiques en solutions pratiques. Ils permettent aux chercheurs de développer des projets à haut risque et à fort potentiel d'innovation en vue de leur application et de faire les premiers pas vers leur mise en œuvre. La condition préalable à l'encouragement est un bénéfice potentiel clair pour l'économie ou la société ainsi que des possibilités de mise en œuvre pour une application ultérieure.
 
-Les projets d'innovation sans partenaire chargé de la mise en valeur soutiennent ainsi des projets de recherche et d'innovation axés sur l'application et visent à long terme une mise en œuvre économique.
+Les projets d'innovation sans partenaire chargé de la mise en valeur soutiennent ainsi des projets de recherche et d'innovation axés sur l'application et visent, à long terme, une mise en œuvre dans l'économie et la société.
 
 ### Des étapes réussies vers la mise en œuvre
 Quatre projets d'innovation sur cinq ont testé leur faisabilité avec succès. La moitié des projets ont abouti à des résultats probants pour la prochaine étape de mise en œuvre et/ou ont de fortes chances d'introduire l'innovation sur le marché.
@@ -52,9 +52,9 @@ ${draw_waffle("ipr_impl_goals",-100,10)}
   <div>${drawMiniPlot("BRIDGE Discovery", false)}</div>
 </div>
 
-BRIDGE Discovery vise à identifier et à explorer le potentiel d’innovation des résultats de recherche, puis à les transposer en applications concrètes. Cet instrument permet à des chercheurs expérimentés de mettre en œuvre des projets d’excellence scientifique dotés d’une vision claire d’une application future, et de développer les fondements scientifiques de produits, de services ou de solutions sociétales innovants. Pour bénéficier d’un encouragement, les projets doivent présenter une stratégie de mise en œuvre convaincante ainsi qu’un fort potentiel économique ou sociétal.
+BRIDGE est le programme de financement commun d'Innosuisse et du Fonds national suisse (FNS). Il associe la recherche fondamentale et la recherche appliquée à la mise en œuvre. BRIDGE Discovery vise à identifier le potentiel d’innovation des résultats de recherche, à le développer de manière ciblée, puis à le transposer en applications concrètes. Cet instrument permet à des chercheurs expérimentés de mettre en œuvre des projets d’excellence scientifique dotés d’une vision claire d’une application future, et de développer les fondements scientifiques de produits, de services ou de solutions sociétales innovants. Pour bénéficier d’un encouragement, les projets doivent présenter une stratégie de mise en œuvre convaincante ainsi qu’un fort potentiel économique ou sociétal.
 
-BRIDGE Discovery soutient ainsi des projets situés à l’interface entre la recherche fondamentale et la recherche appliquée et vise, à long terme, la concrétisation de l’innovation dans l’économie ou la société.
+BRIDGE Discovery soutient ainsi des projets situés à l’interface entre la recherche fondamentale et la recherche appliquée et vise, à long terme, la concrétisation de l’innovation dans l’économie ou la société. BRIDGE Discovery comble ainsi une lacune importante entre la recherche axée sur l'application et sa mise en œuvre concrète. L'encouragement crée les bases pour les étapes ultérieures de transfert et de mise en œuvre, dont la réalisation n'intervient souvent qu'après la fin du projet.
 
 ### Résultats obtenus en matière de mise en œuvre
 Par rapport aux projets d'innovation sans partenaire de mise en œuvre, la proportion de projets dont la faisabilité a été testée, qui ont abouti à des résultats concluants en vue de la mise en œuvre ou pour lesquels les chercheurs estiment que l'innovation sera commercialisée est supérieure d'environ 10 points de pourcentage.
@@ -68,7 +68,7 @@ ${draw_waffle("bd_inter_trans",-100)}
 </div>
 
 ### Les projets BRIDGE Discovery sont axés sur la pratique
-Les projets BRIDGE Discovery misent eux aussi en premier lieu sur la coopération avec des partenaires de mise en œuvre (76 %) et, en second lieu, sur la création d’une spin-off (53 %). Ces chiffres sont légèrement supérieurs à ceux des projets d’innovation sans partenaires de mise en œuvre (58 % de coopération contre 45 % de spin-off).
+Les projets BRIDGE Discovery misent eux aussi en premier lieu sur la coopération avec des partenaires de mise en œuvre (76 %) et, en second lieu, sur la création d’une spin-off (53 %). Ces chiffres sont légèrement supérieurs à ceux des projets d’innovation sans partenaires de mise en œuvre (58 % de coopération contre 45 % de spin-off). Selon les projets, différentes voies de mise en œuvre passent par la coopération avec des partenaires existants, une création d'entreprise ou la concession de licences sur les résultats de recherche.
 <div>${draw_waffle("bd_imppartner", -85)}</div>
 
 ### L’atteinte des objectifs est élevée
@@ -84,7 +84,7 @@ ${draw_waffle("bd_impl_goals",-100,8)}
   <div>${drawMiniPlot("BRIDGE Proof of Concept", false)}</div>
   </div>
   
-BRIDGE est le programme de financement commun d'Innosuisse et du Fonds national suisse (FNS). Il associe la recherche fondamentale et la recherche appliquée à la mise en œuvre. L'offre d'encouragement BRIDGE Proof of Concept s'adresse aux jeunes chercheurs qui travaillent à l'interface entre la recherche fondamentale et l'innovation basée sur la science. Le programme offre un soutien d'un an pour développer les résultats de la recherche en vue d'une application pratique, dans le but de les commercialiser et de préparer une carrière en dehors du monde universitaire.
+BRIDGE Proof of Concept s'adresse aux jeunes chercheurs qui travaillent à l'interface entre la recherche fondamentale et l'innovation basée sur la science. Le programme offre un soutien d'un an pour développer les résultats de la recherche en vue d'une application pratique, dans le but de les commercialiser et de préparer une carrière en dehors du monde universitaire.
 
 ### BRIDGE Proof of Concept mène à la création de start-up et de spin-off
 BRIDGE Proof of Concept montre son efficacité à travers la part des soutiens qui aboutissent à une création d'entreprise. Plus de deux chercheurs sur trois ayant bénéficié d'un soutien créent par la suite une start-up ou un spin-off (start-up avec octroi de licence de propriété intellectuelle formelle). Ce chiffre est presque deux fois plus élevé que pour les projets d'innovation sans partenaire chargé de la mise en valeur. Il convient toutefois de noter que l'enquête est différente. Pour les projets d'innovation sans partenaire chargé de la mise en valeur, l'enquête a lieu à la fin du projet, tandis que pour BRIDGE Proof of Concept, une recherche distincte a été réalisée, qui est très actuelle (2025) et couvre donc une période plus longue.
