@@ -40,7 +40,7 @@ Einschätzungen der Fördernehmer anhand einer sechsstufigen Bewertungsskala mit
 
 ## Innovationen können die Märkte stark beeinflussen 
 
-Davon zu unterscheiden sind <span class="text-neutral-a">disruptive Innovationen</span>. Hier stehen nicht der technologische Neuheitsgrad, sondern umwälzende Wirkungen auf den Märkten im Vordergrund.  Sie sind dann disruptiv, wenn sie vollständig neue Märkte mit neuen Spielregeln und Zielgruppen schaffen oder bestehende Märkte in starkem Masse beeinflussen, beispielsweise durch Neuheiten, die im internationalen oder globalen Massstab neu sind für die Märkte. Sowohl radikale als auch inkrementelle Innovationen können disruptiv sein. 
+Davon zu unterscheiden sind <span class="text-neutral-a">disruptive Innovationen</span>. Bei diesen steht nicht der technologische Neuheitsgrad im Vordergrund, sondern das Potenzial Märkte grundlegend zu verändern. Innovationen sind dann disruptiv, wenn sie z. B. neue Spielregeln oder Zielgruppen schaffen und damit neue Märkte begründen oder bestehende Märkte in starkem Masse beeinflussen. Neuheiten für den internationalen oder globalen Märkte können disruptiv wirken, aber auch inkrementelle Innovationen. 
 
 Bei den Innovationsprojekten mit Umsetzungspartnern und Innovationsschecks haben rund ein Drittel der Unternehmen das Potenzial, den Markt disruptiv umzugestalten. Bei den Start-ups im Core Coaching verfolgen sogar fast zwei Drittel der Start-ups disruptive Innovationen.
 
@@ -77,7 +77,7 @@ Rund die Hälfte der von Innosuisse geförderten Innovationsprojekten tragen wes
 
 ## Innovation hat eine Schlüsselrolle bei der Entwicklung nachhaltiger Lösungen
 
-Die Förderinstrumente ermöglichen es Unternehmen und Organisationen, frühzeitig innovative Ansätze und Technologien zur Entwicklung nachhaltiger Lösungen zu prüfen und bis zur Umsetzung zu entwickeln, sei es auf nationaler oder auf globaler Ebene. Innosuisse leistet somit zentrale und zukunftsgerichtete Beiträge zur Bewältigung globaler Herausforderungen wie der Energie- und Ressourceneffizienz, dem Klimawandel oder bei sozialen Fragen. Die Innovationsförderung ist mit eine Impulsgeberin bei der Transformation hin zu einer nachhaltigen Wirtschaft und Gesellschaft.
+Die Förderinstrumente ermöglichen es Unternehmen und Organisationen, frühzeitig innovative Ansätze und Technologien zur Entwicklung nachhaltiger Lösungen zu prüfen und bis zur Umsetzung zu entwickeln, sei es auf nationaler oder auf globaler Ebene. Innosuisse leistet somit zentrale und zukunftsgerichtete Beiträge zur Bewältigung globaler Herausforderungen wie der Energie- und Ressourceneffizienz, dem Klimawandel oder bei sozialen Fragen. Die Innovationsförderung ist somit eine Impulsgeberin bei der Transformation hin zu einer nachhaltigen Wirtschaft und Gesellschaft.
 
 Mehr als die Hälfte der geförderten Innovationsprojekte zeigen bei einer konkreten Umsetzung das Potenzial einen Beitrag zur nachhaltigen Entwicklung zu leisten, entweder zur ökologischen oder sozialen nachhaltigen Entwicklung oder bei beiden Themenbereichen. Bei den Innovationsschecks und den Start-ups im Coaching sind die Anteile leicht höher. 
 
