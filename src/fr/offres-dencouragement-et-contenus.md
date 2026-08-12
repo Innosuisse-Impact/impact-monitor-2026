@@ -34,7 +34,7 @@ L'état actuel du suivi de l'impact est tel que, pour toutes les catégories d'o
 </div>
 
 <p class="comment">Source: Cockpit/PowerBI Innosuisse (2025)
-<br>* Pour les instruments marqués, les résultats du suivi de l'impact sont expliqués ci-après. L'offre d'encouragement « Swiss Accelerator » (2023-2024) n'est pas mentionnée (volume d'encouragement 2023 : 111,8 millions de francs). Il s'agissait d'une mesure de remplacement limitée dans le temps en réaction à la non-association à Horizon Europe.</p>
+<br>* Pour les instruments marqués, les résultats du suivi de l'impact sont expliqués ci-après. L'offre d'encouragement « Swiss Accelerator » n'est pas mentionnée (fonds accordés par an, ⌀ 2023–25: 57,4 millions de francs). Il s'agissait d'une mesure de remplacement limitée dans le temps (2023–24) en réaction à la non-association à Horizon Europe.</p>
 
 La majeure partie des encouragements d'Innosuisse est consacrée aux projets d'innovation nationaux et internationaux. Les projets d'innovation standard entre entreprises¹ et chercheurs, dans le cadre desquels les institutions de recherche sont rémunérées principalement pour le personnel de recherche, sont les plus importants. Les entreprises et organisations participantes contribuent pour leur part à hauteur de 40–60 % aux coûts totaux du projet.
 
