@@ -34,7 +34,7 @@ The current status of the impact monitoring is structured in such a way that at 
 </div>
 
 <p class="comment">Source: Cockpit/PowerBI Innosuisse (2025)
-<br>* The results of the impact monitoring for the highlighted instruments are presented subsequently. The 'Swiss Accelerator' funding programme (2023-2024) is not listed (funding volume 2023: CHF 111.8 million). It was a temporary replacement measure in response to the non-association with Horizon Europe.</p>
+<br>* The results of the impact monitoring for the highlighted instruments are presented subsequently. The 'Swiss Accelerator' funding programme is not listed (approved funding per year, ⌀ 2023–25: CHF 57.4 million). It was a temporary replacement measure (2023–24) in response to the non-association with Horizon Europe.</p>.
 
 The majority of Innosuisse funding goes to national and international innovation projects. The greatest importance is attached here to standard innovation projects between companies¹ and researchers, in which the research institutions are primarily compensated for the remuneration of research staff. The participating companies and organisations, for their part, contribute 40–60% of the total project costs.
 
