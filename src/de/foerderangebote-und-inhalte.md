@@ -36,7 +36,7 @@ Der gegenwärtige Stand des Wirkungsmonitorings ist so aufgebaut, dass in allen 
 <p class="comment">Quelle: Cockpit/PowerBI Innosuisse (2025)
 <br>* Für die markierten Instrumente werden in der Folge die Ergebnisse aus dem Wirkungsmonitoring erläutert. Das Förderangebot «Swiss Accelerator» (2023-2024) wird nicht aufgeführt (Fördervolumen 2023: 111.8 Mio. Fr.). Es war eine zeitlich beschränkte Ersatzmassnahme in Reaktion auf die Nichtassoziation an Horizon Europe.</p>
 
-Der Grossteil der Förderung von Innosuisse fliesst in die nationalen und internationalen Innovationsprojekte. Die höchste Bedeutung kommt hier den Standard-Innovationsprojekten zwischen Unternehmen¹ und Forschenden zu, in welchen die Forschungsinstitutionen primär für die Entlohnung des Forschungspersonals entgolten werden. Die beteiligten Unternehmen und Organisationen tragen Ihrerseits mindestens 50% an die gesamten Projektkosten bei.
+Der Grossteil der Förderung von Innosuisse fliesst in die nationalen und internationalen Innovationsprojekte. Die höchste Bedeutung kommt hier den Standard-Innovationsprojekten zwischen Unternehmen¹ und Forschenden zu, in welchen die Forschungsinstitutionen primär für die Entlohnung des Forschungspersonals entgolten werden. Die beteiligten Unternehmen und Organisationen tragen Ihrerseits 40–60 % an die gesamten Projektkosten bei.
 
 Flankierend dazu werden Unternehmen mittels Innovation Booster, Mentoring, Enterprise Europe Network (Partnersuche) und weiteren Veranstaltung in der Initiierung von Innovationsprojekten unterstützt. Start-ups können von Coaching-, Trainings- und Internationalisierungsangeboten profitieren. Hier werden die Ergebnisse des Wirkungsmonitoring der Innovation Booster und des Start-up Core Coaching präsentiert.
 
