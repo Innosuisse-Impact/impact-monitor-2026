@@ -34,9 +34,9 @@ The current status of the impact monitoring is structured in such a way that at 
 </div>
 
 <p class="comment">Source: Cockpit/PowerBI Innosuisse (2025)
-<br>* The results of the impact monitoring for the highlighted instruments are presented subsequently. The 'Swiss Accelerator' funding programme (2023-2024) is not listed (funding volume 2023: CHF 111.8 million). It was a temporary replacement measure in response to the non-association with Horizon Europe.</p>
+<br>* The results of the impact monitoring for the highlighted instruments are presented subsequently. The 'Swiss Accelerator' funding programme is not listed (approved funding per year, ⌀ 2023–25: CHF 57.4 million). It was a temporary replacement measure (2023–24) in response to the non-association with Horizon Europe.</p>.
 
-The majority of Innosuisse funding goes to national and international innovation projects. The greatest importance is attached here to standard innovation projects between companies¹ and researchers, in which the research institutions are primarily compensated for the remuneration of research staff. The participating companies and organisations, for their part, contribute at least 50% of the total project costs.
+The majority of Innosuisse funding goes to national and international innovation projects. The greatest importance is attached here to standard innovation projects between companies¹ and researchers, in which the research institutions are primarily compensated for the remuneration of research staff. The participating companies and organisations, for their part, contribute 40–60% of the total project costs.
 
 In addition, companies are supported in initiating innovation projects by means of Innovation Boosters, mentoring, the Enterprise Europe Network (partner search), and other events. Start-ups can benefit from coaching, training and internationalisation offers. The results of the impact monitoring of the Innovation Boosters and Start-up Core Coaching are presented here.
 
@@ -47,7 +47,7 @@ The inclusion of international innovation projects in the impact monitoring is p
 <p class="comment">¹ In the following, 'company' is often used as a synonym for 'implementation partner'. This is not entirely precise because the implementation partners can include companies as well as administrations, non-profit organisations and other private or public institutions. However, the vast majority of implementation partners are companies (SMEs, large companies and start-ups), which is why we are taking the liberty of simplifying here in order to make the texts easier to understand.<p>
 
 ## Thematic areas of the innovation projects 2023–2025
-The approved innovation projects can be categorised into five different thematic areas, which are also shown in the chart below, broken down by support offers. The chart shows the percentage share of the thematic areas in the approved innovation projects as an average for the years 2023–2025. The percentage shares by instrument differ, sometimes significantly.
+The approved innovation projects can be categorised into five different thematic areas, which are also shown in the chart below, broken down by support offers. The figure shows the percentage of funding allocated to each thematic area, averaged over the years 2023–2025. The shares differ by instrument, sometimes significantly.
 
 - <span class="text-cat-1">Engineering</span> has a higher and comparable share in Innovation projects with implementation partners (37%), Innovation cheques (32%) and in BRIDGE Proof of Concept (31%).
 - <span class="text-cat-2">Life Sciences</span>, on the other hand, accounts for a very high proportion of innovation projects without implementation partners (66%) and an above-average proportion of start-ups in coaching (38%). It is the most important subject area in BRIDGE Proof of Concept (34%).

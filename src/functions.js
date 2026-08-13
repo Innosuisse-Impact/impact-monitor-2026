@@ -41,7 +41,7 @@ const strings = {
     },
     n_subcluster: {
       xLabel: `Anteil bewilligte Innovationsvorhaben in % nach Themenbereich pro Förderangebot (⌀ ${subclusterPeriod})`,
-      caption: "Quelle: Cockpit/PowerBI Innosuisse (2025)"
+      caption: "Quelle: Cockpit/PowerBI Innosuisse (2026)"
     },
     draw_dn_sustainability: ["soziale Nachhaltigkeit", "ökologische Nachhaltigkeit", "Nachhaltigkeit"],
     draw_dn_digital: ["Digitale Geschäftsmodelle", "Digitale Technologien", "Digitalisierung"],
@@ -88,7 +88,7 @@ const strings = {
     },
     n_subcluster: {
       xLabel: `Share of approved innovation projects in % by subject area by support offer (⌀ ${subclusterPeriod})`,
-      caption: "Source: Cockpit / PowerBI Innosuisse (2025)"
+      caption: "Source: Cockpit / PowerBI Innosuisse (2026)"
     },
     draw_dn_sustainability: ["social sustainability", "environmental sustainability", "sustainability"],
     draw_dn_digital: ["digital business models", "digital technologies", "digitisation"],
@@ -135,7 +135,7 @@ const strings = {
     },
     n_subcluster: {
       xLabel: `Part des projets innovants accordés en % selon le domaine thématique par offre d'encouragement (⌀ ${subclusterPeriod})`,
-      caption: "Source: Cockpit / PowerBI Innosuisse (2025)"
+      caption: "Source: Cockpit / PowerBI Innosuisse (2026)"
     },
     draw_dn_sustainability: ["durabilité sociale", "durabilité environnementale", "durabilité"],
     draw_dn_digital: ["modèles d'entreprise numériques", "technologies numériques", "numérisation"],
