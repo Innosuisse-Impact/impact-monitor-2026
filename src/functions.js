@@ -343,16 +343,6 @@ const data = aq
         fill: palette.accent,
         href: hrefCol
       }),
-      Plot.barX(
-        df.filter((d) => d.monitoring !== "Ja"),
-        {
-          x: "mean_funding",
-          y: (d) => (d.monitoring === "Ja" ? `*${d[instrCol]}` : d[instrCol]),
-          sort: { y: "x", reverse: true },
-          opacity: 0.6,
-          fill: "white"
-        }
-      ),
       Plot.ruleX([0]),
       Plot.textX(df, {
         x: "mean_funding",
@@ -462,7 +452,7 @@ export function n_subcluster(width = 755) {
 }
 
 export function draw_result_zf_legend() {
-  return Plot.legend({ color: { type: "ordinal", domain: zufriedenDomain, range: palette.divPN3 }, swatchSize: 12, style: { ...plotStyle, fontSize: "12px" } })
+  return Plot.legend({ color: { type: "ordinal", domain: zufriedenDomain, range: palette.div3 }, swatchSize: 12, style: { ...plotStyle, fontSize: "12px" } })
 }
 
 export function draw_result(data, instrument, x_axis = true, sy = 0, width = 640) {
@@ -497,10 +487,10 @@ export function draw_result(data, instrument, x_axis = true, sy = 0, width = 640
       ticks: null
     },
     color: data === df_ziel
-      ? { type: "ordinal", domain: zielDomain, range: divPN4 }
+      ? { type: "ordinal", domain: zielDomain, range: div4 }
       : data === df_zufrieden
-      ? { type: "ordinal", domain: zufriedenDomain, range: palette.divPN3 }
-      : { type: "ordinal", domain: erfolgDomain, range: divPN4 },
+      ? { type: "ordinal", domain: zufriedenDomain, range: palette.div3 }
+      : { type: "ordinal", domain: erfolgDomain, range: div4 },
     marks: [
       Plot.axisFy({ lineWidth: 15, anchor: "left" }),
       Plot.barX(df, {
@@ -702,10 +692,9 @@ export function draw_dn(
       Plot.barX(df, {
         x: "pct",
         y: respondant,
-        fill: palette.accent,
+        fill: palette.accentInk,
         fx: type,
         fy: "instrument_n",
-        opacity: 0.5,
         inset: 0.5,
         sort: { y: "-x" }
       }),
@@ -715,7 +704,7 @@ export function draw_dn(
         fill: palette.accent,
         fx: type,
         fy: "instrument_n",
-        inset: 1,
+        inset: 0.5,
         sort: { y: "-x" }
       }),
       Plot.barX(df, {
@@ -827,11 +816,10 @@ export function draw_waffle(
 
   // Dynamically select the correct text column based on the current language
   const text = `text_${lang}`;
-
+  
   const { negative, opposites } = df[0];
-  const colorRange = negative && opposites ? palette.divPN2
+  const colorRange = opposites ? palette.div2
     : negative ? palette.hueN2
-    : opposites ? palette.div2
     : palette.hue2;
 
   const x1 = df2.length !== 0 ? getLastDigit(df2[0].pct) * 10 - 1 : null;
@@ -861,7 +849,7 @@ export function draw_waffle(
       text: text,
       lineWidth: 13,
       dy: dy_text + 13,
-      dx: 70,
+      dx: 77,
       fill: black_innosuisse,
       textAnchor: "start",
       frameAnchor: "top-left",
@@ -877,12 +865,12 @@ export function draw_waffle(
       textAnchor: "start",
       frameAnchor: "top-left",
       lineAnchor: "top",
-      dy: dy_text + 13,
+      dy: dy_text + 15,
       dx: 10,
       stroke: "white",
       strokeWidth: 2,
       strokeOpacity: 0.8,
-      fill: "rank",
+      fill: black_innosuisse,
       fontSize: 26,
       fontWeight: "bold"
     }),
@@ -967,9 +955,8 @@ export function draw_bar(
   const df = data.filter((d) => d.title === title);
   if (df.length === 0) return null;
 
-  const { negative, opposites } = df[0];
-  const colorRange = negative && opposites ? palette.divPN2
-    : negative ? palette.hueN2
+  const { negative } = df[0];
+  const colorRange = negative ? palette.div2
     : mode === "opposite" ? palette.div2
     : [palette.accent];
 
@@ -983,7 +970,7 @@ export function draw_bar(
       dx: side === "left" && subset[0].pct <= 20 ? 2 : -2,
       dy: 20,
       text: formatPct,
-      fill: "rank",
+      fill: "black",
       fontSize: 13,
       fontWeight: "bold",
       textAnchor: side === "left" && subset[0].pct <= 20 ? "start" : "end"
@@ -1459,8 +1446,8 @@ export function su_vza(width = 640) {
           x1: [10.5],
           x2: "pct",
           y: "type",
-          fill: "black",
-          fillOpacity: 0.5,
+          fill: palette.accentInk,
+          fillOpacity: 1,
           inset: 0.5,
           sort: { y: "x" }
         }

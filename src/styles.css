@@ -27,7 +27,7 @@
   --font-sans: "Frutiger LT", "Arial", sans-serif;
   --sans-serif: "Frutiger LT", "Arial", sans-serif;
   --color-text: #000000;
-  --theme-foreground-focus: var(--color-accent-ink);
+  --theme-foreground-focus: var(--color-primary-600);
   --color-muted: #828282;
   --color-bg-button: #f2f2f2;
   --color-border: #e5e5e5;
@@ -76,6 +76,17 @@ body {
   margin-top: 2rem;
 }
 
+a:hover {
+  color: var(--color-primary-800);
+}
+
+/* Underline in-text links (e.g. "Methodische Grundlagen", "Zu den
+   detaillierten Ergebnissen"); header/nav links live outside #observablehq-main
+   and are unaffected. Heading anchor links are excluded so headings keep
+   their own styling. */
+#observablehq-main a[href]:not(.observablehq-header-anchor) {
+  text-decoration: underline;
+}
 
 h1 {
   color: var(--color-text);
@@ -329,19 +340,20 @@ li {
   transition: color var(--transition-fast);
 }
 .claim__link:hover {
-  color: var(--color-ink);
+  color: var(--color-primary-800);
 }
 .claim__link-arrow {
   display: inline-block;
   margin-left: 2px;
+  text-decoration: none;
   transition: transform var(--transition-fast);
 }
 .claim__link:hover .claim__link-arrow {
   transform: translateX(2px);
 }
 
-.text-positive  { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: var(--color-positive);}
-.text-negative  { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: var(--color-negative);}
+.text-positive  { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: var(--color-accent);}
+.text-negative  { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: var(--color-neutral-b);}
 .text-neutral-a { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: var(--color-accent);}
 .text-neutral-b { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: var(--color-neutral-b);}
 .text-cat-1 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: var(--color-cat-1);}

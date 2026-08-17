@@ -64,7 +64,7 @@ Die Unternehmen und Organisationen erweitern ihr Netzwerk über ihr bestehendes 
 <div class="claims-wrapper">
  <section class="claim" style="margin-bottom: 0px">
     <div class="figure" style="align-items:center">
-      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_new_contacts", mode: "single", mode: "single", rank: "pct1" })}</div>
+      <div class="figure__col"">${draw_bar(df_waffle, { title: "ib_new_contacts", mode: "single", mode: "single", rank: "pct1" })}</div>
       <p>Organisationen arbeiten mit Partnern ausserhalb der bestehenden Kontakte zusammen.
       </p>
     </div>

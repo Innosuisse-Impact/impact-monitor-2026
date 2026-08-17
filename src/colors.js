@@ -3,21 +3,25 @@
 // in observablehq.config.js head() — do not redefine them in styles.css.
 export const palette = {
   accent: "#06F7DA",
-  accentInk: "#037C6D", // dark teal for accent-colored text (accent itself fails contrast on white)
+  accentInk: "#009F8B", // dark teal for accent-colored text (accent itself fails contrast on white)
   background: "#e8e8e8",
 
-  cat: ["#06F7DA", "#A2AFE9", "#FF8674", "#FCE300", "#777777", "#cdcdcd"],
+  // Color links CD BUND
+  primaryLink: "#D8232A",
+  primaryHover: "#99191E",
 
-  hue2: ["#3CF3E3", "#037C6D"],
-  hue3: ["#9DFAF2", "#3CF3E3", "#037C6D"],
-  hue6: ["#CDFEF8", "#9DFAF2", "#6CF6EB", "#3CF3E3", "#0BEEDB", "#037C6D"],
+  cat: ["#06F7DA", "#A495E8", "#E83E5A", "#FFED00", "#53565A", "#cdcdcd"],
 
-  hueN2: ["#FECF8C", "#FEB040"],
-  hueN3: ["#FFE7C5", "#FECF8C", "#FEB040"],
+  hue2: ["#06F7DA", "#009F8B"],
+  hue3: ["#9DFAF2", "#06F7DA", "#009F8B"],
+  hue6: ["#CDFEF8", "#9DFAF2", "#6CF6EB", "#3CF3E3", "#06F7DA", "#009F8B"],
 
-  div2: ["#06F7DA", "#A2AFE9"],
-  div3: ["#06F7DA", "#e8e8e8", "#A2AFE9"],
-  div6: ["#06F7DA", "#7CF9EE", "#C8F9F5", "#C8C8E8", "#7878C8", "#A2AFE9"],
+  hueN2: ["#A495E8", "#6758A6"],
+  hueN3: ["#E1D2FF", "#A495E8", "#6758A6"],
+
+  div2: ["#06F7DA", "#A495E8"],
+  div3: ["#06F7DA", "#e8e8e8", "#A495E8"],
+  div6: ["#009F8B", "#06F7DA", "#7CF9EE", "#E1D2FF", "#A495E8", "#6758A6"],
 
   divPN2: ["#65CDDF", "#FEB040"],
   divPN3: ["#65CDDF", "#e8e8e8", "#FEB040"],

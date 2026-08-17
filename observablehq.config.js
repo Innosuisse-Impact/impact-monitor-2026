@@ -7,9 +7,11 @@ import { palette } from "./src/colors.js";
 const paletteVars = `:root{
   --color-accent: ${palette.accent};
   --color-accent-ink: ${palette.accentInk};
+  --color-primary-600: ${palette.primaryLink};
+  --color-primary-800: ${palette.primaryHover};
   --color-background: ${palette.background};
-  --color-positive: ${palette.divPN2[0]};
-  --color-negative: ${palette.divPN2[1]};
+  --color-positive: ${palette.accent};
+  --color-negative: ${palette.hueN2[1]};
   --color-neutral-b: ${palette.div2[1]};
 ${palette.cat.map((c, i) => `  --color-cat-${i + 1}: ${c};`).join("\n")}
 }`;
