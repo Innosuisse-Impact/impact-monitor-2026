@@ -10,89 +10,6 @@ import { drawMiniPlot, draw_waffle, draw_bar, draw_results, ib_toipis, su_vza, s
 import { df_waffle } from "../data.js"
 ```
 
-# Knowledge and Networks
-## Innovation Booster
-<div style="display: flex;">
-  <div>${drawMiniPlot("Innovation Booster")}</div>
-  <div>${drawMiniPlot("Innovation Booster", false)}</div>
-  </div>
-  <p class = "comment">In contrast to the other mini-charts, these charts show the amounts invested rather than the amounts approved, and the active rather than the approved Innovation Boosters.</p>
-
-The Innovation Boosters funded by Innosuisse each focus on a specific innovation topic. They cover a wide range of topics, from artificial intelligence to tourism and food tech.
-
-The Innovation Boosters develop new and radical innovation ideas and test them in an open, network-based innovation process with an open innovation culture. The partners of the funded networks come from research, business and society. The focus of the funding is on the early phase of idea generation and testing, using experimental methods such as design thinking and co-creation.
-
-A key objective of the Innovation Boosters is to further develop successfully tested innovation ideas, including within the framework of funded innovation projects. This promotes science-based and sustainable innovations and provides implementation partners and the Swiss innovation system with concrete added value and competitive advantages.
-
-### Innovation Boosters strengthen the innovation skills of the participants
-The aim of the Innovation Boosters is to develop new and radical innovation ideas during the challenge phase, which are then tested for feasibility and potential in terms of demand and user orientation in a further phase of idea testing.
-
-The vast majority of respondents (81%) confirm that their participation in an Innovation Booster has increased their ability and competence to develop and test radical ideas.
-
-<div>${draw_waffle("ib_capabilities", -100, 0)}</div>
-
-### Radical innovation ideas from the Innovation Boosters are pursued further, including with Innosuisse funding
-Two-thirds of the innovation ideas that receive funding are pursued further after the funding period ends, often with new approaches and even more radical orientations. In 2022–24, the Innovation Boosters led to an average of 31 approved Innovation cheques and 25 approved innovation projects per year. With an Innovation cheque, the idea is examined in more detail with a research partner in terms of feasibility. In the case of innovation projects, the innovation ideas are pursued in a scientifically sound manner with the aim of implementing them in the long term.
-
-<div style="display: flex; column-gap: 20px;">
-<div> ${draw_waffle("ib_continued", -85)}</div>
-<div>${ib_toipis(width)}</div>
-</div>
-
-<div class="card" style="max-width: 620px">
-
-# Evaluation confirms the impact of the Innovation Boosters
-
-The impact evaluation by Ecoplan ([2025](https://www.innosuisse.admin.ch/de/publication?id=TpGqSBI8N6Cl)) has shown that the Innovation Boosters strengthen long-term innovation partnerships, innovation know-how and the development of new ideas across a wide range of topics. Collaboration and user-centred problem analyses are their unique selling points. These will become even more important in the future.
-
-## More radical ideas
-
-Companies and organisations develop radical ideas that solve problems in new ways.
-<div class="claims-wrapper">
- <section class="claim" style="margin-bottom: 0px">
-    <div class="figure" style="align-items:center">
-      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_radical", mode: "opposite" })}</div>
-      <p>The proportion of organisations that rate their innovation ideas as <span class="text-neutral-b">clearly radical</span> is more than twice as high as those that rate them as <span class="text-neutral-a">clearly incremental</span>.
-      </p>
-    </div>
-  </section>
-</div>
-
-## Expanded networks
-
-Companies and organisations expand their networks beyond their existing environment.
-
-<div class="claims-wrapper">
- <section class="claim" style="margin-bottom: 0px">
-    <div class="figure" style="align-items:center">
-      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_new_contacts", mode: "single", rank: "pct1" })}</div>
-      <p>Organisations work with partners outside their existing contacts.
-      </p>
-    </div>
-    <div class="figure" style="align-items:center">
-      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_new_contacts", mode: "single", rank: "pct2" })}</div>
-      <p>Organisations are able to make useful new contacts.
-      </p>
-    </div>
-</section>
-</div>
-
-## Strengthened learning culture
-
-Companies and organisations adopt new know-how on innovation methods and a culture of learning and accepting failure.
-
-<div class="claims-wrapper">
- <section class="claim" style="margin-bottom: 0px">
-    <div class="figure" style="align-items:center">
-      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_learning_effects", mode: "single", rank: "pct1" })}</div>
-      <p>Organisations perceive rather high to very high long-term learning effects on innovation processes.
-      </p>
-    </div>
-  </section>
-</div>
-</div>
-
-
 # Innovation Management and Advisory
 ## Start-up Coaching
 
@@ -184,4 +101,86 @@ Half of the start-ups that take advantage of Innosuisse's Core Coaching originat
 <div class="chart-pair" style="--chart-pair-gap: var(--space-3)">
 ${draw_waffle("scc_start_spin", -70)}
 ${draw_waffle("scc_patent", -70)}
+</div>
+
+# Knowledge and Networks
+## Innovation Booster
+<div style="display: flex;">
+  <div>${drawMiniPlot("Innovation Booster")}</div>
+  <div>${drawMiniPlot("Innovation Booster", false)}</div>
+  </div>
+  <p class = "comment">In contrast to the other mini-charts, these charts show the amounts invested rather than the amounts approved, and the active rather than the approved Innovation Boosters.</p>
+
+The Innovation Boosters funded by Innosuisse each focus on a specific innovation topic. They cover a wide range of topics, from artificial intelligence to tourism and food tech.
+
+The Innovation Boosters develop new and radical innovation ideas and test them in an open, network-based innovation process with an open innovation culture. The partners of the funded networks come from research, business and society. The focus of the funding is on the early phase of idea generation and testing, using experimental methods such as design thinking and co-creation.
+
+A key objective of the Innovation Boosters is to further develop successfully tested innovation ideas, including within the framework of funded innovation projects. This promotes science-based and sustainable innovations and provides implementation partners and the Swiss innovation system with concrete added value and competitive advantages.
+
+### Innovation Boosters strengthen the innovation skills of the participants
+The aim of the Innovation Boosters is to develop new and radical innovation ideas during the challenge phase, which are then tested for feasibility and potential in terms of demand and user orientation in a further phase of idea testing.
+
+The vast majority of respondents (81%) confirm that their participation in an Innovation Booster has increased their ability and competence to develop and test radical ideas.
+
+<div>${draw_waffle("ib_capabilities", -100, 0)}</div>
+
+### Radical innovation ideas from the Innovation Boosters are pursued further, including with Innosuisse funding
+Two-thirds of the innovation ideas that receive funding are pursued further after the funding period ends, often with new approaches and even more radical orientations. In 2022–24, the Innovation Boosters led to an average of 31 approved Innovation cheques and 25 approved innovation projects per year. With an Innovation cheque, the idea is examined in more detail with a research partner in terms of feasibility. In the case of innovation projects, the innovation ideas are pursued in a scientifically sound manner with the aim of implementing them in the long term.
+
+<div style="display: flex; column-gap: 20px;">
+<div> ${draw_waffle("ib_continued", -85)}</div>
+<div>${ib_toipis(width)}</div>
+</div>
+
+<div class="card" style="max-width: 620px">
+
+# Evaluation confirms the impact of the Innovation Boosters
+
+The impact evaluation by Ecoplan ([2025](https://www.innosuisse.admin.ch/de/publication?id=TpGqSBI8N6Cl)) has shown that the Innovation Boosters strengthen long-term innovation partnerships, innovation know-how and the development of new ideas across a wide range of topics. Collaboration and user-centred problem analyses are their unique selling points. These will become even more important in the future.
+
+## More radical ideas
+
+Companies and organisations develop radical ideas that solve problems in new ways.
+<div class="claims-wrapper">
+ <section class="claim" style="margin-bottom: 0px">
+    <div class="figure" style="align-items:center">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_radical", mode: "opposite" })}</div>
+      <p>The proportion of organisations that rate their innovation ideas as <span class="text-neutral-b">clearly radical</span> is more than twice as high as those that rate them as <span class="text-neutral-a">clearly incremental</span>.
+      </p>
+    </div>
+  </section>
+</div>
+
+## Expanded networks
+
+Companies and organisations expand their networks beyond their existing environment.
+
+<div class="claims-wrapper">
+ <section class="claim" style="margin-bottom: 0px">
+    <div class="figure" style="align-items:center">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_new_contacts", mode: "single", rank: "pct1" })}</div>
+      <p>Organisations work with partners outside their existing contacts.
+      </p>
+    </div>
+    <div class="figure" style="align-items:center">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_new_contacts", mode: "single", rank: "pct2" })}</div>
+      <p>Organisations are able to make useful new contacts.
+      </p>
+    </div>
+</section>
+</div>
+
+## Strengthened learning culture
+
+Companies and organisations adopt new know-how on innovation methods and a culture of learning and accepting failure.
+
+<div class="claims-wrapper">
+ <section class="claim" style="margin-bottom: 0px">
+    <div class="figure" style="align-items:center">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_learning_effects", mode: "single", rank: "pct1" })}</div>
+      <p>Organisations perceive rather high to very high long-term learning effects on innovation processes.
+      </p>
+    </div>
+  </section>
+</div>
 </div>
