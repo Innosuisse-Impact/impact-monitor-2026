@@ -234,36 +234,6 @@ BRIDGE Proof of Concept bietet Forschenden ein Jahr Unterstützung, um Forschung
 
 <div class="claims-wrapper">
 
-### Innovation Booster
-
-Bei den themenorientierten Innovation Booster werden neue und radikale Innovationsideen in einem offenen und netzwerkbasierten Innovationsprozess entwickelt. Der Fokus liegt in der frühen Phase der experimentellen Ideenfindung und dem Testen von Ideen. Erfolgsversprechende Innovationsideen sollen in Projekten weitergeführt werden.
-
-  <section class="claim">
-    <header class="claim__header">
-      <h3 class="claim__title">Teilnehmende sträken ihre Fähigkeiten und Kompetenzen der Teilnehmenden</h3>
-      <span class="claim__level">Output</span>
-    </header>
-    <div class="figure">
-      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_capabilities", mode: "single", rank: "pct1" })}</div>
-      <p>Befragte bestätigen, dass sie aufgrund ihrer Teilnahme an einem Innovation Booster ihre Fähigkeiten und Kompetenz zum Entwickeln und Testen von radikalen Ideen erhöhen konnten.</p>
-    </div>
-  </section>
-
-  <section class="claim">
-    <header class="claim__header">
-      <h3 class="claim__title">Innovationsideen werden zur Umsetzung gebracht</h3>
-      <span class="claim__level">Outcome</span>
-    </header>
-    <div class="figure">
-      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_continued", mode: "single", rank: "pct1" })}</div>
-      <p>Innovationsideen werden weiterverfolgt, oft mit neuen Lösungsansätzen. Es entstehen daraus durchschnittlich 26 Innovationsprojekte bei Innosuisse pro Jahr.</p>
-    </div>
-    <a class="claim__link" href="/de/beratung-und-netzwerk">Zu den detaillierten Ergebnissen<span class="claim__link-arrow">→</span></a>
-  </section>
-</div>
-
-<div class="claims-wrapper">
-
 ### Start-up Coaching
 
 Das Coaching unterstützt Start-ups mit innovativen und wissenschaftsbasierten Geschäftsideen durch massgeschneiderte Begleitung in verschiedenen Gründungsphasen. Das Förderangebot gliedert sich in drei aufeinander abgestimmte Angebote – Initial, Core und Scale-up Coaching. Die Start-ups haben die Möglichkeit, an internationalen Camps und international bedeutenden Messen teilzunehmen. Die nachfolgenden Ergebnisse beziehen sich auf das Start-up Core Coaching.
@@ -295,6 +265,36 @@ Das Coaching unterstützt Start-ups mit innovativen und wissenschaftsbasierten G
       ${draw_bar(df_waffle, { title: "scc_capital", mode: "single", rank: "pct2" })}
       </div>
       <p>Gewisse Start-ups haben in diesem Zeitraum bereits über 5 Millionen Franken an Kapital akquiriert. Zwei Drittel erhielten im Core Coaching massgebliche Unterstützung bei der Kapitalbeschaffung.</p>
+    </div>
+    <a class="claim__link" href="/de/beratung-und-netzwerk">Zu den detaillierten Ergebnissen<span class="claim__link-arrow">→</span></a>
+  </section>
+</div>
+
+<div class="claims-wrapper">
+
+### Innovation Booster
+
+Bei den themenorientierten Innovation Booster werden neue und radikale Innovationsideen in einem offenen und netzwerkbasierten Innovationsprozess entwickelt. Der Fokus liegt in der frühen Phase der experimentellen Ideenfindung und dem Testen von Ideen. Erfolgsversprechende Innovationsideen sollen in Projekten weitergeführt werden.
+
+  <section class="claim">
+    <header class="claim__header">
+      <h3 class="claim__title">Teilnehmende sträken ihre Fähigkeiten und Kompetenzen der Teilnehmenden</h3>
+      <span class="claim__level">Output</span>
+    </header>
+    <div class="figure">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_capabilities", mode: "single", rank: "pct1" })}</div>
+      <p>Befragte bestätigen, dass sie aufgrund ihrer Teilnahme an einem Innovation Booster ihre Fähigkeiten und Kompetenz zum Entwickeln und Testen von radikalen Ideen erhöhen konnten.</p>
+    </div>
+  </section>
+
+  <section class="claim">
+    <header class="claim__header">
+      <h3 class="claim__title">Innovationsideen werden zur Umsetzung gebracht</h3>
+      <span class="claim__level">Outcome</span>
+    </header>
+    <div class="figure">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_continued", mode: "single", rank: "pct1" })}</div>
+      <p>Innovationsideen werden weiterverfolgt, oft mit neuen Lösungsansätzen. Es entstehen daraus durchschnittlich 26 Innovationsprojekte bei Innosuisse pro Jahr.</p>
     </div>
     <a class="claim__link" href="/de/beratung-und-netzwerk">Zu den detaillierten Ergebnissen<span class="claim__link-arrow">→</span></a>
   </section>

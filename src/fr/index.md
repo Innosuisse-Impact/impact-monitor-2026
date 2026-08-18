@@ -234,36 +234,6 @@ BRIDGE Proof of Concept offre aux chercheurs un an de soutien pour mener les ré
 
 <div class="claims-wrapper">
 
-### Innovation Booster
-
-Dans le cadre des Innovation Booster thématiques, des idées d'innovation nouvelles et radicales sont développées dans un processus d'innovation ouvert et basé sur le travail en réseau. L'accent est mis sur la phase initiale de la recherche expérimentale d'idées et du test des idées. Les idées d'innovation prometteuses doivent être poursuivies dans le cadre de projets.
-
-  <section class="claim">
-    <header class="claim__header">
-      <h3 class="claim__title">Les aptitudes et compétences des participants sont renforcées</h3>
-      <span class="claim__level">Output</span>
-    </header>
-    <div class="figure">
-      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_capabilities", mode: "single", rank: "pct1" })}</div>
-      <p>Les personnes interrogées confirment que leur participation à un Innovation Booster leur a permis d'améliorer leurs capacités et leurs compétences en matière de développement et de test d'idées radicales.</p>
-    </div>
-  </section>
-
-  <section class="claim">
-    <header class="claim__header">
-      <h3 class="claim__title">Les idées d'innovation sont mises en œuvre</h3>
-      <span class="claim__level">Outcome</span>
-    </header>
-    <div class="figure">
-      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_continued", mode: "single", rank: "pct1" })}</div>
-      <p>Les idées d'innovation sont poursuivies, souvent avec de nouvelles approches. Cela se traduit par une moyenne de 26 projets d'innovation par an chez Innosuisse.</p>
-    </div>
-    <a class="claim__link" href="/fr/conseil-et-reseaux">Vers les résultats détaillés<span class="claim__link-arrow">→</span></a>
-  </section>
-</div>
-
-<div class="claims-wrapper">
-
 ### Start-up Coaching
 
 Le coaching soutient les start-up ayant des idées commerciales innovantes et basées sur la science grâce à un accompagnement personnalisé dans différentes phases de création. L'offre d'encouragement se divise en trois offres coordonnées – Initial, Core et Scale-up Coaching. Les start-up ont la possibilité de participer à des camps internationaux et à des salons internationaux importants. Les résultats du suivi de l'impact concernent le Start-up Core Coaching.
@@ -295,6 +265,36 @@ Le coaching soutient les start-up ayant des idées commerciales innovantes et ba
       ${draw_bar(df_waffle, { title: "scc_capital", mode: "single", rank: "pct2" })}
       </div>
       <p>Certaines start-up ont déjà levé plus de 5 millions de francs au cours de cette période. Les deux tiers ont bénéficié d'un soutien significatif pour la levée de fonds dans le cadre du Core Coaching.</p>
+    </div>
+    <a class="claim__link" href="/fr/conseil-et-reseaux">Vers les résultats détaillés<span class="claim__link-arrow">→</span></a>
+  </section>
+</div>
+
+<div class="claims-wrapper">
+
+### Innovation Booster
+
+Dans le cadre des Innovation Booster thématiques, des idées d'innovation nouvelles et radicales sont développées dans un processus d'innovation ouvert et basé sur le travail en réseau. L'accent est mis sur la phase initiale de la recherche expérimentale d'idées et du test des idées. Les idées d'innovation prometteuses doivent être poursuivies dans le cadre de projets.
+
+  <section class="claim">
+    <header class="claim__header">
+      <h3 class="claim__title">Les aptitudes et compétences des participants sont renforcées</h3>
+      <span class="claim__level">Output</span>
+    </header>
+    <div class="figure">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_capabilities", mode: "single", rank: "pct1" })}</div>
+      <p>Les personnes interrogées confirment que leur participation à un Innovation Booster leur a permis d'améliorer leurs capacités et leurs compétences en matière de développement et de test d'idées radicales.</p>
+    </div>
+  </section>
+
+  <section class="claim">
+    <header class="claim__header">
+      <h3 class="claim__title">Les idées d'innovation sont mises en œuvre</h3>
+      <span class="claim__level">Outcome</span>
+    </header>
+    <div class="figure">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_continued", mode: "single", rank: "pct1" })}</div>
+      <p>Les idées d'innovation sont poursuivies, souvent avec de nouvelles approches. Cela se traduit par une moyenne de 26 projets d'innovation par an chez Innosuisse.</p>
     </div>
     <a class="claim__link" href="/fr/conseil-et-reseaux">Vers les résultats détaillés<span class="claim__link-arrow">→</span></a>
   </section>

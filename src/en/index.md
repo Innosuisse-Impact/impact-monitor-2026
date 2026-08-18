@@ -234,36 +234,6 @@ BRIDGE Proof of Concept gives researchers a year of support to develop research 
 
 <div class="claims-wrapper">
 
-### Innovation Booster
-
-In the topic-oriented Innovation Boosters, new and radical innovation ideas are developed in an open, network-based innovation process. The focus is on the early phase of experimental idea generation and testing. Promising innovation ideas are to be pursued further in projects.
-
-  <section class="claim">
-    <header class="claim__header">
-      <h3 class="claim__title">Skills and competencies of participants are enhanced</h3>
-      <span class="claim__level">Output</span>
-    </header>
-    <div class="figure">
-      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_capabilities", mode: "single", rank: "pct1" })}</div>
-      <p>Respondents confirm that their participation in an Innovation Booster has increased their ability to develop and test radical ideas.</p>
-    </div>
-  </section>
-
-  <section class="claim">
-    <header class="claim__header">
-      <h3 class="claim__title">Innovation ideas are brought to implementation</h3>
-      <span class="claim__level">Outcome</span>
-    </header>
-    <div class="figure">
-      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_continued", mode: "single", rank: "pct1" })}</div>
-      <p>Innovation ideas are pursued further, often with new approaches. This results in an average of 26 innovation projects at Innosuisse per year.</p>
-    </div>
-    <a class="claim__link" href="/en/advisory-and-networks">To the detailed results<span class="claim__link-arrow">→</span></a>
-  </section>
-</div>
-
-<div class="claims-wrapper">
-
 ### Start-up Coaching
 
 The coaching supports start-ups with innovative and science-based business ideas through tailored support in various founding phases. The support offer is divided into three coordinated offers – Initial, Core and Scale-up Coaching. Start-ups have the opportunity to participate in international camps and internationally important trade fairs. The results of the impact monitoring relate to Start-up Core Coaching.
@@ -295,6 +265,36 @@ The coaching supports start-ups with innovative and science-based business ideas
       ${draw_bar(df_waffle, { title: "scc_capital", mode: "single", rank: "pct2" })}
       </div>
       <p>Some start-ups have already raised over 5 million francs in capital during this period. Two thirds received significant support with fundraising during Core Coaching.</p>
+    </div>
+    <a class="claim__link" href="/en/advisory-and-networks">To the detailed results<span class="claim__link-arrow">→</span></a>
+  </section>
+</div>
+
+<div class="claims-wrapper">
+
+### Innovation Booster
+
+In the topic-oriented Innovation Boosters, new and radical innovation ideas are developed in an open, network-based innovation process. The focus is on the early phase of experimental idea generation and testing. Promising innovation ideas are to be pursued further in projects.
+
+  <section class="claim">
+    <header class="claim__header">
+      <h3 class="claim__title">Skills and competencies of participants are enhanced</h3>
+      <span class="claim__level">Output</span>
+    </header>
+    <div class="figure">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_capabilities", mode: "single", rank: "pct1" })}</div>
+      <p>Respondents confirm that their participation in an Innovation Booster has increased their ability to develop and test radical ideas.</p>
+    </div>
+  </section>
+
+  <section class="claim">
+    <header class="claim__header">
+      <h3 class="claim__title">Innovation ideas are brought to implementation</h3>
+      <span class="claim__level">Outcome</span>
+    </header>
+    <div class="figure">
+      <div class="figure__col">${draw_bar(df_waffle, { title: "ib_continued", mode: "single", rank: "pct1" })}</div>
+      <p>Innovation ideas are pursued further, often with new approaches. This results in an average of 26 innovation projects at Innosuisse per year.</p>
     </div>
     <a class="claim__link" href="/en/advisory-and-networks">To the detailed results<span class="claim__link-arrow">→</span></a>
   </section>
