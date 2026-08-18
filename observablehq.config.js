@@ -65,8 +65,8 @@ export default {
       { name: "BRIDGE: Proof of Concept",                    path: "/de/projekte-forschende#bridge-proof-of-concept" }
     ]},
     { name: "Beratung und Vernetzung", pager: "de", pages: [
-      { name: "Start-up Core Coaching", path: "/de/beratung-und-netzwerk#innovationsmanagement-und-beratung" },
-      { name: "Innovation Booster",     path: "/de/beratung-und-netzwerk" }
+      { name: "Start-up Core Coaching", path: "/de/beratung-und-netzwerk" },
+      { name: "Innovation Booster",     path: "/de/beratung-und-netzwerk#wissen-und-netzwerke" }
     ]},
 
     // === ENGLISH ===
@@ -82,8 +82,8 @@ export default {
       { name: "BRIDGE: Proof of Concept",                           path: "/en/projects-researchers#bridge-proof-of-concept" }
     ]},
     { name: "Advice and Networking", pager: "en", pages: [
-      { name: "Start-up Core Coaching", path: "/en/advisory-and-networks#innovation-management-and-advisory" },
-      { name: "Innovation Booster",     path: "/en/advisory-and-networks" }
+      { name: "Start-up Core Coaching", path: "/en/advisory-and-networks" },
+      { name: "Innovation Booster",     path: "/en/advisory-and-networks#knowledge-and-networks" }
     ]},
 
     // === FRANÇAIS ===
@@ -99,8 +99,8 @@ export default {
       { name: "BRIDGE: Proof of Concept",             path: "/fr/projets-chercheurs#bridge-proof-of-concept" }
     ]},
     { name: "Conseil et mise en réseau", pager: "fr", pages: [
-      { name: "Start-up Core Coaching", path: "/fr/conseil-et-reseaux#gestion-de-linnovation-et-conseil" },
-      { name: "Innovation Booster",     path: "/fr/conseil-et-reseaux" }
+      { name: "Start-up Core Coaching", path: "/fr/conseil-et-reseaux" },
+      { name: "Innovation Booster",     path: "/fr/conseil-et-reseaux#savoir-et-reseaux" }
     ]}
   ],
 
