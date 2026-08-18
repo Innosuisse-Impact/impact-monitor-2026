@@ -43,7 +43,7 @@ Die Befragungen basieren auf differenzierten Bewertungen der befragten Zielgrupp
 
 ## Tabellarische Zusammenstellung der Ergebnisse
 
-Die detaillierten Ergebnisse finden sich in einer tabellarischen Zusammenstellung ([⤓&nbsp;Excel](/_file/data//wirkungsindikatoren-2023-2025.xlsx)), gegliedert nach Instrumenten, Zielgruppen der Förderung, fünf Stossrichtungen der Wirkungsorientierung und differenzierter Kategorisierung der Wirkung
+Die detaillierten Ergebnisse finden sich in einer tabellarischen Zusammenstellung ([⤓&nbsp;Excel](./data/wirkungsindikatoren-2023-2025.xlsx download)), gegliedert nach Instrumenten, Zielgruppen der Förderung, fünf Stossrichtungen der Wirkungsorientierung und differenzierter Kategorisierung der Wirkung
   
 ## Förderangebote und Wirkungsziele von Innosuisse (Outcomes)
 Die Förderangebote von Innosuisse können in zwei übergeordnete Förderbereiche gegliedert werden (vgl. nachfolgende Übersicht): 
