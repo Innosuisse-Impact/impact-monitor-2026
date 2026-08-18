@@ -43,7 +43,7 @@ Lorsqu’ils sont disponibles, les résultats sont présentés sous forme de moy
 
 ## Synthèse tabulaire des résultats
 
-Les résultats détaillés figurent dans une synthèse tabulaire (<a href="./data/wirkungsindikatoren-2023-2025.xlsx" download>⤓&nbsp;Excel</a>), organisée par instruments d’encouragement, groupes cibles, cinq axes d’orientation de l’impact et une catégorisation différenciée de l’impact
+Les résultats détaillés figurent dans une synthèse tabulaire (<a href="../data/wirkungsindikatoren-2023-2025.xlsx" download>⤓&nbsp;Excel</a>), organisée par instruments d’encouragement, groupes cibles, cinq axes d’orientation de l’impact et une catégorisation différenciée de l’impact
   
 ## Offres d’encouragement d’Innosuisse et objectifs d’impact (résultats)
 Les offres d’encouragement d’Innosuisse peuvent être réparties en deux grands domaines de contribution (voir l’aperçu ci-dessous) : 

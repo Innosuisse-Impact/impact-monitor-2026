@@ -43,7 +43,7 @@ Where available, the results are presented as average across the three most rece
 
 ## Tabular summary of the results
 
-The detailed results can be found in a tabular summary (<a href="./data/wirkungsindikatoren-2023-2025.xlsx" download>⤓&nbsp;Excel</a>), organised by funding instruments, target groups, five thrusts of impact orientation and a differentiated categorisation of impact
+The detailed results can be found in a tabular summary (<a href="../data/wirkungsindikatoren-2023-2025.xlsx" download>⤓&nbsp;Excel</a>), organised by funding instruments, target groups, five thrusts of impact orientation and a differentiated categorisation of impact
   
 ## Innosuisse’s support offers and impact objectives (Outcomes)
 Innosuisse’s support offers can be divided into two overarching funding areas (see the overview below): 
