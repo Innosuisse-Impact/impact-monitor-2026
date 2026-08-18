@@ -14,7 +14,7 @@ import { df_waffle } from "../data.js"
 <div style="background: rgb(6, 247, 218) no-repeat padding-box; min-height: 110px; max-width: 100%; padding-left: 40px; padding-top: 5px; padding-bottom: 5px;  margin-left: -48px; margin-top: -31px;">
 
 # L'impact de l'encouragement d'Innosuisse 2023–2025
-<p class="comment">Version 2.1, dernières modifications : 17 août 2026</p>
+<p class="comment">Version 2.2, dernières modifications : 18 août 2026</p>
 </div>
 <br>
 
