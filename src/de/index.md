@@ -278,7 +278,7 @@ Bei den themenorientierten Innovation Booster werden neue und radikale Innovatio
 
   <section class="claim">
     <header class="claim__header">
-      <h3 class="claim__title">Teilnehmende sträken ihre Fähigkeiten und Kompetenzen der Teilnehmenden</h3>
+      <h3 class="claim__title">Teilnehmende stärken ihre Fähigkeiten und Kompetenzen der Teilnehmenden</h3>
       <span class="claim__level">Output</span>
     </header>
     <div class="figure">
