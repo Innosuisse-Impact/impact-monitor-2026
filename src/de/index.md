@@ -18,7 +18,7 @@ import { df_waffle } from "../data.js"
 </div>
 <br>
 
-Innosuisse legt grosses Gewicht darauf die Wirksamkeit der Innovationsförderung transparent anhand folgender zwei Hauptfragen darzulegen:
+Innosuisse legt grosses Gewicht darauf, die Wirksamkeit der Innovationsförderung transparent anhand folgender zwei Hauptfragen darzulegen:
 
 * Welche Wirkungen erzielen die eingesetzten öffentlichen Mittel bei den Unternehmen, Start-ups und weiteren Organisationen?
 * Wird der Wissens- und Technologietransfer zwischen Organisationen und der Forschung gestärkt und in welcher Form?
@@ -33,7 +33,7 @@ Die nationalen Innovationsprojekte sind das wichtigste Förderinstrument von Inn
 <div class="claims-wrapper">
   <section class="claim">
     <header class="claim__header">
-      <h3 class="claim__title">Projekte decken das gesamte Spektrum der Innovation ab und führen zu neuen Produkten, Dienstleistungen und Prozessen.</h3>
+      <h3 class="claim__title">Projekte decken das gesamte Spektrum der Innovation ab und führen zu neuen Produkten, Dienstleistungen und Prozessen</h3>
       <span class="claim__level">Output</span>
     </header>
     <div class="figure">
@@ -48,7 +48,7 @@ Die nationalen Innovationsprojekte sind das wichtigste Förderinstrument von Inn
 
   <section class="claim">
     <header class="claim__header">
-      <h3 class="claim__title">Die Ergebnisse erreichen den Markt.</h3>
+      <h3 class="claim__title">Die Ergebnisse erreichen den Markt</h3>
       <span class="claim__level">Outcome</span>
     </header>
     <div class="figure">
@@ -63,24 +63,24 @@ Die nationalen Innovationsprojekte sind das wichtigste Förderinstrument von Inn
 
   <section class="claim">
     <header class="claim__header">
-      <h3 class="claim__title">Die wirtschaftlichen Auswirkungen sind eindeutig.</h3>
+      <h3 class="claim__title">Die wirtschaftlichen Auswirkungen sind eindeutig</h3>
       <span class="claim__level">Impact</span>
     </header>
     <div class="figure">
       <div class="figure__col">
         <div class="figure__title">Arbeitsplätze</div>
-        <div class="figure__value">+ 18%</div>
+        <div class="figure__value">+18 %</div>
         <div class="figure__title">Umsatz</div>
-        <div class="figure__value">+ 21%</div>
+        <div class="figure__value">+21 %</div>
       </div>
-      <p>Eine unabhängige wissenschaftliche Studie der KOF Konjunkturforschungsstelle (ETH Zürich) liefert erstmals kausale Belege für die Wirksamkeit von Innovationsprojekten. Sie verglich geförderte Unternehmen mit möglichst ähnlichen Firmen, die keinen Förderung erhielten. Über einen Zeitraum von fünf Jahren schufen die geförderten Unternehmen durchschnittlich 18 % mehr Arbeitsplätze und wuchsen um 21 % schneller.</p>
+      <p>Eine unabhängige wissenschaftliche Studie der KOF Konjunkturforschungsstelle (ETH Zürich) liefert erstmals kausale Belege für die Wirksamkeit von Innovationsprojekten. Sie verglich geförderte Unternehmen mit möglichst ähnlichen Firmen, die keine Förderung erhielten. Über einen Zeitraum von fünf Jahren schufen die geförderten Unternehmen durchschnittlich 18 % mehr Arbeitsplätze und wuchsen um 21 % schneller.</p>
     </div>
     <div class="figure">
       <div class="figure__col">
         <div class="figure__title">Vollzeitstellen</div>
         <div class="figure__value">+ 2.5</div>
       </div>
-      <p>Nach Angaben der befragten Unternehmen lassen sich drei Jahre nach Projektabschluss durchschnittlich 2,5 zusätzliche Vollzeitstellen auf das geförderte Projekt zurückführen.</p>
+      <p>Nach Angaben der befragten Unternehmen lassen sich drei Jahre nach Projektabschluss durchschnittlich 2.5 zusätzliche Vollzeitstellen auf das geförderte Projekt zurückführen.</p>
     </div>
     <div class="figure">
       <div class="figure__col">
@@ -89,7 +89,7 @@ Die nationalen Innovationsprojekte sind das wichtigste Förderinstrument von Inn
       </div>
       <p>EBP schätzt, dass jeder Schweizer Franken an Förderbeiträgen innerhalb von drei Jahren rund vier Franken an Wertschöpfung generiert.</p>
     </div>
-    <a class="claim__link" href="/de/projekte-unternehmen-forschende">Zu den detaillierten Ergebnissen<span class="claim__link-arrow">→</span></a>
+    <a class="claim__link" href="/de/projekte-unternehmen-forschende">Zu den detaillierten Ergebnissen <span class="claim__link-arrow">→</span></a>
   </section>
 </div>
 
@@ -121,9 +121,9 @@ Der Innovationsscheck bietet KMU und Start-ups eine niederschwellige Förderung.
     </div>
     <div class="figure">
       <div class="figure__col">${draw_bar(df_waffle, { title: "is_ideas", mode: "single", rank: "pct2" })}</div>
-      <p>Einige beantragen oder planen konkret innerhalb eines Jahres ein vollwertiges Innosuisse Innovationsprojekt.</p>
+      <p>Einige beantragen oder planen konkret innerhalb eines Jahres ein vollwertiges Innosuisse-Innovationsprojekt.</p>
     </div>
-    <a class="claim__link" href="/de/projekte-unternehmen-forschende#innovationsscheck">Zu den detaillierten Ergebnissen<span class="claim__link-arrow">→</span></a>
+    <a class="claim__link" href="/de/projekte-unternehmen-forschende#innovationsscheck">Zu den detaillierten Ergebnissen <span class="claim__link-arrow">→</span></a>
   </section>
 </div>
 
@@ -150,7 +150,7 @@ Innovationsprojekte ohne Umsetzungspartner zielen darauf ab, wissenschaftliche E
 
   <section class="claim">
     <header class="claim__header">
-      <h3 class="claim__title">Innovationen werden in Zukunft in der Praxis umgesetzt.</h3>
+      <h3 class="claim__title">Innovationen werden in Zukunft in der Praxis umgesetzt</h3>
             <span class="claim__level">Outcome</span>
     </header>
     <div class="figure">
@@ -163,7 +163,7 @@ Innovationsprojekte ohne Umsetzungspartner zielen darauf ab, wissenschaftliche E
     </div>
     <div class="figure">
       <div class="figure__col">${draw_bar(df_waffle, { title: "ipr_imppartner", mode: "single", rank: "pct2" })}</div>
-      <p>Forschende realisierten oder planen die Ausgründung eines Start-ups.</p>
+      <p>Forschende haben ein Start-up ausgegründet oder planen dies.</p>
     </div>
     <a class="claim__link" href="/de/projekte-forschende">Zu den detaillierten Ergebnissen <span class="claim__link-arrow">→</span></a>
   </section>
@@ -173,7 +173,7 @@ Innovationsprojekte ohne Umsetzungspartner zielen darauf ab, wissenschaftliche E
 
 ### BRIDGE Discovery
 
-Das Förderangebot des Schweizerischen Nationalfonds (SNF) und Innosuisse zielt darauf ab, Forschungsresultate an der Schnittstelle zwischen Grundlagenforschung und angewandter Forschung zu wissenschaftlich exzellenten Projekten mit hohem Innovationspotenzial zu entwickeln und die Grundlagen für die Umsetzung zu schaffen.
+Das Förderangebot des Schweizerischen Nationalfonds (SNF) und der Innosuisse zielt darauf ab, Forschungsresultate an der Schnittstelle zwischen Grundlagenforschung und angewandter Forschung zu wissenschaftlich exzellenten Projekten mit hohem Innovationspotenzial zu entwickeln und die Grundlagen für die Umsetzung zu schaffen.
 
   <section class="claim">
     <header class="claim__header">
@@ -197,7 +197,7 @@ Das Förderangebot des Schweizerischen Nationalfonds (SNF) und Innosuisse zielt 
     </header>
         <div class="figure">
       <div class="figure__col">${draw_bar(df_waffle, { title: "bd_umsetzung", mode: "single", rank: "pct1" })}</div>
-      <p>Projekt wird mit hoher bis sehr hoher Wahrscheinlichkeit auf dem Markt umgesetzt.</p>
+      <p>Innovationen besitzen mit hoher bis sehr hoher Wahrscheinlichkeit längerfristiges Potenzial für eine Markteinführung.</p>
     </div>
     <div class="figure">
       <div class="figure__col">${draw_bar(df_waffle, { title: "bd_imppartner", mode: "single", rank: "pct1" })}</div>
@@ -205,7 +205,7 @@ Das Förderangebot des Schweizerischen Nationalfonds (SNF) und Innosuisse zielt 
     </div>
     <div class="figure">
       <div class="figure__col">${draw_bar(df_waffle, { title: "bd_imppartner", mode: "single", rank: "pct2" })}</div>
-      <p>Forschungsgruppen realisierten oder planen die Ausgründung eines Start-ups oder Spin-offs.</p>
+      <p>Forschungsgruppen haben ein Start-up oder Spin-off ausgegründet oder planen dies.</p>
     </div>
     <a class="claim__link" href="/de/projekte-forschende#bridge-discovery">Zu den detaillierten Ergebnissen <span class="claim__link-arrow">→</span></a>
   </section>
@@ -234,13 +234,13 @@ BRIDGE Proof of Concept bietet Forschenden ein Jahr Unterstützung, um Forschung
 
 <div class="claims-wrapper">
 
-### Start-up Coaching
+### Start-up Core Coaching
 
 Das Coaching unterstützt Start-ups mit innovativen und wissenschaftsbasierten Geschäftsideen durch massgeschneiderte Begleitung in verschiedenen Gründungsphasen. Das Förderangebot gliedert sich in drei aufeinander abgestimmte Angebote – Initial, Core und Scale-up Coaching. Die Start-ups haben die Möglichkeit, an internationalen Camps und international bedeutenden Messen teilzunehmen. Die nachfolgenden Ergebnisse beziehen sich auf das Start-up Core Coaching.
 
   <section class="claim">
     <header class="claim__header">
-      <h3 class="claim__title">Das Core Coaching bringt den Start-up Mehrwert</h3>
+      <h3 class="claim__title">Das Core Coaching bringt den Start-ups Mehrwert</h3>
       <span class="claim__level">Output</span>
     </header>
     <div class="figure">
@@ -258,7 +258,7 @@ Das Coaching unterstützt Start-ups mit innovativen und wissenschaftsbasierten G
       <div class="figure__col">
       ${draw_bar(df_waffle, { title: "scc_capital", mode: "single", rank: "pct1" })}
       </div>
-      <p>Start-ups haben bis zum Abschluss des Coachings erfolgreich Risikokapital akquiriert.</p>
+      <p>Start-ups haben bis zum Abschluss des Coachings erfolgreich Risikokapital akquiriert</p>
     </div>
     <div class="figure">
       <div class="figure__col">
@@ -266,7 +266,7 @@ Das Coaching unterstützt Start-ups mit innovativen und wissenschaftsbasierten G
       </div>
       <p>Gewisse Start-ups haben in diesem Zeitraum bereits über 5 Millionen Franken an Kapital akquiriert. Zwei Drittel erhielten im Core Coaching massgebliche Unterstützung bei der Kapitalbeschaffung.</p>
     </div>
-    <a class="claim__link" href="/de/beratung-und-netzwerk">Zu den detaillierten Ergebnissen<span class="claim__link-arrow">→</span></a>
+    <a class="claim__link" href="/de/beratung-und-netzwerk">Zu den detaillierten Ergebnissen <span class="claim__link-arrow">→</span></a>
   </section>
 </div>
 
@@ -274,16 +274,16 @@ Das Coaching unterstützt Start-ups mit innovativen und wissenschaftsbasierten G
 
 ### Innovation Booster
 
-Bei den themenorientierten Innovation Booster werden neue und radikale Innovationsideen in einem offenen und netzwerkbasierten Innovationsprozess entwickelt. Der Fokus liegt in der frühen Phase der experimentellen Ideenfindung und dem Testen von Ideen. Erfolgsversprechende Innovationsideen sollen in Projekten weitergeführt werden.
+Bei den themenorientierten Innovation Booster werden neue und radikale Innovationsideen in einem offenen und netzwerkbasierten Innovationsprozess entwickelt. Der Fokus liegt auf der frühen Phase der experimentellen Ideenfindung und dem Testen von Ideen. Erfolgversprechende Innovationsideen sollen in Projekten weitergeführt werden.
 
   <section class="claim">
     <header class="claim__header">
-      <h3 class="claim__title">Teilnehmende stärken ihre Fähigkeiten und Kompetenzen der Teilnehmenden</h3>
+      <h3 class="claim__title">Teilnehmende stärken ihre Fähigkeiten und Kompetenzen</h3>
       <span class="claim__level">Output</span>
     </header>
     <div class="figure">
       <div class="figure__col">${draw_bar(df_waffle, { title: "ib_capabilities", mode: "single", rank: "pct1" })}</div>
-      <p>Befragte bestätigen, dass sie aufgrund ihrer Teilnahme an einem Innovation Booster ihre Fähigkeiten und Kompetenz zum Entwickeln und Testen von radikalen Ideen erhöhen konnten.</p>
+      <p>Befragte bestätigen, dass sie aufgrund ihrer Teilnahme an einem Innovation Booster ihre Fähigkeiten und Kompetenzen zum Entwickeln und Testen von radikalen Ideen erhöhen konnten.</p>
     </div>
   </section>
 
@@ -296,11 +296,11 @@ Bei den themenorientierten Innovation Booster werden neue und radikale Innovatio
       <div class="figure__col">${draw_bar(df_waffle, { title: "ib_continued", mode: "single", rank: "pct1" })}</div>
       <p>Innovationsideen werden weiterverfolgt, oft mit neuen Lösungsansätzen. Es entstehen daraus durchschnittlich 26 Innovationsprojekte bei Innosuisse pro Jahr.</p>
     </div>
-    <a class="claim__link" href="/de/beratung-und-netzwerk">Zu den detaillierten Ergebnissen<span class="claim__link-arrow">→</span></a>
+    <a class="claim__link" href="/de/beratung-und-netzwerk">Zu den detaillierten Ergebnissen <span class="claim__link-arrow">→</span></a>
   </section>
 </div>
 
 ## Berichtsstruktur
-* Das Kapitel [Methodische Grundlagen](/de/methodische-grundlagen) erklärt die Einbettung und die Konzeption des Wirkungsmonitorings
+* Das Kapitel [Methodische Grundlagen](/de/methodische-grundlagen) erklärt die Einbettung und die Konzeption des Wirkungsmonitorings.
 * Das Kapitel [Förderangebote und Inhalte](/de/foerderangebote-und-inhalte) zeigt auf, wie breit das Monitoring die Instrumente von Innosuisse abdeckt. In den [vergleichenden Ergebnissen](/de/vergleichende-ergebnisse) werden die Förderangebote untereinander verglichen.
-* Danach werden in einem Kapitel pro Förderangebot die Ergebnisse des Wirkungsmonitoring präsentiert und erläutert.
+* Danach werden in einem Kapitel pro Förderangebot die Ergebnisse des Wirkungsmonitorings präsentiert und erläutert.
