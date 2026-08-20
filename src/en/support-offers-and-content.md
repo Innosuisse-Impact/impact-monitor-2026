@@ -49,10 +49,10 @@ The inclusion of international innovation projects in the impact monitoring is p
 ## Thematic areas of the innovation projects 2023–2025
 The approved innovation projects can be categorised into five different thematic areas, which are also shown in the chart below, broken down by support offers. The figure shows the percentage of funding allocated to each thematic area, averaged over the years 2023–2025. The shares differ by instrument, sometimes significantly.
 
-- <span class="text-cat-1">Engineering</span> has a higher and comparable share in Innovation projects with implementation partners (37%), Innovation cheques (32%) and in BRIDGE Proof of Concept (31%).
-- <span class="text-cat-2">Life Sciences</span>, on the other hand, accounts for a very high proportion of innovation projects without implementation partners (66%) and an above-average proportion of start-ups in coaching (38%). It is the most important subject area in BRIDGE Proof of Concept (34%).
-- The differences for '<span class="text-cat-3">Energy & environment</span>' are smaller, ranging between 9% for innovation projects without implementation partner and 17% for innovation projects with implementation partner.
-- <span class="text-cat-4">Information and communication technologies ICT</span> is the most important area for start-ups in coaching (30%).
-- <span class="text-cat-5">Social sciences & business management'</span> is most strongly represented in innovation cheques (21%); otherwise, the proportions are comparatively smaller.
+- <span class="text-cat-1">Engineering</span> is the leading thematic area in Innovation projects with implementation partner (39%) and reaches comparably high shares in BRIDGE Discovery (38%) and BRIDGE Proof of Concept (33%). It is least present in Start-up Coaching (14%) and in Innovation projects without implementation partner (16%).
+- <span class="text-cat-2">Life Sciences</span> account for a very high proportion of Innovation projects without implementation partners (71%) and also the largest thematic area in BRIDGE Discovery (44%), BRIDGE Proof of Concept (37%) and Start-up Coaching (34%). Their share is lowest in the Innovation cheque (16%).
+- The differences for '<span class="text-cat-3">Energy & environment</span>' are smaller, ranging from 4% in Innovation projects without implementation partner to 17% in Start-up Coaching.
+- <span class="text-cat-4">Information and communication technologies (ICT)</span> carry the most weight in Start-up Coaching (27%) and in the Innovation cheque (22%), and the least in BRIDGE Discovery (6%).
+- <span class="text-cat-5">Social sciences & business management'</span> are most strongly represented in the innovation cheque (22%); in every other support offer the share is 8% or lower.
 
 <div>${n_subcluster(width)}</div>
