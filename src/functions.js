@@ -39,7 +39,7 @@ const strings = {
       caption: "Quelle: Cockpit/PowerBI Innosuisse (2026)",
       snsf: "Betrag wird durch den SNF verdoppelt"
     },
-    : {
+    n_subcluster: {
       xLabel: `Anteil bewilligte Födermittel in % nach Themenbereich pro Förderangebot (⌀ ${subclusterPeriod})`,
       caption: "Quelle: Cockpit/PowerBI Innosuisse (2026)"
     },
@@ -86,7 +86,7 @@ const strings = {
       caption: "Source: Cockpit/PowerBI Innosuisse (2026)",
       snsf: "The amount is doubled by the SNSF"
     },
-    : {
+    n_subcluster: {
       xLabel: `Share of approved funding in % by thematic area and support offer (⌀ ${subclusterPeriod})`,
       caption: "Source: Cockpit / PowerBI Innosuisse (2026)"
     },
@@ -133,7 +133,7 @@ const strings = {
       caption: "Source: Cockpit/PowerBI Innosuisse (2026)",
       snsf: "Le montant est doublé par le FNS"
     },
-    : {
+    n_subcluster: {
       xLabel: `Part fonds accordés en % selon le domaine thématique par offre d'encouragement (⌀ ${subclusterPeriod})`,
       caption: "Source: Cockpit / PowerBI Innosuisse (2026)"
     },
