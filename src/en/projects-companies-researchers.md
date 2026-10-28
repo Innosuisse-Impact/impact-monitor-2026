@@ -98,7 +98,7 @@ A large proportion of the project partners involved have fully achieved or even 
 This is confirmed by the low level of windfall effects in funding: only 3% of companies state that they would have carried out the project in the same way without Innosuisse's support. 16% would have carried it out in a modified or reduced form.
 
   <div class="chart-pair">
-  <div>${draw_waffle("ip_project_goals",-70, 20)}</div>
+  <div>${draw_waffle("ip_project_goals",-85, 20)}</div>
   <div>${draw_waffle("ip_mitnahme",-85,5)}</div>
   </div>
 
