@@ -99,7 +99,7 @@ This is confirmed by the low level of windfall effects in funding: only 3% of co
 
   <div class="chart-pair">
   <div>${draw_waffle("ip_project_goals",-70, 20)}</div>
-  <div>${draw_waffle("ip_mitnahme",-70,5)}</div>
+  <div>${draw_waffle("ip_mitnahme",-85,5)}</div>
   </div>
 
 
