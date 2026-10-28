@@ -95,8 +95,8 @@ La majorité des partenaires de projet impliqués ont entièrement atteint, voir
 
 Les faibles effets d’aubaine de l'encouragement le confirment : seules 3 % des entreprises déclarent qu'elles auraient réalisé le projet sous la même forme sans le soutien d'Innosuisse. 16 % l'auraient réalisé sous une forme modifiée ou réduite.
   <div class="chart-pair">
-  <div>${draw_waffle("ip_project_goals",-70, 20)}</div>
-  <div>${draw_waffle("ip_mitnahme",-70,5)}</div>
+  <div>${draw_waffle("ip_project_goals",-100, 20)}</div>
+  <div>${draw_waffle("ip_mitnahme",-100,5)}</div>
   </div>
 
 
