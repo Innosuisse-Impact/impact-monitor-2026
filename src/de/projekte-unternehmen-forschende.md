@@ -98,8 +98,8 @@ Ein Grossteil der beteiligten Projektpartner haben ihre Ziele vollständig errei
 
 Dies belegen die tiefen Mitnahmeeffekte bei der Förderung: Nur 3 % der Unternehmen geben an, dass sie das Projekt auch ohne die Unterstützung von Innosuisse in derselben Form durchgeführt hätten. 16 % hätten es in veränderter oder reduzierter Form durchgeführt.
   <div class="chart-pair">
-  <div>${draw_waffle("ip_project_goals",-115)}</div>
-  <div>${draw_waffle("ip_mitnahme",-115,10)}</div>
+  <div>${draw_waffle("ip_project_goals",-100)}</div>
+  <div>${draw_waffle("ip_mitnahme",-100,10)}</div>
   </div>
 
 ### Innosuisse-Förderung stärkt den Wissens- und Technologietransfer (WTT) auch langfristig
